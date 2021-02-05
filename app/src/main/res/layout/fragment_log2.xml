@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/mygradient">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/myinnergradient">
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/day"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:nb_backgroundColor="@android:color/black"
+                app:nb_radius="25dp"
+                app:nb_textSize="12sp"
+                app:nb_text="D"
+                app:nb_textColor="@android:color/white" />
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/week"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_radius="25dp"
+                app:nb_textSize="12sp"
+                app:nb_text="W"
+                app:nb_textColor="@android:color/black" />
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/month"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_radius="25dp"
+                app:nb_textSize="12sp"
+                app:nb_text="M"
+                app:nb_textColor="@android:color/black" />
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/year"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_radius="25dp"
+                app:nb_textSize="12sp"
+                app:nb_text="Y"
+                app:nb_textColor="@android:color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+</FrameLayout>

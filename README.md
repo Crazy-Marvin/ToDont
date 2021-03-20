@@ -17,7 +17,7 @@
 
 This libre software app keeps track of things you do __NOT__ want to do.
 
-<b>Take a mirror-facing look at bad habits.</b> Jot down your vices, right from the home page. Use notes to add details — like a healthy alternative to that chocolate bar you cannot resist. And organise your input with labels.
+<b>A good look at bad habits.</b> Jot down your vices, right from the home page. Use notes to add details — like a healthy alternative to that chocolate bar you cannot resist. And organise your input with labels.
 
 <b>Faster than you can grab a pen.</b> Find  and cross out the bad habits you give into on the home page. These will move to "Done" for the day. The next morning fresh, with a full list of things to avoid.
 

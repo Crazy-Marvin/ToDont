@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/mygradient</item>
+        <item name="toolbarStyle">@style/Widget.Toolbar</item>
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#DF26272C</item>
+
+    </style>
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#FFAF01</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">#000000</item>
+    </style>
+
+    <style name="LightSpinnerTextColor">
+        <item name="android:textColor">#ffffff</item>
+        <!--        <item name="android:background">@drawable/ic_spinner</item>-->
+    </style>
+
+    <style name="NightSpinnerTextColor">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

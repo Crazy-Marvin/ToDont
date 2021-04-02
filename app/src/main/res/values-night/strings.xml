@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!--    <string name="app_name">toDonts</string>-->
+    <string name="NightMode" tools:ignore="ExtraTranslation">toDonts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinner_array">
+        <item>Select Label</item>
+        <item>Social</item>
+        <item>Foods And Drinks</item>
+
+
+    </string-array>
+</resources>

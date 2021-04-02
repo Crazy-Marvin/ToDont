@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/mygradient"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/myinnergradient"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/day"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    app:nb_radius="10dp"
+                    app:nb_text="D"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    app:nb_textColor="@color/textcolor"
+                    app:nb_textSize="12sp" />
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/week"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    app:nb_radius="10dp"
+                    app:nb_text="W"
+                    android:layout_weight="1"
+                    app:nb_textColor="@color/textcolor"
+                    app:nb_textSize="12sp" />
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/month"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    app:nb_radius="10dp"
+                    app:nb_text="M"
+                    android:layout_weight="1"
+                    app:nb_textColor="@color/textcolor"
+                    app:nb_textSize="12sp" />
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/year"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    app:nb_radius="10dp"
+                    app:nb_text="Y"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    app:nb_textColor="@color/textcolor"
+                    app:nb_textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/containerLogFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+</FrameLayout>

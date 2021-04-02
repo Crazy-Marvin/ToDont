@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/toDonts.iml" filepath="$PROJECT_DIR$/.idea/modules/toDonts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/toDonts.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/toDonts.app.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="toDonts/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/toDonts.iml" filepath="$PROJECT_DIR$/.idea/modules/toDonts.iml" group="toDonts" />
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
+    </modules>
+  </component>
+</project>

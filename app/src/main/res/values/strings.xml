@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">To Don\'t</string>
-<<<<<<< HEAD
     <string name="LightMode">To Don\'t</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="text">
@@ -17,8 +16,3 @@
     </string-array>
 
 </resources>
-=======
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c

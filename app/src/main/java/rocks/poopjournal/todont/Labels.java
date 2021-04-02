@@ -1,6 +1,5 @@
 package rocks.poopjournal.todont;
 
-<<<<<<< HEAD
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -30,21 +29,10 @@ public class Labels extends AppCompatActivity {
     ArrayList<String> gettinglabels = new ArrayList<>();
     FloatingActionButton labels_floatingbutton;
     SharedPreferences sharedPreferences;
-=======
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-
-public class Labels extends AppCompatActivity {
-
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_labels);
-<<<<<<< HEAD
         rv_labels = findViewById(R.id.rv_labels);
 
         sharedPreferences=getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
@@ -98,12 +86,6 @@ public class Labels extends AppCompatActivity {
 
     public void backbtnclicked(View view) {
         Intent i = new Intent(this, MainActivity.class);
-=======
-    }
-
-    public void backbtnclicked(View view) {
-        Intent i =new Intent(this,MainActivity.class);
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
         startActivity(i);
     }
 }

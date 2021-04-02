@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,19 +7,11 @@
     android:background="@color/backgroundcolor"
     tools:context=".Fragments.FragmentToday">
 
-=======
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FragmentToday"
-    android:background="@android:color/white">
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-<<<<<<< HEAD
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,90 +78,5 @@
             android:layout_weight="1"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-=======
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="15dp" />
-
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="15dp"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Done"
-            android:textAlignment="textStart"
-            android:textColor="@android:color/black"
-            android:textSize="18dp"
-            android:layout_marginLeft="15dp"
-            android:textStyle="bold"
-            tools:ignore="RtlCompat" />
-        <Button
-            android:layout_width="7dp"
-            android:layout_height="30dp"
-            android:layout_weight="0.1"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/ic_downarrow"/>
-    </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:background="@android:color/darker_gray"
-            android:layout_height="1dp"/>
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/rv2"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="200dp"-->
-<!--            />-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="15dp">
-
-            <Button
-                android:layout_width="7dp"
-                android:layout_height="33dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="0.1"
-                android:background="@drawable/ic_sad" />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginLeft="10dp"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="@android:color/white"
-                    android:text="Eat Candy"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:textAlignment="textStart"
-                    android:layout_marginLeft="15dp"
-                    tools:ignore="RtlCompat" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:textSize="12dp"
-                    android:text="Food and Drink"
-                    android:layout_marginLeft="15dp"
-                    />
-            </LinearLayout>
-
-
-        </LinearLayout>
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
     </LinearLayout>
 </FrameLayout>

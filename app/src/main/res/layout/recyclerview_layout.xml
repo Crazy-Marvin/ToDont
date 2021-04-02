@@ -4,11 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:layout_gravity="center"
-<<<<<<< HEAD
     android:background="@color/backgroundcolor">
-=======
-    android:background="@android:color/white">
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +13,6 @@
         android:layout_marginLeft="15dp"
         >
 
-<<<<<<< HEAD
         <Button
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -25,15 +20,6 @@
             android:layout_gravity="top"
             android:layout_marginTop="5dp"
             android:id="@+id/addToAvoided"
-=======
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="top"
-            android:layout_weight="0"
-
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
             />
 
         <LinearLayout
@@ -43,7 +29,6 @@
             android:layout_marginLeft="10dp">
 
             <TextView
-<<<<<<< HEAD
                 android:id="@+id/task"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -51,38 +36,21 @@
                 android:gravity="center"
                 android:textAlignment="textStart"
                 android:textColor="@color/textcolor"
-=======
-                android:id="@+id/todaytext"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
-                android:background="@android:color/white"
-                android:gravity="center"
-                android:text="Eat Candy"
-                android:textAlignment="textStart"
-                android:textColor="@android:color/black"
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
                 android:textSize="16sp"
                 tools:ignore="RtlCompat" />
 
             <TextView
                 android:layout_width="match_parent"
-<<<<<<< HEAD
                 android:id="@+id/dateoftask"
-=======
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
                 android:layout_height="20dp"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="12sp"
                 android:layout_marginLeft="15dp"
                 android:text="Food and Drink" />
-<<<<<<< HEAD
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/bottom_sheet_background"/>
-=======
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
         </LinearLayout>
     </LinearLayout>
 

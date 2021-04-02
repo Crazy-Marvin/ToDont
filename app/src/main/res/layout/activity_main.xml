@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:background="@color/backgroundcolor"
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:layout_marginTop="10dp"
-=======
-    android:background="#ffffff"
-    android:orientation="vertical"
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
     >
 
     <com.google.android.material.appbar.AppBarLayout
@@ -25,47 +16,29 @@
         android:layout_height="50dp"
         android:background="@drawable/mygradient"
         android:gravity="bottom"
-<<<<<<< HEAD
         app:elevation="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-=======
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:elevation="0dp">
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_marginLeft="20dp"
-<<<<<<< HEAD
             android:background="@android:color/transparent">
-=======
-            android:background="@android:color/transparent"
-            >
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-<<<<<<< HEAD
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:orientation="horizontal">
-=======
-                android:orientation="horizontal"
-                android:background="@android:color/transparent"
-                android:gravity="center">
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 
                 <TextView
                     android:id="@+id/toolbartext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:textColor="@color/textcolor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -86,26 +59,6 @@
                     android:layout_weight="0.01"
                     android:background="@drawable/ic_menu"
                     android:onClick="mysettings"
-=======
-                    android:textSize="18sp"
-                    android:textColor="@android:color/black"
-                    android:textStyle="bold" />
-                <Button
-                    android:id="@+id/label"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="0.01"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/label"
-                    />
-                <Button
-                    android:id="@+id/settings"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="0.01"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/ic_settings"
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
                     />
             </LinearLayout>
 
@@ -113,32 +66,10 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-<<<<<<< HEAD
-=======
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingbtn"
-        android:layout_width="46dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/g1"
-        android:src="@drawable/ic_add"
-        app:backgroundTint="@color/g1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationView"
         android:layout_width="match_parent"
-<<<<<<< HEAD
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="2dp"
@@ -148,16 +79,11 @@
         app:itemIconTint="@drawable/bottom_nav_color"
         app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
         app:itemTextAppearanceInactive="@style/BottomNavigationView"
-=======
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />
 
-<<<<<<< HEAD
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
@@ -168,6 +94,3 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </RelativeLayout>
-=======
-</LinearLayout>
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c

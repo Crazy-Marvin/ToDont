@@ -2,7 +2,6 @@
 <resources>
     <color name="colorPrimary">#FFAF01</color>
     <color name="colorPrimaryDark">#3700B3</color>
-<<<<<<< HEAD
     <color name="colorAccent">#FFAF01</color>
 
 
@@ -27,14 +26,5 @@
     <color name="newhabitsheet">#ffffff</color>
     <color name="spinr">#7C7A72</color>
 
-=======
-    <color name="colorAccent">#fac401</color>
-
-
-    <color name="g1">#fac401</color>
-    <color name="g2">#ff8c00</color>
-    <color name="innerg1"> #f2be00</color>
-    <color name="innerg2">#ed8709</color>
->>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 
 </resources>

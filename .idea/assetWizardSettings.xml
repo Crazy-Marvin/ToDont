@@ -18,7 +18,11 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
+<<<<<<< HEAD
                                       <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/account_circle/baseline_account_circle_24.xml" />
+=======
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/add/baseline_add_24.xml" />
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +32,14 @@
                         </option>
                         <option name="values">
                           <map>
+<<<<<<< HEAD
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="outputName" value="ic_label_dark_labels" />
                             <entry key="sourceFile" value="C:\Users\shaista barkaat\Desktop\tttt.svg" />
+=======
+                            <entry key="outputName" value="ic_add" />
+                            <entry key="sourceFile" value="C:\Users\shaista barkaat\AndroidStudioProjects\toDonts" />
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
                           </map>
                         </option>
                       </PersistentState>

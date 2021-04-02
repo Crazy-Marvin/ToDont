@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundcolor"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
     android:orientation="vertical"
     tools:context=".Labels">
 
@@ -28,6 +36,10 @@
                 android:layout_weight="0.01"
                 android:background="@drawable/ic_back"
                 android:onClick="backbtnclicked" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
             <TextView
                 android:id="@+id/toolbartext"
                 android:layout_width="wrap_content"
@@ -35,7 +47,11 @@
                 android:layout_marginLeft="15dp"
                 android:layout_weight="1"
                 android:text="Labels"
+<<<<<<< HEAD
                 android:textColor="@color/textcolor"
+=======
+                android:textColor="@android:color/black"
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -46,6 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+<<<<<<< HEAD
         android:layout_marginBottom="55dp"
         android:layout_marginTop="10dp"
         android:layout_below="@id/toolbar"
@@ -56,10 +73,148 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
+=======
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+
+                android:background="@drawable/ic_label" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="Social"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="3 habits"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+
+                android:background="@drawable/ic_label" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="Food and drink"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="1 habit"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+
+                android:background="@drawable/ic_label" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/todaytext"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="Emotions"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="1 habit"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+<<<<<<< HEAD
         android:id="@+id/label_floatingbtn"
         android:layout_width="55dp"
         android:layout_height="55dp"
@@ -73,3 +228,16 @@
         android:src="@drawable/ic_add" />
 
 </RelativeLayout>
+=======
+        android:id="@+id/floatingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.1"
+        android:background="@color/g1"
+        android:backgroundTint="@color/g1"
+        android:src="@drawable/ic_add" />
+
+</LinearLayout>
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c

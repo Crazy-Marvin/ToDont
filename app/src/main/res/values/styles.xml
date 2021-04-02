@@ -11,6 +11,7 @@
         <item name="android:statusBarColor">#00000000</item>
     </style>
 
+<<<<<<< HEAD
     <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
     </style>
@@ -41,4 +42,6 @@
     <style name="NightSpinnerTextColor">
         <item name="android:textColor">@android:color/white</item>
     </style>
+=======
+>>>>>>> 4401b101e1e75ccd4ae51cb14e5ea8fc1148130c
 </resources>

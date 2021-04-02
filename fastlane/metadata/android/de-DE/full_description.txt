@@ -1,0 +1,12 @@
+<b>Ein guter Blick auf schlechte Gewohnheiten.</b> Notieren Sie Ihre Laster mit einem Fingertipp direkt von der Startseite aus. Verwenden Sie Notizen, um Details hinzuzufügen - wie eine gesunde Alternative zu dieser Tafel Schokolade, der Sie nicht widerstehen können. Und organisieren Sie Ihre Eingabe mit Labels.
+
+
+<b>Schneller als Sie einen Stift greifen können.</b> Finden Sie Ihre schlechten Gewohnheiten auf der Startseite und markieren Sie die Einträge, denen Sie nachgegeben haben. Diese werden für den Tag nach Getan verschoben. Beginnen Sie am nächsten Morgen mit einer vollständigen Liste von Dingen, die Sie vermeiden sollten.
+
+
+<b>Bleiben Sie auf dem Laufenden.</b> Das Protokoll gibt Ihnen einen Einblick über Ihre Gesamterfolgsraten und zeigt auf, mit welcher schlechten Angewohnheit Sie am meisten verbunden waren - über eine Woche, einen Monat oder ein Jahr. So können Sie leicht auf ein besseres Ich hinarbeiten.
+
+
+Webseite: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Übersetzte To Don’t: <a href="https://crowdin.com/project/ToDont">https://crowdin.com/project/ToDont</a> 
+Quelltext auf GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

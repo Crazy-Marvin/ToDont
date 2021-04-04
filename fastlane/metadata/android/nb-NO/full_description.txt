@@ -1,0 +1,12 @@
+<b>Et godt innblikk i dårlige vaner.</b> Skriv ned dine laster med ett trykk, direkte fra hjemmesiden. Bruk notater for å legge til detaljer, som sunt alternativ til den sjokoladen du ikke kan motstå. Organiser alt med etiketter.
+
+
+<b>Raskere enn en penn er for hånden.</b> Finn dine dårlige vaner fra hjemmesiden, og kryss ut de du faller for. Disse vil bli flyttet til gjort for dagen. Neste morgen starter med en tom liste over ting å unngå.
+
+
+<b>Hold øye med framdriften.</b> Loggen gir deg innsikt i din generelle framdrift og peker klart ut de dårlige vanene du oftest foretar deg; i løpet av en uke, måned, eller år. Slik kan du enkelt jobbe mot en bedre versjon av deg selv.
+
+
+Nettside: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Oversett To Don’t: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
+Kildekode på GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

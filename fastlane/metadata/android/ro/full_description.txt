@@ -1,0 +1,12 @@
+<b>O privire bună asupra obiceiurilor proaste.</b> Notează-ți viciile într-o singură atingere, direct de pe pagina principală. Folosiți Note pentru a adăuga detalii — cum ar fi o alternativă sănătoasă la acel baton de ciocolată căruia nu-i puteți rezista. Și organizați-vă informațiile cu ajutorul etichetelor.
+
+
+<b> Mai repede decât poți apuca un pix.</b> Găsește-ți obiceiurile rele pe pagina principală și bifează-le pe cele la care cedezi. Acestea se vor muta la Făcute pentru azi. În dimineața următoare, începeți din nou cu o listă completă de lucruri de evitat.
+
+
+<b> Fiți la curent cu progresele dvs.</b> Jurnalul vă oferă o perspectivă asupra ratelor dvs. generale de succes și vă indică de ce obiceiuri proaste ați fost cel mai atașat - pe parcursul unei săptămâni, al unei luni sau al unui an. Astfel, puteți lucra cu ușurință pentru a vă îmbunătăți.
+
+
+Pagina web: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Translate To Don't: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Sursa pe GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

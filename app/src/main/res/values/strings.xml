@@ -1,18 +1,4 @@
 <resources>
     <string name="app_name">To Don\'t</string>
     <string name="LightMode">To Don\'t</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="text">
-        <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a>
-        Hello blank fragment</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <string-array name="spinner_array">
-        <item>Social</item>
-        <item>Foods And Drinks</item>
-        <item>Studies</item>
-
-
-    </string-array>
-
 </resources>

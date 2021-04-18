@@ -19,7 +19,7 @@ jobs:
       - name: "🦸 Make gradlew executable"
         run: chmod +x ./gradlew
       - name: "🏗 Build"
-        run: ./gradlew build
+        run: ./gradlew assembleDebug
       - name: "🧪 Code coverage"
         run: ./gradlew jacocoTestReport
       - name: "📤 Upload code coverage"

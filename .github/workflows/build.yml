@@ -1,4 +1,18 @@
-- name: "Build Android project"
-  uses: vgaidarji/android-github-actions-build@v1.0.1
-  with:
-    args: "./gradlew assembleDebug"
+name: Android Build
+
+on: push
+
+jobs:
+  build:
+    name: "Assemble artifacts"
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout
+      - name: SCM
+        uses: actions/checkout@v2
+
+      # Assemble artifacts
+      - name: Assemble
+        uses: vgaidarji/android-github-actions-build@v1.0.1
+        with:
+          args: "./gradlew assemble"

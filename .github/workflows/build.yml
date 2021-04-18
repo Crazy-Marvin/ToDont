@@ -10,6 +10,9 @@ jobs:
       # Checkout
       - name: SCM
         uses: actions/checkout@v2
+        
+    name: "Make gradlew executable"
+        run: chmod +x ./gradlew
 
       # Assemble artifacts
       - name: Assemble

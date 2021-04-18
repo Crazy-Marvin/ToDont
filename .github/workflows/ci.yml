@@ -17,6 +17,8 @@ jobs:
         uses: malinskiy/action-android/install-sdk@release/0.1.1
         with:
           acceptLicense: yes
+      - name: "🦸 Make gradlew executable"
+        run: chmod +x ./gradlew
       - name: "🏗 Build"
         run: ./gradlew assembleDebug
       - name: "🧪 Code coverage"

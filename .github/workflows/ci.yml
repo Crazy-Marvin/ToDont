@@ -13,10 +13,8 @@ jobs:
         with:
           java-version: 1.8
           java-package: jdk
-      - name: "🧰 Install Android SDK"
-        uses: malinskiy/action-android/install-sdk@release/0.1.1
-        with:
-          acceptLicense: yes
+      - name: "🧰 Setup Android SDK"
+        uses: android-actions/setup-android@v2
       - name: "🦸 Make gradlew executable"
         run: chmod +x ./gradlew
       - name: "🏗 Build"

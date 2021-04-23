@@ -21,9 +21,9 @@ about: Create a report to help us improve
 <!-- If applicable, add screenshots to help explain your problem. -->
 
 ## :iphone: Tech info
- - Device: <!-- e.g. Nexus 6P -->
- - OS: <!-- e.g. 7.1.1 -->
- - Version: <!-- e.g. 3.1.2 -->
+- Device: <!-- e.g. Nexus 6P -->
+- OS: <!-- e.g. 7.1.1 -->
+- Version: <!-- e.g. 3.1.2 -->
 
 ## :page_facing_up: Additional context
 <!-- Add any other context about the problem here. -->

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<androidx.legacy>
-  <legacy-support-v13 versions="1.0.0-alpha1,1.0.0-alpha3,1.0.0-beta01,1.0.0-rc01,1.0.0-rc02,1.0.0"/>
-  <legacy-preference-v14 versions="1.0.0-alpha1,1.0.0-alpha3,1.0.0-beta01,1.0.0-rc01,1.0.0-rc02,1.0.0"/>
-  <legacy-support-v4 versions="1.0.0-alpha1,1.0.0-alpha3,1.0.0-beta01,1.0.0-rc01,1.0.0-rc02,1.0.0"/>
-  <legacy-support-core-ui versions="1.0.0-alpha1,1.0.0-alpha3,1.0.0-beta01,1.0.0-rc01,1.0.0-rc02,1.0.0"/>
-  <legacy-support-core-utils versions="1.0.0-alpha1,1.0.0-alpha3,1.0.0-beta01,1.0.0-rc01,1.0.0-rc02,1.0.0"/>
-</androidx.legacy>

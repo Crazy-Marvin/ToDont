@@ -72,7 +72,6 @@ class MainActivity : AppCompatActivity() {
         label.setOnClickListener {
             val intennt = Intent(this, Labels::class.java)
             startActivity(intennt)
-            finish()
         }
     }
 
@@ -82,8 +81,6 @@ class MainActivity : AppCompatActivity() {
         val intennt = Intent(this, Settings::class.java)
             startActivity(intennt)
             overridePendingTransition(0, 0)
-            finish()
-
     }
 
 }

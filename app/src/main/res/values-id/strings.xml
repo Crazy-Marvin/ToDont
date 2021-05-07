@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="LightMode">To Don\'t</string>
+    <string name="app_name">To Don\'t</string>
+</resources>

@@ -7,9 +7,6 @@
 <b>Pantau kemajuan Anda.</b> Log memberi Anda pengetahuan tentang tingkat keberhasilan Anda secara keseluruhan dan menunjukkan dengan tepat kebiasaan buruk apa yang paling Anda sukai — lebih dari seminggu, sebulan, atau setahun.
 
 
-Halaman web:
-<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
-Terjemahkan To Don't:
-<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
-Sumber di GitHub:
-<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>
+Halaman web:<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Terjemahkan To Don't:<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
+Sumber di GitHub:<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="LightMode">拉斯</string>
+    <string name="app_name">拉斯</string>
+</resources>

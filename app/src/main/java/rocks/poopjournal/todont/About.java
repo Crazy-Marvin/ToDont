@@ -25,27 +25,27 @@ public class About extends AppCompatActivity {
 }
 
 
-    public void contact_patriyk(View view) {
-        switch(view.getId()){
-            case R.id.btngit_patriyk:
-                Uri uri = Uri.parse("https://github.com/patrykmichalik"); // missing 'http://' will cause crashed
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-                break;
-            case R.id.btntwitter_patriyk:
-                Uri u = Uri.parse("https://twitter.com/patrykmichalik_\n");
-                Intent i = new Intent(Intent.ACTION_VIEW, u);
-                startActivity(i);
-                break;
-            case R.id.btnweb_patriyk:
-                Uri ur = Uri.parse("https://patrykmichalik.com/"); // missing 'http://' will cause crashed
-                Intent in = new Intent(Intent.ACTION_VIEW, ur);
-                startActivity(in);
-                break;
-
-        }
-
-    }
+//    public void contact_patriyk(View view) {
+//        switch(view.getId()){
+//            case R.id.btngit_patriyk:
+//                Uri uri = Uri.parse("https://github.com/patrykmichalik"); // missing 'http://' will cause crashed
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
+//                break;
+//            case R.id.btntwitter_patriyk:
+//                Uri u = Uri.parse("https://twitter.com/patrykmichalik_\n");
+//                Intent i = new Intent(Intent.ACTION_VIEW, u);
+//                startActivity(i);
+//                break;
+//            case R.id.btnweb_patriyk:
+//                Uri ur = Uri.parse("https://patrykmichalik.com/"); // missing 'http://' will cause crashed
+//                Intent in = new Intent(Intent.ACTION_VIEW, ur);
+//                startActivity(in);
+//                break;
+//
+//        }
+//
+//    }
 
     public void contact_codeaquaria(View view) {
         switch(view.getId()){

@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
             .commit()
-        toolbartext.setText("Today")
+        toolbartext.setText(R.string.today)
         label.visibility = View.VISIBLE
         settings.visibility = View.VISIBLE
         db?.getNightMode()
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                         supportFragmentManager.beginTransaction()
                             .replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
                             .commit()
-                        toolbartext.setText("Today")
+                        toolbartext.setText(R.string.today)
                         label.visibility = View.VISIBLE
                         settings.visibility = View.VISIBLE
 
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                         supportFragmentManager.beginTransaction()
                             .replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
                             .commit()
-                        toolbartext.setText("Log")
+                        toolbartext.setText(R.string.log)
                         label.visibility = View.INVISIBLE
                         settings.visibility = View.INVISIBLE
                         return@OnNavigationItemSelectedListener true
@@ -72,6 +72,7 @@ class MainActivity : AppCompatActivity() {
         label.setOnClickListener {
             val intennt = Intent(this, Labels::class.java)
             startActivity(intennt)
+            finish()
         }
     }
 
@@ -81,6 +82,8 @@ class MainActivity : AppCompatActivity() {
         val intennt = Intent(this, Settings::class.java)
             startActivity(intennt)
             overridePendingTransition(0, 0)
+            finish()
+
     }
 
 }

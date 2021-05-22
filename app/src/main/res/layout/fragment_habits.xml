@@ -25,7 +25,7 @@
         android:layout_height="30dp"
         android:textColor="@color/spinr"
         android:textSize="12sp"
-        android:text="Habits will show up here."
+        android:text="@string/habitswillshowuphere"
         android:layout_gravity="center"
         />
     <TextView
@@ -35,7 +35,7 @@
         android:layout_weight="1"
         android:textColor="@color/textcolor"
         android:textSize="14sp"
-        android:text="To start off, put down a bad habit"
+        android:text="@string/puthabit"
         android:layout_marginBottom="75dp"
         android:layout_gravity="bottom|center"
         />

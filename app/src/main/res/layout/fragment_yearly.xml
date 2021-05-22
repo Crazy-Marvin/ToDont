@@ -79,7 +79,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="Most Avoided :"
+                android:text="@string/mostav"
                 android:textColor="@color/textcolor"
                 android:textSize="16sp"
                 android:layout_marginLeft="15dp"
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="Least Avoided :"
+                android:text="@string/leastav"
                 android:textColor="@color/textcolor"
                 android:textSize="16sp"
                 android:layout_marginLeft="15dp"

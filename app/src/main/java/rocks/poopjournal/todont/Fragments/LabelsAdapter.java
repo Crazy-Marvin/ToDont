@@ -60,37 +60,37 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.RecyclerVi
         else if(Helper.isnightmodeon.equals("yes")){
             holder.btnlabel.setBackgroundResource(R.drawable.ic_label_dark_labels);
         }
-        holder.btndelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(con);
-                builder1.setMessage("Do you really want to delete this?");
-                builder1.setCancelable(true);
-                builder1.setPositiveButton(
-                        "Yes",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                db.delete_label(dTask);
-                                Intent intent = new Intent(con, Labels.class);
-                                con.startActivity(intent);
-                                ((Activity) con).overridePendingTransition(0, 0);
-                                dialog.cancel();
-                            }
-                        });
-
-                builder1.setNegativeButton(
-                        "No",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                            }
-                        });
-
-                AlertDialog alert11 = builder1.create();
-                alert11.show();
-
-            }
-        });
+//        holder.btndelete.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                AlertDialog.Builder builder1 = new AlertDialog.Builder(con);
+//                builder1.setMessage("Do you really want to delete this?");
+//                builder1.setCancelable(true);
+//                builder1.setPositiveButton(
+//                        "Yes",
+//                        new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int id) {
+//                                db.delete_label(dTask);
+//                                Intent intent = new Intent(con, Labels.class);
+//                                con.startActivity(intent);
+//                                ((Activity) con).overridePendingTransition(0, 0);
+//                                dialog.cancel();
+//                            }
+//                        });
+//
+//                builder1.setNegativeButton(
+//                        "No",
+//                        new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int id) {
+//                                dialog.cancel();
+//                            }
+//                        });
+//
+//                AlertDialog alert11 = builder1.create();
+//                alert11.show();
+//
+//            }
+//        });
 
     }
 
@@ -101,12 +101,11 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.RecyclerVi
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
         TextView tv_label,tv_sum;
-        Button btndelete, btnlabel;
+        Button  btnlabel;
         public RecyclerViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_label = itemView.findViewById(R.id.tv_label);
             tv_sum = itemView.findViewById(R.id.tv_sum);
-            btndelete=itemView.findViewById(R.id.btndelete);
             btnlabel=itemView.findViewById(R.id.labelsbtn);
 
         }

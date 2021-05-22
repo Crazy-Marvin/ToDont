@@ -41,7 +41,7 @@
                     android:gravity="center"
                     app:nb_backgroundColor="@color/bottom_sheet_background"
                     app:nb_radius="10dp"
-                    app:nb_text="Habits"
+                    app:nb_text="@string/habits"
                     app:nb_textColor="@color/textcolor"
                     app:nb_textSize="12sp"
                     />
@@ -52,7 +52,7 @@
                     android:layout_height="40dp"
                     app:nb_backgroundColor="@android:color/transparent"
                     app:nb_radius="10dp"
-                    app:nb_text="Avoided"
+                    app:nb_text="@string/avoided"
                     app:nb_textColor="@color/textcolor"
                     app:nb_textSize="12sp"
                     android:layout_weight="1"/>
@@ -63,7 +63,7 @@
                     android:layout_height="40dp"
                     app:nb_backgroundColor="@android:color/transparent"
                     app:nb_radius="10dp"
-                    app:nb_text="Done"
+                    app:nb_text="@string/done"
                     app:nb_textColor="@color/textcolor"
                     app:nb_textSize="12sp"
                     android:layout_marginRight="2dp"

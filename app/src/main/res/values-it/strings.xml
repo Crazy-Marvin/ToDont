@@ -2,4 +2,18 @@
 <resources>
     <string name="LightMode">Da non fare</string>
     <string name="app_name">Da non fare</string>
+    <string name="avoided">Evitata</string>
+    <string name="habitswillshowuphere">Le abitudini verranno visualizzate qui.</string>
+    <string name="puthabit">Per iniziare, metti una cattiva abitudine</string>
+    <string name="addnewlabl">Aggiungi una nuova etichetta</string>
+    <string name="addlabl">Si prega di aggiungere prima un’etichetta</string>
+    <string name="leastav">Le meno evitate:</string>
+    <string name="mostav">Le più evitate:</string>
+    <string name="settings">Impostazioni</string>
+    <string name="labels">Etichette</string>
+    <string name="about">Informazioni</string>
+    <string name="log">Registro</string>
+    <string name="today">Oggi</string>
+    <string name="habits">Abitudini</string>
+    <string name="done">Finito</string>
 </resources>

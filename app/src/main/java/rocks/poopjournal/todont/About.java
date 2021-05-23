@@ -156,4 +156,43 @@ public class About extends AppCompatActivity {
         Intent i = new Intent(Intent.ACTION_VIEW, u);
         startActivity(i);
     }
+    public void spinner(View view) {
+        Uri u = Uri.parse("https://github.com/jaredrummler/MaterialSpinner/blob/master/LICENSE");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+
+    public void nobobutton(View view) {
+        Uri u = Uri.parse("https://github.com/alex31n/NoboButton/blob/master/LICENSE");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void cImgButton(View view) {
+        Uri u = Uri.parse("https://github.com/hdodenhof/CircleImageView/blob/master/LICENSE.txt");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void MPAndroidChart(View view) {
+        Uri u = Uri.parse("https://github.com/PhilJay/MPAndroidChart/blob/master/LICENSE");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void JUnit(View view) {
+        Uri u = Uri.parse("https://junit.org/junit4/license.html");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+
+    public void Kotlin(View view) {
+        Uri u = Uri.parse("https://github.com/JetBrains/kotlin/blob/master/license/LICENSE.txt");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void Java(View view) {
+        Uri u = Uri.parse("http://openjdk.java.net/legal/gplv2+ce.html");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+
+
 }

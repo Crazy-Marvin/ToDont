@@ -37,7 +37,7 @@
         android:layout_below="@id/detail"
         android:layout_marginLeft="5dp"
         android:gravity="center_vertical"
-        android:text="Please add Label First"
+        android:text="@string/addlabl"
         android:textColor="#7C7A72"
         android:textSize="18sp"
         android:textStyle="italic" />

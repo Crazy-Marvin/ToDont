@@ -8,11 +8,11 @@
         android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textColor="@color/textcolor"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="About"
+        android:text="@string/about"
         android:textColor="@color/textcolor" />
 </LinearLayout>

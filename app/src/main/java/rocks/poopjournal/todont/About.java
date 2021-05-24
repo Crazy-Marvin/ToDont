@@ -25,27 +25,27 @@ public class About extends AppCompatActivity {
 }
 
 
-    public void contact_patriyk(View view) {
-        switch(view.getId()){
-            case R.id.btngit_patriyk:
-                Uri uri = Uri.parse("https://github.com/patrykmichalik"); // missing 'http://' will cause crashed
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-                break;
-            case R.id.btntwitter_patriyk:
-                Uri u = Uri.parse("https://twitter.com/patrykmichalik_\n");
-                Intent i = new Intent(Intent.ACTION_VIEW, u);
-                startActivity(i);
-                break;
-            case R.id.btnweb_patriyk:
-                Uri ur = Uri.parse("https://patrykmichalik.com/"); // missing 'http://' will cause crashed
-                Intent in = new Intent(Intent.ACTION_VIEW, ur);
-                startActivity(in);
-                break;
-
-        }
-
-    }
+//    public void contact_patriyk(View view) {
+//        switch(view.getId()){
+//            case R.id.btngit_patriyk:
+//                Uri uri = Uri.parse("https://github.com/patrykmichalik"); // missing 'http://' will cause crashed
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
+//                break;
+//            case R.id.btntwitter_patriyk:
+//                Uri u = Uri.parse("https://twitter.com/patrykmichalik_\n");
+//                Intent i = new Intent(Intent.ACTION_VIEW, u);
+//                startActivity(i);
+//                break;
+//            case R.id.btnweb_patriyk:
+//                Uri ur = Uri.parse("https://patrykmichalik.com/"); // missing 'http://' will cause crashed
+//                Intent in = new Intent(Intent.ACTION_VIEW, ur);
+//                startActivity(in);
+//                break;
+//
+//        }
+//
+//    }
 
     public void contact_codeaquaria(View view) {
         switch(view.getId()){
@@ -156,4 +156,43 @@ public class About extends AppCompatActivity {
         Intent i = new Intent(Intent.ACTION_VIEW, u);
         startActivity(i);
     }
+    public void spinner(View view) {
+        Uri u = Uri.parse("https://github.com/jaredrummler/MaterialSpinner/blob/master/LICENSE");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+
+    public void nobobutton(View view) {
+        Uri u = Uri.parse("https://github.com/alex31n/NoboButton/blob/master/LICENSE");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void cImgButton(View view) {
+        Uri u = Uri.parse("https://github.com/hdodenhof/CircleImageView/blob/master/LICENSE.txt");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void MPAndroidChart(View view) {
+        Uri u = Uri.parse("https://github.com/PhilJay/MPAndroidChart/blob/master/LICENSE");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void JUnit(View view) {
+        Uri u = Uri.parse("https://junit.org/junit4/license.html");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+
+    public void Kotlin(View view) {
+        Uri u = Uri.parse("https://github.com/JetBrains/kotlin/blob/master/license/LICENSE.txt");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+    public void Java(View view) {
+        Uri u = Uri.parse("http://openjdk.java.net/legal/gplv2+ce.html");
+        Intent i = new Intent(Intent.ACTION_VIEW, u);
+        startActivity(i);
+    }
+
+
 }

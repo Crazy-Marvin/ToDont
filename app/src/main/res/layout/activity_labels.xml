@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_weight="1"
-                android:text="Labels"
+                android:text="@string/labels"
                 android:textColor="@color/textcolor"
                 android:textSize="18sp"
                 android:textStyle="bold" />

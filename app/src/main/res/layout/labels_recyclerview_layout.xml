@@ -61,15 +61,7 @@
                 android:layout_height="1dp"
                 android:background="@color/bottom_sheet_background"/>
         </LinearLayout>
-        <Button
-            android:id="@+id/btndelete"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_gravity="top"
-            android:layout_weight="0.1"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/ic_delete"
-            />
+
 
     </LinearLayout>
 

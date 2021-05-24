@@ -2,4 +2,18 @@
 <resources>
     <string name="LightMode">Lass es!</string>
     <string name="app_name">Lass es!</string>
+    <string name="habitswillshowuphere">Gewohnheiten werden hier angezeigt.</string>
+    <string name="puthabit">Um zu beginnen, füge eine schlechte Gewohnheit hinzu</string>
+    <string name="addnewlabl">Neues Etikett hinzufügen</string>
+    <string name="addlabl">Bitte zuerst Etikett hinzufügen</string>
+    <string name="leastav">Die wenigsten vermieden:</string>
+    <string name="avoided">Vermieden</string>
+    <string name="mostav">Die meisten vermieden:</string>
+    <string name="settings">Einstellungen</string>
+    <string name="labels">Etikette</string>
+    <string name="about">Über</string>
+    <string name="log">Protokoll</string>
+    <string name="today">Heute</string>
+    <string name="habits">Gewohnheiten</string>
+    <string name="done">Fertig</string>
 </resources>

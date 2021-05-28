@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="habitswillshowuphere">Os hábitos aparecerão aqui.</string>
+    <string name="puthabit">Para começar, abandone um mau hábito</string>
+    <string name="addnewlabl">Adicionar nova etiqueta</string>
+    <string name="addlabl">Por favor, adicione a etiqueta primeiro</string>
+    <string name="leastav">Menos evitado:</string>
+    <string name="mostav">Mais evitados:</string>
+    <string name="settings">Configurações</string>
+    <string name="labels">Etiquetas</string>
+    <string name="about">Sobre</string>
+    <string name="log">Registro</string>
+    <string name="today">Hoje</string>
+    <string name="habits">Hábitos</string>
+    <string name="done">Feito</string>
+    <string name="avoided">Evitado</string>
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Olá fragmento em branco</string>
+    <string name="LightMode">To Don\'t</string>
+    <string name="app_name">To Don\'t</string>
+</resources>

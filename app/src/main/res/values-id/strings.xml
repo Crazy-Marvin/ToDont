@@ -2,4 +2,20 @@
 <resources>
     <string name="LightMode">To Don\'t</string>
     <string name="app_name">To Don\'t</string>
+    <string name="habitswillshowuphere">Kebiasaan akan muncul di sini.</string>
+    <string name="puthabit">Untuk memulai, tuliskan kebiasaan buruk</string>
+    <string name="addnewlabl">Tambahkan Label Baru</string>
+    <string name="addlabl">Silakan tambahkan Label Terlebih Dahulu</string>
+    <string name="leastav">Paling Sedikit Dihindari:</string>
+    <string name="mostav">Paling Dihindari:</string>
+    <string name="settings">Pengaturan</string>
+    <string name="labels">Label</string>
+    <string name="about">Tentang</string>
+    <string name="log">Catatan</string>
+    <string name="today">Hari ini</string>
+    <string name="habits">Kebiasaan</string>
+    <string name="done">Selesai</string>
+    <string name="avoided">Dihindari</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Tautan</a> Halo fragmen kosong</string>
 </resources>

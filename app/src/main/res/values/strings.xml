@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">To Don\'t</string>
     <string name="LightMode">To Don\'t</string>
@@ -14,19 +15,15 @@
     <string name="about">About</string>
     <string name="labels">Labels</string>
     <string name="settings">Settings</string>
-    <string name="mostav">Most Avoided :</string>
-    <string name="leastav">Least Avoided :</string>
+    <string name="mostav">Most Avoided:</string>
+    <string name="leastav">Least Avoided:</string>
     <string name="addlabl">Please add Label First</string>
     <string name="addnewlabl">Add New Label</string>
     <string name="puthabit">To start off, put down a bad habit</string>
     <string name="habitswillshowuphere">Habits will show up here.</string>
-
     <string-array name="spinner_array">
         <item>Social</item>
         <item>Foods And Drinks</item>
         <item>Studies</item>
-
-
     </string-array>
-
 </resources>

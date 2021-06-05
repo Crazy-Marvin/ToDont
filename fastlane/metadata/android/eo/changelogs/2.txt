@@ -1,0 +1,5 @@
+- Forigis dezajniston for de la ekrano «Pri»
+- Movis enkodigitajn signoĉenojn el la aranĝo en la dosieron strings.xml por pli facila tradukado
+- Ĝisdatigis sekcion de Uzitaj Permesiloj laŭ ĉiuj uzataj dependaĵoj (dankon al ĉiuj!)
+- Aldonis pli da ŝovumaj gestoj
+- Malgrandaj plibonigoj

@@ -12,7 +12,7 @@
     <string name="log">Registro</string>
     <string name="today">Hoje</string>
     <string name="habits">Hábitos</string>
-    <string name="done">Feito</string>
+    <string name="done">Concluído</string>
     <string name="avoided">Evitado</string>
     <string name="hello_blank_fragment">Olá fragmento em branco</string>
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Olá fragmento em branco</string>

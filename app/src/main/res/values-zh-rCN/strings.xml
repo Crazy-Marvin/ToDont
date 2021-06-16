@@ -9,8 +9,8 @@
     <string name="puthabit">开始改掉一个坏习惯</string>
     <string name="addnewlabl">添加新标签</string>
     <string name="addlabl">请先添加标签</string>
-    <string name="leastav">最不能避免的:</string>
-    <string name="mostav">最能避免的:</string>
+    <string name="leastav">不经常忽略的:</string>
+    <string name="mostav">经常忽略的:</string>
     <string name="settings">设置</string>
     <string name="labels">标签</string>
     <string name="about">关于</string>

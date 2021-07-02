@@ -1,0 +1,5 @@
+- Rimosso il designer dalla schermata "Informazioni".
+- Spostate le stringhe dal codice del layout in strings.xml per una più facile traduzione.
+- Aggiornata la sezione Licenze Usate con tutte le dipendenze usate (grazie!).
+- Aggiunge più gestures.
+- Piccoli miglioramenti dietro le quinte

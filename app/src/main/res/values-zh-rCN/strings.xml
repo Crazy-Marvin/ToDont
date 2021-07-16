@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="LightMode">拉斯</string>
-    <string name="app_name">拉斯</string>
+    <string name="LightMode">不要去做</string>
+    <string name="app_name">不要去做</string>
+    <string name="text"> 链接<a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"/>你好空白的片断</string>
+    <string name="hello_blank_fragment">你好，空白的片断</string>
+    <string name="avoided">忽略的</string>
+    <string name="habitswillshowuphere">这里会显示习惯.</string>
+    <string name="puthabit">开始改掉一个坏习惯</string>
+    <string name="addnewlabl">添加新标签</string>
+    <string name="addlabl">请先添加标签</string>
+    <string name="leastav">不经常忽略的:</string>
+    <string name="mostav">经常忽略的:</string>
+    <string name="settings">设置</string>
+    <string name="labels">标签</string>
+    <string name="about">关于</string>
+    <string name="log">日志</string>
+    <string name="today">今日</string>
+    <string name="habits">习惯</string>
+    <string name="done">已完成</string>
 </resources>

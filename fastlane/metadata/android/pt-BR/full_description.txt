@@ -1,0 +1,12 @@
+<b>Uma boa olhada nos maus hábitos.</b> Anote seus vícios com um toque, direto da página inicial. Use notas para adicionar detalhes - como uma alternativa saudável para aquela barra de chocolate que você não pode resistir. E organize sua entrada com rótulos.
+
+
+<b>Mais rápido do que você pode pegar uma caneta.</b> Encontre seus hábitos ruins na página inicial e risque aqueles que você adotar. Estes serão movidos para Concluído para o dia. Na manhã seguinte, comece do zero com uma lista completa de coisas a evitar.
+
+
+<b>Fique por dentro do seu progresso.</b>O registro fornece uma visão geral das taxas de sucesso e indica a qual mau hábito você se apegou mais - mais de uma semana, um mês ou um ano. Assim, você pode facilmente trabalhar para ser melhor.
+
+
+Página da web:<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Traduza To Don’t:<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Código Fonte no GitHub:<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

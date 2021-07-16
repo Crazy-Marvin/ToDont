@@ -2,4 +2,20 @@
 <resources>
     <string name="LightMode">La det</string>
     <string name="app_name">La det</string>
+    <string name="leastav">Minst unngått:</string>
+    <string name="habitswillshowuphere">Vaner vil vises her.</string>
+    <string name="puthabit">Begynn ved å skrive ned en dårlig vane</string>
+    <string name="addnewlabl">Legg til ny etikett</string>
+    <string name="addlabl">Legg til etikett først</string>
+    <string name="mostav">Mest unngått:</string>
+    <string name="settings">Innstillinger</string>
+    <string name="labels">Etiketter</string>
+    <string name="about">Om</string>
+    <string name="log">Logg</string>
+    <string name="today">I dag</string>
+    <string name="habits">Vaner</string>
+    <string name="done">Ferdig</string>
+    <string name="avoided">Unngått</string>
+    <string name="hello_blank_fragment">Hei blanke fragment</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Lenke</a> Hei blanke fragment</string>
 </resources>

@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="LightMode">Lasi in</string>
-    <string name="app_name">Lasi in</string>
+    <string name="LightMode">To Don\'t</string>
+    <string name="app_name">To Don\'t</string>
+    <string name="habitswillshowuphere">Kutimoj montriĝos ĉi tie.</string>
+    <string name="puthabit">Por komenci, demetu fikutimon</string>
+    <string name="hello_blank_fragment">Saluton, malplena fragmento!</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Ligo</a> Saluton, malplena fragmento!</string>
+    <string name="addnewlabl">Fiksi etikedon</string>
+    <string name="addlabl">Bonvolu fiksi etikedon unue</string>
+    <string name="avoided">Evitita</string>
+    <string name="mostav">Plej evitita:</string>
+    <string name="leastav">Malplej evitita:</string>
+    <string name="settings">Agordoj</string>
+    <string name="labels">Etikedoj</string>
+    <string name="about">Pri</string>
+    <string name="log">Protokolo</string>
+    <string name="today">Hodiaŭ</string>
+    <string name="habits">Kutimoj</string>
+    <string name="done">Farita</string>
 </resources>

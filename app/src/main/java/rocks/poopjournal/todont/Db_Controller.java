@@ -98,7 +98,11 @@ public class Db_Controller extends SQLiteOpenHelper {
             String[] temp = new String[5];
             temp[0] = (cursor.getString(0));
             temp[1] = (cursor.getString(1));
-            temp[2] = (cursor.getString(2));
+            String str=(cursor.getString(2));
+            if(str.contains("geodhola")){
+                str=str.replace("geodhola","'");
+            }
+            temp[2] = str;
             temp[3] = (cursor.getString(3));
             temp[4] = (cursor.getString(4));
             Helper.habitsdata.add(temp);

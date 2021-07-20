@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="LightMode">不要去做</string>
-    <string name="app_name">不要去做</string>
+    <string name="LightMode">To Don\'t</string>
+    <string name="app_name">To Don\'t</string>
     <string name="text"> 链接<a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"/>你好空白的片断</string>
     <string name="hello_blank_fragment">你好，空白的片断</string>
     <string name="avoided">忽略的</string>

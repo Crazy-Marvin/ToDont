@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="hello_blank_fragment">안녕 비어있는 요소야</string>
+    <string name="LightMode">안 할일</string>
+    <string name="app_name">안 할일</string>
+</resources>

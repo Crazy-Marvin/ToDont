@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="habitswillshowuphere">Gewoontes zullen hier getoond worden.</string>
+    <string name="puthabit">Om te beginnen, geef je een slechte gewoonte op</string>
+    <string name="addnewlabl">Nieuw label toevoegen</string>
+    <string name="addlabl">Gelieve eerst een label toe te voegen</string>
+    <string name="leastav">Minst vermeden:</string>
+    <string name="mostav">Meest vermeden:</string>
+    <string name="settings">Instellingen</string>
+    <string name="labels">Labels</string>
+    <string name="about">Over</string>
+    <string name="log">Log</string>
+    <string name="today">Vandaag</string>
+    <string name="habits">Gewoontes</string>
+    <string name="done">Gedaan</string>
+    <string name="avoided">Vermeden</string>
+    <string name="hello_blank_fragment">Hallo leeg fragment</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Hallo leeg fragment</string>
+</resources>

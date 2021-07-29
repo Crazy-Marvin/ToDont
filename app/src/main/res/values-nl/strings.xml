@@ -16,4 +16,5 @@
     <string name="avoided">Vermeden</string>
     <string name="hello_blank_fragment">Hallo leeg fragment</string>
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Hallo leeg fragment</string>
+    <string name="app_name">Wat je niet moet doen</string>
 </resources>

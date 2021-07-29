@@ -1,0 +1,12 @@
+<b>Een blik op slechte gewoontes.</b> Noteer je slechte gewoontes met één tikje, rechtstreeks vanaf de startpagina. Gebruik Notities om details toe te voegen - zoals een gezond alternatief voor die chocoladereep waar je niet aan kan weerstaan. En organiseer je invoer met Labels.
+
+
+<b>Sneller dan je een pen kan pakken.</b> Vind je slechte gewoontes op de startpagina, en doorstreep degene waar je aan toegeeft. Deze worden verplaatst naar Gedaan voor die dag. De volgende ochtend begint je opnieuw met een volledige lijst van dingen die je moet vermijden.
+
+
+<b>Blijf op de hoogte van je vorderingen.</b> Het Logboek geeft je inzicht in je algemene successen en toont aan welke slechte gewoonte je het meest hebt vastgehouden - over een week, een maand of een jaar. Zo kan je gemakkelijk werken aan een betere jij.
+
+
+Webpagina: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Vertaal naar Don't: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
+Bron op GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

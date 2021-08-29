@@ -3,12 +3,12 @@
     <string name="LightMode">Lass es!</string>
     <string name="app_name">Lass es!</string>
     <string name="habitswillshowuphere">Gewohnheiten werden hier angezeigt.</string>
-    <string name="puthabit">Um zu beginnen, füge eine schlechte Gewohnheit hinzu</string>
-    <string name="addnewlabl">Neues Etikett hinzufügen</string>
-    <string name="addlabl">Bitte zuerst Etikett hinzufügen</string>
-    <string name="leastav">Die wenigsten vermieden:</string>
+    <string name="puthabit">Erstelle für den Anfang eine schlechte Angewohnheit</string>
+    <string name="addnewlabl">Neues Label hinzufügen</string>
+    <string name="addlabl">Bitte zuerst Label erstellen</string>
+    <string name="leastav">Am wenigsten sein gelassen:</string>
     <string name="avoided">Vermieden</string>
-    <string name="mostav">Die meisten vermieden:</string>
+    <string name="mostav">Am häufigsten sein gelassen:</string>
     <string name="settings">Einstellungen</string>
     <string name="labels">Etikette</string>
     <string name="about">Über</string>
@@ -16,4 +16,6 @@
     <string name="today">Heute</string>
     <string name="habits">Gewohnheiten</string>
     <string name="done">Fertig</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

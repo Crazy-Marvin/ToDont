@@ -2,4 +2,20 @@
 <resources>
     <string name="LightMode">Proszę się nie martwić</string>
     <string name="app_name">Proszę się nie martwić</string>
+    <string name="avoided">Uniknione</string>
+    <string name="hello_blank_fragment">Witaj, pusty fragmencie</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Witaj, pusty fragmencie</string>
+    <string name="habitswillshowuphere">Tutaj pojawią się nawyki.</string>
+    <string name="puthabit">Na początek odstaw zły nawyk</string>
+    <string name="addnewlabl">Dodaj nową etykietę</string>
+    <string name="addlabl">Najpierw dodaj etykietę</string>
+    <string name="leastav">Najmniej Unikane:</string>
+    <string name="mostav">Najbardziej Unikane:</string>
+    <string name="settings">Ustawienia</string>
+    <string name="labels">Etykiety</string>
+    <string name="about">O aplikacji</string>
+    <string name="log">Dziennik</string>
+    <string name="today">Dzisiaj</string>
+    <string name="habits">Nawyki</string>
+    <string name="done">Zrobione</string>
 </resources>

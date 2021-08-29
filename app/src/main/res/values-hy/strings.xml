@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="habitswillshowuphere">Սովորությունները կցուցադրվեն այստեղ:</string>
+    <string name="puthabit">Նախ և առաջ ազատվեք վատ սովորությունից</string>
+    <string name="addnewlabl">Հավելել նոր պիտակ</string>
+    <string name="addlabl">Նախ հավելեք պիտակը</string>
+    <string name="leastav">Ամենից քիչ խուսափում են՝</string>
+    <string name="mostav">Ամենից շատ խուսափում են՝</string>
+    <string name="settings">Կարգավորումներ</string>
+    <string name="labels">Պիտակներ</string>
+    <string name="about">Մասին</string>
+    <string name="log">Մատյան</string>
+    <string name="today">Այսօր</string>
+    <string name="habits">Սովորություններ</string>
+    <string name="done">Պատրաստ է</string>
+    <string name="avoided">Խուսափել</string>
+    <string name="hello_blank_fragment">Բարև դատարկ դրվագ</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Հղում</a> Բարև դատարկ դրվագ</string>
+    <string name="LightMode">To Don\'t</string>
+    <string name="app_name">To Don\'t</string>
+</resources>

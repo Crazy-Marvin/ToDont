@@ -1,0 +1,12 @@
+<b> Dobrý pohled na špatné návyky. </b> Zapište si své neřesti do klepnutí, přímo z domovské stránky. Použijte Poznámky k přidání podrobností - jako zdravá alternativa k té čokoládové tyčince, které nemůžete odolat. A organizujte svůj vstup pomocí štítků.
+
+
+<b> Rychleji, než můžete popadnout pero. </b> Najděte své špatné návyky na domovské stránce a přeškrtněte ty, kterým dáte přednost. Přesunou se na den do Hotovo. Druhý den ráno začněte znovu s úplným seznamem věcí, kterým se musíte vyhnout.
+
+
+<b> Mějte přehled o svém pokroku. </b> Protokol vám poskytuje přehled o vašich celkových úspěšnostech a určuje, ke kterému zlozvyku jste se nejvíce uchýlili - za týden, měsíc nebo rok. Takže se můžete snadno dopracovat k lepšímu.
+
+
+Webová stránka: <a href="https://www.crazymarvin.com/todont"> https://www.crazymarvin.com/todont </a>
+Přeložit do: <a href="https://hosted.weblate.org/engage/todont/"> https://hosted.weblate.org/engage/todont/ </a>
+Zdroj na GitHub: <a href="https://github.com/Crazy-Marvin/ToDont"> https://github.com/Crazy-Marvin/ToDont </a>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="habitswillshowuphere">Zde se projeví návyky.</string>
+    <string name="puthabit">Na začátek odložte zlozvyk</string>
+    <string name="addnewlabl">Přidat nový štítek</string>
+    <string name="addlabl">Nejprve přidejte štítek</string>
+    <string name="leastav">Nejméně se vyhnout:</string>
+    <string name="mostav">Nejvíce se vyhýbáme:</string>
+    <string name="settings">Nastavení</string>
+    <string name="labels">Štítky</string>
+    <string name="about">O</string>
+    <string name="log">Záznam</string>
+    <string name="today">Dnes</string>
+    <string name="habits">Zvyky</string>
+    <string name="done">Hotovo</string>
+    <string name="avoided">Vyhnuto</string>
+</resources>

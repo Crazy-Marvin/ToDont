@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="habitswillshowuphere">Привычки можно будет увидеть здесь.</string>
+    <string name="puthabit">Для начала избавьтесь от вредной привычки</string>
+    <string name="addlabl">Пожалуйста, сначала добавьте ярлык</string>
+    <string name="addnewlabl">Добавьте новый ярлык</string>
+    <string name="leastav">Наименее избегаемые:</string>
+    <string name="mostav">Наиболее избегаемые:</string>
+    <string name="settings">Настройки</string>
+    <string name="labels">Ярлыки</string>
+    <string name="about">О нас</string>
+    <string name="log">Журнал прогресса</string>
+    <string name="today">Сегодня</string>
+    <string name="habits">Привычки</string>
+    <string name="done">Выполнено</string>
+    <string name="avoided">Предотвращено</string>
+    <string name="hello_blank_fragment">Пустой фрагмент приветствия</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Пустой фрагмент приветствия</string>
+    <string name="LightMode">Прекрати это</string>
+    <string name="app_name">Прекрати это</string>
+</resources>

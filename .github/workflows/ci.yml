@@ -26,7 +26,6 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          yml: .codecov.yml
       - name: "🧪 Android LINT"
         run: ./gradlew lint
       - name: "🧪 Unit test"

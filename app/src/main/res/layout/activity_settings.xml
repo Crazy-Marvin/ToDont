@@ -31,7 +31,7 @@
             android:layout_height="20dp"
             android:textSize="18sp"
             android:layout_marginLeft="20dp"
-            android:text="Settings"
+            android:text="@string/settings"
             android:textColor="@color/textcolor"
             android:layout_gravity="center"
             android:gravity="bottom"
@@ -67,7 +67,7 @@
                 android:gravity="bottom"
                 android:textSize="16sp"
                 android:textColor="@color/textcolor"
-                android:text="Appearance"
+                android:text="@string/appearance"
                 android:onClick="changeMode"
 
                 />
@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
-                android:text="Follow System"
+                android:text="@string/followsys"
                 android:textColor="@color/textcolor"
                 android:layout_marginLeft="20dp"
                 android:onClick="changeMode"
@@ -113,7 +113,7 @@
                 android:gravity="bottom"
                 android:textSize="16sp"
                 android:textColor="@color/textcolor"
-                android:text="About"
+                android:text="@string/about"
                 android:onClick="aboutus"
 
                 />

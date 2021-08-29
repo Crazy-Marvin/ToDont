@@ -108,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text=" Apache License 2.0"
+                android:text="@string/apachelicense"
                 android:textColor="@color/colorPrimary"
                 android:onClick="apacheee"/>
         </LinearLayout>
@@ -190,7 +190,7 @@
                             <TextView
                                 android:layout_width="230dp"
                                 android:layout_height="wrap_content"
-                                android:text="Developer"
+                                android:text="@string/developer"
                                 android:textColor="@color/spinr" />
                         </LinearLayout>
                     </LinearLayout>
@@ -294,7 +294,7 @@
                             <TextView
                                 android:layout_width="230dp"
                                 android:layout_height="wrap_content"
-                                android:text="Developer"
+                                android:text="@string/developer"
                                 android:textColor="@color/spinr" />
                         </LinearLayout>
                     </LinearLayout>
@@ -444,7 +444,7 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
-                android:text="Contribute"
+                android:text="@string/contribute"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
 
@@ -475,7 +475,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:text="Translate"
+                    android:text="@string/translate"
                     android:onClick="translate"
                     android:gravity = "center_vertical"
                     android:textColor="@color/textcolor" />
@@ -509,7 +509,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:text="Report a problem"
+                    android:text="@string/report"
                     android:gravity = "center_vertical"
                     android:textColor="@color/textcolor"
                     android:onClick="report"
@@ -544,7 +544,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:text="View source"
+                    android:text="@string/source"
                     android:gravity = "center_vertical"
                     android:onClick="viewsource"
                     android:textColor="@color/textcolor"/>
@@ -555,7 +555,7 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
-                android:text="Open-source licences"
+                android:text="@string/opensourcelicense"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
 
@@ -578,14 +578,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Feather Icons"
+                        android:text="@string/feather"
                         android:onClick="feather"
                         android:textColor="@color/textcolor"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="MIT License"
+                        android:text="@string/mitlicence"
                         android:onClick="feather"
                         android:textColor="@color/spinr" />
                 </LinearLayout>
@@ -609,7 +609,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Android Jetpack"
+                        android:text="@string/jetpack"
                         android:onClick="jetpack"
                         android:textColor="@color/textcolor"/>
                     <TextView
@@ -617,7 +617,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Apache License 2.0"
+                        android:text="@string/apachelicense"
                         android:onClick="jetpack"
                         android:textColor="@color/spinr" />
                 </LinearLayout>
@@ -640,7 +640,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="MaterialSpinner"
+                    android:text="@string/materialspinner"
                     android:onClick="spinner"
                     android:textColor="@color/textcolor"/>
                 <TextView
@@ -648,7 +648,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Apache License 2.0"
+                    android:text="@string/apachelicense"
                     android:onClick="spinner"
                     android:textColor="@color/spinr" />
             </LinearLayout>
@@ -672,7 +672,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="NoboButton"
+                    android:text="@string/nobobutton"
                     android:onClick="nobobutton"
                     android:textColor="@color/textcolor"/>
                 <TextView
@@ -680,7 +680,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Apache License 2.0"
+                    android:text="@string/apachelicense"
                     android:onClick="nobobutton"
                     android:textColor="@color/spinr" />
             </LinearLayout>
@@ -705,7 +705,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="CircleImageView"
+                    android:text="@string/circleimg"
                     android:onClick="cImgButton"
                     android:textColor="@color/textcolor"/>
                 <TextView
@@ -713,7 +713,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Apache License 2.0"
+                    android:text="@string/apachelicense"
                     android:onClick="cImgButton"
                     android:textColor="@color/spinr" />
             </LinearLayout>
@@ -736,7 +736,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="MPAndroidChart"
+                    android:text="@string/mpandroidchart"
                     android:onClick="MPAndroidChart"
                     android:textColor="@color/textcolor"/>
                 <TextView
@@ -744,7 +744,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Apache License 2.0"
+                    android:text="@string/apachelicense"
                     android:onClick="MPAndroidChart"
                     android:textColor="@color/spinr" />
             </LinearLayout>
@@ -770,7 +770,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="JUnit"
+                    android:text="@string/junit"
                     android:onClick="JUnit"
                     android:textColor="@color/textcolor"/>
                 <TextView
@@ -778,7 +778,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Eclipse Public License 1.0"
+                    android:text="@string/eclipse"
                     android:onClick="JUnit"
                     android:textColor="@color/spinr" />
             </LinearLayout>
@@ -804,7 +804,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Kotlin"
+                    android:text="@string/kotlin"
                     android:onClick="Kotlin"
                     android:textColor="@color/textcolor"/>
                 <TextView
@@ -812,7 +812,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Apache License 2.0"
+                    android:text="@string/apachelicense"
                     android:onClick="Kotlin"
                     android:textColor="@color/spinr" />
             </LinearLayout>
@@ -838,7 +838,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Java"
+                    android:text="@string/java"
                     android:onClick="Java"
                     android:textColor="@color/textcolor"/>
                 <TextView
@@ -846,7 +846,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="GNU General Public License CE"
+                    android:text="@string/gnu"
                     android:onClick="Java"
                     android:textColor="@color/spinr" />
             </LinearLayout>

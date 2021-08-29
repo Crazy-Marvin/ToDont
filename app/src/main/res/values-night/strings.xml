@@ -17,6 +17,23 @@
     <string name="addnewlabl">Add New Label</string>
     <string name="puthabit">To start off, put down a bad habit</string>
     <string name="habitswillshowuphere">Habits will show up here.</string>
+    <string name="apachelicense">Apache License 2.0</string>
+    <string name="developer">Developer</string>
+    <string name="contribute">Contributer</string>
+    <string name="translate">Translate</string>
+    <string name="report">Report a problem</string>
+    <string name="source">View Source</string>
+    <string name="opensourcelicense">Open-source licences</string>
+    <string name="appearance">Appearance</string>
+    <string name="followsys">Follow System</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="junit">JUnit</string>
+    <string name="eclipse">Eclipse Public License 1.0</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
+    <string name="gnu">GNU General Public License CE</string>
 
 
     <string-array name="spinner_array">

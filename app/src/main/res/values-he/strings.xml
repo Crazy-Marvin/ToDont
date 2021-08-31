@@ -18,4 +18,25 @@
     <string name="done">בוצעו</string>
     <string name="avoided">נמנעו</string>
     <string name="habitswillshowuphere">ההרגלים יופיעו כאן.</string>
+    <string name="gnu">הרישיון הציבורי הכללי של גנו במהדורה הקהילתית</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="eclipse">רישיון ציבורי Eclipse 2.0</string>
+    <string name="junit">JUnit</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="followsys">כמו המערכת</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="mitlicence">רישיון MIT</string>
+    <string name="feather">סמלי נוצה</string>
+    <string name="appearance">מראה</string>
+    <string name="opensourcelicense">רישיונות קוד פתוח</string>
+    <string name="source">הצגת המקור</string>
+    <string name="report">דיווח על תקלה</string>
+    <string name="translate">תרגום</string>
+    <string name="contribute">תורם</string>
+    <string name="developer">מפתח</string>
+    <string name="apachelicense">רישיון Apache 2.0</string>
 </resources>

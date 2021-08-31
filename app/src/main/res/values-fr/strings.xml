@@ -18,4 +18,25 @@
     <string name="today">Aujourd’hui</string>
     <string name="habits">Habitudes</string>
     <string name="done">Fini</string>
+    <string name="gnu">Licence publique générale GNU CE</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="eclipse">Licence publique Eclipse 1.0</string>
+    <string name="junit">JUnit</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="followsys">Suivre le système</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="mitlicence">Licence MIT</string>
+    <string name="feather">Icônes de plumes</string>
+    <string name="appearance">Apparence</string>
+    <string name="opensourcelicense">Licences de logiciels libres</string>
+    <string name="source">Voir la source</string>
+    <string name="report">Signaler un problème</string>
+    <string name="translate">Traduire</string>
+    <string name="contribute">Contributeur</string>
+    <string name="developer">Développeur</string>
+    <string name="apachelicense">Licence Apache 2.0</string>
 </resources>

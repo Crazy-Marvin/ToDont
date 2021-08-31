@@ -8,4 +8,5 @@
     <string name="today">Tänään</string>
     <string name="avoided">Vältetty</string>
     <string name="hello_blank_fragment">Hei tyhjä osa</string>
+    <string name="done">Valmis</string>
 </resources>

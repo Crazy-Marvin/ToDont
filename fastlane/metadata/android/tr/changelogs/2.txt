@@ -1,0 +1,5 @@
+- Hakkında ekranından tasarımcı kaldırıldı
+- Daha kolay çeviri için sabit kodlanmış dizgeler düzenden string.xml dosyasına taşındı
+- Kullanılan Lisanslar bölümü kullanılan tüm bağımlılıklarla güncellendi (hepsine teşekkürler!)
+- Daha fazla kaydırma hareketi eklendi
+- Perde arkasındaki küçük iyileştirmeler

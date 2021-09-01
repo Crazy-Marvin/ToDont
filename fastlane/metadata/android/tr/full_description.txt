@@ -1,0 +1,12 @@
+<b>Kötü alışkanlıklara güzel bir bakış.</b> Kötü alışkanlıklarınızı ana sayfadan bir dokunuşla not edin. Ayrıntılar eklemek için Notlar'ı kullanın — karşı koyamayacağınız o çikolata için sağlıklı bir alternatif gibi. Ve girdilerinizi Etiketlerle düzenleyin.
+
+
+<b>Bir kalem kullanmaktan daha hızlı.</b> Ana sayfada kötü alışkanlıklarınızı bulun ve boyun eğdiklerinizin üzerini çizin. Bunlar o gün için Yapıldı bölümüne taşınacak. Ertesi sabah, kaçınılması gereken şeylerin tam listesiyle yeni bir başlangıç yapın.
+
+
+<b>Gelişiminizin zirvesinde kalın.</b> Günlük, size genel başarı oranlarınız hakkında fikir verir ve bir hafta, bir ay veya bir yıl boyunca en çok hangi kötü alışkanlığınıza bağımlı olduğunuzu belirler. Böylece daha iyi bir sen için kolayca çalışabilirsiniz.
+
+
+Web sayfası: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Yapılmayacaklar'ı çevirin: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+GitHub'daki kaynak kodları: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

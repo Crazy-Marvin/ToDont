@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="habitswillshowuphere">Звички можна буде побачити тут.</string>
+    <string name="puthabit">Для початку позбудьтеся від шкідливої звички</string>
+    <string name="addnewlabl">Додайте новий ярлик</string>
+    <string name="addlabl">Будь ласка, спочатку додайте ярлик</string>
+    <string name="leastav">Уникали найменше:</string>
+    <string name="mostav">Уникали найбільше:</string>
+    <string name="settings">Налаштування</string>
+    <string name="labels">Ярлики</string>
+    <string name="about">Про нас</string>
+    <string name="log">Журнал прогресу</string>
+    <string name="today">Сьогодні</string>
+    <string name="habits">Звички</string>
+    <string name="done">Виконано</string>
+    <string name="avoided">Варто уникати</string>
+    <string name="hello_blank_fragment">Пустий фрагмент вітання</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Пустий фрагмент вітання</string>
+    <string name="LightMode">Припини це</string>
+    <string name="app_name">Припини це</string>
+</resources>

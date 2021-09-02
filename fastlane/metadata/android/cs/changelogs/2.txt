@@ -1,0 +1,5 @@
+- Odebrán návrhář z obrazovky Informace
+- Přesunuté pevně kódované řetězce z rozložení do řetězce.xml pro snazší překlad
+- Aktualizujte sekci Použité licence o všechny použité závislosti (díky všem!)
+- Přidejte další gesta přejetí prstem
+- Malá vylepšení pod kapotou

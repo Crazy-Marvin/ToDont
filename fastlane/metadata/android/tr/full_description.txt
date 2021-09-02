@@ -1,0 +1,12 @@
+<b>Kötü alışkanlıklara yeni bir bakış açısı.</b> Ana sayfadan tek bir dokunuşla bir kötü alışkanlık oluşturun. Oluşturduğunuz alışkanlıklara ayrıntılar eklemek için Notlar sekmesini kullanın; örneğin karşı koyamadağınız o çikolata yerine sağlıklı bir alternatif tüketmek gibi. Son olarak alışkanlıklarınızı Etiketler ile derli toplu hâle getirin.
+
+
+<b>Kalemden daha hızlı.</b> Ana sayfada kötü alışkanlıklarınızı bulun ve başarılı bir şekilde uzak duramadıklarınıza çarpı atın. Bunlar o gün için Yapıldı bölümüne taşınır. Ertesi gün başarılı bir şekilde uzak durnayı deneyerek yeniden başlayın.
+
+
+<b>Gelişiminizi en üst seviyeye çıkarın.</b> Günlük sekmesi size genel başarı oranlarınız hakkında fikir verir ve bir hafta, bir ay veya bir yıl boyunca en çok hangi kötü alışkanlıkları yenmekte zorlandığınızı gösterir, böylece gelişim yolculuğundaki engelleri kolayca görebilirsin.
+
+
+Web sayfası: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Yerelleştirme: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Kaynak kodu: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

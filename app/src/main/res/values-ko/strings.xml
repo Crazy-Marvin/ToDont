@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">안녕 비어있는 요소야</string>
+    <string name="LightMode">안 할일</string>
+    <string name="app_name">안 할일</string>
+    <string name="habitswillshowuphere">작성한 습관들이 여기에 표시될껍니다.</string>
+    <string name="puthabit">시작하기 위해서, 가지고 있는 나쁜 습관들을 먼저 적어보세요</string>
+    <string name="addnewlabl">새로운 라벨 추가</string>
+    <string name="addlabl">라벨 먼저 추가해주세요</string>
+    <string name="leastav">가장 적게 회피한 것:</string>
+    <string name="mostav">가장 많이 회피한 것:</string>
+    <string name="settings">설정</string>
+    <string name="labels">라벨</string>
+    <string name="about">대하여</string>
+    <string name="log">기록</string>
+    <string name="today">오늘</string>
+    <string name="habits">습관들</string>
+    <string name="done">저지른일</string>
+    <string name="avoided">회피함</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="log">Günlük</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="eclipse">Eclipse Kamu Lisansı 1.0</string>
+    <string name="junit">JUnit</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="gnu">GNU Genel Kamu Lisansı CE</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="followsys">Sistemi Takip Et</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="mitlicence">MIT Lisansı</string>
+    <string name="feather">Feather Simge Paketi</string>
+    <string name="appearance">Görünüm</string>
+    <string name="opensourcelicense">Açık kaynak lisanslar</string>
+    <string name="source">Kaynak kodunu görüntüle</string>
+    <string name="report">Sorun bildir</string>
+    <string name="translate">Çeviri</string>
+    <string name="contribute">Katkıda bulunun</string>
+    <string name="developer">Geliştirici</string>
+    <string name="apachelicense">Apache Lisansı 2.0</string>
+    <string name="habitswillshowuphere">Alışkanlıklar burada görünecek.</string>
+    <string name="puthabit">Başlamak için bir kötü alışkanlık oluşturun</string>
+    <string name="addnewlabl">Yeni Etiket ekle</string>
+    <string name="addlabl">Lütfen önce Etiket ekleyin</string>
+    <string name="leastav">En Az Kaçınılan:</string>
+    <string name="mostav">En Çok Kaçınılan:</string>
+    <string name="settings">Ayarlar</string>
+    <string name="labels">Etiketler</string>
+    <string name="about">Hakkında</string>
+    <string name="today">Bugün</string>
+    <string name="habits">Alışkanlıklar</string>
+    <string name="done">Yapıldı</string>
+    <string name="avoided">Kaçınıldı</string>
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Bağlantı</a> Merhaba boş parça</string>
+    <string name="LightMode">Yapılmayacaklar</string>
+    <string name="app_name">Yapılmayacaklar</string>
+</resources>

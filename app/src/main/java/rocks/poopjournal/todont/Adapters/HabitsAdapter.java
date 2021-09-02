@@ -132,7 +132,12 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
 
                         } catch (SQLiteException e) {
                         }
-                        db.update_habitsdata(position, formattedDate, habit.getText().toString()
+                        String str=habit.getText().toString();
+                        if(str.contains("'")){
+                            str=str.replace("'","geodhola");
+                            Log.d("kuttistring",""+str);
+                        }
+                        db.update_habitsdata(position, formattedDate,str
                                 , detail.getText().toString(), catagoryselected);
                         db.show_habits_data();
                         Intent intent = new Intent(con, MainActivity.class);

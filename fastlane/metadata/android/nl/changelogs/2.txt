@@ -1,0 +1,5 @@
+- Ontwerper verwijderd uit Over-scherm
+- Hard-coded strings van de layout naar de strings.xml verplaatst voor eenvoudigere vertaling
+- Gebruikte licenties sectie bijgewerkt met alle gebruikte afhankelijkheden (dank aan allen!)
+- Meer swipe-bewegingen toegevoegd
+- Kleine verbeteringen achter de schermen

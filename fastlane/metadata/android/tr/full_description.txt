@@ -1,12 +1,12 @@
-<b>Kötü alışkanlıklara güzel bir bakış.</b> Kötü alışkanlıklarınızı ana sayfadan bir dokunuşla not edin. Ayrıntılar eklemek için Notlar'ı kullanın — karşı koyamayacağınız o çikolata için sağlıklı bir alternatif gibi. Ve girdilerinizi Etiketlerle düzenleyin.
+<b>Kötü alışkanlıklara yeni bir bakış açısı.</b> Ana sayfadan tek bir dokunuşla bir kötü alışkanlık oluşturun. Oluşturduğunuz alışkanlıklara ayrıntılar eklemek için Notlar sekmesini kullanın; örneğin karşı koyamadağınız o çikolata yerine sağlıklı bir alternatif tüketmek gibi. Son olarak alışkanlıklarınızı Etiketler ile derli toplu hâle getirin.
 
 
-<b>Bir kalem kullanmaktan daha hızlı.</b> Ana sayfada kötü alışkanlıklarınızı bulun ve boyun eğdiklerinizin üzerini çizin. Bunlar o gün için Yapıldı bölümüne taşınacak. Ertesi sabah, kaçınılması gereken şeylerin tam listesiyle yeni bir başlangıç yapın.
+<b>Kalemden daha hızlı.</b> Ana sayfada kötü alışkanlıklarınızı bulun ve başarılı bir şekilde uzak duramadıklarınıza çarpı atın. Bunlar o gün için Yapıldı bölümüne taşınır. Ertesi gün başarılı bir şekilde uzak durnayı deneyerek yeniden başlayın.
 
 
-<b>Gelişiminizin zirvesinde kalın.</b> Günlük, size genel başarı oranlarınız hakkında fikir verir ve bir hafta, bir ay veya bir yıl boyunca en çok hangi kötü alışkanlığınıza bağımlı olduğunuzu belirler. Böylece daha iyi bir sen için kolayca çalışabilirsiniz.
+<b>Gelişiminizi en üst seviyeye çıkarın.</b> Günlük sekmesi size genel başarı oranlarınız hakkında fikir verir ve bir hafta, bir ay veya bir yıl boyunca en çok hangi kötü alışkanlıkları yenmekte zorlandığınızı gösterir, böylece gelişim yolculuğundaki engelleri kolayca görebilirsin.
 
 
 Web sayfası: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
-Yapılmayacaklar'ı çevirin: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
-GitHub'daki kaynak kodları: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>
+Yerelleştirme: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Kaynak kodu: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

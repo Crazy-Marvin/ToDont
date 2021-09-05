@@ -18,4 +18,25 @@
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Olá fragmento em branco</string>
     <string name="LightMode">To Don\'t</string>
     <string name="app_name">To Don\'t</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="followsys">Follow System</string>
+    <string name="feather">Feather Icons</string>
+    <string name="gnu">GNU General Public License CE</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="eclipse">Eclipse Public License 1.0</string>
+    <string name="junit">JUnit</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="mitlicence">Licença MIT</string>
+    <string name="appearance">Aparência</string>
+    <string name="opensourcelicense">Licenças de código-fonte aberto</string>
+    <string name="source">Ver código-fonte</string>
+    <string name="report">Relatar problema</string>
+    <string name="translate">Traduzir</string>
+    <string name="contribute">Contribuidor</string>
+    <string name="developer">Desenvolvedor</string>
+    <string name="apachelicense">Apache License 2.0</string>
 </resources>

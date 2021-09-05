@@ -1,0 +1,2 @@
+Pequenas melhorias nos bastidores
+Corrigida configuração do fastlane

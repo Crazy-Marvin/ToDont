@@ -1,2 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="developer">Programador</string>
+    <string name="log">Registo</string>
+    <string name="gnu">GNU General Public License CE</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="eclipse">Eclipse Public License 1.0</string>
+    <string name="junit">JUnit</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="followsys">Follow System</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="mitlicence">Licença MIT</string>
+    <string name="feather">Feather Icons</string>
+    <string name="appearance">Aparência</string>
+    <string name="opensourcelicense">Licenças de código-fonte aberto</string>
+    <string name="source">Ver código-fonte</string>
+    <string name="report">Relatar problema</string>
+    <string name="translate">Traduzir</string>
+    <string name="contribute">Contribuidor</string>
+    <string name="apachelicense">Apache License 2.0</string>
+    <string name="habitswillshowuphere">Os hábitos aparecerão aqui.</string>
+    <string name="puthabit">Para começar, abandone um mau hábito</string>
+    <string name="addnewlabl">Adicionar nova etiqueta</string>
+    <string name="addlabl">Por favor, adicione a etiqueta primeiro</string>
+    <string name="leastav">Menos evitado:</string>
+    <string name="mostav">Mais evitados:</string>
+    <string name="settings">Configurações</string>
+    <string name="labels">Etiquetas</string>
+    <string name="about">Sobre</string>
+    <string name="today">Hoje</string>
+    <string name="habits">Hábitos</string>
+    <string name="done">Concluído</string>
+    <string name="avoided">Evitado</string>
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Olá fragmento em branco</string>
+    <string name="LightMode">To Don\'t</string>
+    <string name="app_name">To Don\'t</string>
+</resources>

@@ -9,4 +9,4 @@
 
 Página da web:<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
 Traduza To Don’t:<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
-Código Fonte no GitHub:<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>
+Código-fonte no GitHub:<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

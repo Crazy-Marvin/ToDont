@@ -1,2 +1,2 @@
-Pequenas melhorias sob o capô
+Pequenas melhorias nos bastidores
 Corrigida configuração do fastlane

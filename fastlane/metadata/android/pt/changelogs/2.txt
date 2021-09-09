@@ -1,0 +1,5 @@
+- Removido designer no ecrã Sobre
+- Cadeias de texto codificadas permanentemente do layout foram movidas para strings.xml para facilitar a tradução
+- Atualizada a secção de licenças usadas com todas as dependências usadas (graças a todos os seus autores!)
+- Adicionados mais gestos de toque deslizante
+- Pequenas melhorias nos bastidores

@@ -18,4 +18,25 @@
     <string name="today">Hodiaŭ</string>
     <string name="habits">Kutimoj</string>
     <string name="done">Farita</string>
+    <string name="eclipse">Publika Permesilo Eclipse 1.0</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="followsys">Laŭ sistemo</string>
+    <string name="gnu">Ĝenerala Publika Permesilo GNU CE</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="junit">JUnit</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="mitlicence">Permesilo MIT</string>
+    <string name="feather">Piktogramaro Feather</string>
+    <string name="appearance">Aspekto</string>
+    <string name="opensourcelicense">Malfermitkodaj permesiloj</string>
+    <string name="source">Vidi fonton</string>
+    <string name="report">Raporti problemon</string>
+    <string name="translate">Traduki</string>
+    <string name="contribute">Kontribuanto</string>
+    <string name="developer">Evoluiganto</string>
+    <string name="apachelicense">Permesilo Apache 2.0</string>
 </resources>

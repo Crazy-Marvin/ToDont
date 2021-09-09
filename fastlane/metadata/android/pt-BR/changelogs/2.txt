@@ -1,5 +1,5 @@
 - Removido designer da tela Sobre
 - Strings codificadas permanentemente do layout para strings.xml para facilitar a tradução
 - Atualizar seção de licenças usadas com todas as dependências usadas (graças a todos eles!)
-- Adicione mais gestos de deslizar
+- Adicionados mais gestos de deslizar
 - Pequenas melhorias sob o capô

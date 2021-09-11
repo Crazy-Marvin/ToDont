@@ -12,7 +12,6 @@
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
 [![F-Droid](https://img.shields.io/f-droid/v/rocks.poopjournal.todont.svg)](https://f-droid.org/en/packages/rocks.poopjournal.todont/)
 [![Google Play](https://badgen.net/badge/icon/googleplay?icon=googleplay&label)](https://play.google.com/store/apps/details?id=rocks.poopjournal.todont)
-[![Poop Journal Blog](https://img.shields.io/badge/Poop_Journal-Blog-yellowgreen?logo=wordpress)](https://poopjournal.rocks/blog/)
 
 # To Don't
 

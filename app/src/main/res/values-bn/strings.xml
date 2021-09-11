@@ -1,2 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="gnu">গ্নু সাধারণ গণ লাইসেন্স সিই</string>
+    <string name="java">জাভা</string>
+    <string name="kotlin">কোটলিন</string>
+    <string name="eclipse">একলিপ্স গণ লাইসেন্স ১.০</string>
+    <string name="junit">জে একক</string>
+    <string name="mpandroidchart">এমপিঅ্যান্ড্রয়েড চার্ট</string>
+    <string name="circleimg">সার্কল ইমেজ ভিউ</string>
+    <string name="followsys">অনুসরণ ব্যবস্থা</string>
+    <string name="nobobutton">নোবো বোতাম</string>
+    <string name="materialspinner">মেটেরিয়াল স্পিনার</string>
+    <string name="jetpack">অ্যান্ড্রয়েড জেটপ্যাক</string>
+    <string name="mitlicence">এমআইটি লাইসেন্স</string>
+    <string name="feather">ফেদার আইকনগুলি</string>
+    <string name="appearance">রূপ</string>
+    <string name="opensourcelicense">মুক্ত-উৎস লাইসেন্সগুলি</string>
+    <string name="source">উৎস দেখুন</string>
+    <string name="report">সমস্যা জানান</string>
+    <string name="translate">অনুবাদ করুন</string>
+    <string name="contribute">অবদানকারী</string>
+    <string name="developer">ডেভেলপার</string>
+    <string name="apachelicense">অ্যাপাচে লাইসেন্স ২.০</string>
+    <string name="habitswillshowuphere">অভ্যাসগুলি এখানে দেখানো হবে।</string>
+    <string name="puthabit">শুরু করার জন্য, একটা খারাপ অভ্যাস যোগ করুন</string>
+    <string name="addnewlabl">নতুন লেবেল যোগ করুন</string>
+    <string name="addlabl">অনুগ্রহ করে প্রথমে লেবেল যোগ করুন</string>
+    <string name="leastav">সবচেয়ে কম এড়ানো:</string>
+    <string name="mostav">সর্বাধিক এড়িয়ে যাওয়া :</string>
+    <string name="settings">সেটিংস</string>
+    <string name="labels">লেবেলগুলি</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> অনুসংযোগ</a>হ্যালো ফাঁকা অংশ</string>
+    <string name="LightMode">টু ডোন্ট</string>
+    <string name="about">আমাদের সম্পর্কে</string>
+    <string name="log">লগ</string>
+    <string name="today">আজ</string>
+    <string name="habits">অভ্যাস গুলি</string>
+    <string name="done">সম্পূর্ণ</string>
+    <string name="avoided">এড়ানো গেছে</string>
+    <string name="hello_blank_fragment">হ্যালো ফাঁকা টুকরো</string>
+    <string name="app_name">টু ডোন্ট</string>
+</resources>

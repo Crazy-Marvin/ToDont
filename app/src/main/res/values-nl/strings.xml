@@ -17,4 +17,15 @@
     <string name="hello_blank_fragment">Hallo leeg fragment</string>
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Hallo leeg fragment</string>
     <string name="app_name">Wat je niet moet doen</string>
+    <string name="gnu">GNU Algemene Publieke Licentie CE</string>
+    <string name="eclipse">Eclipse Publieke Licentie 1.0</string>
+    <string name="followsys">Systeem volgen</string>
+    <string name="mitlicence">MIT licentie</string>
+    <string name="appearance">Uiterlijk</string>
+    <string name="opensourcelicense">Open-source licenties</string>
+    <string name="source">Brontekst bekijken</string>
+    <string name="report">Een probleem melden</string>
+    <string name="translate">Vertalen</string>
+    <string name="contribute">Deelnemer</string>
+    <string name="developer">Ontwikkelaar</string>
 </resources>

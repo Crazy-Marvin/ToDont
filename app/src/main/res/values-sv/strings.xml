@@ -8,7 +8,7 @@
     <string name="addlabl">Var god lägg till en etikett först</string>
     <string name="habits">Vanor</string>
     <string name="leastav">Minst undvikta:</string>
-    <string name="mostav">Mest undvikta:</string>
+    <string name="mostav">Mest undvikta :</string>
     <string name="settings">Inställningar</string>
     <string name="labels">Etiketter</string>
     <string name="about">Om</string>
@@ -23,4 +23,15 @@
     <string name="appearance">Utseende</string>
     <string name="mitlicence">MIT-licens</string>
     <string name="followsys">Följ enhetens</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="junit">JUnit</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="feather">Feather Icons</string>
+    <string name="source">Studera källkoden</string>
+    <string name="apachelicense">Apache-licens 2.0</string>
 </resources>

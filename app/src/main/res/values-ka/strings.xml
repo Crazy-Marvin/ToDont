@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="addnewlabl">ახალი იარლიყის დამატება</string>
+    <string name="addlabl">გთხოვთ, ჯერ იარლიყი დაამატოთ</string>
+    <string name="leastav">ბოლოს არიდებული:</string>
+    <string name="mostav">ყველაზე ხშირად არიდებული:</string>
+    <string name="settings">პარამეტრები</string>
+    <string name="labels">იარლიყები</string>
+    <string name="about">აპლიკაციის შესახებ</string>
+    <string name="log">ლოგი</string>
+    <string name="today">დღეს</string>
+    <string name="habits">ჩვევები</string>
+    <string name="done">შესრულებული</string>
+    <string name="avoided">აცილებული</string>
+</resources>

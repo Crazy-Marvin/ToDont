@@ -7,7 +7,7 @@
     <string name="addnewlabl">Tambahkan Label Baru</string>
     <string name="addlabl">Silakan tambahkan Label Terlebih Dahulu</string>
     <string name="leastav">Paling Sedikit Dihindari:</string>
-    <string name="mostav">Paling Dihindari:</string>
+    <string name="mostav">Paling Dihindari :</string>
     <string name="settings">Pengaturan</string>
     <string name="labels">Label</string>
     <string name="about">Tentang</string>
@@ -18,4 +18,25 @@
     <string name="avoided">Dihindari</string>
     <string name="hello_blank_fragment">Halo fragmen kosong</string>
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Tautan</a> Halo fragmen kosong</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="eclipse">Lisensi Publik Eclipse 1.0</string>
+    <string name="junit">JUnit</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="gnu">Lisensi Publik Umum GNU CE</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="followsys">Follow System</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="apachelicense">Lisensi Apache 2.0</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="mitlicence">Lisensi MIT</string>
+    <string name="feather">Ikon Bulu</string>
+    <string name="appearance">Tampilan</string>
+    <string name="opensourcelicense">Lisensi open-source</string>
+    <string name="source">Lihat Sumber</string>
+    <string name="report">Laporkan masalah</string>
+    <string name="translate">Terjemah</string>
+    <string name="contribute">Kontributor</string>
+    <string name="developer">Pengembang</string>
 </resources>

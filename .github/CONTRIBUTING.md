@@ -12,7 +12,7 @@ Check out the [README](https://github.com/Crazy-Marvin/ToDont/blob/development/R
 
 ## Any contributions you make will be under the Apache License 2.0
 
-When you submit code changes, they are subject to the same Apache License as the project. If you have any concerns, please contact the project maintainers.
+When you submit code changes, they are subject to the same [Apache License](https://www.apache.org/licenses/LICENSE-2.0) as the project. If you have any concerns, please contact the project maintainers.
 
 ## How to Contribute
 

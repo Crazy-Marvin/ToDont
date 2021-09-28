@@ -1,4 +1,4 @@
-# Contributing to ToDon't
+# Contributing to To Don't
 
 Thank you for choosing to contribute to our project! We appreciate your input and want to make contributing to this project as simple and transparent as possible, whether it's:
 
@@ -25,4 +25,3 @@ These are the steps you should take to contribute to this project;
 Following a successful PR review, the project maintainer will merge your contribution into the project.
 
 Hooray! You have successfully contributed to To Don't!
-

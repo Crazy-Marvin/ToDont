@@ -31,7 +31,8 @@
     <string name="nobobutton">NoboButton</string>
     <string name="materialspinner">MaterialSpinner</string>
     <string name="jetpack">Android Jetpack</string>
-    <string name="feather">Feather Icons</string>
+    <string name="feather">Fjäderikoner</string>
     <string name="source">Studera källkoden</string>
     <string name="apachelicense">Apache-licens 2.0</string>
+    <string name="contribute">Bidragsgivare</string>
 </resources>

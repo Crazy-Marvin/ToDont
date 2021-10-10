@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="habits">Thói quen</string>
+    <string name="today">Hôm nay</string>
+    <string name="settings">Cài đặt</string>
+    <string name="addnewlabl">Thêm nhãn mới</string>
+    <string name="addlabl">Trước tiên, hãy thêm nhãn</string>
+    <string name="developer">Lập trình viên</string>
+    <string name="contribute">Người đóng góp</string>
+    <string name="report">Báo lỗi</string>
+    <string name="translate">Biên dịch</string>
+    <string name="opensourcelicense">Giấy phép Mở</string>
+    <string name="mitlicence">Giấy phép MIT</string>
+    <string name="source">Xem mã nguồn</string>
+    <string name="apachelicense">Giấy phép Apache 2.0</string>
+    <string name="leastav">Nên tránh:</string>
+    <string name="mostav">Tối kỵ:</string>
+    <string name="labels">Nhãn</string>
+    <string name="log">Nhật ký</string>
+    <string name="avoided">Đã tránh</string>
+    <string name="appearance">Giao diện</string>
+    <string name="about">Giới thiệu</string>
+    <string name="gnu">Giấy phép Công cộng GNU Hạn chế</string>
+    <string name="eclipse">Giấy phép Công cộng Eclipse 1.0</string>
+    <string name="followsys">Theo hệ thống</string>
+    <string name="done">Hoàn thành</string>
+    <string name="puthabit">Để bắt đầu, hãy ghi ra một thói quen xấu</string>
+    <string name="habitswillshowuphere">Thói quen được hiển thị tại đây.</string>
+</resources>

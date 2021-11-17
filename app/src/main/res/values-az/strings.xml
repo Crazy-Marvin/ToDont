@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="gnu">GNU Ümumi İctimai Lisenziya CE</string>
-    <string name="eclipse">Eclipse İctimai Lisenziya 1.0</string>
-    <string name="junit">JUnit</string>
-    <string name="mpandroidchart">MPAndroidChart</string>
-    <string name="circleimg">DairəviŞəkilBaxışı</string>
-    <string name="kotlin">Kotlin</string>
-    <string name="nobobutton">NoboDüymə</string>
+    <string name="gnu">GNU Ümumi İctimai Lisenziyası CE</string>
+    <string name="eclipse">Eclipse İctimai Lisenziyası 1.0</string>
+    <string name="junit">JUnitModulu</string>
+    <string name="mpandroidchart">MPAndroidChartModulu</string>
+    <string name="circleimg">DairəviŞəkilGörünüşü</string>
+    <string name="kotlin">Kotlin dili</string>
+    <string name="nobobutton">NoboDüyməsi</string>
     <string name="followsys">Sistemi İzlə</string>
-    <string name="materialspinner">MaterialSpinner</string>
-    <string name="jetpack">Android Jetpaketi</string>
+    <string name="materialspinner">MaterialSpinnerModulu</string>
+    <string name="jetpack">Android Jetpack kitabxanası</string>
     <string name="mitlicence">MIT lisenziyası</string>
     <string name="addlabl">İlk olaraq etiketi əlavə edin</string>
-    <string name="labels">Nişanlar</string>
+    <string name="labels">Etiketlər</string>
     <string name="about">Haqqında</string>
     <string name="log">Loq</string>
     <string name="java">Java</string>
@@ -20,11 +20,23 @@
     <string name="source">Mənbə koduna bax</string>
     <string name="report">Problemi bildir</string>
     <string name="translate">Tərcümə et</string>
-    <string name="settings">Xassələr</string>
+    <string name="settings">Parametrlər</string>
     <string name="today">Bugün</string>
     <string name="contribute">Tövhə verən</string>
-    <string name="developer">Proqramçı</string>
+    <string name="developer">Tərtibatçı</string>
     <string name="apachelicense">Apache Lisenziyası 2.0</string>
     <string name="done">Hazır</string>
     <string name="addnewlabl">Yeni etiket əlavə et</string>
+    <string name="habits">Vərdişlər</string>
+    <string name="mostav">Ən çox boyun qaçılıran :</string>
+    <string name="leastav">Ən az boyun qaçırılan:</string>
+    <string name="puthabit">Başlamaq üçün pis bir vərdişinizi qeyd edin</string>
+    <string name="habitswillshowuphere">Vərdişlər burada göstəriləcək.</string>
+    <string name="app_name">To Don\'t</string>
+    <string name="LightMode">To don\'t</string>
+    <string name="avoided">Boyun qaçırılan</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a></string>
+    <string name="hello_blank_fragment">Boş fragment</string>
+    <string name="appearance">Görünüş</string>
+    <string name="feather">\"Feather\" ikonları</string>
 </resources>

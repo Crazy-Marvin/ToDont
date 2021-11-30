@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="LightMode">Lass es!</string>
-    <string name="app_name">Lass es!</string>
+    <string name="app_name">To Don\'t</string>
     <string name="habitswillshowuphere">Hier werden Angewohnheiten angezeigt.</string>
     <string name="puthabit">Um zu beginnen, füge eine schlechte Angewohnheit hinzu</string>
     <string name="addnewlabl">Neues Label hinzufügen</string>

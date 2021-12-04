@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFAF01</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FFAF01</color>
+
+
+    <color name="g1">#fac401</color>
+<!--    <color name="floatingbutton">#fac401</color>-->
+    <color name="g2">#ff8c00</color>
+    <color name="innerg1">#f2be00</color>
+    <color name="innerg2">#ed8709</color>
+    <color name="backgroundcolor">#FFFFFF</color>
+    <color name="bottomnavigationline">#FFFFFF</color>
+    <color name="bottom_sheet_background">#F8F8F8</color>
+    <color name="textcolor">#000000</color>
+    <color name="catagoriescolor">#000000</color>
+    <color name="radiobuttoncolor">#000000</color>
+    <color name="fragmentsColor">#f2be00</color>
+    <color name="fragmentsColor2">#ed8709</color>
+    <color name="spinnercolor">#ffffff</color>
+    <color name="a">#ffffff</color>
+    <color name="innerfragmentsColor1">#DADADA</color>
+    <color name="innerfragmentsColor2">#DADADA</color>
+    <color name="iconcolor">#D226272C</color>
+    <color name="newhabitsheet">#ffffff</color>
+    <color name="spinr">#7C7A72</color>
+
+
+</resources>

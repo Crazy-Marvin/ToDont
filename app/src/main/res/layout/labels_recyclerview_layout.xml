@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/labelsbtn"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.1"
+
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.8"
+            >
+
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/backgroundcolor"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tv_sum"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@android:color/darker_gray"
+                android:background="@color/backgroundcolor"
+                android:textSize="12sp"
+                android:layout_marginLeft="15dp"
+                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bottom_sheet_background"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".Fragments.DailyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/before"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_backarrow"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/textcolor"
+                    />
+
+                <Button
+                    android:id="@+id/after"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nextarrow"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spinnercolor" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/myinnergradientlog"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:weightSum="3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/dhabits"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    app:nb_backgroundColor="@color/spinnercolor"
+                    app:nb_radius="10dp"
+                    app:nb_text="@string/habits"
+                    android:layout_weight="1"
+                    app:nb_textColor="@color/textcolor"
+                    app:nb_textSize="12sp" />
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/davoided"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    app:nb_backgroundColor="@android:color/transparent"
+                    app:nb_radius="10dp"
+                    app:nb_text="@string/avoided"
+                    android:layout_weight="1"
+                    app:nb_textColor="@color/textcolor"
+                    app:nb_textSize="12sp" />
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/ddone"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    app:nb_backgroundColor="@android:color/transparent"
+                    app:nb_radius="10dp"
+                    app:nb_text="@string/done"
+                    android:layout_weight="1"
+                    app:nb_textColor="@color/textcolor"
+                    app:nb_textSize="12sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/containerLogDailyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+</FrameLayout>

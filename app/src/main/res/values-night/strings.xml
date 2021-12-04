@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">To Don\'t</string>
+    <string name="NightMode" tools:ignore="ExtraTranslation">toDonts</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="avoided">Avoided</string>
+    <string name="done">Done</string>
+    <string name="habits">Habits</string>
+    <string name="today">Today</string>
+    <string name="log">Log</string>
+    <string name="about">About</string>
+    <string name="labels">Labels</string>
+    <string name="settings">Settings</string>
+    <string name="mostav">Most Avoided :</string>
+    <string name="leastav">Least Avoided :</string>
+    <string name="addlabl">Please add Label First</string>
+    <string name="addnewlabl">Add New Label</string>
+    <string name="puthabit">To start off, put down a bad habit</string>
+    <string name="habitswillshowuphere">Habits will show up here.</string>
+    <string name="apachelicense">Apache License 2.0</string>
+    <string name="developer">Developer</string>
+    <string name="contribute">Contributer</string>
+    <string name="translate">Translate</string>
+    <string name="report">Report a problem</string>
+    <string name="source">View Source</string>
+    <string name="opensourcelicense">Open-source licences</string>
+    <string name="appearance">Appearance</string>
+    <string name="followsys">Follow System</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="junit">JUnit</string>
+    <string name="eclipse">Eclipse Public License 1.0</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
+    <string name="gnu">GNU General Public License CE</string>
+
+
+    <string-array name="spinner_array">
+        <item>Select Label</item>
+        <item>Social</item>
+        <item>Foods And Drinks</item>
+
+
+    </string-array>
+</resources>

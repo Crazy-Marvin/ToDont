@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/before"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_backarrow" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/textcolor" />
+
+                <Button
+                    android:id="@+id/after"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nextarrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spinnercolor" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/daterange"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/mostav"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mostavoided"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                tools:ignore="RtlCompat"
+                android:maxLength="25"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/leastav"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/leastavoided"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                android:maxLength="25"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

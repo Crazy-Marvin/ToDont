@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="rocks.poopjournal.todont">
+
+    <application
+        tools:replace="android:allowBackup"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_store"
+        android:roundIcon="@mipmap/ic_store"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".About"></activity>
+        <activity android:name=".Settings" />
+        <activity android:name=".OnBoardingActivity" />
+        <activity android:name=".Labels" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

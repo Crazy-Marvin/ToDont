@@ -1,0 +1,12 @@
+<b>Perhatian bagus pada kebiasaan yang buruk.</b> Tulis sifat buruk Anda dengan beberapa ketukan, langsung dari halaman beranda. Gunakan Catatan untuk menambahkan keterangan — seperti alternatif sehat dari batang coklat yang tidak dapat ditolak. Dan rapikan apa yang Anda tulis dengan Label.
+
+
+<b>Lebih cepat dari Anda mengambil sebuah pena.</b> Cari kebiasaan buruk Anda di halaman beranda, dan coret kebiasaan yang Anda lakukan. Ini akan dipindahkan ke Selesai sampai hari Anda berakhir. Pagi berikutnya, Anda akan mulai dengan daftar yang penuh akan sesuatu yang Anda perlu jauhi.
+
+
+<b>Pantau kemajuan Anda.</b> Log memberi Anda pengetahuan tentang tingkat keberhasilan Anda secara keseluruhan dan menunjukkan dengan tepat kebiasaan buruk apa yang paling Anda sukai — lebih dari seminggu, sebulan, atau setahun.
+
+
+Halaman web:<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Terjemahkan To Don't:<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
+Sumber di GitHub:<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

@@ -1,0 +1,12 @@
+<b>Bona rigardo al malbonaj kutimoj.</b> Notu viajn malvirtojn per frapeto, rekte de la ĉefpaĝo. Uzu Notojn por aldoni detalojn — ekzemple, sanan alternativon al ĉokolado, kiun vi ne povas rezisti. Kaj organizu vian kontribuon per Etikedoj.
+
+
+<b>Pli rapide ol kiel vi prenas plumon.</b> Trovu viajn malbonajn kutimojn sur la ĉefpaĝo, kaj forstreku tiujn, al kiuj vi emas cedi. Ĉi tiuj moviĝos al «Finita» nur por la tago. La sekvan matenon, komencu freŝe per plena listo de evitindaĵoj.
+
+
+<b>Spuru vian progreson.</b> La Protokolo donas al vi sciojn pri viaj ĝeneralaj sukcesfrekvencoj kaj indikas, kiajn malbonajn kutimojn vi plej kutimis — dum semajno, monato aŭ jaro. Tiel vi povas facile klopodi por plibonigi vin.
+
+
+Retpaĝo: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Traduki la programon en aliajn lingvojn: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Fontkodo ĉe GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

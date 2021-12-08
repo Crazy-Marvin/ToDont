@@ -1,0 +1,5 @@
+- Suppression du concepteur de l'écran À propos
+- Déplacement des chaînes codées en dur de la disposition vers le fichier strings.xml pour une traduction plus facile
+- Mise à jour de la section Licences utilisées avec toutes les dépendances utilisées (merci à tous !)
+- Ajout de nouveaux gestes de glissement
+- Petites améliorations sous le capot

@@ -1,0 +1,9 @@
+<b>Dobre spojrzenie na złe nawyki.</b> Notuj złe nawyki jednym dotknięciem, prosto ze strony głównej. Używaj Notatek, by dodawać szczegóły – na przykład zdrową alternatywę dla czekoladowego batonika, któremu nie możesz się oprzeć. I porządkuj wpisy dzięki Etykietom.
+
+<b>Szybciej niż zdążysz sięgnąć po długopis.</b> Znajduj swoje złe nawyki na stronie głównej i przekreślaj te, którym ulegasz. Zostaną one przeniesione do kategorii Zrobione na resztę dnia. Następnego ranka, zacznij od nowa z pełną listą rzeczy do uniknięcia.
+
+<b>Bądź na bieżąco ze swymi postępami.</b> Dziennik wyświetla ogólny sukces i wskazuje, do jakiego złego nawyku jesteś najbardziej przywiązany – na przestrzeni tygodnia, miesiąca czy roku. Tak łatwiej się doskonalić.
+
+Strona internetowa: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Tłumacz To Don’t: <a href="https://hosted.weblate.org/engage/todont/">https://crowdin.com/project/ToDont</a> 
+Źródło na GitHubie: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

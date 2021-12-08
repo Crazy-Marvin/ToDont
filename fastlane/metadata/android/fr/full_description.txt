@@ -1,0 +1,13 @@
+<b>Un bon regard sur les mauvaises habitudes</b> Notez vos vices en un clin d'œil, directement depuis la page d'accueil. Utilisez les notes pour ajouter des détails, comme une alternative saine à cette barre de chocolat à laquelle vous ne pouvez pas résister. Et organisez vos entrées avec les Étiquettes.
+
+
+<b>Plus rapide que de prendre un stylo</b> Retrouvez vos mauvaises habitudes sur la page d'accueil, et rayez celles auxquelles vous cédez. Elles passeront dans la catégorie Fait pour la journée. Le lendemain matin, repartez de zéro avec une liste complète de choses à éviter.
+
+
+<b>Retracez vos progrès.</b>
+Le journal vous donne un aperçu de votre taux de réussite global et indique la mauvaise habitude à laquelle vous étiez le plus attaché·e, sur une semaine, un mois ou une année. Vous pouvez donc facilement travailler à vous améliorer.
+
+
+Page Web : <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Traduire À pas faire : <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Source sur GitHub : <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

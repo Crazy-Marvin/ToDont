@@ -1,0 +1,15 @@
+<b>Una buona occhiata alle cattive abitudini.</b> Annota i tuoi vizi in un tap, direttamente dalla pagina principale. Usa Note per aggiungere dettagli — come un'alternativa sana a quella barretta di cioccolato a cui non puoi resistere. E organizza i tuoi input con Etichette.
+
+
+<b>Più veloce di quanto tu possa prendere una penna</b> Trova le tue cattive abitudini sulla pagina principale, e cancella quelle a cui ti abbandoni. Queste si sposteranno in Fatto per oggi. La mattina dopo, ricomincia da capo con una lista completa di cose da evitare.
+
+
+<b>Tieni d'occhio i tuoi progressi</b> Il Diario ti dà un'idea delle tue percentuali complessive di successo e individua la cattiva abitudine a cui sei stato più legato — nel corso di una settimana, un mese o un anno. Così puoi facilmente lavorare per migliorare la tua persona.
+
+
+Pagina web:
+<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Traduci per non farlo:
+<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Fonte su GitHub:
+<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

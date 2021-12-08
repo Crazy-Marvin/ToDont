@@ -1,0 +1,5 @@
+- Menghapus desainer dari layar Tentang
+- Memindahkan string hard-code dari layout ke strings.xml untuk terjemahan yang lebih mudah
+- Perbarui bagian pengunaan lisensi dengan semua dependensi yang digunakan (terima kasih untuk semuanya!)
+- Menambahkan swipe gesture lainnya
+- Perbaikan lainnya

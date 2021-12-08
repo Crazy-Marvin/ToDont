@@ -1,0 +1,5 @@
+- Fjernet designer fra «Om»-skjerm
+- Flyttet hardkodede strenger fra oppsettet til strings.xml for enklere oversetting
+- Oppdaterte «Brukte lisenser» med alle brukte avhengigheter (takk til alle prosjektene)
+- La til flere håndvendinger
+- Små usynlige forbedringer

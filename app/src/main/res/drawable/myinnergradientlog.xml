@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    android:useLevel="false"
+    tools:ignore="MissingDefaultResource">
+    <gradient
+        android:angle="360"
+        android:type="linear"
+        android:startColor="@color/innerfragmentsColor1"
+        android:endColor="@color/innerfragmentsColor1"
+        />
+    <corners android:radius="10dip" />
+
+</shape>

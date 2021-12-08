@@ -51,7 +51,6 @@ public class Db_Controller extends SQLiteOpenHelper {
         while (cursor.moveToNext()){
             Helper.isnightmodeon=cursor.getString(0);
         }
-        Log.d("ttttt", " " +cursor.getCount());
 
     }
     public void update_nightmode(String a) {

@@ -28,13 +28,13 @@ class MainActivity : AppCompatActivity() {
         label.visibility = View.VISIBLE
         settings.visibility = View.VISIBLE
         db?.getNightMode()
-        if (Helper.isnightmodeon == "no") {
+//        if (Helper.isnightmodeon == "no") {
             label.setBackgroundResource(R.drawable.ic_label_light)
-        }
-        else if (Helper.isnightmodeon == "yes") {
-            label.setBackgroundResource(R.drawable.ic_label_dark)
-
-        }
+//        }
+//        else if (Helper.isnightmodeon == "yes") {
+//            label.setBackgroundResource(R.drawable.ic_label_dark)
+//
+//        }
 
         val actionBar: android.app.ActionBar? = actionBar
         actionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.mygradient))

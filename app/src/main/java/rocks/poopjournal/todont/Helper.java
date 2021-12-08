@@ -21,7 +21,7 @@ public class Helper {
     public static int SelectedButtonOfLogTab=0;
     public static int SelectedButtonOfLogDailyTab=0;
     public static Boolean isTodaySelected=true;
-    public static String isnightmodeon;
+    public static String isnightmodeon="light";
     public static String getSelecteddate="";
 
 }

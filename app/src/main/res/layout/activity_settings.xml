@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
-                android:text="@string/followsys"
+                android:id="@+id/modetitle"
                 android:textColor="@color/textcolor"
                 android:layout_marginLeft="20dp"
                 android:onClick="changeMode"

@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteException;
+import android.graphics.Color;
+import android.os.Build;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -166,11 +168,7 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                             String getdate = Helper.data.get(i)[1];
                             String gethabit = Helper.data.get(i)[2];
                             if ((Helper.habitsdata.get(position)[2].equals(gethabit)) && (getdate.equals(df.format(c)))) {
-                                Toast toast = Toast.makeText(con, "    Already Added    ", Toast.LENGTH_SHORT);
-                                View v = toast.getView();
-                                v.setBackground(con.getResources().getDrawable(R.drawable.roundbutton));
-                                toast.setGravity(Gravity.CENTER, 0, 0);
-                                toast.show();
+                                Toast.makeText(con, "    Already Added    ", Toast.LENGTH_SHORT).show();
                                 count++;
                             }
 
@@ -178,20 +176,12 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                         if (count == 0) {
                             db.insert_data(Helper.data.size(), df.format(c), Helper.habitsdata.get(position)[2],
                                     Helper.habitsdata.get(position)[3], catagoryselected);
-                            Toast toast = Toast.makeText(con, "    Added To Avoided    ", Toast.LENGTH_SHORT);
-                            View v = toast.getView();
-                            v.setBackground(con.getResources().getDrawable(R.drawable.roundbutton));
-                            toast.setGravity(Gravity.CENTER, 0, 0);
-                            toast.show();
+                            Toast.makeText(con, "    Added To Avoided    ", Toast.LENGTH_SHORT).show();
                         }
                     } else {
                         db.insert_data(Helper.data.size(), df.format(c), Helper.habitsdata.get(position)[2],
                                 Helper.habitsdata.get(position)[3], catagoryselected);
-                        Toast toast = Toast.makeText(con, "    Added To Avoided    ", Toast.LENGTH_SHORT);
-                        View v = toast.getView();
-                        v.setBackground(con.getResources().getDrawable(R.drawable.roundbutton));
-                        toast.setGravity(Gravity.CENTER, 0, 0);
-                        toast.show();
+                        Toast.makeText(con, "    Added To Avoided    ", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -208,11 +198,8 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                             String getdate = Helper.donedata.get(i)[1];
                             String gethabit = Helper.donedata.get(i)[2];
                             if ((Helper.habitsdata.get(position)[2].equals(gethabit)) && (getdate.equals(df.format(c)))) {
-                                Toast toast = Toast.makeText(con, "    Already Added    ", Toast.LENGTH_SHORT);
-                                View v = toast.getView();
-                                v.setBackground(con.getResources().getDrawable(R.drawable.roundbutton));
-                                toast.setGravity(Gravity.CENTER, 0, 0);
-                                toast.show();
+                                Toast.makeText(con, "    Already Added    ", Toast.LENGTH_SHORT).show();
+
                                 count++;
                             }
 
@@ -221,21 +208,13 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                             Log.d("id", "" + Helper.donedata.size());
                             db.insert_done_data(Helper.donedata.size(), df.format(c), Helper.habitsdata.get(position)[2],
                                     Helper.habitsdata.get(position)[3], catagoryselected);
-                            Toast toast = Toast.makeText(con, "    Added To Done    ", Toast.LENGTH_SHORT);
-                            View v = toast.getView();
-                            v.setBackground(con.getResources().getDrawable(R.drawable.roundbutton));
-                            toast.setGravity(Gravity.CENTER, 0, 0);
-                            toast.show();
+                            Toast.makeText(con, "    Added To Done    ", Toast.LENGTH_SHORT).show();
                         }
                     } else {
                         Log.d("id", "" + Helper.donedata.size());
                         db.insert_done_data(Helper.donedata.size(), df.format(c), Helper.habitsdata.get(position)[2],
                                 Helper.habitsdata.get(position)[3], catagoryselected);
-                        Toast toast = Toast.makeText(con, "    Added To Done    ", Toast.LENGTH_SHORT);
-                        View v = toast.getView();
-                        v.setBackground(con.getResources().getDrawable(R.drawable.roundbutton));
-                        toast.setGravity(Gravity.CENTER, 0, 0);
-                        toast.show();
+                        Toast.makeText(con, "    Added To Done    ", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

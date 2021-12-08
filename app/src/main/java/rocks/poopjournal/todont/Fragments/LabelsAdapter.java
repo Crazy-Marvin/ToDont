@@ -54,12 +54,12 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.RecyclerVi
         else{
             holder.tv_sum.setText(""+count+ " habit");
         }
-        if(Helper.isnightmodeon.equals("no")){
+//        if(Helper.isnightmodeon.equals("no")){
             holder.btnlabel.setBackgroundResource(R.drawable.ic_label_light_labels);
-        }
-        else if(Helper.isnightmodeon.equals("yes")){
-            holder.btnlabel.setBackgroundResource(R.drawable.ic_label_dark_labels);
-        }
+//        }
+//        else if(Helper.isnightmodeon.equals("yes")){
+//            holder.btnlabel.setBackgroundResource(R.drawable.ic_label_dark_labels);
+//        }
 //        holder.btndelete.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {

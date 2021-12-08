@@ -2,6 +2,7 @@ package rocks.poopjournal.todont.Fragments;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,9 +10,13 @@ import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteException;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -20,7 +25,10 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -78,26 +86,24 @@ public class HabitsFragment extends Fragment {
         }
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View view) {
                 final SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
                 final String formattedDate = df.format(c);
-                View bottomsheetview = null;
-                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getActivity(),
-                        R.style.BottomSheetDialogTheme);
-                if(Helper.isnightmodeon.equals("no")){
-                    bottomsheetview = LayoutInflater.from(getActivity().getApplicationContext()).
-                            inflate(R.layout.layout_bottom_sheet,
-                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
-                }
-                else if(Helper.isnightmodeon.equals("yes")){
-                    bottomsheetview = LayoutInflater.from(getActivity().getApplicationContext()).
-                            inflate(R.layout.layout_bottom_sheet_nightmode,
-                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
-                }
-                final Spinner spinner = bottomsheetview.findViewById(R.id.spinner);
-                final TextView txt=bottomsheetview.findViewById(R.id.txt);
+                final Dialog d = new Dialog(getActivity());
+                d.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                d.setContentView(R.layout.dialogbox_floatingbutton);
+                Button btndone=d.findViewById(R.id.btndone);
+                WindowManager.LayoutParams lp = d.getWindow().getAttributes();
+                lp.dimAmount=0.9f;
+                lp.gravity = Gravity.BOTTOM;
+                Window window = d.getWindow();
+                window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+                d.getWindow().setAttributes(lp);
+                d.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+
+                final Spinner spinner = d.findViewById(R.id.spinner);
+                final TextView txt=d.findViewById(R.id.txt);
                 if(Helper.labels_array.size()==0){
                     txt.setVisibility(View.VISIBLE);
                     spinner.setVisibility(View.INVISIBLE);
@@ -117,14 +123,14 @@ public class HabitsFragment extends Fragment {
                     @Override
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                         catagoryselected = adapterView.getItemAtPosition(i).toString();
-                        if(Helper.isnightmodeon.equals("no")){
-                            ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK);
-
-                        }
-                        else if(Helper.isnightmodeon.equals("yes")){
-                            ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
-
-                        }
+//                        if(Helper.isnightmodeon.equals("no")){
+                            ((TextView) adapterView.getChildAt(0)).setTextColor(getResources().getColor(R.color.textcolor));
+//
+//                        }
+//                        else if(Helper.isnightmodeon.equals("yes")){
+//                            ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
+//
+//                        }
                     }
 
                     @Override
@@ -133,9 +139,9 @@ public class HabitsFragment extends Fragment {
                     }
                 });
 
-                Button saveTaskButton = bottomsheetview.findViewById(R.id.saveTaskButton);
-                final EditText habit = bottomsheetview.findViewById(R.id.habit);
-                final EditText detail = bottomsheetview.findViewById(R.id.detail);
+                Button saveTaskButton = d.findViewById(R.id.saveTaskButton);
+                final EditText habit = d.findViewById(R.id.habit);
+                final EditText detail = d.findViewById(R.id.detail);
 
                 saveTaskButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -158,17 +164,113 @@ public class HabitsFragment extends Fragment {
                         Intent i=new Intent(getActivity(), MainActivity.class);
                         startActivity(i);
                         getActivity().overridePendingTransition(0,0);
-                        bottomSheetDialog.dismiss();
+                        d.dismiss();
                     }
 
                 });
                 spinner.setAdapter((SpinnerAdapter) arrayAdapter);
-                bottomSheetDialog.setContentView(bottomsheetview);
-                bottomSheetDialog.show();
+                d.show();
 
 
             }
         });
+
+
+//        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+//            @SuppressLint("ResourceAsColor")
+//            @Override
+//            public void onClick(View view) {
+//                final SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+//                final String formattedDate = df.format(c);
+//                View bottomsheetview = null;
+//                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getActivity(),
+//                        R.style.BottomSheetDialogTheme);
+//                bottomsheetview = LayoutInflater.from(getActivity().getApplicationContext()).
+//                            inflate(R.layout.layout_bottom_sheet,
+//                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
+////                if(Helper.isnightmodeon.equals("no")){
+////                    bottomsheetview = LayoutInflater.from(getActivity().getApplicationContext()).
+////                            inflate(R.layout.layout_bottom_sheet,
+////                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
+////                }
+////                else if(Helper.isnightmodeon.equals("yes")){
+////                    bottomsheetview = LayoutInflater.from(getActivity().getApplicationContext()).
+////                            inflate(R.layout.layout_bottom_sheet_nightmode,
+////                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
+////                }
+//                final Spinner spinner = bottomsheetview.findViewById(R.id.spinner);
+//                final TextView txt=bottomsheetview.findViewById(R.id.txt);
+//                if(Helper.labels_array.size()==0){
+//                    txt.setVisibility(View.VISIBLE);
+//                    spinner.setVisibility(View.INVISIBLE);
+//                }
+//                else{
+//                    txt.setVisibility(View.INVISIBLE);
+//                    spinner.setVisibility(View.VISIBLE);
+//                }
+//
+//
+//                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item,Helper.labels_array);
+//                arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//                spinner.setAdapter(arrayAdapter);
+//
+//
+//                spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                    @Override
+//                    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//                        catagoryselected = adapterView.getItemAtPosition(i).toString();
+//                        if(Helper.isnightmodeon.equals("no")){
+//                            ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK);
+//
+//                        }
+//                        else if(Helper.isnightmodeon.equals("yes")){
+//                            ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
+//
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onNothingSelected(AdapterView<?> adapterView) {
+//
+//                    }
+//                });
+//
+//                Button saveTaskButton = bottomsheetview.findViewById(R.id.saveTaskButton);
+//                final EditText habit = bottomsheetview.findViewById(R.id.habit);
+//                final EditText detail = bottomsheetview.findViewById(R.id.detail);
+//
+//                saveTaskButton.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//
+//                        String habit_text = habit.getText().toString();
+//                        String detail_text = detail.getText().toString();
+//                        //String formattedDate = df.format(c);
+//                        try {
+//
+//                        } catch (SQLiteException e) {
+//                        }
+//                        if(habit_text.equals("")){
+//
+//                        }
+//                        db.insert_habits(Helper.habitsdata.size(),formattedDate, habit_text, detail_text, catagoryselected);
+//                        db.show_habits_data();
+//
+//                        Helper.SelectedButtonOfTodayTab=0;
+//                        Intent i=new Intent(getActivity(), MainActivity.class);
+//                        startActivity(i);
+//                        getActivity().overridePendingTransition(0,0);
+//                        bottomSheetDialog.dismiss();
+//                    }
+//
+//                });
+//                spinner.setAdapter((SpinnerAdapter) arrayAdapter);
+//                bottomSheetDialog.setContentView(bottomsheetview);
+//                bottomSheetDialog.show();
+//
+//
+//            }
+//        });
         setDataInList();
         return view;
 

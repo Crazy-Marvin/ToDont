@@ -2,7 +2,7 @@
     android:id="@+id/bottomsheetContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bottom_sheet"
+    android:background="@color/backgroundcolor"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Task"
+        android:textColor="@color/textcolor"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <EditText
@@ -19,6 +20,7 @@
         android:layout_height="100dp"
         android:layout_below="@id/habit"
         android:hint="Note"
+        android:textColor="@color/textcolor"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView

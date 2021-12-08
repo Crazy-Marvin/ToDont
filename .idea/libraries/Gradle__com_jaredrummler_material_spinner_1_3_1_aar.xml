@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.jaredrummler:material-spinner:1.3.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52c560d27e82cfbb881221e616ed68dc/jetified-material-spinner-1.3.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52c560d27e82cfbb881221e616ed68dc/jetified-material-spinner-1.3.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52c560d27e82cfbb881221e616ed68dc/jetified-material-spinner-1.3.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5744acd13b1dee4a24c0d841f2971091/jetified-material-spinner-1.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5744acd13b1dee4a24c0d841f2971091/jetified-material-spinner-1.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5744acd13b1dee4a24c0d841f2971091/jetified-material-spinner-1.3.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaredrummler/material-spinner/1.3.1/ba40fe8844e61d621039959de90238701daa648a/material-spinner-1.3.1-javadoc.jar!/" />

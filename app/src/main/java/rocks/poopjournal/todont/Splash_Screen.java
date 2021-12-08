@@ -23,10 +23,10 @@ public class Splash_Screen extends AppCompatActivity {
         checkFirstTime = prefs.getString("FirstTime", "");
         db.getNightMode();
         if(checkFirstTime.equals("no")){
-            if(Helper.isnightmodeon.equals("no")){
+            if(Helper.isnightmodeon.equals("light")){
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             }
-            else if(Helper.isnightmodeon.equals("yes")){
+            else if(Helper.isnightmodeon.equals("dark")){
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             }
         }

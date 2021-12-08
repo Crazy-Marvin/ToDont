@@ -1,5 +1,6 @@
 package rocks.poopjournal.todont;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -8,6 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -64,22 +67,16 @@ public class Labels extends AppCompatActivity {
         labels_floatingbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                View bottomsheetview=null;
-                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Labels.this,
-                        R.style.BottomSheetDialogTheme);
-                if(Helper.isnightmodeon.equals("no")){
-                    bottomsheetview = LayoutInflater.from(getApplicationContext()).
-                            inflate(R.layout.labels_bottom_sheet,
-                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
-                }
-                else if(Helper.isnightmodeon.equals("yes")){
-                    bottomsheetview = LayoutInflater.from(getApplicationContext()).
-                            inflate(R.layout.labels_bottom_sheet_night,
-                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
-                }
-                final EditText editText = bottomsheetview.findViewById(R.id.label);
-                Button saveLabelButton = bottomsheetview.findViewById(R.id.saveLabelButton);
-                saveLabelButton.setOnClickListener(new View.OnClickListener() {
+                final Dialog d = new Dialog(Labels.this);
+                d.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                d.setContentView(R.layout.dialogbox_labels);
+                Button btnsave=d.findViewById(R.id.saveLabelButton);
+                final EditText editText = d.findViewById(R.id.label);
+                WindowManager.LayoutParams lp = d.getWindow().getAttributes();
+                lp.dimAmount=0.9f;
+                d.getWindow().setAttributes(lp);
+                d.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+                btnsave.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         db.insert_label(editText.getText().toString());
@@ -88,11 +85,38 @@ public class Labels extends AppCompatActivity {
                         Intent i = new Intent(getApplicationContext(), Labels.class);
                         startActivity(i);
                         overridePendingTransition(0, 0);
-                        bottomSheetDialog.dismiss();
+
                     }
-                });
-                bottomSheetDialog.setContentView(bottomsheetview);
-                bottomSheetDialog.show();
+                });d.show();
+//                View bottomsheetview=null;
+//                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Labels.this,
+//                        R.style.BottomSheetDialogTheme);
+//                if(Helper.isnightmodeon.equals("no")){
+//                    bottomsheetview = LayoutInflater.from(getApplicationContext()).
+//                            inflate(R.layout.labels_bottom_sheet,
+//                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
+//                }
+//                else if(Helper.isnightmodeon.equals("yes")){
+//                    bottomsheetview = LayoutInflater.from(getApplicationContext()).
+//                            inflate(R.layout.labels_bottom_sheet_night,
+//                                    (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
+//                }
+//                final EditText editText = bottomsheetview.findViewById(R.id.label);
+//                Button saveLabelButton = bottomsheetview.findViewById(R.id.saveLabelButton);
+//                saveLabelButton.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        db.insert_label(editText.getText().toString());
+//                        Helper.labels_array.add(editText.getText().toString());
+//                        db.show_labels();
+//                        Intent i = new Intent(getApplicationContext(), Labels.class);
+//                        startActivity(i);
+//                        overridePendingTransition(0, 0);
+//                        bottomSheetDialog.dismiss();
+//                    }
+//                });
+//                bottomSheetDialog.setContentView(bottomsheetview);
+//                bottomSheetDialog.show();
             }
 
         });

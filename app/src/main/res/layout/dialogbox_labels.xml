@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/bottomsheetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundcolor"
+        android:padding="3dp"
+        android:layout_margin="1dp">
+
+        <EditText
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/addnewlabl"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/saveLabelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/roundbutton"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>

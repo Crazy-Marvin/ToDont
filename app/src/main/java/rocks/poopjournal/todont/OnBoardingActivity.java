@@ -32,7 +32,7 @@ SharedPreferences sharedPreferences;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db_controller.setNightMode("no");
+                db_controller.setNightMode("light");
                 db_controller.getNightMode();
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("FirstTime","no");

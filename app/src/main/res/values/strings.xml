@@ -17,7 +17,7 @@
     <string name="settings">Settings</string>
     <string name="mostav">Most avoided:</string>
     <string name="leastav">Least avoided:</string>
-    <string name="addlabl">Please add label first</string>
+    <string name="addlabl">Please add a label first</string>
     <string name="addnewlabl">Add new label</string>
     <string name="puthabit">To start off, put down a bad habit</string>
     <string name="habitswillshowuphere">Habits will show up here.</string>

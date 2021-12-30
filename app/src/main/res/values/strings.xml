@@ -18,7 +18,7 @@
     <string name="mostav">Most avoided:</string>
     <string name="leastav">Least avoided:</string>
     <string name="addlabl">Please add label first</string>
-    <string name="addnewlabl">Add New Label</string>
+    <string name="addnewlabl">Add new label</string>
     <string name="puthabit">To start off, put down a bad habit</string>
     <string name="habitswillshowuphere">Habits will show up here.</string>
     <string name="apachelicense">Apache License 2.0</string>
@@ -26,7 +26,7 @@
     <string name="contribute">Contribute</string>
     <string name="translate">Translate</string>
     <string name="report">Report a problem</string>
-    <string name="source">View Source</string>
+    <string name="source">View source</string>
     <string name="opensourcelicense">Open-source licences</string>
     <string name="appearance">Appearance</string>
     <string name="feather">Feather Icons</string>

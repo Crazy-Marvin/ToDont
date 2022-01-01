@@ -3,7 +3,7 @@
     <string name="LightMode">רשימת מכשלות</string>
     <string name="app_name">רשימת מכשלות</string>
     <string name="hello_blank_fragment">שלום מקטע ריק</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> קישור</a> שלום מקטע ריק</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">קישור</a> שלום מקטע ריק</string>
     <string name="puthabit">כדי להתחיל, כדאי להוסיף כאן הרגל רע</string>
     <string name="addnewlabl">הוספת תווית חדשה</string>
     <string name="addlabl">נא להוסיף תווית תחילה</string>
@@ -17,7 +17,7 @@
     <string name="habits">הרגלים</string>
     <string name="done">בוצעו</string>
     <string name="avoided">נמנעו</string>
-    <string name="habitswillshowuphere">ההרגלים יופיעו כאן.</string>
+    <string name="habitswillshowuphere">ההרגלים יופיעו כאן</string>
     <string name="gnu">הרישיון הציבורי הכללי של גנו במהדורה הקהילתית</string>
     <string name="java">Java</string>
     <string name="kotlin">Kotlin</string>
@@ -36,7 +36,7 @@
     <string name="source">הצגת המקור</string>
     <string name="report">דיווח על תקלה</string>
     <string name="translate">תרגום</string>
-    <string name="contribute">תורם</string>
+    <string name="contribute">תרומה</string>
     <string name="developer">מפתח</string>
     <string name="apachelicense">רישיון Apache 2.0</string>
 </resources>

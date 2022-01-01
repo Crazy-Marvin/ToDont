@@ -3,7 +3,7 @@
     <string name="LightMode">Da non fare</string>
     <string name="app_name">Da non fare</string>
     <string name="avoided">Evitata</string>
-    <string name="habitswillshowuphere">Le abitudini verranno visualizzate qui.</string>
+    <string name="habitswillshowuphere">Le abitudini verranno visualizzate qui</string>
     <string name="puthabit">Per iniziare, metti una cattiva abitudine</string>
     <string name="addnewlabl">Aggiungi una nuova etichetta</string>
     <string name="addlabl">Si prega di aggiungere prima un’etichetta</string>
@@ -16,7 +16,7 @@
     <string name="today">Oggi</string>
     <string name="habits">Abitudini</string>
     <string name="done">Finito</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Ciao frammento vuoto</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Collegamento</a> Ciao frammento vuoto</string>
     <string name="hello_blank_fragment">Ciao frammento vuoto</string>
     <string name="gnu">Licenza pubblica generale GNU CE</string>
     <string name="java">Java</string>
@@ -36,7 +36,7 @@
     <string name="source">Vedi il sorgente</string>
     <string name="report">Segnala un problema</string>
     <string name="translate">Traduci</string>
-    <string name="contribute">Contributore</string>
+    <string name="contribute">Contribuisci</string>
     <string name="developer">Sviluppatore</string>
     <string name="apachelicense">Licenza Apache 2.0</string>
 </resources>

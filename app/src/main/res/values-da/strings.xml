@@ -2,4 +2,41 @@
 <resources>
     <string name="LightMode">Lad det</string>
     <string name="app_name">Lad det</string>
+    <string name="hello_blank_fragment">Hej blanke fragment</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="opensourcelicense">Frie licenser</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="gnu">GNU GPL-licens CE</string>
+    <string name="log">Log</string>
+    <string name="addnewlabl">Tilføj ny etiket</string>
+    <string name="appearance">Udseende</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="avoided">Undgået</string>
+    <string name="habits">Vaner</string>
+    <string name="followsys">Følg systemet</string>
+    <string name="translate">Oversæt</string>
+    <string name="source">Vis kildekode</string>
+    <string name="junit">JUnit</string>
+    <string name="done">Gjort</string>
+    <string name="today">I dag</string>
+    <string name="labels">Etiketter</string>
+    <string name="leastav">Mindst undgået:</string>
+    <string name="developer">Udvikler</string>
+    <string name="contribute">Bidrag</string>
+    <string name="report">Rapporter et problem</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="eclipse">Eclipse Public-licens 1.0</string>
+    <string name="about">Om</string>
+    <string name="settings">Indstillinger</string>
+    <string name="apachelicense">Apache 2.0-licens</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="addlabl">Tilføj en etiket først</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hej blanke fragment</string>
+    <string name="mitlicence">MIT-licens</string>
+    <string name="mostav">Mest undgået:</string>
+    <string name="puthabit">Begynd ved at skrive ned en dårlig vane</string>
+    <string name="habitswillshowuphere">Vaner vises her</string>
+    <string name="feather">Fjerikoner</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
 </resources>

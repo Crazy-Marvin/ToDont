@@ -3,9 +3,7 @@
     <string name="app_name">To Don\'t</string>
     <string name="LightMode">To Don\'t</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="text">
-        <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a>
-        Hello blank fragment</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hello blank fragment</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="avoided">Avoided</string>
     <string name="done">Done</string>
@@ -20,7 +18,7 @@
     <string name="addlabl">Please add a label first</string>
     <string name="addnewlabl">Add new label</string>
     <string name="puthabit">To start off, put down a bad habit</string>
-    <string name="habitswillshowuphere">Habits will show up here.</string>
+    <string name="habitswillshowuphere">Habits will show up here</string>
     <string name="apachelicense">Apache License 2.0</string>
     <string name="developer">Developer</string>
     <string name="contribute">Contribute</string>

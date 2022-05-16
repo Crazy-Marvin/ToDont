@@ -1,0 +1,12 @@
+<b>对坏习惯的良好审视。</b> 直接从主页轻点一下，记下你的恶习。使用注释添加细节——比如你无法抗拒的巧克力棒的健康替代品。并使用标签组织您的输入。
+
+
+<b>比你拿笔的速度还快。</b> 在主页上找到你的坏习惯，并划掉你的坏习惯。这些将移至当天的 "完成"。第二天早上，带着要避免的事情的完整清单重新开始。
+
+
+<b>随时掌握您的进度。</b> 日志让您深入了解您的整体成功率，并指出您在一周、一个月或一年内最容易养成的坏习惯。因此，您可以轻松地朝着更好的自己努力。
+
+
+网站地址：<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+为 To Don't 添加翻译：<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+在GitHub上的源代码：<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

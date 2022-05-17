@@ -21,8 +21,8 @@
     <string name="gnu">GNU General Public License CE</string>
     <string name="report">Повідомити про проблему</string>
     <string name="contribute">Сприяють</string>
-    <string name="jetpack"></string>
-    <string name="apachelicense"></string>
+    <string name="jetpack"/>
+    <string name="apachelicense"/>
     <string name="source">Переглянути вихідний код</string>
     <string name="translate">Перекласти</string>
     <string name="opensourcelicense">Ліцензії з відкритим кодом</string>
@@ -30,4 +30,5 @@
     <string name="appearance">Вигляд</string>
     <string name="developer">Розробник</string>
     <string name="java">Java</string>
+    <string name="followsys">Стежити за системою</string>
 </resources>

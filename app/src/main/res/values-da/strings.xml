@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="LightMode">Lad det</string>
-    <string name="app_name">Lad det</string>
+    <string name="LightMode"></string>
+    <string name="app_name"></string>
     <string name="hello_blank_fragment">Hej blanke fragment</string>
     <string name="jetpack">Android Jetpack</string>
     <string name="opensourcelicense">Frie licenser</string>

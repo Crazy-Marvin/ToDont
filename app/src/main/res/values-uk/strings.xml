@@ -21,8 +21,8 @@
     <string name="gnu">GNU General Public License CE</string>
     <string name="report">Повідомити про проблему</string>
     <string name="contribute">Сприяють</string>
-    <string name="jetpack"/>
-    <string name="apachelicense"/>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="apachelicense">Apache License 2.0</string>
     <string name="source">Переглянути вихідний код</string>
     <string name="translate">Перекласти</string>
     <string name="opensourcelicense">Ліцензії з відкритим кодом</string>
@@ -31,4 +31,12 @@
     <string name="developer">Розробник</string>
     <string name="java">Java</string>
     <string name="followsys">Стежити за системою</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="junit">JUnit</string>
+    <string name="eclipse">Eclipse Public License 1.0</string>
+    <string name="feather">Feather Icons</string>
 </resources>

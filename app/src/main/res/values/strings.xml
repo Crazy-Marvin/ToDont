@@ -53,6 +53,10 @@
         <item>Foods And Drinks</item>
         <item>Studies</item>
     </string-array>
+    # Toasts
+    <string name="toast_system">To Don\'t now follows your system.</string>
+    <string name="toast_light">To Don\'t is on the light side now.</string>
+    <string name="toast_dark">To Don\'t is on the dark side now.</string>
     # Here are the non-translateable strings
     <string name="crazymarvin" translatable="false">Crazy Marvin</string>
     <string name="codeacquaria" translatable="false">Code Acquaria</string>

@@ -10,7 +10,7 @@
         android:id="@+id/habit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Task"
+        android:hint="@string/addtask"
         android:textColor="@color/textcolor"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@id/habit"
-        android:hint="Note"
+        android:hint="@string/note"
         android:textColor="@color/textcolor"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -61,7 +61,7 @@
         android:layout_gravity="right"
         android:layout_marginTop="50dp"
         android:background="@drawable/roundbutton"
-        android:text="Save"
+        android:text="@string/save"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="16sp" />

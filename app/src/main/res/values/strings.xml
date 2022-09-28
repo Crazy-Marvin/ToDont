@@ -43,4 +43,6 @@
         <item>Foods And Drinks</item>
         <item>Studies</item>
     </string-array>
+    # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
+    <string name="contentDescription_FAB">Add new To Don't item</string>
 </resources>

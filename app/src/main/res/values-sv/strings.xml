@@ -4,7 +4,7 @@
     <string name="done">Klar</string>
     <string name="avoided">Undvikta</string>
     <string name="hello_blank_fragment">Hej tomma fragment</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Länk</a> Hej tomma fragment</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Länk</a> Hej tomma fragment</string>
     <string name="addlabl">Var god lägg till en etikett först</string>
     <string name="habits">Vanor</string>
     <string name="leastav">Minst undvikta:</string>
@@ -13,7 +13,14 @@
     <string name="labels">Etiketter</string>
     <string name="about">Om</string>
     <string name="today">Idag</string>
-    <string name="habitswillshowuphere">Vanorna kommer att dyka upp här.</string>
+    <string name="habitswillshowuphere">Vanorna kommer att dyka upp här</string>
     <string name="puthabit">För att börja, skriv ned en dålig vana</string>
     <string name="addnewlabl">Lägg till ny etikett</string>
+    <string name="developer">Utvecklare</string>
+    <string name="report">Rapportera ett fel</string>
+    <string name="source">Läs källkoden</string>
+    <string name="opensourcelicense">Licenser för öppen källkod</string>
+    <string name="appearance">Utseende</string>
+    <string name="contribute">Bidra</string>
+    <string name="translate">Översätt</string>
 </resources>

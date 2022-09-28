@@ -31,7 +31,7 @@
             <TextView
                 android:id="@+id/task"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:gravity="center"
                 android:textAlignment="textStart"
@@ -42,7 +42,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/dateoftask"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="12sp"
                 android:layout_marginLeft="15dp"

@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hello blank fragment</string>
+    <string name="habitswillshowuphere">Tutaj pojawią się nawyki</string>
+    <string name="today">Dzisiaj</string>
+    <string name="log">Dziennik</string>
+    <string name="about">O aplikacji</string>
+    <string name="avoided">Uniknione</string>
+    <string name="done">Zrobione</string>
+    <string name="habits">Nawyki</string>
+    <string name="settings">Ustawienia</string>
+    <string name="labels">Etykiety</string>
+    <string name="mostav">Najczęściej uniknione:</string>
+    <string name="leastav">Najrzadziej uniknione:</string>
+    <string name="addnewlabl">Dodaj nową etykiete</string>
+    <string name="puthabit">Na początek, dodaj zły nawyk</string>
+    <string name="apachelicense">Licencja Apache 2.0</string>
+    <string name="developer">Deweloper</string>
+    <string name="translate">Przetłumacz</string>
+    <string name="report">Zgłoś problem</string>
+    <string name="source">Zobacz kod źródłowy</string>
+    <string name="mitlicence">Licencja MIT</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="opensourcelicense">Licencje Open source</string>
+    <string name="addlabl">Najpierw dodaj etykiete</string>
+    <string name="appearance">Wygląd</string>
+</resources>

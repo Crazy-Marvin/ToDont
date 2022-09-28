@@ -2,12 +2,12 @@
 <resources>
     <string name="LightMode">To Don\'t</string>
     <string name="app_name">To Don\'t</string>
-    <string name="habitswillshowuphere">Kebiasaan akan muncul di sini.</string>
+    <string name="habitswillshowuphere">Kebiasaan akan muncul di sini</string>
     <string name="puthabit">Untuk memulai, tuliskan kebiasaan buruk</string>
-    <string name="addnewlabl">Tambahkan Label Baru</string>
-    <string name="addlabl">Silakan tambahkan Label Terlebih Dahulu</string>
-    <string name="leastav">Paling Sedikit Dihindari:</string>
-    <string name="mostav">Paling Dihindari:</string>
+    <string name="addnewlabl">Tambahkan label baru</string>
+    <string name="addlabl">Silakan tambahkan label terlebih dahulu</string>
+    <string name="leastav">Paling sedikit dihindari:</string>
+    <string name="mostav">Paling dihindari:</string>
     <string name="settings">Pengaturan</string>
     <string name="labels">Label</string>
     <string name="about">Tentang</string>
@@ -17,5 +17,26 @@
     <string name="done">Selesai</string>
     <string name="avoided">Dihindari</string>
     <string name="hello_blank_fragment">Halo fragmen kosong</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Tautan</a> Halo fragmen kosong</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Tautan</a> Halo fragmen kosong</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="apachelicense">Lisensi Apache 2.0</string>
+    <string name="developer">Pengembang</string>
+    <string name="translate">Terjemah</string>
+    <string name="report">Laporkan masalah</string>
+    <string name="source">Lihat sumber</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="followsys">Ikuti Sistem</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="junit">JUnit</string>
+    <string name="eclipse">Lisensi Publik Eclipse 1.0</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
+    <string name="contribute">Kontribusi</string>
+    <string name="opensourcelicense">Lisensi open-source</string>
+    <string name="appearance">Tampilan</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="gnu">Lisensi Publik Umum GNU CE</string>
+    <string name="feather">Ikon Bulu</string>
+    <string name="mitlicence">Lisensi MIT</string>
 </resources>

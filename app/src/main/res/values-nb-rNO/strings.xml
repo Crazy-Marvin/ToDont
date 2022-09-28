@@ -2,4 +2,36 @@
 <resources>
     <string name="hello_blank_fragment">Hei, blanke fragment</string>
     <string name="app_name">To Don\'t</string>
+    <string name="java">Java</string>
+    <string name="LightMode">Vaneavdanning</string>
+    <string name="mostav">Mest unngått</string>
+    <string name="labels">Etiketter</string>
+    <string name="about">Om</string>
+    <string name="today">I dag</string>
+    <string name="settings">Innstillinger</string>
+    <string name="apachelicense">Lisensiert Apache 2.0</string>
+    <string name="developer">Utvikler</string>
+    <string name="source">Vis kildekode</string>
+    <string name="opensourcelicense">Frie lisenser</string>
+    <string name="appearance">Utseende</string>
+    <string name="feather">Fjærikoner</string>
+    <string name="mitlicence">MIT-lisens</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="materialspinner">Material</string>
+    <string name="report">Rapporter et problem</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Lenke</a> Hei blanke fragment</string>
+    <string name="avoided">Unngått</string>
+    <string name="done">Ferdig</string>
+    <string name="addlabl">Legg til en etikett først</string>
+    <string name="addnewlabl">Legg til en ny etikett</string>
+    <string name="followsys">Følg systemet</string>
+    <string name="puthabit">Start med å notere en dårlig vane</string>
+    <string name="habitswillshowuphere">Vaner vises her</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="habits">Vaner</string>
+    <string name="log">Logg</string>
+    <string name="contribute">Bidra</string>
+    <string name="translate">Oversett</string>
+    <string name="leastav">Minst unngått:</string>
 </resources>

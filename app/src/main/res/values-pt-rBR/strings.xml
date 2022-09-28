@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="habitswillshowuphere">Os hábitos aparecerão aqui.</string>
+    <string name="habitswillshowuphere">Os hábitos aparecerão aqui</string>
     <string name="puthabit">Para começar, abandone um mau hábito</string>
     <string name="addnewlabl">Adicionar nova etiqueta</string>
-    <string name="addlabl">Por favor, adicione a etiqueta primeiro</string>
-    <string name="leastav">Menos evitado:</string>
+    <string name="addlabl">Por favor, adicione uma etiqueta primeiro</string>
+    <string name="leastav">Menos evitados:</string>
     <string name="mostav">Mais evitados:</string>
     <string name="settings">Configurações</string>
     <string name="labels">Etiquetas</string>
@@ -15,7 +15,25 @@
     <string name="done">Concluído</string>
     <string name="avoided">Evitado</string>
     <string name="hello_blank_fragment">Olá fragmento em branco</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Olá fragmento em branco</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Olá fragmento em branco</string>
     <string name="LightMode">To Don\'t</string>
     <string name="app_name">To Don\'t</string>
+    <string name="apachelicense">Licença Apache 2.0</string>
+    <string name="contribute">Contribuidor</string>
+    <string name="java">Java</string>
+    <string name="gnu">Licença Pública Geral GNU</string>
+    <string name="eclipse">Licença pública Eclipse 1.0</string>
+    <string name="kotlin">JUnit</string>
+    <string name="developer">Desenvolvedor</string>
+    <string name="report">Informar um problema</string>
+    <string name="opensourcelicense">Licenças open source</string>
+    <string name="mitlicence">Licença MIT</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="translate">Traduzir</string>
+    <string name="feather">Ícones de penas</string>
+    <string name="junit">JUnit</string>
+    <string name="materialspinner">MaterialSpinner</string>
 </resources>

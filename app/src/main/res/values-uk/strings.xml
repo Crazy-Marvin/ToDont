@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="habitswillshowuphere">Звички можна буде побачити тут.</string>
+    <string name="habitswillshowuphere">Звички можна буде побачити тут</string>
     <string name="puthabit">Для початку позбудьтеся від шкідливої звички</string>
     <string name="addnewlabl">Додайте новий ярлик</string>
     <string name="addlabl">Будь ласка, спочатку додайте ярлик</string>
@@ -15,7 +15,28 @@
     <string name="done">Виконано</string>
     <string name="avoided">Варто уникати</string>
     <string name="hello_blank_fragment">Пустий фрагмент вітання</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Пустий фрагмент вітання</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Посилання</a> Пустий фрагмент вітання</string>
     <string name="LightMode">Припини це</string>
     <string name="app_name">Припини це</string>
+    <string name="gnu">GNU General Public License CE</string>
+    <string name="report">Повідомити про проблему</string>
+    <string name="contribute">Сприяють</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="apachelicense">Apache License 2.0</string>
+    <string name="source">Переглянути вихідний код</string>
+    <string name="translate">Перекласти</string>
+    <string name="opensourcelicense">Ліцензії з відкритим кодом</string>
+    <string name="mitlicence">Ліцензія MIT</string>
+    <string name="appearance">Вигляд</string>
+    <string name="developer">Розробник</string>
+    <string name="java">Java</string>
+    <string name="followsys">Стежити за системою</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="junit">JUnit</string>
+    <string name="eclipse">Eclipse Public License 1.0</string>
+    <string name="feather">Feather Icons</string>
 </resources>

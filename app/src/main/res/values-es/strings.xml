@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="done">Hecho</string>
+    <string name="habits">Hábitos</string>
+    <string name="today">Hoy</string>
+    <string name="log">Registro</string>
+    <string name="app_name">Que no hacer</string>
+    <string name="LightMode">Que no hacer</string>
+    <string name="avoided">Evitado</string>
+    <string name="about">Acerca de</string>
+    <string name="settings">Ajustes</string>
+    <string name="mostav">Más evitado:</string>
+    <string name="developer">Desarrollador</string>
+    <string name="feather">Iconos ligeros</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="java">Java</string>
+    <string name="addlabl">Por favor, añade una etiqueta primero</string>
+    <string name="addnewlabl">Añadir nueva etiqueta</string>
+    <string name="puthabit">Para comenzar, apunta un mal hábito</string>
+    <string name="habitswillshowuphere">Los hábitos se mostrarán aquí</string>
+    <string name="translate">Traducir</string>
+    <string name="source">Ver código fuente</string>
+    <string name="opensourcelicense">Licencias de código abierto</string>
+    <string name="mitlicence">Licencia MIT</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="followsys">Seguir al sistema</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="eclipse">Licencia pública de Eclipse 1.0</string>
+    <string name="junit">JUnit</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Enlace</a> Hola fragmento en blanco</string>
+    <string name="leastav">Menos evitado:</string>
+    <string name="contribute">Contribuir</string>
+    <string name="labels">Etiquetas</string>
+    <string name="gnu">Licencia pública general GNU CE</string>
+    <string name="appearance">Apariencia</string>
+    <string name="report">Reportar un problema</string>
+    <string name="apachelicense">Licencia Apache 2.0</string>
+</resources>

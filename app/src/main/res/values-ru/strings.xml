@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="habitswillshowuphere">Привычки можно будет увидеть здесь.</string>
+    <string name="habitswillshowuphere">Привычки можно будет увидеть здесь</string>
     <string name="puthabit">Для начала избавьтесь от вредной привычки</string>
     <string name="addlabl">Пожалуйста, сначала добавьте ярлык</string>
     <string name="addnewlabl">Добавьте новый ярлык</string>
@@ -15,7 +15,28 @@
     <string name="done">Выполнено</string>
     <string name="avoided">Предотвращено</string>
     <string name="hello_blank_fragment">Пустой фрагмент приветствия</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Link</a> Пустой фрагмент приветствия</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Пустой фрагмент приветствия</string>
     <string name="LightMode">Прекрати это</string>
     <string name="app_name">Прекрати это</string>
+    <string name="translate">Перевести</string>
+    <string name="source">Посмотреть исходный код</string>
+    <string name="opensourcelicense">Open-source лицензии</string>
+    <string name="mitlicence">Лицензия MIT</string>
+    <string name="feather">Feather Icons</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="eclipse">Публичная лицензия Eclipse 1.0</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
+    <string name="gnu">Универсальная общественная лицензия GNU CE</string>
+    <string name="appearance">Тема</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="junit">JUnit</string>
+    <string name="apachelicense">Apache License 2.0</string>
+    <string name="developer">Разработчик</string>
+    <string name="report">Сообщить об ошибке</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="followsys">Системная</string>
+    <string name="contribute">Внести вклад</string>
 </resources>

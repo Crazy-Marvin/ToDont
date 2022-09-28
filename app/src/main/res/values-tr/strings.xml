@@ -18,16 +18,16 @@
     <string name="opensourcelicense">Açık kaynak lisanslar</string>
     <string name="source">Kaynak kodunu görüntüle</string>
     <string name="report">Sorun bildir</string>
-    <string name="translate">Çeviri</string>
-    <string name="contribute">Katkıda bulunun</string>
+    <string name="translate">Çevir</string>
+    <string name="contribute">Katkıda bulun</string>
     <string name="developer">Geliştirici</string>
     <string name="apachelicense">Apache Lisansı 2.0</string>
-    <string name="habitswillshowuphere">Alışkanlıklar burada görünecek.</string>
+    <string name="habitswillshowuphere">Alışkanlıklar burada görünecek</string>
     <string name="puthabit">Başlamak için bir kötü alışkanlık oluşturun</string>
-    <string name="addnewlabl">Yeni Etiket ekle</string>
-    <string name="addlabl">Lütfen önce Etiket ekleyin</string>
-    <string name="leastav">En Az Kaçınılan:</string>
-    <string name="mostav">En Çok Kaçınılan:</string>
+    <string name="addnewlabl">Yeni etiket ekle</string>
+    <string name="addlabl">Lütfen önce etiket ekleyin</string>
+    <string name="leastav">En az kaçınılan:</string>
+    <string name="mostav">En çok kaçınılan:</string>
     <string name="settings">Ayarlar</string>
     <string name="labels">Etiketler</string>
     <string name="about">Hakkında</string>
@@ -36,7 +36,7 @@
     <string name="done">Yapıldı</string>
     <string name="avoided">Kaçınıldı</string>
     <string name="hello_blank_fragment">Merhaba boş parça</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> Bağlantı</a> Merhaba boş parça</string>
+    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Bağlantı</a> Merhaba boş parça</string>
     <string name="LightMode">Yapılmayacaklar</string>
     <string name="app_name">Yapılmayacaklar</string>
 </resources>

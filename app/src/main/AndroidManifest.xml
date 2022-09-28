@@ -15,7 +15,7 @@
         <activity android:name=".OnBoardingActivity" />
         <activity android:name=".Labels" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Splash_Screen">
+        <activity android:name=".Splash_Screen" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" android:exported="true"/>
                 <category android:name="android.intent.category.LAUNCHER" android:exported="true" />

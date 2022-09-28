@@ -19,7 +19,7 @@
             android:id="@+id/label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/addnewlabl"
+            android:hint="@string/addnewlabel"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/textcolor"
             android:textColorHint="@android:color/darker_gray"

@@ -9,7 +9,8 @@
         android:icon="@mipmap/ic_store"
         android:roundIcon="@mipmap/ic_store"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:dataExtractionRules="@xml/data_extraction_rules">
         <activity android:name=".About"></activity>
         <activity android:name=".Settings" />
         <activity android:name=".OnBoardingActivity" />

@@ -35,7 +35,6 @@
     <string name="habits">Alışkanlıklar</string>
     <string name="done">Yapıldı</string>
     <string name="avoided">Kaçınıldı</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Bağlantı</a> Merhaba boş parça</string>
     <string name="LightMode">Yapılmayacaklar</string>
     <string name="app_name">Yapılmayacaklar</string>
 </resources>

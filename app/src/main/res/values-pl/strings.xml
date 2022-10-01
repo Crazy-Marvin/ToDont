@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hello blank fragment</string>
     <string name="habitswillshowuphere">Tutaj pojawią się nawyki</string>
     <string name="today">Dzisiaj</string>
     <string name="log">Dziennik</string>

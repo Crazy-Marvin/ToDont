@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/addtask"
         android:textColor="@color/textcolor"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/detail"
@@ -21,7 +22,8 @@
         android:layout_below="@id/habit"
         android:hint="@string/note"
         android:textColor="@color/textcolor"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/txt"

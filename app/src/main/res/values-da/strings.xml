@@ -2,13 +2,12 @@
 <resources>
     <string name="LightMode"></string>
     <string name="app_name"></string>
-    <string name="hello_blank_fragment">Hej blanke fragment</string>
     <string name="jetpack">Android Jetpack</string>
     <string name="opensourcelicense">Frie licenser</string>
     <string name="circleimg">CircleImageView</string>
     <string name="gnu">GNU GPL-licens CE</string>
     <string name="log">Log</string>
-    <string name="addnewlabl">Tilføj ny etiket</string>
+    <string name="addnewlabel">Tilføj ny etiket</string>
     <string name="appearance">Udseende</string>
     <string name="java">Java</string>
     <string name="kotlin">Kotlin</string>
@@ -31,8 +30,7 @@
     <string name="settings">Indstillinger</string>
     <string name="apachelicense">Apache 2.0-licens</string>
     <string name="nobobutton">NoboButton</string>
-    <string name="addlabl">Tilføj en etiket først</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hej blanke fragment</string>
+    <string name="addlabel">Tilføj en etiket først</string>
     <string name="mitlicence">MIT-licens</string>
     <string name="mostav">Mest undgået:</string>
     <string name="puthabit">Begynd ved at skrive ned en dårlig vane</string>

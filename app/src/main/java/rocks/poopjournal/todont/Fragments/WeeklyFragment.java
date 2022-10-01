@@ -180,7 +180,7 @@ public class WeeklyFragment extends Fragment {
         pieDataSet.setValueTextColor(Color.WHITE);
         PieData pieData = new PieData(pieDataSet);
         pieChart.setData(pieData);
-        pieDataSet.setColors(new int[]{Color.parseColor("#FFAF01"), Color.parseColor("#26272c")});
+        pieDataSet.setColors(Color.parseColor("#FFAF01"), Color.parseColor("#26272c"));
         Legend legend = pieChart.getLegend();
         legend.setEnabled(false);
         Description description = new Description();

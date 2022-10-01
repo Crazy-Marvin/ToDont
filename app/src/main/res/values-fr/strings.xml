@@ -3,11 +3,9 @@
     <string name="LightMode">À pas faire</string>
     <string name="app_name">À pas faire</string>
     <string name="avoided">Évitée</string>
-    <string name="addnewlabl">Ajouter une nouvelle étiquette</string>
-    <string name="addlabl">Ajoutez d’abord une étiquette</string>
+    <string name="addnewlabel">Ajouter une nouvelle étiquette</string>
+    <string name="addlabel">Ajoutez d’abord une étiquette</string>
     <string name="labels">Étiquettes</string>
-    <string name="hello_blank_fragment">Salut fragment vide</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Lien</a> Salut fragment vide</string>
     <string name="habitswillshowuphere">Les habitudes seront affichées ici</string>
     <string name="puthabit">Pour commencer, mettez une mauvaise habitude</string>
     <string name="leastav">Les moins évitées :</string>

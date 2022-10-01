@@ -2,13 +2,11 @@
 <resources>
     <string name="LightMode">To Don\'t</string>
     <string name="app_name">To Don\'t</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new"> 链接</a> Hello blank fragment</string>
-    <string name="hello_blank_fragment">hello blank fragment</string>
     <string name="avoided">忽略的</string>
     <string name="habitswillshowuphere">习惯会在这里显示</string>
     <string name="puthabit">开始改掉一个坏习惯吧</string>
-    <string name="addnewlabl">添加新的标签</string>
-    <string name="addlabl">请先添加一个标签</string>
+    <string name="addnewlabel">添加新的标签</string>
+    <string name="addlabel">请先添加一个标签</string>
     <string name="leastav">不常被忽略的:</string>
     <string name="mostav">经常被忽略的:</string>
     <string name="settings">设置</string>

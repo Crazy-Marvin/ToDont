@@ -41,7 +41,7 @@ import rocks.poopjournal.todont.R;
 public class AvoidedLogAdapter extends RecyclerView.Adapter<AvoidedLogAdapter.RecyclerViewHolder> {
     private ArrayList<String> donotTask = new ArrayList<>();
     private ArrayList<String> donotCatagory = new ArrayList<>();
-    private ArrayList<String> updateddonotCatagory = new ArrayList<>();
+    private final ArrayList<String> updateddonotCatagory = new ArrayList<>();
     AvoidedLogFragment ft;
     Context con;
     Date c = Calendar.getInstance().getTime();
@@ -82,7 +82,7 @@ public class AvoidedLogAdapter extends RecyclerView.Adapter<AvoidedLogAdapter.Re
                         R.style.BottomSheetDialogTheme);
                 final View bottomsheetview = LayoutInflater.from(con.getApplicationContext()).
                         inflate(R.layout.update_layout_bottom_sheet,
-                                (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
+                                view.findViewById(R.id.bottomsheetContainer));
                 final Spinner spinner = bottomsheetview.findViewById(R.id.updatespinner);
                 Button saveTaskButton = bottomsheetview.findViewById(R.id.updateTaskButton);
                 final EditText habit = bottomsheetview.findViewById(R.id.updatehabit);
@@ -101,11 +101,7 @@ public class AvoidedLogAdapter extends RecyclerView.Adapter<AvoidedLogAdapter.Re
                       Helper.labels_array) {
                     @Override
                     public boolean isEnabled(int position) {
-                        if (position == 0) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return position != 0;
                     }
                 };
                 spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

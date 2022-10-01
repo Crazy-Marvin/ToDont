@@ -24,7 +24,8 @@
             android:hint="@string/addtask"
             android:textColorHint="@android:color/darker_gray"
             android:textColor="@color/textcolor"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/detail"
@@ -34,7 +35,8 @@
             android:hint="@string/note"
             android:textColorHint="@android:color/darker_gray"
             android:textColor="@color/textcolor"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/txt"

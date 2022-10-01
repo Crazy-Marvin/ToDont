@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/addtask"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/updatedetail"
@@ -19,7 +20,8 @@
         android:layout_height="100dp"
         android:layout_below="@id/updatehabit"
         android:hint="@string/note"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/txt"

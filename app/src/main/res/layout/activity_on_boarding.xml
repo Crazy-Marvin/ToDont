@@ -16,14 +16,14 @@
             android:layout_height="300dp"
             android:elevation="6dp"
             android:layout_gravity="center"
-            android:src="@drawable/onbording"
-            />
+            android:src="@drawable/onboarding"
+            tools:ignore="ContentDescription" />
         <TextView
             android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="The reverse to-do list"
+            android:text="@string/onboarding_reverse"
             android:textColor="@color/textcolor"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Jot down your bad habits. Every day, cross"
+            android:text="@string/onboarding_bad"
             android:textColor="@color/spinr"
             android:textSize="14sp" />
 
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="out those you gave in to. And the next"
+            android:text="@string/onboarding_gavein"
             android:textColor="@color/spinr"
             android:textSize="14sp" />
 
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="morning start off with the fresh list."
+            android:text="@string/onboarding_freshlist"
             android:textColor="@color/spinr"
             android:textSize="14sp" />
     </LinearLayout>
@@ -60,7 +60,7 @@
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="30dp"
-        android:text="  Continue  "
+        android:text="@string/onboarding_continue"
         android:layout_centerInParent="true"
         android:background="@drawable/continuebutton"
         android:textAllCaps="false"/>

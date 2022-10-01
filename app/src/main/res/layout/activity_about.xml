@@ -184,7 +184,7 @@
                                 android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:text="Crazy Marvin"
+                                android:text="@string/crazymarvin"
                                 android:textColor="@color/textcolor" />
 
                             <TextView
@@ -288,7 +288,7 @@
                                 android:layout_width="230dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:text="Code Acquaria"
+                                android:text="@string/codeacquaria"
                                 android:textColor="@color/textcolor" />
 
                             <TextView

@@ -70,6 +70,7 @@
         android:layout_marginRight="10dp"
         android:background="@color/colorPrimary"
         backgroundTint="@color/colorPrimary"
-        android:src="@drawable/ic_add" />
+        android:src="@drawable/ic_add"
+        android:contentDescription="@string/contentDescription_FAB" />
 
 </RelativeLayout>

@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:hint="@string/addnewlabl"
+        android:hint="@string/addnewlabel"
         android:textColorHint="#7C7A72"
         android:textColor="@android:color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
@@ -24,7 +24,7 @@
         android:background="@drawable/roundbutton"
         android:textSize="16sp"
         android:layout_marginTop="50dp"
-        android:text="Save"
+        android:text="@string/save"
         android:layout_alignParentEnd="true"
         android:textAllCaps="false"
         android:textColor="@android:color/white" />

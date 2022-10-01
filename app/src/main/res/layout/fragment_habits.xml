@@ -49,6 +49,7 @@
         android:background="@color/colorPrimary"
         android:src="@drawable/ic_add"
         android:layout_gravity="bottom|center"
+        android:contentDescription="@string/contentDescription_FAB"
         />
     <View
         android:layout_width="match_parent"

@@ -22,7 +22,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
             android:gravity="left"
-            android:text="Appearance"
+            android:text="@string/appearance"
             android:textSize="20sp" />
 
 
@@ -39,8 +39,8 @@
                 android:checked="false"
                 android:buttonTint="@color/g1"
                 android:onClick="onRadioButtonClicked"
-                android:text="  Follow System"
-               android:textColor="@color/textcolor"
+                android:text="@string/followsys"
+                android:textColor="@color/textcolor"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -51,7 +51,7 @@
                 android:checked="false"
                 android:buttonTint="@color/g1"
                 android:onClick="onRadioButtonClicked"
-                android:text="  Light"
+                android:text="@string/light"
                 android:textColor="@color/textcolor"
                 android:textSize="16sp" />
 
@@ -63,7 +63,7 @@
                 android:checked="false"
                 android:buttonTint="@color/g1"
                 android:onClick="onRadioButtonClicked"
-                android:text="  Dark"
+                android:text="@string/dark"
                 android:textColor="@color/textcolor"
                 android:textSize="16sp" />
         </RadioGroup>
@@ -76,7 +76,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="5dp"
-            android:text="Done"
+            android:text="@string/done"
             android:background="@drawable/roundbutton"
             android:textColor="@color/textcolor"
 

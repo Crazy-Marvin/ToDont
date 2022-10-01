@@ -2,7 +2,11 @@
 <resources>
     <string name="app_name">To Don\'t</string>
     <string name="LightMode">To Don\'t</string>
-    <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hello blank fragment</string>
+    <string name="onboarding_reverse">The reverse to-do list</string>
+    <string name="onboarding_bad">Jot down your bad habits. Every day, cross</string>
+    <string name="onboarding_gavein">out those you gave in to. And the next</string>
+    <string name="onboarding_freshlist">morning start off with the fresh list.</string>
+    <string name="onboarding_continue">Continue</string>
     <string name="avoided">Avoided</string>
     <string name="done">Done</string>
     <string name="habits">Habits</string>
@@ -13,8 +17,11 @@
     <string name="settings">Settings</string>
     <string name="mostav">Most avoided:</string>
     <string name="leastav">Least avoided:</string>
-    <string name="addlabl">Please add a label first</string>
-    <string name="addnewlabl">Add new label</string>
+    <string name="addlabel">Please add a label first</string>
+    <string name="addnewlabel">Add new label</string>
+    <string name="addtask">Enter task</string>
+    <string name="note">Note</string>
+    <string name="save">Save</string>
     <string name="puthabit">To start off, put down a bad habit</string>
     <string name="habitswillshowuphere">Habits will show up here</string>
     <string name="apachelicense">Apache License 2.0</string>
@@ -25,6 +32,9 @@
     <string name="source">View source</string>
     <string name="opensourcelicense">Open-source licences</string>
     <string name="appearance">Appearance</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="update">Update</string>
     <string name="feather">Feather Icons</string>
     <string name="mitlicence">MIT License</string>
     <string name="jetpack">Android Jetpack</string>
@@ -43,4 +53,14 @@
         <item>Foods And Drinks</item>
         <item>Studies</item>
     </string-array>
+    # Toasts
+    <string name="toast_system">To Don\'t now follows your system.</string>
+    <string name="toast_light">To Don\'t is on the light side now.</string>
+    <string name="toast_dark">To Don\'t is on the dark side now.</string>
+    # Here are the non-translateable strings
+    <string name="crazymarvin" translatable="false">Crazy Marvin</string>
+    <string name="codeacquaria" translatable="false">Code Acquaria</string>
+    <string name="text" translatable="false"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hello blank fragment</string>
+    # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
+    <string name="contentDescription_FAB">Add new To Don\'t item</string>
 </resources>

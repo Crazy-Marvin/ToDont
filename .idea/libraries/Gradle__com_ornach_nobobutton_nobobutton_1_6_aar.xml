@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7c678575c804ac422473e304b211bd3/transformed/jetified-nobobutton-1.6/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a7c678575c804ac422473e304b211bd3/transformed/jetified-nobobutton-1.6/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7c678575c804ac422473e304b211bd3/transformed/jetified-nobobutton-1.6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/024d2007cfb3b313c45ccaecad025357/transformed/jetified-nobobutton-1.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/024d2007cfb3b313c45ccaecad025357/transformed/jetified-nobobutton-1.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/024d2007cfb3b313c45ccaecad025357/transformed/jetified-nobobutton-1.6/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ornach.nobobutton/nobobutton/1.6/911b15d3f7fbb294cf0ddb682bf1c90da2cffa01/nobobutton-1.6-javadoc.jar!/" />

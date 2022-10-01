@@ -30,13 +30,13 @@ public class Settings extends AppCompatActivity {
         Log.d("heyyyymode",""+Helper.isnightmodeon);
         switch(Helper.isnightmodeon){
             case "followsys":
-                modetitle.setText("Follow System");
+                modetitle.setText(R.string.followsys);
                 break;
             case "light":
-                modetitle.setText("Light");
+                modetitle.setText(R.string.light);
                 break;
             case "dark":
-                modetitle.setText("Dark");
+                modetitle.setText(R.string.dark);
                 break;
         }
 //        db.getNightMode();
@@ -75,21 +75,21 @@ public class Settings extends AppCompatActivity {
                 if(Helper.isnightmodeon.equals("followsys")){
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
                     Log.d("checkmode","f .. "+AppCompatDelegate.getDefaultNightMode());
-                    Toast.makeText(getApplicationContext(), "      To Don't now follows your system      ", Toast.LENGTH_SHORT).show();
-                    modetitle.setText("Follow System");
+                    Toast.makeText(getApplicationContext(), (R.string.toast_system), Toast.LENGTH_SHORT).show();
+                    modetitle.setText(R.string.followsys);
                     d.dismiss();
                 }
                 if(Helper.isnightmodeon.equals("light")){
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     Log.d("checkmode","l .. "+AppCompatDelegate.getDefaultNightMode());
-                    modetitle.setText("Light");
-                    Toast.makeText(getApplicationContext(), "      To Don't is on the light side now      ", Toast.LENGTH_SHORT).show();
+                    modetitle.setText(R.string.dark);
+                    Toast.makeText(getApplicationContext(), (R.string.toast_light), Toast.LENGTH_SHORT).show();
                     d.dismiss();
                 }
                 if(Helper.isnightmodeon.equals("dark")){
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    Toast.makeText(getApplicationContext(), "      To Don't is on the dark side now      ", Toast.LENGTH_SHORT).show();
-                    modetitle.setText("Dark");
+                    Toast.makeText(getApplicationContext(), R.string.toast_dark, Toast.LENGTH_SHORT).show();
+                    modetitle.setText(R.string.light);
                     d.dismiss();
                 }
 

@@ -45,8 +45,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="12sp"
-                android:layout_marginLeft="15dp"
-                android:text="Food and Drink" />
+                android:layout_marginLeft="15dp" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

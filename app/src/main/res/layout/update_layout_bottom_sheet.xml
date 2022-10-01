@@ -28,7 +28,7 @@
         android:layout_below="@id/updatedetail"
         android:layout_marginLeft="5dp"
         android:gravity="center_vertical"
-        android:text="@string/addlabl"
+        android:text="@string/addlabel"
         android:textColor="@android:color/darker_gray"
         android:textSize="18sp"
         android:textStyle="italic" />

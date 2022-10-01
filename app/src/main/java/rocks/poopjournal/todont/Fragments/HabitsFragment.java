@@ -168,7 +168,7 @@ public class HabitsFragment extends Fragment {
                     }
 
                 });
-                spinner.setAdapter((SpinnerAdapter) arrayAdapter);
+                spinner.setAdapter(arrayAdapter);
                 d.show();
 
 

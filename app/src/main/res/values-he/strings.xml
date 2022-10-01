@@ -2,11 +2,10 @@
 <resources>
     <string name="LightMode">רשימת מכשלות</string>
     <string name="app_name">רשימת מכשלות</string>
-    <string name="hello_blank_fragment">שלום מקטע ריק</string>
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">קישור</a> שלום מקטע ריק</string>
     <string name="puthabit">כדי להתחיל, כדאי להוסיף כאן הרגל רע</string>
-    <string name="addnewlabl">הוספת תווית חדשה</string>
-    <string name="addlabl">נא להוסיף תווית תחילה</string>
+    <string name="addnewlabel">הוספת תווית חדשה</string>
+    <string name="addlabel">נא להוסיף תווית תחילה</string>
     <string name="leastav">הכי פחות נמנעת:</string>
     <string name="mostav">הכי הרבה נמנעת:</string>
     <string name="settings">הגדרות</string>

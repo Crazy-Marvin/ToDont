@@ -2,7 +2,6 @@
     <string name="app_name">To Don\'t</string>
     <string name="NightMode" tools:ignore="ExtraTranslation">toDonts</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="avoided">Avoided</string>
     <string name="done">Done</string>
     <string name="habits">Habits</string>
@@ -13,8 +12,8 @@
     <string name="settings">Settings</string>
     <string name="mostav">Most Avoided :</string>
     <string name="leastav">Least Avoided :</string>
-    <string name="addlabl">Please add Label First</string>
-    <string name="addnewlabl">Add New Label</string>
+    <string name="addlabel">Please add Label First</string>
+    <string name="addnewlabel">Add New Label</string>
     <string name="puthabit">To start off, put down a bad habit</string>
     <string name="habitswillshowuphere">Habits will show up here.</string>
     <string name="apachelicense">Apache License 2.0</string>

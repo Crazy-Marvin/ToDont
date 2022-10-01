@@ -79,7 +79,7 @@ public class DoneAdapter extends RecyclerView.Adapter<DoneAdapter.RecyclerViewHo
                         R.style.BottomSheetDialogTheme);
                 final View bottomsheetview = LayoutInflater.from(con.getApplicationContext()).
                         inflate(R.layout.update_layout_bottom_sheet,
-                                (RelativeLayout) view.findViewById(R.id.bottomsheetContainer));
+                                view.findViewById(R.id.bottomsheetContainer));
                 final Spinner spinner = bottomsheetview.findViewById(R.id.updatespinner);
                 Button saveTaskButton = bottomsheetview.findViewById(R.id.updateTaskButton);
                 final EditText habit = bottomsheetview.findViewById(R.id.updatehabit);
@@ -98,11 +98,7 @@ public class DoneAdapter extends RecyclerView.Adapter<DoneAdapter.RecyclerViewHo
                         Helper.labels_array) {
                     @Override
                     public boolean isEnabled(int position) {
-                        if (position == 0) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return position != 0;
                     }
 
                 };

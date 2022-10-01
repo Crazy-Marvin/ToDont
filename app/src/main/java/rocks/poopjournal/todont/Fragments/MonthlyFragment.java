@@ -99,12 +99,7 @@ public class MonthlyFragment extends Fragment {
             btnbefore.setEnabled(true);
             btnafter.setEnabled(true);
         }
-        if(year.getText().toString().equals(splitteddate[0]) && date.getText().toString().equals(curmonth)){
-            btnafter.setEnabled(false);
-        }
-        else{
-            btnafter.setEnabled(true);
-        }
+        btnafter.setEnabled(!year.getText().toString().equals(splitteddate[0]) || !date.getText().toString().equals(curmonth));
 
         btnbefore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -365,7 +360,7 @@ public class MonthlyFragment extends Fragment {
         pieDataSet.setValueTextColor(Color.WHITE);
         PieData pieData = new PieData(pieDataSet);
         pieChart.setData(pieData);
-        pieDataSet.setColors(new int[]{Color.parseColor("#FFAF01"), Color.parseColor("#26272c")});
+        pieDataSet.setColors(Color.parseColor("#FFAF01"), Color.parseColor("#26272c"));
         Legend legend = pieChart.getLegend();
         legend.setEnabled(false);
         Description description = new Description();

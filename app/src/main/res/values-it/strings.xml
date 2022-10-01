@@ -5,8 +5,8 @@
     <string name="avoided">Evitata</string>
     <string name="habitswillshowuphere">Le abitudini verranno visualizzate qui</string>
     <string name="puthabit">Per iniziare, metti una cattiva abitudine</string>
-    <string name="addnewlabl">Aggiungi una nuova etichetta</string>
-    <string name="addlabl">Si prega di aggiungere prima un’etichetta</string>
+    <string name="addnewlabel">Aggiungi una nuova etichetta</string>
+    <string name="addlabel">Si prega di aggiungere prima un’etichetta</string>
     <string name="leastav">Le meno evitate:</string>
     <string name="mostav">Le più evitate:</string>
     <string name="settings">Impostazioni</string>
@@ -17,7 +17,6 @@
     <string name="habits">Abitudini</string>
     <string name="done">Finito</string>
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Collegamento</a> Ciao frammento vuoto</string>
-    <string name="hello_blank_fragment">Ciao frammento vuoto</string>
     <string name="gnu">Licenza pubblica generale GNU CE</string>
     <string name="java">Java</string>
     <string name="kotlin">Kotlin</string>

@@ -15,14 +15,13 @@
     <string name="mitlicence">MIT License</string>
     <string name="materialspinner">MaterialSpinner</string>
     <string name="avoided">Vermieden</string>
-    <string name="addlabl">Bitte füge erst ein Label hinzu</string>
+    <string name="addlabel">Bitte füge erst ein Label hinzu</string>
     <string name="done">Getan</string>
     <string name="text"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hallo leeres Fragment</string>
-    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
     <string name="habits">Angewohnheiten</string>
     <string name="today">Heute</string>
     <string name="leastav">Am wenigsten vermieden:</string>
-    <string name="addnewlabl">Neues Label hinzufügen</string>
+    <string name="addnewlabel">Neues Label hinzufügen</string>
     <string name="contribute">Beitragen</string>
     <string name="mostav">Am meisten vermieden:</string>
     <string name="java">Java</string>

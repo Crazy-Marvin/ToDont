@@ -12,10 +12,9 @@
     <string name="mostav">Más evitado:</string>
     <string name="developer">Desarrollador</string>
     <string name="feather">Iconos ligeros</string>
-    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
     <string name="java">Java</string>
-    <string name="addlabl">Por favor, añade una etiqueta primero</string>
-    <string name="addnewlabl">Añadir nueva etiqueta</string>
+    <string name="addlabel">Por favor, añade una etiqueta primero</string>
+    <string name="addnewlabel">Añadir nueva etiqueta</string>
     <string name="puthabit">Para comenzar, apunta un mal hábito</string>
     <string name="habitswillshowuphere">Los hábitos se mostrarán aquí</string>
     <string name="translate">Traducir</string>

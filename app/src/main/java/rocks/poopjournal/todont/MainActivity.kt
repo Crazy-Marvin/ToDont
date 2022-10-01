@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val fragment = FragmentToday();
+        val fragment = FragmentToday()
         db = Db_Controller(applicationContext, "", null, 2)
 
 
         supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+            .replace(R.id.container, fragment, fragment.javaClass.simpleName)
             .commit()
         toolbartext.setText(R.string.today)
         label.visibility = View.VISIBLE
@@ -43,9 +43,9 @@ class MainActivity : AppCompatActivity() {
                 when (item.itemId) {
                     R.id.navigation_today -> {
                         val fragment =
-                            FragmentToday();
+                            FragmentToday()
                         supportFragmentManager.beginTransaction()
-                            .replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                            .replace(R.id.container, fragment, fragment.javaClass.simpleName)
                             .commit()
                         toolbartext.setText(R.string.today)
                         label.visibility = View.VISIBLE
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                         val fragment =
                             FragmentLog()
                         supportFragmentManager.beginTransaction()
-                            .replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                            .replace(R.id.container, fragment, fragment.javaClass.simpleName)
                             .commit()
                         toolbartext.setText(R.string.log)
                         label.visibility = View.INVISIBLE

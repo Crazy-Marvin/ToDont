@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:hint="@string/addnewlabel"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
 
 
     <Button

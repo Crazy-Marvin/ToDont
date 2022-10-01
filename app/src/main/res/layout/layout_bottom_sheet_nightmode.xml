@@ -13,7 +13,8 @@
         android:hint="@string/addtask"
         android:textColorHint="#7C7A72"
         android:textColor="@android:color/white"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/detail"
@@ -23,7 +24,8 @@
         android:textColorHint="#7C7A72"
         android:textColor="@android:color/white"
         android:layout_below="@id/habit"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
 <!--    <View-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="1dp"-->

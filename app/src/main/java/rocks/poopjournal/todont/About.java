@@ -167,4 +167,11 @@ public class About extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(About.this, Settings.class);
+        finishAffinity();
+        startActivity(i);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
 }

@@ -1,0 +1,1 @@
+- Corregidos problemas de código (linting) 🐛

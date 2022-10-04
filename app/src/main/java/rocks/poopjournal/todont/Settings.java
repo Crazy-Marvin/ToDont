@@ -170,4 +170,12 @@ public class Settings extends AppCompatActivity {
         startActivity(i);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(Settings.this, MainActivity.class);
+        finishAffinity();
+        startActivity(i);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
 }

@@ -1,1 +1,5 @@
-Kleine Verbesserungen unter der Haube
+- Designer aus dem Info-Bildschirm entfernt
+- Hart kodierte Zeichenketten aus dem Layout in die strings.xml verschoben, um die Übersetzung zu erleichtern
+- Aktualisierung der Seite "Verwendete Lizenzen" mit allen verwendeten Abhängigkeiten (vielen Dank an alle!)
+- Weitere Wischgesten hinzugefügt
+- Kleine Verbesserungen unter der Haube

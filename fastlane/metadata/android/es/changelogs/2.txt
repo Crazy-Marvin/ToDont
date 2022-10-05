@@ -1,0 +1,5 @@
+- Eliminado el diseñador de la pantalla Acerca de
+- Se movieron cadenas codificadas de forma rígida del diseño a strings.xml para facilitar la traducción
+- Actualizada la sección Licencias usadas con todas las dependencias usadas (¡gracias a todos ellos!)
+- Agregados más gestos de deslizamiento
+- Pequeñas mejoras debajo del telón

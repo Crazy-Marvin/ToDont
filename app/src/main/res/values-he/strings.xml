@@ -37,4 +37,19 @@
     <string name="contribute">תרומה</string>
     <string name="developer">מפתח</string>
     <string name="apachelicense">רישיון Apache 2.0</string>
+    <string name="light">בהיר</string>
+    <string name="dark">כהה</string>
+    <string name="update">עדכון</string>
+    <string name="toast_dark">רשימת המכשלות עברה לצד האפל כעת.</string>
+    # Here are the non-translateable strings
+    <string name="onboarding_reverse">רשימת המטלות ההפוכה</string>
+    <string name="onboarding_bad">מתעדים את ההרגלים הרעים. בכל יום מסמנים</string>
+    <string name="onboarding_gavein">את אלו שנכנעת אליהם. ובבוקר שלמחרת</string>
+    <string name="onboarding_freshlist">מתחילים מחדש עם רשימה רעננה.</string>
+    <string name="onboarding_continue">להמשיך</string>
+    <string name="addtask">הוספת משימה</string>
+    <string name="note">הערה</string>
+    <string name="save">שמירה</string>
+    <string name="toast_system">רשימת המכשלות תואמת לעיצוב המערכת שלך כעת.</string>
+    <string name="toast_light">רשימת המכשלות עברה לצד הבהיר כעת.</string>
 </resources>

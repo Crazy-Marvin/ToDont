@@ -50,7 +50,7 @@
             android:elevation="6dp"
             android:layout_marginLeft="20dp"
             android:gravity="bottom"
-            android:background="@drawable/ic_settings"
+            android:background="@drawable/ic_appearance"
             android:onClick="changeMode"
             />
         <LinearLayout

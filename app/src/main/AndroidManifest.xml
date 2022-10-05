@@ -6,8 +6,8 @@
     <application
         tools:replace="android:allowBackup"
         android:allowBackup="false"
-        android:icon="@mipmap/ic_store"
-        android:roundIcon="@mipmap/ic_store"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:dataExtractionRules="@xml/data_extraction_rules">

@@ -58,6 +58,7 @@ public class Labels extends AppCompatActivity {
         for (int i = 0; i < Helper.labels_array.size(); i++) {
             gettinglabels.add(Helper.labels_array.get(i));
         }
+
         rv_labels.setLayoutManager(new LinearLayoutManager(this));
         new ItemTouchHelper(itemtouchhelper).attachToRecyclerView(rv_labels);
         adapter= new LabelsAdapter(this,db,gettinglabels);
@@ -79,8 +80,9 @@ public class Labels extends AppCompatActivity {
                 btnsave.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        db.insert_label(editText.getText().toString());
-                        Helper.labels_array.add(editText.getText().toString());
+                        String entered_text = editText.getText().toString().replace("'","''");
+                        db.insert_label(entered_text);
+                        Helper.labels_array.add(entered_text);
                         db.show_labels();
                         Intent i = new Intent(getApplicationContext(), Labels.class);
                         startActivity(i);

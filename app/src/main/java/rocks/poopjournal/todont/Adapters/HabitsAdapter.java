@@ -74,7 +74,7 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
     @Override
     public void onBindViewHolder(@NonNull final HabitsAdapter.RecyclerViewHolder holder, final int position) {
         String dTask = donotTask.get(position);
-        String dCatagory = donotCatagory.get(position);
+        String dCatagory = donotCatagory.get(position).replace("''","'");
         holder.task.setText(dTask);
         holder.catagoryoftask.setText(dCatagory);
         holder.task.setOnClickListener(new View.OnClickListener() {
@@ -98,9 +98,15 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                     spinner.setVisibility(View.VISIBLE);
                 }
                 habit.setText("" + Helper.habitsdata.get(position)[2]);
-                detail.setText("" + Helper.habitsdata.get(position)[3]);
+                detail.setText("" + Helper.habitsdata.get(position)[3].replace("''","'"));
+
+                ArrayList<String> reformed_labels = new ArrayList<>();
+                for (int i=0;i<Helper.labels_array.size();i++){
+                    reformed_labels.add(Helper.labels_array.get(i).toString().replace("''","'"));
+                }
+
                 final Adapter adapter = new ArrayAdapter<String>(con, android.R.layout.simple_list_item_1,
-                        Helper.labels_array) {
+                        reformed_labels) {
                     @Override
                     public boolean isEnabled(int position) {
                         return position != 0;
@@ -110,7 +116,7 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                 spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                        catagoryselected = adapterView.getItemAtPosition(i).toString();
+                        catagoryselected = adapterView.getItemAtPosition(i).toString().replace("'","''");
                         TextView selectedText = (TextView) adapterView.getChildAt(i);
                         if (selectedText != null) {
                             selectedText.setTextColor(ContextCompat.getColor(con, R.color.g2));
@@ -136,7 +142,7 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                             Log.d("kuttistring",""+str);
                         }
                         db.update_habitsdata(position, formattedDate,str
-                                , detail.getText().toString(), catagoryselected);
+                                , detail.getText().toString().replace("'","''"), catagoryselected);
                         db.show_habits_data();
                         Intent intent = new Intent(con, MainActivity.class);
                         con.startActivity(intent);
@@ -147,6 +153,8 @@ public class HabitsAdapter extends RecyclerView.Adapter<HabitsAdapter.RecyclerVi
                 });
 
                 spinner.setAdapter((SpinnerAdapter) adapter);
+                spinner.setSelection(reformed_labels.indexOf(dCatagory));
+
                 bottomSheetDialog.setContentView(bottomsheetview);
                 bottomSheetDialog.show();
             }

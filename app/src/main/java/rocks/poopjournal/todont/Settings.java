@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.audiofx.EnvironmentalReverb;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,6 +48,7 @@ public class Settings extends AppCompatActivity {
         final Dialog d = new Dialog(this);
         d.requestWindowFeature(Window.FEATURE_NO_TITLE);
         d.setContentView(R.layout.dialogbox);
+        d.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         Button btndone=d.findViewById(R.id.btndone);
         RadioButton light,dark,fsys;
         light=d.findViewById(R.id.light);
@@ -65,7 +68,6 @@ public class Settings extends AppCompatActivity {
         WindowManager.LayoutParams lp = d.getWindow().getAttributes();
         lp.dimAmount=0.9f;
         d.getWindow().setAttributes(lp);
-        d.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
 
         btndone.setOnClickListener(new View.OnClickListener() {
             @Override

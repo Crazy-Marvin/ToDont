@@ -322,8 +322,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_menu" />
-                            <entry key="sourceFile" value="F:\svg\more-vertical.svg" />
+                            <entry key="outputName" value="ic_monochrome" />
+                            <entry key="sourceFile" value="F:\svg\ic_monochrome.svg" />
                           </map>
                         </option>
                       </PersistentState>

@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteException;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -96,11 +97,10 @@ public class HabitsFragment extends Fragment {
                 Button btndone=d.findViewById(R.id.btndone);
                 WindowManager.LayoutParams lp = d.getWindow().getAttributes();
                 lp.dimAmount=0.9f;
-                lp.gravity = Gravity.BOTTOM;
+                d.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 Window window = d.getWindow();
                 window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
                 d.getWindow().setAttributes(lp);
-                d.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
 
                 final Spinner spinner = d.findViewById(R.id.spinner);
                 final TextView txt=d.findViewById(R.id.txt);

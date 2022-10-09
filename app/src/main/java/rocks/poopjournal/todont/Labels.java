@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -71,12 +73,13 @@ public class Labels extends AppCompatActivity {
                 final Dialog d = new Dialog(Labels.this);
                 d.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 d.setContentView(R.layout.dialogbox_labels);
+                d.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
                 Button btnsave=d.findViewById(R.id.saveLabelButton);
                 final EditText editText = d.findViewById(R.id.label);
                 WindowManager.LayoutParams lp = d.getWindow().getAttributes();
                 lp.dimAmount=0.9f;
                 d.getWindow().setAttributes(lp);
-                d.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
                 btnsave.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

@@ -6,11 +6,14 @@
 
 
     <color name="g1">#fac401</color>
-<!--    <color name="floatingbutton">#fac401</color>-->
+    <color name="radio">#fac401</color>
+
+    <!--    <color name="floatingbutton">#fac401</color>-->
     <color name="g2">#ff8c00</color>
     <color name="innerg1">#f2be00</color>
     <color name="innerg2">#ed8709</color>
     <color name="backgroundcolor">#FFFFFF</color>
+    <color name="dialogcolor">#FFFFFF</color>
     <color name="bottomnavigationline">#FFFFFF</color>
     <color name="bottom_sheet_background">#F8F8F8</color>
     <color name="textcolor">#000000</color>

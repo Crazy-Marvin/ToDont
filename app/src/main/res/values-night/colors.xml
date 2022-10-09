@@ -7,12 +7,15 @@
 
     <color name="g1">#26272c</color>
     <color name="g2">#26272c</color>
-<!--    <color name="floatingbutton">#fac401</color>-->
+    <color name="radio">#fac401</color>
+
+    <!--    <color name="floatingbutton">#fac401</color>-->
 <!--    <color name="innerg1">#7C7A72</color>-->
     <color name="innerg1">#26272c</color>
     <color name="innerg2">#26272c</color>
     <color name="bottom_sheet_background">#26272c</color>
     <color name="backgroundcolor">#000000</color>
+    <color name="dialogcolor">#26272c</color>
     <color name="textcolor">#FFFFFF</color>
     <color name="bottomnavigationline">#26272c</color>
     <color name="catagoriescolor">#26272c</color>

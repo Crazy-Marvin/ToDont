@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom"
-    android:background="@android:color/white"
+    android:background="@drawable/rounded_corners"
     android:orientation="vertical"
 
     >
@@ -11,7 +11,7 @@
         android:id="@+id/bottomsheetContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/backgroundcolor"
+        android:background="@drawable/rounded_corners"
         android:padding="3dp"
         android:layout_margin="1dp">
 

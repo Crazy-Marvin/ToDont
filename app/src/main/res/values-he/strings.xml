@@ -52,4 +52,5 @@
     <string name="save">שמירה</string>
     <string name="toast_system">רשימת המכשלות תואמת לעיצוב המערכת שלך כעת.</string>
     <string name="toast_light">רשימת המכשלות עברה לצד הבהיר כעת.</string>
+    <string name="contentDescription_FAB">הוספת פריט מכשלה חדש</string>
 </resources>

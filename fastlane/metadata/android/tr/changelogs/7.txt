@@ -1,0 +1,5 @@
+- UX iyileştirmeleri 🦋
+- Küçük hata düzeltmeleri 🐛
+- Çeviri güncellemeleri 🗺️
+
+E-posta ile geri bildirim göndermekten, GitHub'da sorunları açmaktan veya çeviriye yardımcı olmaktan memnuniyet duyarız. 💓

@@ -37,4 +37,20 @@
     <string name="avoided">Kaçınıldı</string>
     <string name="LightMode">Yapılmayacaklar</string>
     <string name="app_name">Yapılmayacaklar</string>
+    <string name="onboarding_freshlist">sabah yeni listeyle başlayın.</string>
+    <string name="addtask">Görev girin</string>
+    <string name="dark">Koyu</string>
+    <string name="onboarding_continue">Devam et</string>
+    <string name="save">Kaydet</string>
+    <string name="update">Güncelle</string>
+    <string name="note">Not</string>
+    <string name="light">Açık</string>
+    <string name="onboarding_reverse">Yapılacaklar listesinin tersi</string>
+    <string name="onboarding_bad">Kötü alışkanlıklarınızı not edin. Her gün, çarpı atın</string>
+    <string name="onboarding_gavein">teslim olduklarınıza. Ve bir sonraki</string>
+    <string name="toast_system">Yapılmayacaklar şimdi sisteminizi takip ediyor.</string>
+    <string name="toast_light">Yapılmayacaklar şimdi aydınlık tarafta.</string>
+    <string name="toast_dark">Yapılmayacaklar şimdi karanlık tarafta.</string>
+    # Here are the non-translateable strings
+    <string name="contentDescription_FAB">Yeni Yapılmayacaklar ögesi ekleyin</string>
 </resources>

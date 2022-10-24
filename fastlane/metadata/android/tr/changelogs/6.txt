@@ -1,4 +1,3 @@
-- Kullanıcı deneyimi iyileştirmeleri 🦋
-- Küçük hata düzeltmeleri 🐛
+- Çeviri güncellemeleri 🗺️
 
-E-posta ile geri bildirim gönderebilir, GitHub'da sorun açabilir veya çevirilere yardımcı olabilirsiniz. 💓
+E-posta ile geri bildirim gönderebilir, GitHub'da sorun açabilir veya çeviriye yardımcı olabilirsiniz. 💓

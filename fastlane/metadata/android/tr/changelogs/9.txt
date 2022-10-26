@@ -1,0 +1,4 @@
+- Birçok hata düzeltildi, teşekkürler subeep 🐛
+- Daha keskin bir görünüm için vektör grafiklerine geçildi, teşekkürler karthikayya 🎨
+- Bağımlılıklar güncellendi ⚙️
+- Çeviriler güncellendi 🗺️

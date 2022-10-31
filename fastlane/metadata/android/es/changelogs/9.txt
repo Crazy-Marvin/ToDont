@@ -1,0 +1,4 @@
+- Muchos errores fueron corregidos gracias a subeep 🐛
+- Cambio a gráficos vectoriales para una vista más nítida gracias a karthikayya 🎨
+- Actualizaciones de las dependencias ⚙️
+- Actualizaciones de la traducción 🗺️

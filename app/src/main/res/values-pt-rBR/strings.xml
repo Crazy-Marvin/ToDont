@@ -34,4 +34,22 @@
     <string name="feather">Ícones de penas</string>
     <string name="junit">JUnit</string>
     <string name="materialspinner">MaterialSpinner</string>
+    <string name="addtask">Digite a tarefa</string>
+    <string name="onboarding_gavein">aqueles a quem você cedeu. E o próximo</string>
+    <string name="note">Nota</string>
+    <string name="save">Salvar</string>
+    <string name="dark">Escuro</string>
+    <string name="onboarding_reverse">A lista inversa de afazeres</string>
+    <string name="onboarding_freshlist">manhã comece com a nova lista.</string>
+    <string name="onboarding_bad">Anote seus maus hábitos. Todos os dias, cruze</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="light">Claro</string>
+    <string name="update">Atualizar</string>
+    <string name="appearance">Aparência</string>
+    <string name="followsys">Sistema</string>
+    <string name="toast_system">To Don\'t agora segue seu sistema.</string>
+    <string name="toast_light">To Don\'t está claro agora.</string>
+    <string name="toast_dark">To Don\'t está escuro agora.</string>
+    # Here are the non-translateable strings
+    <string name="contentDescription_FAB">Adicionar novo item para não fazer</string>
 </resources>

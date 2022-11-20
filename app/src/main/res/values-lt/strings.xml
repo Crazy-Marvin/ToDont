@@ -51,4 +51,6 @@
     <string name="gnu">GNU General Public License CE</string>
     <string name="contentDescription_FAB">Pridėti naują To Don\'t elementą</string>
     <string name="apachelicense">Apache License 2.0</string>
+    <string name="app_name">Ko nedaryti</string>
+    <string name="LightMode">Ko nedaryti</string>
 </resources>

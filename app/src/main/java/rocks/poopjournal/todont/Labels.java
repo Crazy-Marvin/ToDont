@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -58,6 +60,7 @@ public class Labels extends AppCompatActivity {
         for (int i = 0; i < Helper.labels_array.size(); i++) {
             gettinglabels.add(Helper.labels_array.get(i));
         }
+
         rv_labels.setLayoutManager(new LinearLayoutManager(this));
         new ItemTouchHelper(itemtouchhelper).attachToRecyclerView(rv_labels);
         adapter= new LabelsAdapter(this,db,gettinglabels);
@@ -70,17 +73,19 @@ public class Labels extends AppCompatActivity {
                 final Dialog d = new Dialog(Labels.this);
                 d.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 d.setContentView(R.layout.dialogbox_labels);
+                d.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
                 Button btnsave=d.findViewById(R.id.saveLabelButton);
                 final EditText editText = d.findViewById(R.id.label);
                 WindowManager.LayoutParams lp = d.getWindow().getAttributes();
                 lp.dimAmount=0.9f;
                 d.getWindow().setAttributes(lp);
-                d.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
                 btnsave.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        db.insert_label(editText.getText().toString());
-                        Helper.labels_array.add(editText.getText().toString());
+                        String entered_text = editText.getText().toString().replace("'","''");
+                        db.insert_label(entered_text);
+                        Helper.labels_array.add(entered_text);
                         db.show_labels();
                         Intent i = new Intent(getApplicationContext(), Labels.class);
                         startActivity(i);
@@ -165,6 +170,12 @@ public class Labels extends AppCompatActivity {
         }
     };
     public void backbtnclicked(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+
+    @Override
+    public void onBackPressed() {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }

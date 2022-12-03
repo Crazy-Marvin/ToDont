@@ -1,0 +1,2 @@
+Pequeñas mejoras debajo del telón
+Arreglar la configuración de fastlane

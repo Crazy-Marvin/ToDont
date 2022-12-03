@@ -32,6 +32,8 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.RecyclerVi
         this.con = con;
         this.db=db;
 
+
+
     }
 
     @NonNull
@@ -45,7 +47,7 @@ public class LabelsAdapter extends RecyclerView.Adapter<LabelsAdapter.RecyclerVi
     @Override
     public void onBindViewHolder(@NonNull LabelsAdapter.RecyclerViewHolder holder, final int position) {
         final String dTask=labels_list.get(position);
-        holder.tv_label.setText(dTask);
+        holder.tv_label.setText(dTask.replace("''","'"));
         db.getNightMode();
         int count=db.countLabels(dTask);
         if(count>1){

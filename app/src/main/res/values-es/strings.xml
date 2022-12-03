@@ -37,4 +37,20 @@
     <string name="appearance">Apariencia</string>
     <string name="report">Reportar un problema</string>
     <string name="apachelicense">Licencia Apache 2.0</string>
+    <string name="onboarding_gavein">aquellos en los que te rendiste. Y la siguiente</string>
+    <string name="onboarding_freshlist">mañana comienza con una lista nueva.</string>
+    <string name="onboarding_continue">Continuar</string>
+    <string name="toast_system">To Don\'t ahora sigue a tu sistema.</string>
+    <string name="toast_dark">To Don\'t ahora está del lado oscuro.</string>
+    # Here are the non-translateable strings
+    <string name="onboarding_reverse">La lista de tareas al revés</string>
+    <string name="save">Guardar</string>
+    <string name="onboarding_bad">Anota tus malos hábitos. Todos los días, marca</string>
+    <string name="addtask">Crear tarea</string>
+    <string name="note">Nota</string>
+    <string name="dark">Oscuro</string>
+    <string name="light">Claro</string>
+    <string name="update">Actualizar</string>
+    <string name="toast_light">To Don\'t ahora está del lado de la luz.</string>
+    <string name="contentDescription_FAB">Agregar un nuevo elemento Para no hacer</string>
 </resources>

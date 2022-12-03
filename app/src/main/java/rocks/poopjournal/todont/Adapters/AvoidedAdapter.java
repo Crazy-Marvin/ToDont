@@ -95,9 +95,15 @@ public class AvoidedAdapter extends RecyclerView.Adapter<AvoidedAdapter.Recycler
                     spinner.setVisibility(View.VISIBLE);
                 }
                 habit.setText("" + Helper.data.get(position)[2]);
-                detail.setText("" + Helper.data.get(position)[3]);
+                detail.setText("" + Helper.habitsdata.get(position)[3].replace("''","'"));
+
+                ArrayList<String> reformed_labels = new ArrayList<>();
+                for (int i=0;i<Helper.labels_array.size();i++){
+                    reformed_labels.add(Helper.labels_array.get(i).toString().replace("''","'"));
+                }
+
                 final Adapter adapter = new ArrayAdapter<String>(con, android.R.layout.simple_list_item_1,
-                      Helper.labels_array) {
+                      reformed_labels) {
                     @Override
                     public boolean isEnabled(int position) {
                         return position != 0;
@@ -106,7 +112,7 @@ public class AvoidedAdapter extends RecyclerView.Adapter<AvoidedAdapter.Recycler
                 spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                        catagoryselected = adapterView.getItemAtPosition(i).toString();
+                        catagoryselected = adapterView.getItemAtPosition(i).toString().replace("'","''");
                         TextView selectedText = (TextView) adapterView.getChildAt(i);
                         if (selectedText != null) {
                             selectedText.setTextColor(ContextCompat.getColor(con,R.color.g2));
@@ -131,7 +137,8 @@ public class AvoidedAdapter extends RecyclerView.Adapter<AvoidedAdapter.Recycler
                         } catch (SQLiteException e) {
                         }
                         Log.d("checkingz",""+habit.getText().toString());
-                        db.update_data(position, formattedDate,habit.getText().toString(), detail.getText().toString(), catagoryselected);
+                        db.update_habitsdata(position, formattedDate,habit_text
+                                , detail.getText().toString().replace("'","''"), catagoryselected);
                         db.show_data();
                         Helper.SelectedButtonOfTodayTab = 1;
                         Intent intent = new Intent(con, MainActivity.class);
@@ -141,7 +148,7 @@ public class AvoidedAdapter extends RecyclerView.Adapter<AvoidedAdapter.Recycler
                     }
 
                 });
-                  spinner.setAdapter((SpinnerAdapter) adapter);
+                spinner.setAdapter((SpinnerAdapter) adapter);
                 bottomSheetDialog.setContentView(bottomsheetview);
                 bottomSheetDialog.show();
             }

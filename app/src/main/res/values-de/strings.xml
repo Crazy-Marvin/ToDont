@@ -16,7 +16,7 @@
     <string name="materialspinner">MaterialSpinner</string>
     <string name="avoided">Vermieden</string>
     <string name="addlabel">Bitte füge erst ein Label hinzu</string>
-    <string name="done">Getan</string>
+    <string name="done">Erledigt</string>
     <string name="habits">Angewohnheiten</string>
     <string name="today">Heute</string>
     <string name="leastav">Am wenigsten vermieden:</string>
@@ -25,7 +25,7 @@
     <string name="mostav">Am meisten vermieden:</string>
     <string name="java">Java</string>
     <string name="settings">Einstellungen</string>
-    <string name="puthabit">Notiere um anzufangen eine schlechte Gewohnheit</string>
+    <string name="puthabit">Um zu beginnen, notiere eine schlechte Gewohnheit</string>
     <string name="habitswillshowuphere">Gewohnheiten werden hier angezeigt</string>
     <string name="apachelicense">Apache License 2.0</string>
     <string name="developer">Entwickler</string>
@@ -35,4 +35,19 @@
     <string name="nobobutton">NoboButton</string>
     <string name="junit">JUnit</string>
     <string name="kotlin">Kotlin</string>
+    <string name="onboarding_reverse">Die umgekehrte ToDo-Liste</string>
+    <string name="onboarding_bad">Notiere deine schlechten Angewohnheiten. Streiche jeden Tag</string>
+    <string name="onboarding_gavein">die, denen du nachgegeben hast. Am nächsten Morgen</string>
+    <string name="onboarding_freshlist">Morgen startest Du dann wieder mit einer neuen Liste.</string>
+    <string name="onboarding_continue">Weiter</string>
+    <string name="addtask">Aufgabe eingeben</string>
+    <string name="save">Speichern</string>
+    <string name="dark">Dunkel</string>
+    <string name="light">Hell</string>
+    <string name="update">Aktualisierung</string>
+    <string name="toast_system">To Don\'t folgt jetzt deinem System.</string>
+    <string name="toast_light">To Don\'t ist jetzt auf der hellen Seite.</string>
+    <string name="toast_dark">To Don\'t ist jetzt auf der dunklen Seite.</string>
+    # Here are the non-translateable strings
+    <string name="contentDescription_FAB">Füge ein neues To Don\'t-Element hinzu</string>
 </resources>

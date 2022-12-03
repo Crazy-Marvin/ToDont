@@ -24,4 +24,9 @@
     <string name="opensourcelicense">Licencje Open source</string>
     <string name="addlabel">Najpierw dodaj etykiete</string>
     <string name="appearance">Wygląd</string>
+    <string name="onboarding_continue">Kontynuuj</string>
+    <string name="save">Zapisz</string>
+    <string name="addtask">Wprowadź zadanie</string>
+    <string name="dark">Ciemny</string>
+    <string name="light">Jasny</string>
 </resources>

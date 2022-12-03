@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_bad">Užsirašykite savo blogus įpročius. Kiekvieną dieną užbraukite</string>
+    <string name="done">Atlikta</string>
+    <string name="today">Šiandien</string>
+    <string name="log">Žurnalas</string>
+    <string name="about">Apie</string>
+    <string name="labels">Etiketės</string>
+    <string name="settings">Nustatymai</string>
+    <string name="habitswillshowuphere">Įpročiai bus rodomi čia</string>
+    <string name="puthabit">Norėdami pradėti, parašykite blogą įprotį</string>
+    <string name="update">Atnaujinti</string>
+    <string name="feather">Feather Icons</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="followsys">Sekti sistemos</string>
+    <string name="eclipse">Eclipse Public License 1.0</string>
+    <string name="toast_system">To Don\'t dabar seka jūsų sistemą.</string>
+    <string name="toast_light">To Don\'t dabar yra šviesos pusėje.</string>
+    <string name="toast_dark">To Don\'t dabar yra tamsos pusėje.</string>
+    # Here are the non-translateable strings
+    <string name="onboarding_reverse">Darbų kurių nereikia daryti sąrašas</string>
+    <string name="onboarding_gavein">tuos, kuriems pasidavėte. Ir kitą</string>
+    <string name="addnewlabel">Pridėti naują etiketę</string>
+    <string name="avoided">Išvengta</string>
+    <string name="leastav">Mažiausiai vengiama:</string>
+    <string name="onboarding_freshlist">rytą pradėkite nuo šviežio sąrašo.</string>
+    <string name="developer">Kūrėjas</string>
+    <string name="onboarding_continue">Tęsti</string>
+    <string name="note">Pastaba</string>
+    <string name="report">Pranešti apie problemą</string>
+    <string name="habits">Įpročiai</string>
+    <string name="mostav">Labiausiai vengiama:</string>
+    <string name="addlabel">Pirmiausia pridėkite etiketę</string>
+    <string name="save">Išsaugoti</string>
+    <string name="addtask">Įveskite užduotį</string>
+    <string name="contribute">Prisidėti</string>
+    <string name="translate">Versti</string>
+    <string name="appearance">Išvaizda</string>
+    <string name="source">Peržiūrėti pirminį kodą</string>
+    <string name="opensourcelicense">Atvirojo kodo licencijos</string>
+    <string name="dark">Tamsi</string>
+    <string name="light">Šviesi</string>
+    <string name="mitlicence">MIT licencija</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="junit">JUnit</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
+    <string name="gnu">GNU General Public License CE</string>
+    <string name="contentDescription_FAB">Pridėti naują To Don\'t elementą</string>
+    <string name="apachelicense">Apache License 2.0</string>
+    <string name="app_name">Ko nedaryti</string>
+    <string name="LightMode">Ko nedaryti</string>
+</resources>

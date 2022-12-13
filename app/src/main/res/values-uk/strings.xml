@@ -37,4 +37,20 @@
     <string name="junit">JUnit</string>
     <string name="eclipse">Eclipse Public License 1.0</string>
     <string name="feather">Feather Icons</string>
+    <string name="light">Світлий</string>
+    <string name="toast_dark">To Don\'t тепер на темному боці.</string>
+    # Here are the non-translateable strings
+    <string name="onboarding_reverse">Обернений список справ</string>
+    <string name="onboarding_bad">Запишіть свої погані звички. Щодня, викреслюйте</string>
+    <string name="onboarding_gavein">ті, яким піддалися. А наступного</string>
+    <string name="onboarding_freshlist">ранку почніть з новим списком.</string>
+    <string name="onboarding_continue">Продовжити</string>
+    <string name="addtask">Додати задачу</string>
+    <string name="note">Нотатка</string>
+    <string name="save">Зберегти</string>
+    <string name="dark">Темний</string>
+    <string name="update">Оновити</string>
+    <string name="toast_system">To Don\'t тепер слідкує за вашою системою.</string>
+    <string name="toast_light">To Don\'t тепер на світлому боці.</string>
+    <string name="contentDescription_FAB">Додати новий пункт To Don\'t</string>
 </resources>

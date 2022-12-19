@@ -37,4 +37,20 @@
     <string name="contribute">Contribuisci</string>
     <string name="developer">Sviluppatore</string>
     <string name="apachelicense">Licenza Apache 2.0</string>
+    <string name="onboarding_reverse">La lista delle cose da fare inversa</string>
+    <string name="onboarding_bad">Annota le tue cattive abitudini. Ogni giorno, segna</string>
+    <string name="onboarding_gavein">quelle a cui hai ceduto. E la prossima</string>
+    <string name="onboarding_freshlist">mattina inizia con la nuova lista.</string>
+    <string name="onboarding_continue">Continua</string>
+    <string name="addtask">Inserisci attività</string>
+    <string name="note">Nota</string>
+    <string name="save">Salva</string>
+    <string name="dark">Scuro</string>
+    <string name="light">Chiaro</string>
+    <string name="update">Aggiorna</string>
+    <string name="toast_system">To Don\'t ora segue il tuo sistema.</string>
+    <string name="toast_light">To Don\'t ora segue il tema chiaro.</string>
+    <string name="toast_dark">To Don\'t ora segue il tema scuro.</string>
+    # Here are the non-translateable strings
+    <string name="contentDescription_FAB">Aggiungi un nuovo oggetto To Don\'t</string>
 </resources>

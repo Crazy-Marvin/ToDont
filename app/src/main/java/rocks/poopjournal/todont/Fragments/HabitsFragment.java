@@ -89,32 +89,36 @@ public class HabitsFragment extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(Helper.labels_array.size()==0){
+                    Toast.makeText(getActivity(), "Please Add a Label First",
+                            Toast.LENGTH_LONG).show();
+                }
+                else{
                 final SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
                 final String formattedDate = df.format(c);
                 final Dialog d = new Dialog(getActivity());
                 d.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 d.setContentView(R.layout.dialogbox_floatingbutton);
-                Button btndone=d.findViewById(R.id.btndone);
+                Button btndone = d.findViewById(R.id.btndone);
                 WindowManager.LayoutParams lp = d.getWindow().getAttributes();
-                lp.dimAmount=0.9f;
+                lp.dimAmount = 0.9f;
                 d.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 Window window = d.getWindow();
                 window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
                 d.getWindow().setAttributes(lp);
 
                 final Spinner spinner = d.findViewById(R.id.spinner);
-                final TextView txt=d.findViewById(R.id.txt);
-                if(Helper.labels_array.size()==0){
+                final TextView txt = d.findViewById(R.id.txt);
+                if (Helper.labels_array.size() == 0) {
                     txt.setVisibility(View.VISIBLE);
                     spinner.setVisibility(View.INVISIBLE);
-                }
-                else{
+                } else {
                     txt.setVisibility(View.INVISIBLE);
                     spinner.setVisibility(View.VISIBLE);
                 }
 
 
-                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item,Helper.labels_array);
+                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, Helper.labels_array);
                 arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spinner.setAdapter(arrayAdapter);
 
@@ -124,7 +128,7 @@ public class HabitsFragment extends Fragment {
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                         catagoryselected = adapterView.getItemAtPosition(i).toString();
 //                        if(Helper.isnightmodeon.equals("no")){
-                            ((TextView) adapterView.getChildAt(0)).setTextColor(getResources().getColor(R.color.textcolor));
+                        ((TextView) adapterView.getChildAt(0)).setTextColor(getResources().getColor(R.color.textcolor));
 //
 //                        }
 //                        else if(Helper.isnightmodeon.equals("yes")){
@@ -154,16 +158,16 @@ public class HabitsFragment extends Fragment {
 
                         } catch (SQLiteException e) {
                         }
-                        if(habit_text.equals("")){
+                        if (habit_text.equals("")) {
 
                         }
-                        db.insert_habits(Helper.habitsdata.size(),formattedDate, habit_text, detail_text, catagoryselected);
+                        db.insert_habits(Helper.habitsdata.size(), formattedDate, habit_text, detail_text, catagoryselected);
                         db.show_habits_data();
 
-                        Helper.SelectedButtonOfTodayTab=0;
-                        Intent i=new Intent(getActivity(), MainActivity.class);
+                        Helper.SelectedButtonOfTodayTab = 0;
+                        Intent i = new Intent(getActivity(), MainActivity.class);
                         startActivity(i);
-                        getActivity().overridePendingTransition(0,0);
+                        getActivity().overridePendingTransition(0, 0);
                         d.dismiss();
                     }
 
@@ -171,10 +175,9 @@ public class HabitsFragment extends Fragment {
                 spinner.setAdapter(arrayAdapter);
                 d.show();
 
-
+            }
             }
         });
-
 
 //        floatingActionButton.setOnClickListener(new View.OnClickListener() {
 //            @SuppressLint("ResourceAsColor")

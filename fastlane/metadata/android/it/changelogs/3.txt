@@ -1,0 +1,2 @@
+Piccoli miglioramenti
+Risolta configurazione fastlane

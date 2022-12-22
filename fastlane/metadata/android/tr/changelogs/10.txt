@@ -1,0 +1,1 @@
+- 🐛 Uygulama çökmelerini önlemek için kullanıcıların etiket olmadan kötü alışkanlıklar oluşturmasını önle (#187)

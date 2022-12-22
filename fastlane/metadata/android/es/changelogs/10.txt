@@ -1,0 +1,1 @@
+- 🐛 Evite que los usuarios creen malos hábitos sin una etiqueta para evitar bloqueos de aplicaciones (#187)

@@ -1,0 +1,5 @@
+- Usunięto twórcę z menu „o aplikacji”
+- Przeniesiono „sztywne” linie kodu z layoutu do strings.xml dla łatwiejszego tłumaczenia
+- Zaktualizowano Licencje Użytkownika ze wszystkimi zależnościami (dzięki im wszystkim!)
+- Dodano więcej gestów przesunięciem
+- Drobne poprawki "pod maską"

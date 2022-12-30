@@ -1,0 +1,1 @@
+- Rozwiązano problemy z lintingiem 🐛

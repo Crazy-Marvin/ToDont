@@ -1,0 +1,5 @@
+- Usprawnienia UX (doświadczeń użytkownika) 🦋
+- Poprawki drobnych bugów 🐛
+- Aktualizacje tłumaczeń 🗺️
+
+Śmiało dzielcie się opiniami przez e-mail, „open issues" na GitHubie lub pomóżcie w tłumaczeniach. 💓

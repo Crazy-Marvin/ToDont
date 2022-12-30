@@ -11,7 +11,7 @@
     <string name="labels">Etykiety</string>
     <string name="mostav">Najczęściej uniknione:</string>
     <string name="leastav">Najrzadziej uniknione:</string>
-    <string name="addnewlabel">Dodaj nową etykiete</string>
+    <string name="addnewlabel">Dodaj nową etykietę</string>
     <string name="puthabit">Na początek, dodaj zły nawyk</string>
     <string name="apachelicense">Licencja Apache 2.0</string>
     <string name="developer">Deweloper</string>
@@ -22,11 +22,35 @@
     <string name="java">Java</string>
     <string name="kotlin">Kotlin</string>
     <string name="opensourcelicense">Licencje Open source</string>
-    <string name="addlabel">Najpierw dodaj etykiete</string>
+    <string name="addlabel">Najpierw dodaj etykietę</string>
     <string name="appearance">Wygląd</string>
     <string name="onboarding_continue">Kontynuuj</string>
     <string name="save">Zapisz</string>
     <string name="addtask">Wprowadź zadanie</string>
     <string name="dark">Ciemny</string>
     <string name="light">Jasny</string>
+    <string name="junit">JUnit</string>
+    <string name="app_name">Do Niezrobienia</string>
+    <string name="jetpack">Jetpack</string>
+    <string name="followsys">Systemowy</string>
+    <string name="nobobutton">Przycisk Nobo</string>
+    <string name="contribute">Przyczyń się</string>
+    <string name="feather">Ikona pióra</string>
+    <string name="LightMode">Do Niezrobienia</string>
+    <string name="onboarding_bad">Wypisz twoje złe nawyki. Codziennie skreślaj</string>
+    <string name="onboarding_gavein">te, którym uległeś. Następny</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="gnu">Licencja GNU CE</string>
+    <string name="note">Notatka</string>
+    <string name="toast_light">Do Niezrobienia jest teraz po białej tronie mocy.</string>
+    <string name="toast_dark">Do Niezrobienia jest teraz po czarnej stronie mocy.</string>
+    # Here are the non-translateable strings
+    <string name="update">Aktualizuj</string>
+    <string name="onboarding_reverse">Lista \"do zrobienia\" na opak</string>
+    <string name="onboarding_freshlist">poranek zaczniesz z czystą kartą.</string>
+    <string name="eclipse">Licencja Eclipse Public 1.0</string>
+    <string name="toast_system">Teraz Do Niezrobienia jest zgodne z motywem systemu.</string>
+    <string name="contentDescription_FAB">Dodaj nowy przedmiot Do Niezrobienia</string>
 </resources>

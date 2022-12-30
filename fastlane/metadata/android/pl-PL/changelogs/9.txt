@@ -1,0 +1,4 @@
+- Sporo bugów rozwiązynch dzięki subeep 🐛
+- Przejście na grafiki wektorowe dla ostrzejszego wyglądu dzięki karthikayya 🎨
+- Aktualizacje zależności ⚙️
+- Aktualizacje tłumaczeń 🗺️

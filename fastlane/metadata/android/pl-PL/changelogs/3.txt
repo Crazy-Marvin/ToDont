@@ -1,0 +1,2 @@
+Małe poprawki „pod maską”
+Naprawiono wprowadzenie fastlane

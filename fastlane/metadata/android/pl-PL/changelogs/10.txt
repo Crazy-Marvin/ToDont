@@ -1,0 +1,1 @@
+- 🐛 Powstrzymuje użytkowników przed tworzeniem złych nawyków bez etykiety, by uniknąć crashy (#187)

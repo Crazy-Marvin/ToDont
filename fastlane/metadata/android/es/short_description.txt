@@ -1,1 +1,1 @@
-﻿La lista de tareas pendientes al revés.
+La lista de tareas al revés.

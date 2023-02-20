@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:dataExtractionRules="@xml/data_extraction_rules">
-        <activity android:name=".About"></activity>
+        android:fullBackupContent="@xml/backup_rules">
+        <activity android:name=".About" />
         <activity android:name=".Settings" />
         <activity android:name=".OnBoardingActivity" />
         <activity android:name=".Labels" />

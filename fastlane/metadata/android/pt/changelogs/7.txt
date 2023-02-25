@@ -1,0 +1,5 @@
+- Melhorias na experiência do utilizador 🦋
+- Pequenas correções de bugs 🐛
+- Atualizações de traduções 🗺️
+
+Sinta-se à vontade a enviar comentário por e-mail, abrir problemas no GitHub ou ajudar na tradução. 💓

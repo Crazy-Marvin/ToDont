@@ -1,2 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="labels">Etiquetas</string>
+    <string name="onboarding_bad">Anote os seus hábitos maus. Todos os dias, cruze</string>
+    <string name="onboarding_gavein">aqueles a quem cedeu. E o próximo</string>
+    <string name="onboarding_freshlist">manhã comece com a nova lista.</string>
+    <string name="log">Registo</string>
+    <string name="about">Sobre</string>
+    <string name="settings">Configurações</string>
+    <string name="mostav">Mais evitados:</string>
+    <string name="leastav">Menos evitados:</string>
+    <string name="addlabel">Por favor, adicione uma etiqueta primeiro</string>
+    <string name="addnewlabel">Adicionar nova etiqueta</string>
+    <string name="addtask">Digite a tarefa</string>
+    <string name="app_name">To Don\'t</string>
+    <string name="LightMode">To Don\'t</string>
+    <string name="onboarding_reverse">A lista inversa de afazeres</string>
+    <string name="avoided">Evitado</string>
+    <string name="done">Concluído</string>
+    <string name="habits">Hábitos</string>
+    <string name="today">Hoje</string>
+    <string name="onboarding_continue">Continuar</string>
+    <string name="note">Nota</string>
+    <string name="developer">Programador</string>
+    <string name="source">Ver fonte</string>
+    <string name="jetpack">Android Jetpack</string>
+    <string name="materialspinner">MaterialSpinner</string>
+    <string name="circleimg">CircleImageView</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="junit">JUnit</string>
+    <string name="toast_light">To Don\'t está claro agora.</string>
+    <string name="toast_dark">To Don\'t está escuro agora.</string>
+    # Here are the non-translateable strings
+    <string name="contentDescription_FAB">Adicionar novo item para não fazer</string>
+    <string name="save">Gravar</string>
+    <string name="puthabit">Para começar, abandone um mau hábito</string>
+    <string name="habitswillshowuphere">Os hábitos aparecerão aqui</string>
+    <string name="apachelicense">Licença Apache 2.0</string>
+    <string name="contribute">Contribuidor</string>
+    <string name="translate">Traduzir</string>
+    <string name="report">Informar um problema</string>
+    <string name="opensourcelicense">Licenças open source</string>
+    <string name="appearance">Aparência</string>
+    <string name="dark">Escuro</string>
+    <string name="light">Claro</string>
+    <string name="update">Atualizar</string>
+    <string name="feather">Ícones de penas</string>
+    <string name="mitlicence">Licença MIT</string>
+    <string name="followsys">Sistema</string>
+    <string name="nobobutton">NoboButton</string>
+    <string name="eclipse">Licença pública Eclipse 1.0</string>
+    <string name="kotlin">JUnit</string>
+    <string name="java">Java</string>
+    <string name="gnu">Licença Pública Geral GNU</string>
+    <string name="toast_system">To Don\'t agora segue o seu sistema.</string>
+</resources>

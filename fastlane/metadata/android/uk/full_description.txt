@@ -8,5 +8,5 @@
 
 
 Вебсторінка: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
-Перекладіть додаток Припини це: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
+Перекладіть Припини це : <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
 Джерело на GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

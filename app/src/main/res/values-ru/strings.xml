@@ -37,4 +37,5 @@
     <string name="nobobutton">NoboButton</string>
     <string name="followsys">Системная</string>
     <string name="contribute">Внести вклад</string>
+    <string name="onboarding_reverse">Список дел наоборот</string>
 </resources>

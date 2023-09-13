@@ -13,6 +13,10 @@ android {
         versionCode 30
         versionName "3.0"
 
+    androidResources {
+        generateLocaleConfig true
+      }
+        
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

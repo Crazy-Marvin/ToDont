@@ -37,4 +37,20 @@
     <string name="gnu">Lisensi Publik Umum GNU CE</string>
     <string name="feather">Ikon Bulu</string>
     <string name="mitlicence">Lisensi MIT</string>
+    <string name="save">Simpan</string>
+    <string name="contentDescription_FAB">Tambahkan item baru ke To Don\'t</string>
+    <string name="onboarding_freshlist">Pagi hari dimulai dengan daftar yang baru.</string>
+    <string name="toast_dark">To Don\'t sisi gelap.</string>
+    # Here are the non-translateable strings
+    <string name="onboarding_reverse">Daftar reverse to-do</string>
+    <string name="onboarding_bad">Catat kebiasaan buruk Anda. Setiap hari, coret</string>
+    <string name="onboarding_gavein">bagi anda yg menyerah. dan selanjutnya</string>
+    <string name="update">Perbarui</string>
+    <string name="light">Terang</string>
+    <string name="toast_light">To Don\'t sisi terang.</string>
+    <string name="onboarding_continue">Lanjutkan</string>
+    <string name="dark">Gelap</string>
+    <string name="addtask">Masukkan tugas</string>
+    <string name="note">Catatan</string>
+    <string name="toast_system">To Don\'t sekarang mengikuti sistem Anda.</string>
 </resources>

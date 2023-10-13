@@ -1,0 +1,4 @@
+- Banyak Bug Diperbaiki Berkat subeep 🐛 
+- Beralih ke Grafik Vektor Untuk Tampilan yang Lebih Tajam Berkat karthikayya 🎨 
+- Pembaruan Dependency ⚙️ 
+- Pembaruan Terjemahan 🗺️

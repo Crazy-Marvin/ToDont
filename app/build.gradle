@@ -1,10 +1,15 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion "33.0.0"
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+
+    namespace = "rocks.poopjournal.todont"
+
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId "rocks.poopjournal.todont"

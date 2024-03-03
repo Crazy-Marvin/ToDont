@@ -28,47 +28,47 @@
                 android:orientation="horizontal"
                 android:weightSum="4">
 
-                <com.ornach.nobobutton.NoboButton
+                <Button
                     android:id="@+id/day"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    app:nb_radius="10dp"
-                    app:nb_text="D"
+
+                    android:text="D"
                     android:layout_marginLeft="2dp"
                     android:layout_weight="1"
-                    app:nb_textColor="@color/textcolor"
-                    app:nb_textSize="12sp" />
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp" />
 
-                <com.ornach.nobobutton.NoboButton
+                <Button
                     android:id="@+id/week"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    app:nb_radius="10dp"
-                    app:nb_text="W"
-                    android:layout_weight="1"
-                    app:nb_textColor="@color/textcolor"
-                    app:nb_textSize="12sp" />
 
-                <com.ornach.nobobutton.NoboButton
+                    android:text="W"
+                    android:layout_weight="1"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp" />
+
+                <Button
                     android:id="@+id/month"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    app:nb_radius="10dp"
-                    app:nb_text="M"
-                    android:layout_weight="1"
-                    app:nb_textColor="@color/textcolor"
-                    app:nb_textSize="12sp" />
 
-                <com.ornach.nobobutton.NoboButton
+                    android:text="M"
+                    android:layout_weight="1"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp" />
+
+                <Button
                     android:id="@+id/year"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    app:nb_radius="10dp"
-                    app:nb_text="Y"
+
+                    android:text="Y"
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
-                    app:nb_textColor="@color/textcolor"
-                    app:nb_textSize="12sp" />
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp" />
 
             </LinearLayout>
         </LinearLayout>

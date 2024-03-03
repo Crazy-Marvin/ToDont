@@ -4,41 +4,41 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
+import androidx.databinding.DataBindingUtil
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_main.*
 import rocks.poopjournal.todont.Fragments.FragmentLog
 import rocks.poopjournal.todont.Fragments.FragmentToday
+import rocks.poopjournal.todont.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     // Database controller instance
     var db: Db_Controller? = null
-
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+//        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         // Initialize the database controller
         val fragment = FragmentToday()
         db = Db_Controller(applicationContext, "", null, 2)
 
         // Replace the current fragment with the 'FragmentToday'
         supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment, fragment.javaClass.simpleName)
-            .commit()
+            .replace(R.id.container, fragment, fragment.javaClass.simpleName).commit()
+
 
         // Set toolbar text to "Today"
-        toolbartext.setText(R.string.today)
+        binding.toolbartext.setText(R.string.today)
 
         // Make the label and settings views visible
-        label.visibility = View.VISIBLE
-        settings.visibility = View.VISIBLE
+        binding.label.visibility = View.VISIBLE
+        binding.settings.visibility = View.VISIBLE
 
         // Retrieve and apply the night mode setting from the database
         db?.getNightMode()
         // Note: The commented code below appears to have no effect; it may need further review
         // if (Helper.isnightmodeon == "no") {
-               label.setBackgroundResource(R.drawable.ic_label_light)
+        binding.label.setBackgroundResource(R.drawable.ic_label_light)
         // }
         // else if (Helper.isnightmodeon == "yes") {
         //     label.setBackgroundResource(R.drawable.ic_label_dark)
@@ -59,12 +59,13 @@ class MainActivity : AppCompatActivity() {
                             .replace(R.id.container, fragment, fragment.javaClass.simpleName)
                             .commit()
                         // Update the toolbar text
-                        toolbartext.setText(R.string.today)
+                        binding.toolbartext.setText(R.string.today)
                         // Make label and settings views visible
-                        label.visibility = View.VISIBLE
-                        settings.visibility = View.VISIBLE
+                        binding.label.visibility = View.VISIBLE
+                        binding.settings.visibility = View.VISIBLE
                         return@OnNavigationItemSelectedListener true
                     }
+
                     R.id.navigation_log -> {
                         // Switch to the 'FragmentLog' when "Log" is selected
                         val fragment = FragmentLog()
@@ -72,10 +73,10 @@ class MainActivity : AppCompatActivity() {
                             .replace(R.id.container, fragment, fragment.javaClass.simpleName)
                             .commit()
                         // Update the toolbar text
-                        toolbartext.setText(R.string.log)
+                        binding.toolbartext.setText(R.string.log)
                         // Hide the label and settings views
-                        label.visibility = View.INVISIBLE
-                        settings.visibility = View.INVISIBLE
+                        binding.label.visibility = View.INVISIBLE
+                        binding.settings.visibility = View.INVISIBLE
                         return@OnNavigationItemSelectedListener true
                     }
                 }
@@ -83,10 +84,10 @@ class MainActivity : AppCompatActivity() {
             }
 
         // Set the defined listener to the bottom navigation view
-        navigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        binding.navigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
         // Define an action when the 'label' view is clicked
-        label.setOnClickListener {
+        binding.label.setOnClickListener {
             val intent = Intent(this, Labels::class.java)
             startActivity(intent)
             finish()
@@ -103,6 +104,7 @@ class MainActivity : AppCompatActivity() {
 
     // Handle the back button press
     override fun onBackPressed() {
+        super.onBackPressed()
         finish()
     }
 }

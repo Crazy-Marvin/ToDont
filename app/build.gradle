@@ -1,47 +1,65 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+plugins {
+    id 'com.android.application'
+//    id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+//    id 'kotlin-parcelize'
+}
+
 
 android {
-    compileSdkVersion 34
-    buildToolsVersion "34.0.0"
-
-    namespace = "rocks.poopjournal.todont"
-
-    buildFeatures {
-        viewBinding = true
-    }
-
+    namespace 'rocks.poopjournal.todont'
+    compileSdk 34
     defaultConfig {
         applicationId "rocks.poopjournal.todont"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 34
-        versionCode 30
-        versionName "3.0"
+        versionCode 138
+        versionName "1.3.8"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
 
-    androidResources {
-        generateLocaleConfig true
-      }
-        
+    dataBinding {
+        enabled = true
+    }
+
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-        
     kotlinOptions {
         jvmTarget = '17'
-    }  
-        
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        buildConfig = true
+        dataBinding true
+        viewBinding true
+
+
+        // for view binding:
+        // viewBinding true
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
+    /*
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }*/
+
 }
-
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -58,7 +76,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.jaredrummler:material-spinner:1.3.1'
     implementation 'com.google.android.material:material:1.11.0'
-    implementation 'com.ornach.nobobutton:nobobutton:1.6'
+//    implementation 'com.ornach.nobobutton:nobobutton:1.5'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'

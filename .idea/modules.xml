@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/todont.iml" filepath="$PROJECT_DIR$/.idea/modules/todont.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/todont.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/todont.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/todont.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/todont.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/todont.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/todont.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/todont.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/todont.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.toDonts.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.toDonts.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/toDonts.iml" filepath="$PROJECT_DIR$/.idea/modules/toDonts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/toDonts.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/toDonts.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/toDonts.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/toDonts.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/toDonts.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/toDonts.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/toDonts.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/toDonts.app.unitTest.iml" />
     </modules>
   </component>
 </project>

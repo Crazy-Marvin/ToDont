@@ -7,11 +7,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +22,6 @@ public class About extends AppCompatActivity {
         version.setText( BuildConfig.VERSION_NAME +" Beta ");
         //tabdeeli aa gai hai
 }
-
     public void contact_codeaquaria(View view) {
         switch(view.getId()){
             case R.id.btnmail_codeaquaria:
@@ -52,7 +47,6 @@ public class About extends AppCompatActivity {
 
         }
     }
-
     public void contact_marvin(View view) {
         switch(view.getId()){
             case R.id.btnmail_crazymarvin:
@@ -169,6 +163,7 @@ public class About extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         Intent i = new Intent(About.this, Settings.class);
         finishAffinity();
         startActivity(i);

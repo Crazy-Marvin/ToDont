@@ -31,7 +31,7 @@
                 android:layout_marginRight="10dp"
                 >
 
-                <com.ornach.nobobutton.NoboButton
+                <Button
                     android:id="@+id/habits"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -39,33 +39,32 @@
                     android:layout_weight="1"
                     android:layout_marginLeft="2dp"
                     android:gravity="center"
-                    app:nb_backgroundColor="@color/bottom_sheet_background"
-                    app:nb_radius="10dp"
-                    app:nb_text="@string/habits"
-                    app:nb_textColor="@color/textcolor"
-                    app:nb_textSize="12sp"
+                   android:background="@color/bottom_sheet_background"
+                    android:text="@string/habits"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp"
                     />
 
-                <com.ornach.nobobutton.NoboButton
+                <Button
                     android:id="@+id/avoided"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    app:nb_backgroundColor="@android:color/transparent"
-                    app:nb_radius="10dp"
-                    app:nb_text="@string/avoided"
-                    app:nb_textColor="@color/textcolor"
-                    app:nb_textSize="12sp"
+                   android:background="@android:color/transparent"
+
+                    android:text="@string/avoided"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp"
                     android:layout_weight="1"/>
 
-                <com.ornach.nobobutton.NoboButton
+                <Button
                     android:id="@+id/done"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    app:nb_backgroundColor="@android:color/transparent"
-                    app:nb_radius="10dp"
-                    app:nb_text="@string/done"
-                    app:nb_textColor="@color/textcolor"
-                    app:nb_textSize="12sp"
+                   android:background="@android:color/transparent"
+
+                    android:text="@string/done"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp"
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"/>
             </LinearLayout>

@@ -44,7 +44,6 @@
         android:id="@+id/updatedetail"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_below="@id/updatehabit"
         android:hint="@string/note"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:autofillHints="" />

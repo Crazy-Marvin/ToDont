@@ -53,7 +53,8 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <!-- Avoided Counter -->
+        <!-- Avoided Counters -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -1,0 +1,9 @@
+Uusi ominaisuus: lisää kansikuva kirjoituksiin 🖼️
+Uusi ominaisuus: aloitusnäyttö-vimpain 🏡
+Käännöspäivitykset 🗺️
+Virheenkorjauksia 🤢
+Päivitetyt riippuvuudet 🔩
+Siivous 🧹
+
+Suuri kiitos kaikille avustajille ja kääntäjille, erityisesti @theftzoku. 😘
+Voit ilmoittaa ongelmista ja lähettää korjauksia osoitteessa https://github.com/Crazy-Marvin/ToDont/ tai käännöksiä osoitteessa https://hosted.weblate.org/engage/todont/. 🚀

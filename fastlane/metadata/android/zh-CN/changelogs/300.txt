@@ -1,0 +1,13 @@
+增强功能：
+- 扩展教程 🦮
+- 支持Android 15 🤖
+- 翻译更新 🗺️
+- 精细化用户体验 🎨
+
+新功能：
+- 每天多个避免项目与完成项目 🪬
+- 发送通知 🛎️
+- 本地备份与恢复 🛟
+
+非常感谢所有贡献者和翻译者。 😘 
+欢迎在 https://github.com/Crazy-Marvin/ToDont/ 上报告问题并提交修复，或者在 https://hosted.weblate.org/engage/todont/ 上提交翻译。 🚀

@@ -1,0 +1,9 @@
+新功能：为条目添加封面图像 🖼️
+新功能：主屏幕小部件 🏡
+翻译更新 🗺️
+修复漏洞 🤢
+更新依赖 🔩
+日常维护 🧹
+
+非常感谢所有贡献者和翻译者，特别感谢 @theftzoku。 😘
+欢迎在 https://github.com/Crazy-Marvin/ToDont/ 上报告问题并提交修复，或者在 https://hosted.weblate.org/engage/todont/ 上提交翻译。 🚀

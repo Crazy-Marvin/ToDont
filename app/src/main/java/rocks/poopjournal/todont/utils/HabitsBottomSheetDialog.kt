@@ -108,7 +108,7 @@ class HabitsBottomSheetDialog(
         binding.btnDecDoneCount.setOnClickListener()
         {
 
-            if (habit.countAvoided > 0) {
+            if (habit.countDone > 0) {
                 habit.countDone--
                 dbHelper.updateHabit(habit)
                 //delete the last row where status is avoided

@@ -294,9 +294,9 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
     }
 
     // DELETE OPERATIONS
-    fun deleteAlarm(id: Int): Int {
+    fun deleteAlarm(habitId: Int): Int {
         val db = writableDatabase
-        return db.delete(TABLE_ALARM, "$COLUMN_ID = ?", arrayOf(id.toString()))
+        return db.delete(TABLE_ALARM, "$COLUMN_HABIT_ID = ?", arrayOf(habitId.toString()))
     }
 
     fun deleteHabit(id: Int?): Int {

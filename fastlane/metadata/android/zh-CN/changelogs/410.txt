@@ -1,0 +1,9 @@
+新功能：为记入事项添加封面图像 🖼️
+新功能：主屏幕小部件 🏡
+更新了翻译内容 🗺️
+修复了漏洞 🤢
+更新了依赖项 🔩
+进行了常规维护 🧹
+
+非常感谢所有贡献者和翻译人员，特别感谢 @theftzoku 😘
+欢迎在 https://github.com/Crazy-Marvin/ToDont/ 上报告问题并提交修复方案，或者在 https://hosted.weblate.org/engage/todont/ 上提交翻译 🚀

@@ -82,9 +82,8 @@
         <item>Studji</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Biex Ma Ssegwix Is-Sistema Tiegħek.</string>
-    <string name="toast_light">Biex Ma Tinsabx Fuq In-Naħa Tad-Dawl Issa.</string>
-    <string name="toast_dark">Biex Ma Tinsabx Fuq In-Naħa Mudlama Issa.</string>
+    <string name="toast_system">To Don\\\'t qed juża t-tema %s issa.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

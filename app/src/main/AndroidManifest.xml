@@ -1,43 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="rocks.poopjournal.todont">
+    >
 
-
-
-    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
     <application
-        tools:replace="android:allowBackup"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:requestLegacyExternalStorage="true"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:label="@string/app_name"
         android:dataExtractionRules="@xml/data_extraction_rules"
-        tools:ignore="ExtraText"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:localeConfig="@xml/locales_config"
-        tools:targetApi="tiramisu"
-        android:fullBackupContent="@xml/backup_rules">
-        <activity android:name=".About" />
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Todon.Light"
+        tools:ignore="ExtraText"
+        tools:replace="android:allowBackup"
+        tools:targetApi="tiramisu">
+
+        <activity android:name=".About"
+            />
         <activity android:name=".Settings" />
         <activity android:name=".OnBoardingActivity" />
         <activity android:name=".LabelsActivity" />
-        <receiver android:name=".NotificationReceiver" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SplashScreenActivity" android:exported="true">
+
+        <receiver android:name=".utils.NotificationReceiver" />
+        <receiver android:name=".utils.NotificationActionReceiver" />
+
+        <activity android:name=".MainActivity"
+            />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" android:exported="true"/>
-                <category android:name="android.intent.category.LAUNCHER" android:exported="true" />
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:exported="true" />
+                <category
+                    android:name="android.intent.category.LAUNCHER"
+                    android:exported="true" />
             </intent-filter>
         </activity>
+
+
+        <receiver
+            android:name=".widgets.MyAppSmallWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widgets.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".widgets.MyAppNoButtonsWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/no_buttons_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widgets.NoButtonsWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
     </application>
 
 </manifest>

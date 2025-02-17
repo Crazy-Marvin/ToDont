@@ -3,14 +3,16 @@ package rocks.poopjournal.todont
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.util.TypedValue
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import rocks.poopjournal.todont.databinding.ActivityOnBoardingBinding
 import rocks.poopjournal.todont.utils.Constants
 import rocks.poopjournal.todont.utils.SharedPrefUtils
 import rocks.poopjournal.todont.utils.ThemeMode
+import rocks.poopjournal.todont.utils.setAppTheme
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -24,15 +26,19 @@ class OnBoardingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setAppTheme(this)
         // Use ViewBinding to inflate the layout
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //actionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.mygradient))
 
         // Change the status bar color for devices with Lollipop or higher
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            val backgroundColor = ContextCompat.getColor(this, R.color.backgroundcolor)
-            window.statusBarColor = backgroundColor
+            val typedValue = TypedValue()
+            theme.resolveAttribute(com.google.android.material.R.attr.backgroundColor, typedValue, true)
+            window.statusBarColor = typedValue.data
         }
+
 
         // Initialize SharedPrefUtils
         sharedPrefUtils = SharedPrefUtils(this)

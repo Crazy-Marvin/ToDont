@@ -82,9 +82,7 @@
         <item>Staidéar</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Leanann Do Chóras Anois.</string>
-    <string name="toast_light">Tá Sé Ar An Taobh Solais Anois.</string>
-    <string name="toast_dark">Tá Don Ar An Taobh Dorcha Anois.</string>
+    <string name="toast_system">Tá To Don\\\'t ag úsáid an téama %s anois.</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

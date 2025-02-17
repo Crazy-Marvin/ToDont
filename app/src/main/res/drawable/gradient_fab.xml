@@ -2,10 +2,9 @@
     <item>
         <shape android:shape="oval">
             <gradient
-                android:angle="45"
-                android:startColor="#f2be00"
-                android:centerColor="#f2be00"
-                android:endColor="#ed8709" />
+                android:angle="180"
+                android:endColor="?attr/colorButtonGradStart"
+                android:startColor="?attr/colorButtonGradEnd" />
             <size
                 android:width="56dp"
                 android:height="56dp" />

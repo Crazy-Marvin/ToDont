@@ -1,20 +1,33 @@
 package rocks.poopjournal.todont.utils
 
+import android.Manifest
+import android.app.Activity
 import android.app.AlarmManager
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.app.TimePickerDialog
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.Build
 import android.provider.Settings
 import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.MultiTransformation
+import com.bumptech.glide.request.RequestOptions
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import rocks.poopjournal.todont.NotificationReceiver
 import rocks.poopjournal.todont.R
-import rocks.poopjournal.todont.databinding.UpdateLayoutBottomSheetTestBinding
+import rocks.poopjournal.todont.databinding.LayoutHabitBottomSheetBinding
 import rocks.poopjournal.todont.model.Alarm
 import rocks.poopjournal.todont.model.Habit
 import rocks.poopjournal.todont.model.HabitRecord
@@ -22,6 +35,10 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
+import jp.wasabeef.glide.transformations.BlurTransformation
+import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
 
 class HabitsBottomSheetDialog(
     var context: Context, var habit: Habit,
@@ -31,7 +48,7 @@ class HabitsBottomSheetDialog(
 ) {
 
     val bottomSheet: BottomSheetDialog = BottomSheetDialog(context, R.style.BottomSheetDialogTheme)
-    var binding: UpdateLayoutBottomSheetTestBinding = UpdateLayoutBottomSheetTestBinding.inflate(
+    var binding: LayoutHabitBottomSheetBinding = LayoutHabitBottomSheetBinding.inflate(
         LayoutInflater.from(context)
     )
 
@@ -43,6 +60,7 @@ class HabitsBottomSheetDialog(
         binding.tvLabel.text = habit.label?.name
         binding.tvAvoidedCount.text = habit.countAvoided.toString()
         binding.tvDoneCount.text = habit.countDone.toString()
+        habit.coverImageUri?.let { loadImageWithBlur(it) }
 
         val alarm=dbHelper.getAlarmById(habit.id)
         alarm?.let {
@@ -59,7 +77,7 @@ class HabitsBottomSheetDialog(
                 Constants.NOTIFICATION_TIME_FORMAT,
                 calendar[Calendar.HOUR_OF_DAY],
                 calendar[Calendar.MINUTE],
-                alarm.frequency
+                freq
             )
         }
 
@@ -108,7 +126,7 @@ class HabitsBottomSheetDialog(
         binding.btnDecDoneCount.setOnClickListener()
         {
 
-            if (habit.countAvoided > 0) {
+            if (habit.countDone > 0) {
                 habit.countDone--
                 dbHelper.updateHabit(habit)
                 //delete the last row where status is avoided
@@ -118,19 +136,25 @@ class HabitsBottomSheetDialog(
             }
 
         }
-        binding.tvNotification.setOnClickListener(){
+        binding.tvNotification.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 val notificationManager =
                     context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
                 if (!notificationManager.areNotificationsEnabled()) {
-                    // Request notification permission
-                    val intent =
-                        Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
-                            .putExtra(
-                                Settings.EXTRA_APP_PACKAGE,
-                                context.packageName
-                            )
-                    context.startActivity(intent)
+                    // Request notification permission for Android 13+
+                    if (ContextCompat.checkSelfPermission(
+                            context,
+                            Manifest.permission.POST_NOTIFICATIONS
+                        ) != PackageManager.PERMISSION_GRANTED
+                    ) {
+                        ActivityCompat.requestPermissions(
+                            context as Activity, // Ensure the context is an Activity
+                            arrayOf(Manifest.permission.POST_NOTIFICATIONS),
+                            1001
+                        )
+                    } else {
+                        showTimePickerDialog()
+                    }
                 } else {
                     showTimePickerDialog()
                 }
@@ -138,8 +162,10 @@ class HabitsBottomSheetDialog(
                 showTimePickerDialog()
             }
         }
+
         binding.btnDelete.setOnClickListener(){
             habit.id?.let { it1 -> deleteAlarm(it1) }
+            habit.coverImageUri?.let { it1 -> deleteImageFromInternalStorage(it1) }
             dbHelper.deleteHabit(habit.id)
             dbHelper.deleteAllHabitRecords(habit.id)
             listener.deleted(habit,position)
@@ -172,6 +198,65 @@ class HabitsBottomSheetDialog(
         timePickerDialog.show()
     }
 
+    // Function to load image with blur effect
+    private fun loadImageWithBlur(imageUri: String) {
+        // Show both ImageViews
+        try {
+            val bitmap = readImageFromInternalStorage(imageUri)
+            if(bitmap!=null){
+                // Load blurred image into background ImageView
+                Glide.with(context)
+                    .load(bitmap)
+                    .apply(RequestOptions.bitmapTransform(BlurTransformation(25, 3))) // Adjust blur radius and sampling
+                    .into(binding.ivBlurredBackground)
+
+                // Load normal image into foreground ImageView
+                Glide.with(context)
+                    .load(bitmap)
+                    .into(binding.ivSelectedImage)
+                binding.frameSelectedImage.visibility= View.VISIBLE
+            }
+        } catch (e: FileNotFoundException) {
+            e.printStackTrace()
+            binding.frameSelectedImage.visibility= View.GONE
+        }
+
+
+    }
+
+    private fun deleteImageFromInternalStorage(uriString: String): Boolean {
+        val uri = Uri.parse(uriString)
+        return try {
+            // Convert the URI to a File object
+            val file = File(uri.path)
+            // Check if the file exists and delete it
+            if (file.exists()) {
+                file.delete()
+            } else {
+                false // File does not exist
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            false
+        }
+    }
+
+    private fun readImageFromInternalStorage(uriString: String): Bitmap? {
+        return try {
+            // Parse the URI string into a Uri object
+            val uri = Uri.parse(uriString)
+            // Open an input stream from the saved URI
+            val inputStream = FileInputStream(uri.path)
+            inputStream.use { stream ->
+                // Decode the input stream into a Bitmap
+                BitmapFactory.decodeStream(stream)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            null
+        }
+    }
+
     private fun showFrequencyDialog(calendar: Calendar, hourOfDay: Int, minute: Int) {
         // Options for repetition frequency
         val frequencies = arrayOf(
@@ -197,7 +282,7 @@ class HabitsBottomSheetDialog(
                 Constants.NOTIFICATION_TIME_FORMAT,
                 hourOfDay,
                 minute,
-                mapFreq.get(frequency)
+                frequency
             )
             binding.tvNotification.text = notificationText
 
@@ -206,7 +291,7 @@ class HabitsBottomSheetDialog(
                 habit.id,
                 calendar,
                 frequency,
-                mapFreq.get(frequency)?:""
+                mapFreq[frequency] ?:""
             )
         }
         builder.show()
@@ -221,8 +306,12 @@ class HabitsBottomSheetDialog(
         val alarmManager =
             context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
+        val delete:Boolean= mapFreq == "0";
+
+
         val intent = Intent(context, NotificationReceiver::class.java)
         intent.putExtra("task_id", habitId) // Pass task ID in intent
+        intent.putExtra("delete",delete)
         intent.putExtra(
             "task",
             habit.name
@@ -232,7 +321,7 @@ class HabitsBottomSheetDialog(
                 context,
                 it,
                 intent,
-                PendingIntent.FLAG_IMMUTABLE
+               PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
         }
 
@@ -259,7 +348,7 @@ class HabitsBottomSheetDialog(
                     pendingIntent
                 )
             } else {
-                alarmManager.setExact(
+                alarmManager.set(
                     AlarmManager.RTC_WAKEUP,
                     triggerTime,
                     pendingIntent
@@ -285,8 +374,8 @@ class HabitsBottomSheetDialog(
             context,
             habitId,
             intent,
-            PendingIntent.FLAG_UPDATE_CURRENT
-        )
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
+            )
         alarmManager.cancel(pendingIntent)
 
         // Remove alarm from the database

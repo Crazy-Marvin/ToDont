@@ -40,16 +40,7 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         onCreate(db)
     }
 
-    // CREATE OPERATIONS
-    fun insertOrUpdateAlarm(alarm: Alarm): Long {
-        val db = writableDatabase
-        val values = ContentValues().apply {
-            put(COLUMN_ALARM_TIME, alarm.alarmTime)
-            put(COLUMN_FREQUENCY, alarm.frequency)
-            put(COLUMN_HABIT_ID, alarm.habitId)
-        }
-        return db.replace(TABLE_ALARM, null, values)
-    }
+
 
     fun insertHabit(habit: Habit): Long {
         val db = writableDatabase
@@ -60,6 +51,7 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
             put(COLUMN_COUNT_AVOIDED, habit.countAvoided)
             put(COLUMN_COUNT_DONE, habit.countDone)
             put(COLUMN_LABEL_ID, habit.labelId)
+            put(COLUMN_COVER_IMAGE_URI, habit.coverImageUri)  // Add this line
         }
         var count=0L
         try {
@@ -70,47 +62,9 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         return count
     }
 
-    fun insertLabel(label: Label): Long {
-        val db = writableDatabase
-        val values = ContentValues().apply {
-            put(COLUMN_NAME, label.name)
-        }
-        return db.insert(TABLE_LABEL, null, values)
-    }
-
-    fun insertRecord(record: HabitRecord): Long {
-        val db = writableDatabase
-        val values = ContentValues().apply {
-            put(COLUMN_DATE, record.date)
-            put(COLUMN_STATUS, record.status)
-            put(COLUMN_HABIT_ID, record.habitId)
-        }
-        return db.insert(TABLE_RECORD, null, values)
-    }
-
     fun closeDatabase(){
         val db = writableDatabase
         db.close()
-    }
-
-
-    fun getLabelsCount(): Int {
-        var count = 0
-        val db = readableDatabase
-        val cursor: Cursor? = null
-        try {
-            val query = "SELECT COUNT(*) FROM $TABLE_LABEL"
-            val cursor = db.rawQuery(query, null)
-            if (cursor.moveToFirst()) {
-                count = cursor.getInt(0) // Get the count from the first column
-            }
-        } catch (e: Exception) {
-            e.printStackTrace() // Log exception if any
-        } finally {
-            cursor?.close() // Ensure cursor is closed
-            db.close()      // Ensure database is closed
-        }
-        return count
     }
 
     fun getAllHabits(): ArrayList<Habit> {
@@ -132,7 +86,7 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
                     val countAvoided = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_COUNT_AVOIDED))
                     val countDone = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_COUNT_DONE))
                     val labelId = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_LABEL_ID))
-
+                    val coverImageUri = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_COVER_IMAGE_URI))
                     // Create a habit object
                     val habitObj = Habit(
                         id = id,
@@ -141,7 +95,8 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
                         description = description,
                         countAvoided = countAvoided,
                         countDone = countDone,
-                        labelId = labelId
+                        labelId = labelId,
+                        coverImageUri = coverImageUri
                     )
 
                     // Fetch the associated label and set it
@@ -191,9 +146,6 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         return label
     }
 
-
-
-
     private fun countHabitsRelatedToLabel(labelId: Int?): Int {
         if (labelId == null) return 0 // If the label ID is null, return 0
 
@@ -210,8 +162,6 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
 
         return count
     }
-
-
 
     // READ OPERATIONS
     fun getAllAlarms(): List<Alarm> {
@@ -293,23 +243,38 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         return db.update(TABLE_HABIT, values, "$COLUMN_ID = ?", arrayOf(habit.id.toString()))
     }
 
-    // DELETE OPERATIONS
-    fun deleteAlarm(id: Int): Int {
+    fun incrementCount(habitId: Int, isAvoided: Boolean): Int {
         val db = writableDatabase
-        return db.delete(TABLE_ALARM, "$COLUMN_ID = ?", arrayOf(id.toString()))
+        val columnToUpdate = if (isAvoided) COLUMN_COUNT_AVOIDED else COLUMN_COUNT_DONE
+        val query = "UPDATE $TABLE_HABIT SET $columnToUpdate = $columnToUpdate + 1 WHERE $COLUMN_ID = ?"
+        return db.compileStatement(query).apply {
+            bindString(1, habitId.toString())
+        }.executeUpdateDelete()
     }
+
+    // DELETE OPERATIONS
+    /*    fun deleteAlarm(habitId: Int): Int {
+            val db = writableDatabase
+            return db.delete(TABLE_ALARM, "$COLUMN_HABIT_ID = ?", arrayOf(habitId.toString()))
+        }*/
+
+        fun deleteAlarm(habitId: Int): Int {
+            val db = writableDatabase
+            return db.delete(TABLE_ALARM, "$COLUMN_HABIT_ID = ?", arrayOf(habitId.toString()))
+        }
+
 
     fun deleteHabit(id: Int?): Int {
         val db = writableDatabase
         return db.delete(TABLE_HABIT, "$COLUMN_ID = ?", arrayOf(id.toString()))
     }
+
     fun deleteHabitRecordWithStatus(habitId: Int?, status: String): Int {
         val db = writableDatabase
         val selection = "$COLUMN_HABIT_ID = ? AND $COLUMN_STATUS = ?"
         val selectionArgs = arrayOf(habitId.toString(), status)
         return db.delete(TABLE_RECORD, selection, selectionArgs)
     }
-
 
     fun deleteLabel(id: Int?):Int {
         val db = writableDatabase
@@ -367,6 +332,7 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
     fun getAvoidedHabits(): ArrayList<Habit> {
         return getHabits(COLUMN_COUNT_AVOIDED)
     }
+
     fun getDoneHabits(): ArrayList<Habit> {
         return getHabits(COLUMN_COUNT_DONE)
     }
@@ -443,6 +409,40 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         return 0
     }
 
+    // CREATE OPERATIONS
+    fun insertOrUpdateAlarm(alarm: Alarm): Long {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_ALARM_TIME, alarm.alarmTime)
+            put(COLUMN_FREQUENCY, alarm.frequency)
+            put(COLUMN_HABIT_ID, alarm.habitId)
+        }
+        return db.replace(TABLE_ALARM, null, values)
+    }
+
+    fun getDatabaseFile(): File {
+        return context.getDatabasePath(DATABASE_NAME)
+    }
+
+    fun getLabelsCount(): Int {
+        var count = 0
+        val db = readableDatabase
+        val cursor: Cursor? = null
+        try {
+            val query = "SELECT COUNT(*) FROM $TABLE_LABEL"
+            val cursor = db.rawQuery(query, null)
+            if (cursor.moveToFirst()) {
+                count = cursor.getInt(0) // Get the count from the first column
+            }
+        } catch (e: Exception) {
+            e.printStackTrace() // Log exception if any
+        } finally {
+            cursor?.close() // Ensure cursor is closed
+            db.close()      // Ensure database is closed
+        }
+        return count
+    }
+
     fun getRecordsByDateAndStatus(date: String, status: String):ArrayList<String> {
         val records = ArrayList<String>()
         val db = this.readableDatabase
@@ -467,7 +467,6 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         return records
     }
 
-
     private fun getMostFrequentDataInRange(status: String, startDate: String, endDate: String): String {
         val dataList = ArrayList<String>()
         val db = this.readableDatabase
@@ -488,6 +487,7 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
 
         return mostFrequentData ?: ""
     }
+
     private fun getDataInRange(status: String, startDate: String, endDate: String): ArrayList<Habit> {
         val dataList = ArrayList<Habit>()
         val db = this.readableDatabase
@@ -514,6 +514,7 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
     fun getWeeklyDoneRecord(startDate: String, endDate: String): String {
         return getMostFrequentDataInRange(HabitStatus.DONE.value, startDate, endDate)
     }
+
     fun getWeeklyDoneRecordList(startDate: String, endDate: String):ArrayList<Habit>{
         return getDataInRange(HabitStatus.DONE.value, startDate, endDate)
     }
@@ -600,10 +601,27 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         return habitsList
     }
 
+    fun insertLabel(label: Label): Long {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_NAME, label.name)
+        }
+        return db.insert(TABLE_LABEL, null, values)
+    }
+
+    fun insertRecord(record: HabitRecord): Long {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_DATE, record.date)
+            put(COLUMN_STATUS, record.status)
+            put(COLUMN_HABIT_ID, record.habitId)
+        }
+        return db.insert(TABLE_RECORD, null, values)
+    }
 
     companion object {
         const val DATABASE_NAME = "todont.sqlite"
-        const val DATABASE_VERSION = 1
+        const val DATABASE_VERSION = 2
 
         const val TABLE_ALARM = "Alarm"
         const val TABLE_HABIT = "Habit"
@@ -614,6 +632,8 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
         const val COLUMN_ALARM_TIME = "alarm_time"
         const val COLUMN_FREQUENCY = "frequency"
         const val COLUMN_HABIT_ID = "habit_id"
+        // Add new column constant
+        const val COLUMN_COVER_IMAGE_URI = "cover_image_uri"
 
         const val COLUMN_DATE = "date"
         const val COLUMN_HABIT = "habit"
@@ -628,8 +648,11 @@ class DatabaseUtils(val context: Context) : SQLiteOpenHelper(context, DATABASE_N
 
         const val CREATE_TABLE_ALARM = "CREATE TABLE $TABLE_ALARM ($COLUMN_HABIT_ID INTEGER PRIMARY KEY, $COLUMN_ALARM_TIME INTEGER, $COLUMN_FREQUENCY TEXT)"
 
-        const val CREATE_TABLE_HABIT = "CREATE TABLE $TABLE_HABIT ($COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, $COLUMN_DATE TEXT, $COLUMN_HABIT TEXT, $COLUMN_DESCRIPTION TEXT, $COLUMN_COUNT_AVOIDED INTEGER, $COLUMN_COUNT_DONE INTEGER, $COLUMN_LABEL_ID INTEGER)"
-
+        // Update CREATE_TABLE_HABIT
+        const val CREATE_TABLE_HABIT = "CREATE TABLE $TABLE_HABIT ($COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "$COLUMN_DATE TEXT, $COLUMN_HABIT TEXT, $COLUMN_DESCRIPTION TEXT, " +
+                "$COLUMN_COUNT_AVOIDED INTEGER, $COLUMN_COUNT_DONE INTEGER, " +
+                "$COLUMN_LABEL_ID INTEGER, $COLUMN_COVER_IMAGE_URI TEXT)"
         const val CREATE_TABLE_LABEL = "CREATE TABLE $TABLE_LABEL ($COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, $COLUMN_NAME TEXT)"
 
         const val CREATE_TABLE_RECORD = "CREATE TABLE $TABLE_RECORD ($COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, $COLUMN_DATE TEXT, $COLUMN_STATUS TEXT, $COLUMN_HABIT_ID INTEGER)"

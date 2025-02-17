@@ -82,9 +82,9 @@
         <item>Studies</item>
     </string-array>
     # Toasts
-    <string name="toast_system">To Don\'t now follows your system.</string>
-    <string name="toast_light">To Don\'t is on the light side now.</string>
-    <string name="toast_dark">To Don\'t is on the dark side now.</string>
+    <string name="toast_system">To Don\'t is using the %s theme now</string>
+    <string name="ShowCaseView" translatable="false">GNU General Public License CE</string>
+    <string name="showCaseViewLink" translatable="false">https://github.com/mreram/ShowCaseView?</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

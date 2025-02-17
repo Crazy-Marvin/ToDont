@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor"
+    android:background="?attr/colorBackground"
     tools:context=".fragments.AvoidedOrDoneFragment">
 
     <LinearLayout
@@ -24,5 +24,5 @@
         android:layout_height="50dp"
         android:layout_gravity="bottom"
         android:elevation="6dp"
-        android:background="@color/backgroundcolor"/>
+        android:background="?attr/colorBackground"/>
 </FrameLayout>

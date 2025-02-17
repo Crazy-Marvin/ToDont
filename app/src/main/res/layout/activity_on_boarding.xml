@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorBackground"
     tools:context=".OnBoardingActivity">
 
     <LinearLayout
@@ -24,8 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/onboarding_reverse"
-            android:textColor="@color/textcolor"
-
+            android:textColor="?attr/colorOnBackground1"
             android:textSize="22sp"
             android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/onboarding_bad"
-            android:textColor="@color/spinr"
+            android:textColor="?attr/colorOnBackground2"
             android:textSize="14sp" />
 
         <TextView
@@ -43,7 +43,7 @@
             android:layout_gravity="center"
 
             android:text="@string/onboarding_gavein"
-            android:textColor="@color/spinr"
+            android:textColor="?attr/colorOnBackground2"
             android:textSize="14sp" />
 
         <TextView
@@ -51,19 +51,21 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/onboarding_freshlist"
-            android:textColor="@color/spinr"
+            android:textColor="?attr/colorOnBackground2"
             android:textSize="14sp" />
     </LinearLayout>
 
 
     <Button
         android:id="@+id/btncontinue"
+        style="@style/Widget.Todont.GradButton"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="30dp"
         android:text="@string/onboarding_continue"
-        android:layout_centerInParent="true"
-        android:background="@drawable/continuebutton"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        app:backgroundTint="@color/light_button_grad_end"
+        android:textColor="?attr/colorOnBackground1" />
 </RelativeLayout>

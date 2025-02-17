@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor">
+    android:background="?attr/colorBackground">
 
 
     <LinearLayout
@@ -13,58 +13,58 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/mygradient"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_background"
+            android:padding="8dp">
+
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="45dp"
-                android:background="@drawable/myinnergradient"
+                android:layout_height="50dp"
+                android:background="@drawable/grad_tab_back"
                 android:gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:orientation="horizontal"
+                android:padding="3dp"
                 android:weightSum="4">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/day"
+                    style="@style/Widget.Todont.Button"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
                     android:text="@string/d"
-                    android:layout_marginLeft="2dp"
-                    android:layout_weight="1"
-                    android:textColor="@color/textcolor"
+                    android:textColor="?attr/colorOnTopBarContainer1"
                     android:textSize="12sp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/week"
+                    style="@style/Widget.Todont.Button"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
                     android:text="@string/w"
-                    android:layout_weight="1"
-                    android:textColor="@color/textcolor"
+                    android:textColor="?attr/colorOnTopBarContainer1"
                     android:textSize="12sp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/month"
+                    style="@style/Widget.Todont.Button"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:text="@string/m"
+                    android:layout_height="46dp"
                     android:layout_weight="1"
-                    android:textColor="@color/textcolor"
+                    android:text="@string/m"
+                    android:textColor="?attr/colorOnTopBarContainer1"
                     android:textSize="12sp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/year"
+                    style="@style/Widget.Todont.Button"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
-
-                    android:text="@string/y"
-                    android:layout_marginRight="2dp"
+                    android:layout_height="46dp"
                     android:layout_weight="1"
-                    android:textColor="@color/textcolor"
+                    android:text="@string/y"
+                    android:textColor="?attr/colorOnTopBarContainer1"
                     android:textSize="12sp" />
 
             </LinearLayout>
@@ -72,60 +72,58 @@
 
 
         <FrameLayout
-                android:id="@+id/containerLogFragment"
+            android:id="@+id/containerLogFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="43dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:background="@drawable/myinnergradientlogs"
                 android:gravity="center"
-                android:layout_gravity="center"
-                android:weightSum="3"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:weightSum="3">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/dhabits"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-
-                    android:layout_marginLeft="2dp"
-                    android:background="@drawable/continuebutton2"
+                    style="@style/Widget.Todont.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
                     android:text="@string/habits"
-                    android:layout_weight="1"
-                    android:textColor="@color/textcolor"
+                    android:textColor="?attr/colorOnBackgroundContainer1"
                     android:textSize="12sp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/davoided"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/continuebuttontrans"
-                    android:text="@string/avoided"
+                    style="@style/Widget.Todont.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
                     android:layout_weight="1"
-                    android:textColor="@color/textcolor"
+                    android:text="@string/avoided"
+                    android:textColor="?attr/colorOnBackgroundContainer1"
                     android:textSize="12sp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/ddone"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/continuebuttontrans"
-
-                    android:text="@string/done"
-                    android:layout_marginRight="2dp"
+                    style="@style/Widget.Todont.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_weight="1"
-                    android:textColor="@color/textcolor"
+                    android:text="@string/done"
+                    android:textColor="?attr/colorOnBackgroundContainer1"
                     android:textSize="12sp" />
 
 
@@ -135,7 +133,7 @@
         <FrameLayout
             android:id="@+id/containerLogDailyFragment"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
     </LinearLayout>
 </FrameLayout>

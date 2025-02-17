@@ -81,9 +81,8 @@
         <item>Изследвания</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Да Не Се Следва Сега Следва Вашата Система.</string>
-    <string name="toast_light">Да Не Е На Светлинната Страна Сега.</string>
-    <string name="toast_dark">Да Не Се Замисля Сега Е На Тъмната Страна.</string>
+    <string name="toast_system">To Don\\\'t вече използва темата %s.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

@@ -82,9 +82,7 @@
         <item>Вивчення</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Щоб Тепер Не Слідкувати За Вашою Системою.</string>
-    <string name="toast_light">Щоб Зараз Не Було На Легкій Стороні.</string>
-    <string name="toast_dark">Щоб Зараз Не Було На Темній Стороні.</string>
+    <string name="toast_system">To Don\\\'t зараз використовує тему %s.</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

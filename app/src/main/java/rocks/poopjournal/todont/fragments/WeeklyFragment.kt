@@ -6,10 +6,12 @@ import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.IntegerRes
 import androidx.fragment.app.Fragment
@@ -37,8 +39,8 @@ class WeeklyFragment : Fragment() {
     private var mostAvoidedTextView: TextView? = null
     private var leastAvoidedTextView: TextView? = null
     private var dateRangeTextView: TextView? = null
-    private var previousButton: Button? = null
-    private var nextButton: Button? = null
+    private var previousButton: ImageView? = null
+    private var nextButton: ImageView? = null
     private var pieChart: PieChart? = null
 
     private var startDate: String = ""
@@ -177,14 +179,20 @@ class WeeklyFragment : Fragment() {
                 ),
                 ""
             ).apply {
-                setColors(Color.parseColor("#FFAF01"), Color.parseColor("#26272c"))
+                val lightSurface=TypedValue()
+                requireContext().theme.resolveAttribute(R.attr.colorOnBackground3,lightSurface,true)
+                val primaryColor=TypedValue()
+                requireContext().theme.resolveAttribute(R.attr.colorAccent,primaryColor,true)
+                setColors(primaryColor.data, lightSurface.data)
                 valueTextColor = Color.WHITE
             })
 
             legend.isEnabled = false
             description = Description().apply { text = "" }
             holeRadius = 50f
-            setHoleColor(resources.getColor(R.color.backgroundcolor, null))
+            val typedValue = TypedValue()
+            requireContext().theme.resolveAttribute(R.attr.colorBackground, typedValue, true)
+            setHoleColor(typedValue.data)
             transparentCircleRadius = 50f
             animateXY(1000, 1000)
         }

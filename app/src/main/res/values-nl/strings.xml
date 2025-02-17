@@ -81,9 +81,8 @@
         <item>Bestuderen</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Om Nu Niet Uw Systeem Te Volgen.</string>
-    <string name="toast_light">Om Niet Aan De Lichte Kant Te Staan.</string>
-    <string name="toast_dark">Om Niet Aan De Donkere Kant Te Zijn.</string>
+    <string name="toast_system">To Don\\\'t gebruikt nu het %s-thema..</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

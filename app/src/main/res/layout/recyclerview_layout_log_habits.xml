@@ -2,57 +2,75 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="70dp"
     android:layout_gravity="center"
-    android:background="@color/backgroundcolor">
+    android:background="?attr/colorBackground"
+    android:orientation="vertical"
+    android:elevation="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:orientation="horizontal">
+        android:layout_margin="8dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:weightSum="3">
 
-        <Button
+        <ImageView
             android:id="@+id/habitsbutton"
-            android:layout_width="35dp"
+            android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_gravity="top"
-            android:layout_marginTop="5dp"
-            android:layout_weight="0" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.36" />
 
         <LinearLayout
             android:id="@+id/llRootView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight=".34"
             android:orientation="vertical">
-
 
             <TextView
                 android:id="@+id/tvHabitName"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
                 android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="Text my ex"
                 android:textAlignment="textStart"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnBackground1"
                 android:textSize="16sp"
                 tools:ignore="RtlCompat" />
 
             <TextView
-                android:id="@+id/labelOfHabit"
+                android:id="@+id/tvLabelName"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:layout_marginLeft="15dp"
-                android:textColor="@android:color/darker_gray"
+                android:layout_gravity="center_vertical"
+                android:text="Social"
+                android:textColor="?attr/colorOnBackground2"
                 android:textSize="12sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/bottom_sheet_background"
-
-                />
         </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvAvoidedCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.3"
+            android:text="0"
+            android:textColor="?attr/colorOnBackground1" />
+
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:background="?attr/colorOnBackground3" />
 
 </LinearLayout>

@@ -82,9 +82,8 @@
         <item>Izlamoq</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Endi Tizimingizga Ergashishni Bekor Qiling.</string>
-    <string name="toast_light">Endi Yorug\'Lik Yonida Emas.</string>
-    <string name="toast_dark">Endi Qorong\'U Tomonda Emas.</string>
+    <string name="toast_system">To Don\\\'t hozir %s mavzusidan foydalanmoqda..</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

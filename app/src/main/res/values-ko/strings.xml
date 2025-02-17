@@ -82,9 +82,8 @@
         <item>연구</item>
     </string-array>
     # Toasts
-    <string name="toast_system">이제 시스템을 따르지 마십시오.</string>
-    <string name="toast_light">지금은 가벼운쪽에 있습니다.</string>
-    <string name="toast_dark">지금은 어두운면에 있습니다.</string>
+    <string name="toast_system">To Don\\\'t은(는) 이제 %s 테마를 사용하고 있습니다.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

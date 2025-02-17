@@ -29,7 +29,7 @@ class HabitsLogAdapter(
         val habit = habits[position]
         with(holder.binding){
             tvHabitName.text=habit.name
-            labelOfHabit.text=habit.label?.name
+            tvLabelName.text=habit.label?.name
             llRootView.setOnClickListener{
                 val bottomSheet=HabitsBottomSheetDialog(
                     context,

@@ -12,4 +12,31 @@
             <enum name="strokeRipple" value="1"/>
         </attr>
     </declare-styleable>
+    <declare-styleable name="customTheme">
+        <attr name="colorBackground" format="color|reference" />
+        <attr name="colorOnBackground1" format="color|reference" />
+        <attr name="colorOnBackground2" format="color|reference" />
+        <attr name="colorOnBackground3" format="color|reference" />
+        <attr name="colorBackgroundContainer" format="color|reference" />
+        <attr name="colorOnBackgroundContainer1" format="color|reference" />
+        <attr name="colorOnBackgroundContainer2" format="color|reference" />
+        <attr name="colorSurface" format="color|reference" />
+        <attr name="colorOnSurface1" format="color|reference" />
+        <attr name="colorOnSurface2" format="color|reference" />
+        <attr name="colorOnSurface3" format="color|reference" />
+        <attr name="colorAccent" format="color|reference" />
+        <attr name="colorOnAccent" format="color|reference" />
+        <attr name="colorTopBarGradStart" format="color|reference" />
+        <attr name="colorTopBarGradEnd" format="color|reference" />
+        <attr name="colorOnTopBar" format="color|reference" />
+        <attr name="colorTopBarContainer" format="color|reference" />
+        <attr name="colorOnTopBarContainer1" format="color|reference" />
+        <attr name="colorOnTopBarContainer2" format="color|reference" />
+        <attr name="colorButtonGradStart" format="color|reference" />
+        <attr name="colorButtonGradEnd" format="color|reference" />
+        <attr name="colorOnButton" format="color|reference" />
+        <attr name="colorTopBarContainerGradStart" format="reference|color"/>
+        <attr name="colorTopBarContainerGradEnd" format="reference|color"/>
+        <attr name="transparent" format="reference|color"/>
+    </declare-styleable>
 </resources>

@@ -81,9 +81,8 @@
     </string-array>
 
     <!-- Toasts -->
-    <string name="toast_system">To Don\'t suit maintenant votre système.</string>
-    <string name="toast_light">To Don\'t est maintenant en mode clair.</string>
-    <string name="toast_dark">To Don\'t est maintenant en mode sombre.</string>
+    <string name="toast_system">To Don\\\'t utilise maintenant le thème %s.</string>
+
 
     <!-- Here are the non-translateable strings -->
 

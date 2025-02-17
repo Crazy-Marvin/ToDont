@@ -2,10 +2,12 @@ package rocks.poopjournal.todont.fragments
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.IntegerRes
 import androidx.fragment.app.Fragment
@@ -34,8 +36,8 @@ class MonthlyFragment : Fragment() {
     private lateinit var mostAvoidedText: TextView
     private lateinit var leastAvoidedText: TextView
     private lateinit var dateRangeText: TextView
-    private lateinit var btnBefore: Button
-    private lateinit var btnAfter: Button
+    private lateinit var btnBefore: ImageView
+    private lateinit var btnAfter: ImageView
 
     private var currentMonth: String = ""
     private var habitsSize: Double = 0.0
@@ -159,10 +161,11 @@ class MonthlyFragment : Fragment() {
         )
 
         val pieDataSet = PieDataSet(pieEntries, "").apply {
-            setColors(
-                Color.parseColor("#FFAF01"),
-                Color.parseColor("#26272c")
-            )
+            val lightSurface=TypedValue()
+            requireContext().theme.resolveAttribute(R.attr.colorOnBackground3,lightSurface,true)
+            val primaryColor=TypedValue()
+            requireContext().theme.resolveAttribute(R.attr.colorAccent,primaryColor,true)
+            setColors(primaryColor.data, lightSurface.data)
             valueTextColor = Color.WHITE
         }
 
@@ -174,7 +177,9 @@ class MonthlyFragment : Fragment() {
             legend.isEnabled = false
             description = Description().apply { text = "" }
             holeRadius = 50f
-            setHoleColor(requireContext().getColor(R.color.backgroundcolor))
+            val typedValue = TypedValue()
+            requireContext().theme.resolveAttribute(R.attr.colorBackground, typedValue, true)
+            setHoleColor(typedValue.data)
             transparentCircleRadius = 50f
             animateXY(1000, 1000)
         }

@@ -4,15 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:layout_gravity="center"
-    android:layout_marginLeft="3dp"
-    android:layout_marginRight="3dp"
     android:orientation="vertical"
-    android:background="@color/backgroundcolor">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_gravity="center"
+        android:padding="8dp"
         android:layout_weight="2"
         android:gravity="center"
         android:orientation="horizontal"
@@ -23,7 +22,8 @@
             android:id="@+id/llRootView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_weight=".6"
             android:orientation="vertical">
 
@@ -31,10 +31,10 @@
                 android:id="@+id/tvHabitName"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
                 android:gravity="center"
+                android:text="Text my Ex"
                 android:textAlignment="textStart"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnBackground1"
                 android:textSize="16sp"
                 tools:ignore="RtlCompat" />
 
@@ -42,25 +42,17 @@
                 android:id="@+id/tvLabelOfHabit"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:layout_marginLeft="15dp"
-                android:textColor="@android:color/darker_gray"
+                android:text="Social"
+                android:textColor="?attr/colorOnBackground2"
                 android:textSize="12sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/bottom_sheet_background"
-                android:visibility="gone"
-
-                />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/viewDoneOrAvoided"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_gravity="top|center"
-            android:layout_marginRight="2dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
             android:layout_weight="1.4"
             android:background="@drawable/habitlogcheck"
             android:gravity="center"
@@ -68,6 +60,7 @@
             android:weightSum="2">
 
             <LinearLayout
+                android:id="@+id/btnAddToAvoided"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -76,13 +69,12 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
-                <Button
-                    android:id="@+id/btnAddToAvoided"
+                <ImageButton
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:layout_marginLeft="2dp"
-
-                    android:layout_marginRight="2dp" />
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/_tick"
+                    android:layout_marginEnd="2dp" />
 
                 <TextView
                     android:id="@+id/tvAvoided"
@@ -91,7 +83,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/textcolor"
+                     android:textColor="?attr/colorOnBackground1"
                     android:textSize="14sp">
 
                 </TextView>
@@ -101,23 +93,24 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="#9195A1">
+                android:background="?attr/colorOnBackground3">
 
             </View>
 
             <LinearLayout
+                android:id="@+id/btnAddToDone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <Button
-                    android:id="@+id/btnAddToDone"
+                <ImageButton
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"
+                    android:background="@drawable/_cross"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_weight="0" />
 
                 <TextView
@@ -127,7 +120,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/textcolor"
+                     android:textColor="?attr/colorOnBackground1"
                     android:textSize="14sp">
 
                 </TextView>
@@ -141,8 +134,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/bottom_sheet_background"
-        android:layout_margin="5dp"
-
+        android:layout_marginStart="16dp"
+        android:background="?attr/colorOnBackground3"
         />
 </LinearLayout>

@@ -6,7 +6,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/backgroundcolor"
+        android:background="?attr/colorBackground"
         tools:context=".fragments.DailyFragment">
 
         <LinearLayout
@@ -26,7 +26,7 @@
                     android:layout_marginTop="0dp"
                     android:orientation="horizontal">
 
-                    <Button
+                    <ImageView
                         android:id="@+id/before"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
@@ -39,10 +39,12 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="November 24,2020"
                         android:textAlignment="center"
-                        android:textColor="@color/textcolor" />
+                        android:textColor="?attr/colorOnBackground1" />
 
-                    <Button
+                    <ImageView
                         android:id="@+id/after"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
@@ -54,35 +56,49 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/innerfragmentsColor2" />
+                    android:background="?attr/colorOnBackground3" />
             </LinearLayout>
 
-            <com.github.mikephil.charting.charts.PieChart
-                android:id="@+id/pieChart"
-                android:layout_width="210dp"
-                android:layout_height="210dp"
-                android:layout_gravity="center"
-
-                />
-
-            <TextView
-                android:id="@+id/percentage"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:textColor="@color/textcolor"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChart"
+                        android:layout_width="210dp"
+                        android:layout_height="210dp"
+                        android:layout_gravity="center"
 
-            <TextView
-                android:id="@+id/progressText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:textColor="@color/textcolor"
-                android:textSize="16sp" />
+                        />
+
+                    <TextView
+                        android:id="@+id/percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="75% avoided"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnBackground1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/progressText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="3 of 4 habits avoided"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnBackground2"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
     </FrameLayout>

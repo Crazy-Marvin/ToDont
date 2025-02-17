@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor">
+    android:background="?attr/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_marginTop="0dp"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageView
                     android:id="@+id/before"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -37,7 +37,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textAlignment="center"
-                    android:textColor="@color/textcolor" />
+                     android:textColor="?attr/colorOnBackground1" />
                 <TextView
                     android:id="@+id/year"
                     android:layout_width="125dp"
@@ -45,8 +45,8 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textAlignment="center"
-                    android:textColor="@color/textcolor" />
-                <Button
+                     android:textColor="?attr/colorOnBackground1" />
+                <ImageView
                     android:id="@+id/after"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -58,82 +58,90 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/spinnercolor" />
+                android:background="?attr/colorOnBackground3" />
         </LinearLayout>
 
-        <com.github.mikephil.charting.charts.PieChart
-            android:id="@+id/pieChart"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:layout_gravity="center"
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <com.github.mikephil.charting.charts.PieChart
+                   android:id="@+id/pieChart"
+                   android:layout_width="220dp"
+                   android:layout_height="220dp"
+                   android:layout_gravity="center"
+                   />
 
-            />
+               <TextView
+                   android:id="@+id/daterange"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:gravity="center"
+                   android:textAlignment="center"
+                   android:textColor="?attr/colorOnBackground1"
+                   android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/daterange"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@color/textcolor"
-            android:textSize="16sp" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:orientation="horizontal"
+                   >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp"
+                       android:text="@string/mostav"
+                       android:textColor="?attr/colorOnBackground1"
+                       android:textSize="16sp"
+                       android:layout_marginStart="15dp"
+                       android:layout_alignParentStart="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="@string/mostav"
-                android:textColor="@color/textcolor"
-                android:textSize="16sp"
-                android:layout_marginLeft="15dp"
-                android:layout_alignParentStart="true" />
+                   <TextView
+                       android:id="@+id/mostavoided"
+                       android:layout_width="200dp"
+                       android:layout_height="30dp"
+                       android:textAlignment="textEnd"
+                       android:textColor="?attr/colorOnBackground2"
+                       android:textSize="16sp"
+                       android:layout_marginEnd="5dp"
+                       tools:ignore="RtlCompat"
+                       android:maxLength="25"
+                       android:layout_alignParentRight="true" />
+               </LinearLayout>
 
-            <TextView
-                android:id="@+id/mostavoided"
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:textAlignment="textEnd"
-                android:textColor="@color/textcolor"
-                android:textSize="16sp"
-                android:layout_marginRight="5dp"
-                tools:ignore="RtlCompat"
-                android:maxLength="25"
-                android:layout_alignParentRight="true" />
-        </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:orientation="horizontal"
+                   >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-           >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp"
+                       android:text="@string/leastav"
+                       android:textColor="?attr/colorOnBackground1"
+                       android:textSize="16sp"
+                       android:layout_marginStart="15dp"
+                       android:layout_alignParentStart="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="@string/leastav"
-                android:textColor="@color/textcolor"
-                android:textSize="16sp"
-                android:layout_marginLeft="15dp"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:id="@+id/leastavoided"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="5dp"
-                android:textAlignment="textEnd"
-                android:textColor="@color/textcolor"
-                android:textSize="16sp"
-                android:maxLength="25"
-                tools:ignore="RtlCompat" />
-        </LinearLayout>
+                   <TextView
+                       android:id="@+id/leastavoided"
+                       android:layout_width="200dp"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginEnd="5dp"
+                       android:textAlignment="textEnd"
+                       android:textColor="?attr/colorOnBackground2"
+                       android:textSize="16sp"
+                       android:maxLength="25"
+                       tools:ignore="RtlCompat" />
+               </LinearLayout>
+           </LinearLayout>
+       </ScrollView>
     </LinearLayout>
 </FrameLayout>

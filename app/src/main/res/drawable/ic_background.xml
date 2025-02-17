@@ -13,8 +13,8 @@
           android:endX="54"
           android:endY="108"
           android:type="linear">
-        <item android:offset="0" android:color="#FFFFD500"/>
-        <item android:offset="1" android:color="#FFFFAA00"/>
+        <item android:offset="0" android:color="@color/dark_button_grad_start"/>
+        <item android:offset="1" android:color="@color/dark_button_grad_end"/>
       </gradient>
     </aapt:attr>
   </path>
@@ -22,5 +22,5 @@
       android:pathData="M29,51L45,67L74,38"
       android:strokeWidth="8"
       android:fillColor="#00000000"
-      android:strokeColor="#ff7701"/>
+      android:strokeColor="?attr/colorAccent"/>
 </vector>

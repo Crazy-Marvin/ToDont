@@ -82,9 +82,8 @@
         <item>კვლევები</item>
     </string-array>
     # Toasts
-    <string name="toast_system">ახლა არ მიჰყვება თქვენს სისტემას.</string>
-    <string name="toast_light">რომ არ იყოს ახლა სინათლის მხარეზე.</string>
-    <string name="toast_dark">რომ არ იყოს ახლა ბნელ მხარეზე.</string>
+    <string name="toast_system">To Don\\\'t ახლა იყენებს %s თემას.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

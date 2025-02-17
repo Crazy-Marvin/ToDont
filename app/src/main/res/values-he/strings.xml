@@ -82,9 +82,8 @@
         <item>מחקרים</item>
     </string-array>
     # Toasts
-    <string name="toast_system">כדי לא לעקוב אחר המערכת שלך.</string>
-    <string name="toast_light">לא נמצא עכשיו בצד הקל.</string>
-    <string name="toast_dark">לא נמצא עכשיו בצד האפל.</string>
+    <string name="toast_system">‏To Don\\\'t משתמש כעת בערכת הנושא %s.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

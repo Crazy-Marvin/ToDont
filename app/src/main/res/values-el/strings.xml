@@ -82,9 +82,8 @@
         <item>Σπουδές</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Για Να Μην Ακολουθήσετε Τώρα Το Σύστημά Σας.</string>
-    <string name="toast_light">Για Να Μην Είναι Τώρα Στην Ελαφριά Πλευρά.</string>
-    <string name="toast_dark">Για Να Μην Είναι Τώρα Στη Σκοτεινή Πλευρά.</string>
+    <string name="toast_system">Το To Don\\\'t χρησιμοποιεί τώρα το θέμα %s.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

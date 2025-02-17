@@ -2,6 +2,10 @@ package rocks.poopjournal.todont.utils
 
 import android.content.Context
 import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatDelegate
+import rocks.poopjournal.todont.R
+import rocks.poopjournal.todont.utils.SharedPrefUtils.Companion.KEY_NIGHT_MODE
+import rocks.poopjournal.todont.utils.SharedPrefUtils.Companion.PREF_NAME
 
 class SharedPrefUtils(private val context: Context) {
 
@@ -58,7 +62,6 @@ class SharedPrefUtils(private val context: Context) {
     fun putLong(key: String, value: Long) {
         sharedPreferences.edit().putLong(key, value).apply()
     }
-
     fun getThemeMode():String{
         return sharedPreferences.getString(KEY_NIGHT_MODE,"1").toString()
     }
@@ -76,5 +79,56 @@ class SharedPrefUtils(private val context: Context) {
         const val KEY_APPEAR_VIEW: String = "APPEAR_VIEW"
         const val KEY_FIRST_TIME = "FirstTime"
         const val KEY_NIGHT_MODE = "NightMode"
+    }
+}
+
+fun Context.getAppTheme():String{
+     val sharedPreferences: SharedPreferences =
+        this.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+    return sharedPreferences.getString(KEY_NIGHT_MODE,"1").toString()
+}
+
+ fun setAppTheme(context:Context) {
+    // Usage in when block
+    when (context.getAppTheme()) {
+        ThemeMode.FOLLOW_SYS.value -> {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+        }
+
+        ThemeMode.LIGHT_MODE.value-> {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            context.setTheme(R.style.Theme_Todon_Light)
+        }
+
+        ThemeMode.DARK_MODE.value -> {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            context.setTheme(R.style.Theme_Todon_Dark)
+
+        }
+
+        ThemeMode.DRACULA.value -> {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            context.setTheme(R.style.Theme_Todon_Dracula)
+        }
+        ThemeMode.DRACULA_PRO.value ->{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            context.setTheme(R.style.Theme_Todon_Dracula_Pro)
+        }
+        ThemeMode.DRACULA_PRO_ALUCARD.value ->{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            context.setTheme(R.style.Theme_Todon_Dracula_Alucard)
+        }
+        ThemeMode.DRACULA_PRO_BUFFY.value ->{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            context.setTheme(R.style.Theme_Todon_DraculaBlade_Buffy)
+        }
+        ThemeMode.DRACULA_PRO_BLADE.value ->{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            context.setTheme(R.style.Theme_Todon_DraculaBlade)
+        }
+        else ->{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+        }
+
     }
 }

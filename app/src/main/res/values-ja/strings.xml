@@ -82,9 +82,8 @@
         <item>研究</item>
     </string-array>
     # Toasts
-    <string name="toast_system">これでシステムに従うことができません。</string>
-    <string name="toast_light">今は明るい側にありません。</string>
-    <string name="toast_dark">今は暗い側にいない。</string>
+    <string name="toast_system">To Don\\\'t は現在 %s テーマを使用しています。</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

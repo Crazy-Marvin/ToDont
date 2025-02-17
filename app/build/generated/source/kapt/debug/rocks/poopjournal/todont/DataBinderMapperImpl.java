@@ -16,17 +16,21 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import rocks.poopjournal.todont.databinding.ActivityMainBindingImpl;
+import rocks.poopjournal.todont.databinding.ActivitySplashScreenBindingImpl;
 import rocks.poopjournal.todont.databinding.FragmentDailyBindingImpl;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYMAIN = 1;
 
-  private static final int LAYOUT_FRAGMENTDAILY = 2;
+  private static final int LAYOUT_ACTIVITYSPLASHSCREEN = 2;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
+  private static final int LAYOUT_FRAGMENTDAILY = 3;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(rocks.poopjournal.todont.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(rocks.poopjournal.todont.R.layout.activity_splash__screen, LAYOUT_ACTIVITYSPLASHSCREEN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(rocks.poopjournal.todont.R.layout.fragment_daily, LAYOUT_FRAGMENTDAILY);
   }
 
@@ -44,6 +48,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityMainBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYSPLASHSCREEN: {
+          if ("layout/activity_splash__screen_0".equals(tag)) {
+            return new ActivitySplashScreenBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_splash__screen is invalid. Received: " + tag);
         }
         case  LAYOUT_FRAGMENTDAILY: {
           if ("layout/fragment_daily_0".equals(tag)) {
@@ -104,10 +114,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
 
     static {
       sKeys.put("layout/activity_main_0", rocks.poopjournal.todont.R.layout.activity_main);
+      sKeys.put("layout/activity_splash__screen_0", rocks.poopjournal.todont.R.layout.activity_splash__screen);
       sKeys.put("layout/fragment_daily_0", rocks.poopjournal.todont.R.layout.fragment_daily);
     }
   }

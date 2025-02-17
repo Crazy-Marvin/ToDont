@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:clipChildren="true"
+    android:background="@drawable/bottom_sheet"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/frameSelectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Background ImageView (Blurred) -->
+        <ImageView
+            android:id="@+id/ivBlurredBackground"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+
+        <!-- Foreground ImageView (Normal) -->
+        <ImageView
+            android:id="@+id/ivSelectedImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter" />
+        "/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvHabitName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameSelectedImage"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:layout_toStartOf="@+id/iconButtons"
+        android:paddingLeft="10dp"
+        android:text="Text my ex"
+        android:textColor="?attr/colorOnSurface1"
+        android:textSize="15sp" />
+
+    <!-- Icon buttons (Tag and Delete) -->
+    <LinearLayout
+        android:id="@+id/iconButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvHabitName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <!-- Tag Icon -->
+
+        <!-- Delete Icon -->
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/trash" />
+    </LinearLayout>
+
+    <!-- Avoided / Done Counters -->
+    <LinearLayout
+        android:id="@+id/counterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHabitName"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Avoided Counter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/avoided"
+                android:textColor="?attr/colorOnSurface2"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDecAvoidedCount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:text="-"
+                    android:textColor="?attr/colorOnSurface" />
+
+                <TextView
+                    android:id="@+id/tvAvoidedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="0"
+                    android:textColor="?attr/colorOnSurface1"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnIncrAvoidedCount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:text="+"
+                    android:textColor="?attr/colorOnSurface" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Vertical Divider Line -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?attr/colorSurfaceVariant" />
+
+        <!-- Done Counter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/done"
+                android:textColor="?attr/colorOnSurface2"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDecDoneCount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:text="-"
+                    android:textColor="?attr/colorOnSurface" />
+
+                <TextView
+                    android:id="@+id/tvDoneCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:text="0"
+                    android:textColor="?attr/colorOnSurface1"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnIncDoneCount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:text="+"
+                    android:textColor="?attr/colorOnSurface" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Placeholder Text (Lorem ipsum) -->
+    <TextView
+        android:id="@+id/tvHabitDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/counterLayout"
+        android:layout_margin="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu libero, congue id rhoncus vel, ultricies ac diam."
+        android:textColor="?attr/colorOnSurface1"
+        android:textSize="14sp" />
+
+    <!-- Social Button -->
+    <ImageButton
+        android:id="@+id/btnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cvLabel"
+        android:layout_alignBottom="@id/cvLabel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/frame__6_" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHabitDescription"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/btnLabel"
+        app:cardBackgroundColor="#1fff6701"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Tag"
+            android:textColor="?attr/colorAccent"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnNotification"
+        android:layout_alignBottom="@id/btnNotification"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/btnLabel"
+        android:gravity="center"
+        android:text="@string/add_daily_notification"
+        android:textColor="?attr/colorOnSurface1" />
+
+    <ImageButton
+        android:id="@+id/btnNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvLabel"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bell" />
+
+</RelativeLayout>

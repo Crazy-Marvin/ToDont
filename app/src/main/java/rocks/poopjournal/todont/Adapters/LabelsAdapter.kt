@@ -24,7 +24,6 @@ class LabelsAdapter(var context: Context, var dbHelper: DatabaseUtils, var label
         with(holder.binding) {
             tvLabel.text = label.name
             tvSum.text = label.habitCount.toString() + " " + context.resources.getString(R.string.habits)
-            btnLabel.setBackgroundResource(R.drawable.ic_label_light_labels)
         }
     }
 

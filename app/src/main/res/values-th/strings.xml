@@ -82,9 +82,8 @@
         <item>การศึกษา</item>
     </string-array>
     # Toasts
-    <string name="toast_system">หากต้องการไม่ติดตามระบบของคุณ</string>
-    <string name="toast_light">เพื่อไม่ให้อยู่ด้านแสงสว่างในขณะนี้</string>
-    <string name="toast_dark">ในตอนนี้ไม่ได้อยู่ที่ด้านมืดแล้ว</string>
+    <string name="toast_system">To Don\\\'t กำลังใช้ธีม %s อยู่ตอนนี้</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

@@ -17,12 +17,22 @@ import rocks.poopjournal.todont.R
 import rocks.poopjournal.todont.model.Habit
 import rocks.poopjournal.todont.utils.DatabaseUtils
 
-class AvoidedOrDoneFragment(val isAvoided:Boolean) : Fragment() {
+class AvoidedOrDoneFragment() : Fragment() {
     var rv: RecyclerView? = null
 
     var habits=ArrayList<Habit>()
     var dbHelper: DatabaseUtils? = null
     var adapter: AvoidedOrDoneAdapter? = null
+
+    var isAvoided:Boolean=false
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.getBoolean("ARG_DATA")?.let {
+            isAvoided=it
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,6 +47,9 @@ class AvoidedOrDoneFragment(val isAvoided:Boolean) : Fragment() {
 
         return view
     }
+
+
+
     override fun onResume() {
         super.onResume()
         setDataInList()
@@ -114,4 +127,14 @@ class AvoidedOrDoneFragment(val isAvoided:Boolean) : Fragment() {
                 }
             }
         }
+
+    companion object {
+        fun newInstance(someData: Boolean): AvoidedOrDoneFragment {
+            val fragment = AvoidedOrDoneFragment()
+            val args = Bundle()
+            args.putBoolean("ARG_DATA", someData)
+            fragment.arguments = args
+            return fragment
+        }
+    }
 }

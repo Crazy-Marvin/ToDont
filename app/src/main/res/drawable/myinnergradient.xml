@@ -5,8 +5,8 @@
     <gradient
         android:angle="360"
         android:type="linear"
-        android:startColor="@color/fragmentsColor"
-        android:endColor="@color/fragmentsColor2"
+        android:startColor="?attr/colorTopBarGradStart"
+        android:endColor="?attr/colorTopBarGradEnd"
         />
     <corners android:radius="12dip" />
 

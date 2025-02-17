@@ -34,8 +34,8 @@ public class FragmentDailyBindingImpl extends FragmentDailyBinding  {
     }
     private FragmentDailyBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.Button) bindings[3]
-            , (android.widget.Button) bindings[1]
+            , (android.widget.ImageView) bindings[3]
+            , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[5]
             , (com.github.mikephil.charting.charts.PieChart) bindings[4]

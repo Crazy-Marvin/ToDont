@@ -3,16 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/backgroundcolor">
+    android:background="?attr/colorBackground">
     <TextView
         android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="@string/settings"
-        android:textColor="@color/textcolor"/>
+         android:textColor="?attr/colorOnSurface1"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="@string/about"
-        android:textColor="@color/textcolor" />
+         android:textColor="?attr/colorOnSurface2" />
 </LinearLayout>

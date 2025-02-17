@@ -82,9 +82,8 @@
         <item>Studien Sin</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Fir Net Elo Ze Folgen.</string>
-    <string name="toast_light">Zu Don \'T Ass Elo Op Der Liichter Säit.</string>
-    <string name="toast_dark">Zu Don \'T Ass Elo Op Der Däischterer Säit.</string>
+    <string name="toast_system">To Don\\\'t benotzt elo den %s Thema.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

@@ -135,9 +135,5 @@ class HabitsAdapter(
     override fun getItemCount()=habits.size
 
     inner class RecyclerViewHolder(val binding: RecyclerviewLayoutHabitsBinding) : RecyclerView.ViewHolder(binding.root){
-        init {
-            binding.btnAddToDone.background=context.resources.getDrawable(R.drawable._tick)
-            binding.btnAddToAvoided.background=context.resources.getDrawable(R.drawable._cross)
-        }
     }
 }

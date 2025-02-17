@@ -82,9 +82,8 @@
         <item>Studiis</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Ad Don \'T Nunc Sequitur Vestri Ratio.</string>
-    <string name="toast_light">Don \ T In Lumine Parte.</string>
-    <string name="toast_dark">Ad Don \'T In Tenebris Parte Nunc.</string>
+    <string name="toast_system">o Don\\\'t nunc thema %s utitur..</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

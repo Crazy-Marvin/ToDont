@@ -3,6 +3,7 @@ package rocks.poopjournal.todont.fragments
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +25,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-class DailyFragment : Fragment() {
+class DailyFragment() : Fragment() {
     private var binding: FragmentDailyBinding? = null
     private val calendar: Calendar = Calendar.getInstance()
     private val currentDayCalendar: Calendar = Calendar.getInstance()
@@ -53,12 +54,7 @@ class DailyFragment : Fragment() {
 
         binding?.apply {
             date.text = formattedDate
-            before.setBackgroundResource(R.drawable.ic_backarrow)
-            after.setBackgroundResource(R.drawable.ic_nextarrow)
-
             updateHabitStatistics(formattedDate)
-
-
             before.setOnClickListener { handleDateChange(-1, dateFormatter) }
             after.setOnClickListener { handleDateChange(1, dateFormatter) }
 
@@ -107,13 +103,20 @@ class DailyFragment : Fragment() {
             )
             val dataSet = PieDataSet(entries, "").apply {
                 valueTextColor = Color.WHITE
-                setColors(Color.parseColor("#FFAF01"), Color.parseColor("#26272c"))
+                val lightSurface=TypedValue()
+                requireContext().theme.resolveAttribute(R.attr.colorOnBackground3,lightSurface,true)
+                val primaryColor=TypedValue()
+                requireContext().theme.resolveAttribute(R.attr.colorAccent,primaryColor,true)
+
+                setColors(primaryColor.data, lightSurface.data)
             }
             data = PieData(dataSet)
             legend.isEnabled = false
             description = Description().apply { text = "" }
             holeRadius = 50f
-            setHoleColor(resources.getColor(R.color.backgroundcolor, null))
+            val typedValue = TypedValue()
+            requireContext().theme.resolveAttribute(R.attr.colorBackground, typedValue, true)
+            setHoleColor(typedValue.data)
             transparentCircleRadius = 50f
             animateXY(1000, 1000)
         }

@@ -4,24 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
-    android:background="@color/backgroundcolor"
+    android:background="?attr/colorBackground"
     android:orientation="vertical"
     tools:context=".Settings">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/mygradient"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_background"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
-
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/ic_back"
             android:elevation="6dp"
             android:gravity="bottom"
@@ -34,10 +32,10 @@
             android:textStyle="bold"
             android:layout_marginBottom="3dp"
             android:textSize="20sp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:gravity="bottom"
             android:text="@string/settings"
-            android:textColor="@color/textcolor"
+            android:textColor="?attr/colorOnTopBar"
             />
     </LinearLayout>
 
@@ -47,11 +45,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/dis"
             android:elevation="6dp"
             android:gravity="bottom"
@@ -66,13 +64,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:elevation="6dp"
                 android:gravity="center_vertical"
                 android:onClick="changeMode"
                 android:text="@string/appearance"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnBackground1"
                 android:textSize="16sp"
 
                 />
@@ -81,11 +79,12 @@
                 android:id="@+id/modetitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:onClick="changeMode"
-                android:textColor="@color/textcolor"
+                android:layout_marginTop="4dp"
+                android:textColor="?attr/colorOnBackground2"
                 android:textSize="14sp"
-
+                android:text="light"
                 />
         </LinearLayout>
     </LinearLayout>
@@ -99,90 +98,79 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:elevation="6dp"
-
             android:gravity="bottom"
             android:onClick="changeMode"
             android:text="@string/data"
-            android:textColor="@color/red"
+            android:textColor="?attr/colorAccent"
             android:textSize="16sp"
-
             />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
-            android:background="@color/innerfragmentsColor2" />
-
-
-
+            android:background="?attr/colorOnBackground3" />
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="13dp"
-        android:visibility="gone"
-        android:id="@+id/viww"
-        android:background="@color/innerfragmentsColor2" />
 
-    <LinearLayout
-        android:id="@+id/language"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:visibility="gone"
-        android:layout_margin="10dp"
-        android:elevation="5dp"
-        android:orientation="horizontal"
-        android:padding="5dp">
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_appearance"
-            android:elevation="6dp"
-            android:gravity="bottom"
-            android:onClick="changeMode" />
+<!--    <LinearLayout-->
+<!--        android:id="@+id/language"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:elevation="5dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="5dp">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="vertical">
+<!--        <Button-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:background="@drawable/ic_appearance"-->
+<!--            android:elevation="6dp"-->
+<!--            android:gravity="bottom"-->
+<!--            android:onClick="changeMode" />-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:elevation="6dp"
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:orientation="vertical">-->
 
-                android:gravity="bottom"
-                android:onClick="changeMode"
-                android:text="Language"
-                android:textColor="@color/textcolor"
-                android:textSize="16sp"
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:elevation="6dp"-->
 
-                />
+<!--                android:gravity="bottom"-->
+<!--                android:onClick="changeMode"-->
+<!--                android:text="Language"-->
+<!--                android:textColor="@color/textcolor"-->
+<!--                android:textSize="16sp"-->
 
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spLanguagePicker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:entries="@array/languages"
-                android:paddingStart="14dp"
-                android:gravity="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+<!--                />-->
 
-        </LinearLayout>
+<!--            <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                android:id="@+id/spLanguagePicker"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:entries="@array/languages"-->
+<!--                android:paddingStart="14dp"-->
+<!--                android:gravity="center"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent" />-->
 
-    </LinearLayout>
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
 
 
     <LinearLayout
@@ -196,14 +184,12 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-
-
             android:layout_height="wrap_content">
-            <Button
+            <ImageButton
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/frame__4_"
                 android:elevation="6dp"
                 android:gravity="bottom"
@@ -212,11 +198,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:elevation="6dp"
                 android:gravity="center_vertical"
                 android:text="@string/back_up"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnBackground1"
                 android:textSize="16sp"
 
                 />
@@ -224,30 +210,30 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginLeft="64dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/innerfragmentsColor2" />
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="20dp"
+            android:background="?attr/colorOnBackground3" />
 
 
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:elevation="5dp"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/restoreButton"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
             android:onClick="restore"
             android:layout_height="wrap_content">
-            <Button
+            <ImageButton
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/frame__5_"
                 android:elevation="6dp"
                 android:gravity="bottom"
@@ -256,23 +242,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:elevation="6dp"
                 android:gravity="center_vertical"
                 android:text="@string/restore"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnBackground1"
                 android:textSize="16sp"
 
                 />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="64dp"
-            android:visibility="gone"
-            android:background="@color/innerfragmentsColor2" />
-
-
 
     </LinearLayout>
     <LinearLayout
@@ -283,14 +261,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:elevation="6dp"
 
             android:gravity="bottom"
             android:onClick="changeMode"
             android:text="@string/about"
-            android:textColor="@color/red"
+            android:textColor="?attr/colorPrimary"
             android:textSize="16sp"
 
             />
@@ -298,7 +276,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
-            android:background="@color/innerfragmentsColor2" />
+            android:background="?attr/colorOnBackground3" />
 
 
 
@@ -315,11 +293,11 @@
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content">
-            <Button
+            <ImageButton
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/about"
                 android:elevation="6dp"
                 android:gravity="bottom"
@@ -328,22 +306,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:elevation="6dp"
                 android:gravity="center_vertical"
                 android:onClick="aboutus"
                 android:text="@string/about"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnBackground1"
                 android:textSize="16sp"
 
                 />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:visibility="gone"
-            android:layout_marginLeft="64dp"
-            android:background="@color/innerfragmentsColor2" />
 
 
 

@@ -82,9 +82,8 @@
         <item>Kajian</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Untuk Tidak Mengikuti Sistem Anda.</string>
-    <string name="toast_light">Untuk Tidak Berada Di Sisi Cahaya Sekarang.</string>
-    <string name="toast_dark">Untuk Tidak Berada Di Sisi Gelap Sekarang.</string>
+    <string name="toast_system">To Don\\\'t kini menggunakan tema %s.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

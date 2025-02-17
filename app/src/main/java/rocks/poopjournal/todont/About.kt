@@ -4,14 +4,17 @@ import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.View.OnTouchListener
+import android.view.WindowManager
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import rocks.poopjournal.todont.utils.SharedPrefUtils
+import rocks.poopjournal.todont.utils.setAppTheme
 import smartdevelop.ir.eram.showcaseviewlib.GuideView
 import smartdevelop.ir.eram.showcaseviewlib.config.DismissType
 import smartdevelop.ir.eram.showcaseviewlib.config.Gravity
@@ -25,7 +28,12 @@ class About : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        setAppTheme(this)
         setContentView(R.layout.activity_about)
+        //actionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.mygradient))
+
+
         contributionView = findViewById(R.id.contributionView)
         version = findViewById(R.id.versiontext)
         version?.setText(BuildConfig.VERSION_NAME + " Beta ")
@@ -85,7 +93,7 @@ class About : AppCompatActivity() {
 
     fun contact_codeaquariatar(view: View) {
         when (view.id) {
-            R.id.btnmail_codeaquariatar -> {
+            R.id.btnmail_tarik -> {
                 val mailto = "mailto:imamtariq7@gmail.com"
                 val emailIntent = Intent(Intent.ACTION_SENDTO)
                 emailIntent.setData(Uri.parse(mailto))
@@ -96,14 +104,14 @@ class About : AppCompatActivity() {
                 }
             }
 
-            R.id.btngit_codeaquariatar -> {
+            R.id.btngit_tarik -> {
                 val uri =
                     Uri.parse("https://github.com/theftzoku") // missing 'http://' will cause crashed
                 val intent = Intent(Intent.ACTION_VIEW, uri)
                 startActivity(intent)
             }
 
-            R.id.btntwitter_codeaquariatar -> {
+            R.id.btntwitter_tarik -> {
                 val ui =
                     Uri.parse("https://www.facebook.com/Code-Aquaria-109834144196326") // missing 'http://' will cause crashed
                 val it = Intent(Intent.ACTION_VIEW, ui)
@@ -233,6 +241,11 @@ class About : AppCompatActivity() {
         startActivity(i)
     }
 
+    fun showCaseView(view: View?) {
+        val u = Uri.parse(resources.getString(R.string.showCaseViewLink))
+        val i = Intent(Intent.ACTION_VIEW, u)
+        startActivity(i)
+    }
 
     override fun onBackPressed() {
         super.onBackPressed()

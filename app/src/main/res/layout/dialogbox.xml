@@ -27,11 +27,10 @@
 
         <TextView
             android:id="@+id/heading"
-            android:layout_width="270dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/textcolor"
-            android:layout_marginLeft="20dp"
+            android:textColor="?attr/colorOnSurface1"
             android:layout_marginTop="8dp"
             android:gravity="left"
             android:text="@string/appearance"
@@ -41,19 +40,17 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp">
+            android:layout_marginStart="10dp">
 
             <RadioButton
                 android:id="@+id/followsys"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.13"
-                android:buttonTint="@color/radio"
-
                 android:checked="false"
                 android:onClick="onRadioButtonClicked"
                 android:text="@string/followsys"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnSurface1"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -61,12 +58,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.13"
-                android:buttonTint="@color/radio"
                 android:checked="false"
-
                 android:onClick="onRadioButtonClicked"
                 android:text="@string/light"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnSurface1"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -74,42 +69,85 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.13"
-
-                android:buttonTint="@color/radio"
                 android:checked="false"
                 android:onClick="onRadioButtonClicked"
                 android:text="@string/dark"
-                android:textColor="@color/textcolor"
+                android:textColor="?attr/colorOnSurface1"
                 android:textSize="16sp" />
-
             <RadioButton
                 android:id="@+id/dracula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.13"
-                android:buttonTint="@color/radio"
                 android:checked="false"
                 android:onClick="onRadioButtonClicked"
                 android:text="@string/dracula"
-                android:textColor="@color/textcolor"
-
+                android:textColor="?attr/colorOnSurface1"
                 android:textSize="16sp"
-                android:visibility="gone" />
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/dracula_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/dracula_pro"
+                android:textColor="?attr/colorOnSurface1"
+                android:textSize="16sp"
+                android:visibility="visible" />
+            <RadioButton
+                android:id="@+id/dracula_pro_alucard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/dracula_pro_alucard"
+                android:textColor="?attr/colorOnSurface1"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/dracula_pro_buffy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/dracula_pro_buffy"
+                android:textColor="?attr/colorOnSurface1"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/dracula_pro_blade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/dracula_pro_blade"
+                android:textColor="?attr/colorOnSurface1"
+                android:textSize="16sp"
+                android:visibility="visible" />
         </RadioGroup>
 
-        <Button
+        <TextView
             android:id="@+id/btndone"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/roundbutton"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="16dp"
             android:text="@string/done"
-            android:textColor="@color/textcolor"
-
+            android:textSize="18sp"
+            android:textColor="?attr/colorAccent"
             />
+
+
     </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

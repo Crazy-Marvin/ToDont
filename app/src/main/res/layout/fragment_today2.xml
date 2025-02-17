@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor"
+    android:background="?attr/colorBackground"
     tools:context=".fragments.FragmentToday">
 
     <LinearLayout
@@ -12,75 +12,69 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/mygradient"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/gradient_background">
+
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
-                android:background="@drawable/backgorundinner"
-                android:elevation="5dp"
+                android:background="@drawable/grad_tab_back"
+                android:padding="3dp"
                 android:gravity="center"
-
                 android:orientation="horizontal"
                 android:weightSum="3">
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="60dp"-->
+                <!--            android:background="@drawable/gradient_background"-->
+                <!--            android:gravity="center"-->
+                <!--            android:orientation="horizontal">-->
 
-                <Button
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="50dp"-->
+                <!--                android:layout_marginStart="2dp"-->
+                <!--                android:layout_marginEnd="2dp"-->
+                <!--                android:background="@drawable/gradient_background"-->
+                <!--                android:elevation="5dp"-->
+                <!--                android:gravity="center"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                android:weightSum="3">-->
+
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/habits"
+                    style="@style/Widget.Todont.Button"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="2dp"
-
-
+                    android:layout_height="46dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/continuebutton2"
                     android:gravity="center"
-
                     android:text="@string/habits"
-                    android:textColor="@color/textcolor"
                     android:textSize="12sp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/avoided"
+                    style="@style/Widget.Todont.Button"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="2dp"
-
-                    android:layout_marginBottom="2dp"
-
-
+                    android:layout_height="46dp"
                     android:layout_weight="1"
-
-                    android:background="@drawable/continuebuttontrans"
                     android:text="@string/avoided"
-                    android:textColor="@color/textcolor"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="12sp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/done"
+                    style="@style/Widget.Todont.Button"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="2dp"
-
-                    android:layout_marginTop="2dp"
-                    android:layout_marginRight="2dp"
-
-
+                    android:layout_height="46dp"
                     android:layout_weight="1"
-                    android:background="@drawable/continuebuttontrans"
                     android:text="@string/done"
-                    android:textColor="@color/textcolor"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="12sp" />
+                <!--            </LinearLayout>-->
             </LinearLayout>
         </LinearLayout>
 

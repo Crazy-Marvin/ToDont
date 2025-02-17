@@ -7,8 +7,8 @@
     <gradient
         android:angle="360"
         android:type="linear"
-        android:startColor="@color/innerfragmentsColor1s"
-        android:endColor="@color/innerfragmentsColor1s"
+        android:startColor="?attr/colorBackgroundContainer"
+        android:endColor="?attr/colorBackgroundContainer"
         />
     <corners android:radius="10dip" />
 

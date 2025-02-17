@@ -82,9 +82,8 @@
         <item>Studier</item>
     </string-array>
     # Toasts
-    <string name="toast_system">För Att Nu Inte Följer Ditt System.</string>
-    <string name="toast_light">Att Inte Vara På Den Lätta Sidan Nu.</string>
-    <string name="toast_dark">Att Inte Vara På Den Mörka Sidan Nu.</string>
+    <string name="toast_system">o Don\\\'t använder nu temat %s.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

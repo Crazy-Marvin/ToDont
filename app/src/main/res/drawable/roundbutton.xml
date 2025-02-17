@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#ff8c00" />
+    <solid android:color="?attr/colorButtonGradStart" />
     <corners android:bottomRightRadius="30dp"
         android:bottomLeftRadius="30dp"
         android:topRightRadius="30dp"
         android:topLeftRadius="30dp"/>
     <gradient
-        android:startColor="#fac401"
-        android:endColor="#ff8c00"
+        android:startColor="?attr/colorButtonGradStart"
+        android:endColor="?attr/colorButtonGradEnd"
         android:angle="360" />
 </shape>

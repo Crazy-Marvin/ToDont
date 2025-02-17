@@ -81,9 +81,8 @@
         <item>İş</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Artıq Sisteminizi Izləməyə Davam Etmir.</string>
-    <string name="toast_light">Artıq Işığın Üstündədir.</string>
-    <string name="toast_dark">Artıq Qaranlıq Tərəfdə Deyil.</string>
+    <string name="toast_system">To Don\\\'t indi %s mövzusundan istifadə edir.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

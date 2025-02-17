@@ -7,9 +7,10 @@ data class Habit(
     val description: String?,
     var countAvoided: Int,
     var countDone: Int,
-    val labelId: Int
-){
-    var label:Label? = null
+    val labelId: Int,
+    val coverImageUri: String? = null  // Add this line
+) {
+    var label: Label? = null
 }
 
 

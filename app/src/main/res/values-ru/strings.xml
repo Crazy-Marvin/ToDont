@@ -82,9 +82,8 @@
         <item>Исследования</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Чтобы Не Следовать Вашей Системе.</string>
-    <string name="toast_light">Достояно Сейчас На Легкой Стороне.</string>
-    <string name="toast_dark">Достояно Сейчас На Темной Стороне.</string>
+    <string name="toast_system">To Don\\\'t теперь использует тему %s.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

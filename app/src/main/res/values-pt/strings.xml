@@ -82,9 +82,8 @@
         <item>Estudos</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Não Agora Segue Seu Sistema.</string>
-    <string name="toast_light">Não Está Do Lado Da Luz Agora.</string>
-    <string name="toast_dark">Não Está Do Lado Sombrio Agora.</string>
+    <string name="toast_system">O To Don\\\'t está usando o tema %s agora.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

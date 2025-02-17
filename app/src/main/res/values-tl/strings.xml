@@ -82,9 +82,8 @@
         <item>Pag -Aaral</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Upang Hindi Ngayon Ay Sumusunod Sa Iyong System.</string>
-    <string name="toast_light">Ang Don Ay Nasa Light Side Ngayon.</string>
-    <string name="toast_dark">Ang Don Ay Nasa Madilim Na Bahagi Ngayon.</string>
+    <string name="toast_system">Gamit na ngayon ng To Don\\\'t ang %s na tema.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

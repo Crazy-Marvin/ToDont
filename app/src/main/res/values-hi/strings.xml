@@ -82,9 +82,7 @@
         <item>अध्ययन करते हैं</item>
     </string-array>
     # Toasts
-    <string name="toast_system">अब आपके सिस्टम का अनुसरण करने के लिए नहीं है।</string>
-    <string name="toast_light">To Don\'t is on the light side now.</string>
-    <string name="toast_dark">डॉन के लिए अब अंधेरे की तरफ है।</string>
+    <string name="toast_system">To Don\\\'t अब %s थीम का उपयोग कर रहा है।</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

@@ -82,9 +82,8 @@
         <item>Rannsóknir</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Að Fylgja Ekki Eftir Kerfinu Þínu.</string>
-    <string name="toast_light">Að Ekki Er Á Léttu Hliðinni Núna.</string>
-    <string name="toast_dark">Að Ekki Er Á Myrku Hliðinni Núna.</string>
+    <string name="toast_system">To Don\\\'t er nú að nota %s þemað.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

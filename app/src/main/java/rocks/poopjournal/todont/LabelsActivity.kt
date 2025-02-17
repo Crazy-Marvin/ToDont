@@ -8,13 +8,9 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.Window
-import android.view.WindowInsets
-import android.view.WindowInsetsController
 import android.view.WindowManager
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -27,6 +23,7 @@ import rocks.poopjournal.todont.showcaseview.RippleBackground
 import rocks.poopjournal.todont.showcaseview.ShowcaseViewBuilder
 import rocks.poopjournal.todont.utils.DatabaseUtils
 import rocks.poopjournal.todont.utils.SharedPrefUtils
+import rocks.poopjournal.todont.utils.setAppTheme
 import smartdevelop.ir.eram.showcaseviewlib.GuideView
 import smartdevelop.ir.eram.showcaseviewlib.config.DismissType
 import smartdevelop.ir.eram.showcaseviewlib.config.Gravity
@@ -44,19 +41,15 @@ class LabelsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLabelsBinding
 
-    @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setAppTheme(this)
         binding = ActivityLabelsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //actionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.mygradient))
+
         rvLabels = binding.rvLabels
-        // Enable immersive mode
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.insetsController?.let { controller ->
-            controller.hide(WindowInsets.Type.systemBars())
-            controller.systemBarsBehavior =
-                WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-        }
+
         prefUtils = SharedPrefUtils(this)
         showcaseViewBuilder = ShowcaseViewBuilder.init(this)
         fabHighlighter = binding.fabHighlighter
@@ -82,7 +75,7 @@ class LabelsActivity : AppCompatActivity() {
     }
 
     private fun showLabelAddingDialog() {
-        val dialog = Dialog(this@LabelsActivity,R.style.MyDialogStyle)
+        val dialog = Dialog(this@LabelsActivity,R.style.Dialog_Theme)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
 
         // Inflate the custom layout

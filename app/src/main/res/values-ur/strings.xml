@@ -82,9 +82,8 @@
         <item>مطالعات</item>
     </string-array>
     # Toasts
-    <string name="toast_system">اب آپ کے سسٹم کی پیروی نہیں کریں گے۔</string>
-    <string name="toast_light">ڈان \'اب روشنی کی طرف ہے۔</string>
-    <string name="toast_dark">ڈان \'اب اندھیرے کی طرف ہے۔</string>
+    <string name="toast_system">To Don\\\'t اب s% تھیم استعمال کر رہا ہے۔</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

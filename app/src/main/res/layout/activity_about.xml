@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor"
+    android:background="?attr/colorBackground"
     tools:context=".About">
 
+    <!-- App Bar -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/mygradient"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_background"
         android:gravity="bottom"
         app:elevation="0dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +22,6 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_marginLeft="20dp"
             android:background="@android:color/transparent">
 
             <LinearLayout
@@ -31,16 +31,13 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnback"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="0.01"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/ic_back"
-                    android:onClick="back"
-
-                    />
+                    android:onClick="back"/>
 
                 <TextView
                     android:id="@+id/toolbartext"
@@ -48,33 +45,31 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/about"
-                    android:textColor="@color/textcolor"
+                    android:textColor="?attr/colorOnTopBar"
                     android:layout_marginBottom="2dp"
                     android:textStyle="bold"
                     android:textSize="20sp" />
-
-
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- Gradient View -->
     <View
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="50dp"
-        android:background="@drawable/mygradient" />
+        android:background="@drawable/gradient_background" />
 
-
+    <!-- Main Content -->
     <LinearLayout
         android:id="@+id/l"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="55dp"
-        android:orientation="vertical"
+        android:orientation="vertical">
 
-        >
-
+        <!-- Logo and App Name -->
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/z"
             android:layout_width="120dp"
@@ -82,17 +77,16 @@
             android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:src="@drawable/gol"
-            android:onClick="logoclicked"/>
+            android:onClick="logoclicked" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/app_name"
-            android:textColor="@color/textcolor"
+            android:textColor="?attr/colorOnBackground1" />
 
-            />
-
+        <!-- Version and License -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,137 +98,119 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/spinr" />
+                android:textColor="?attr/colorOnBackground2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/apachelicense"
-                android:textColor="@color/colorPrimary"
-                android:onClick="apacheee"/>
+                android:textColor="?attr/colorAccent"
+                android:onClick="apacheee" />
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/l"
         android:fillViewport="true"
         android:scrollbars="vertical"
-        android:background="@color/backgroundcolor"
->
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/backgroundcolor">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
 
+            <!-- Developer Cards -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                app:cardBackgroundColor="@color/a"
-                app:cardCornerRadius="10dp"
-
-                >
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="?attr/colorSurface"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical"
-                    android:background="@color/a"
-                    >
+                    android:orientation="vertical">
 
+                    <!-- Developer Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal">
-
-                            <de.hdodenhof.circleimageview.CircleImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:layout_centerInParent="true"
-                                android:layout_marginLeft="10dp"
-                                android:src="@drawable/crazymarvin"
-                                />
-                        </LinearLayout>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/crazymarvin" />
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical"
-
-                            >
+                            android:layout_marginStart="10dp"
+                            android:gravity="start"
+                            android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="230dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-
-                                android:layout_gravity="center"
                                 android:text="@string/crazymarvin"
-                                android:textColor="@color/textcolor" />
+                                android:textColor="?attr/colorOnBackground1" />
 
                             <TextView
-                                android:layout_width="230dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-
                                 android:text="@string/developer"
-                                android:textColor="@color/spinr" />
+                                android:textColor="?attr/colorOnBackground2" />
                         </LinearLayout>
                     </LinearLayout>
 
+                    <!-- Social Media Buttons -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="horizontal">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btnmail_crazymarvin"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
                             android:background="@drawable/email"
-                            android:onClick="contact_marvin"
-                            />
+                            android:onClick="contact_marvin" />
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btngit_crazymarvin"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
                             android:background="@drawable/git"
-                            android:onClick="contact_marvin"
-                            />
+                            android:onClick="contact_marvin" />
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btntwitter_crazymarvin"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
                             android:background="@drawable/twitter"
-                            android:onClick="contact_marvin"
-                            />
+                            android:onClick="contact_marvin" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -243,523 +219,383 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
-                app:cardBackgroundColor="@color/a"
-                app:cardCornerRadius="10dp"
-                >
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="?attr/colorSurface"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical"
-                    android:background="@color/a"
-                    >
+                    android:orientation="vertical">
 
+                    <!-- Developer Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal">
-
-                            <de.hdodenhof.circleimageview.CircleImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:layout_centerInParent="true"
-                                android:layout_marginLeft="10dp"
-                                android:src="@drawable/codeaquaria" />
-                        </LinearLayout>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/codeaquaria" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical"
-
-                            >
+                            android:layout_gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="230dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
                                 android:text="@string/codeacquaria"
-                                android:textColor="@color/textcolor" />
+                                android:textColor="?attr/colorOnBackground1" />
 
                             <TextView
-                                android:layout_width="230dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-
                                 android:text="@string/developer"
-                                android:textColor="@color/spinr" />
+                                android:textColor="?attr/colorOnBackground2" />
                         </LinearLayout>
                     </LinearLayout>
 
+                    <!-- Social Media Buttons -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="horizontal">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btnmail_codeaquaria"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
                             android:background="@drawable/email"
-                            android:onClick="contact_codeaquaria"
-                            />
+                            android:onClick="contact_marvin" />
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btngit_codeaquaria"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
                             android:background="@drawable/git"
-                            android:onClick="contact_codeaquaria"
-                            />
+                            android:onClick="contact_marvin" />
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btntwitter_codeaquaria"
                             android:layout_width="20dp"
-                            android:layout_height="18dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
-                            android:background="@drawable/ic_facebook"
-                            android:onClick="contact_codeaquaria"
-                            />
+                            android:background="@drawable/twitter"
+                            android:onClick="contact_marvin" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
-                app:cardBackgroundColor="@color/a"
-                app:cardCornerRadius="10dp"
-                >
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="?attr/colorSurface"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical"
-                    android:background="@color/a"
-                    >
+                    android:orientation="vertical">
 
+                    <!-- Developer Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal">
-
-                            <de.hdodenhof.circleimageview.CircleImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:layout_centerInParent="true"
-                                android:layout_marginLeft="10dp"
-                                android:src="@drawable/zoku" />
-                        </LinearLayout>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/zoku" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical"
-
-                            >
+                            android:layout_marginStart="10dp"
+                            android:gravity="start"
+                            android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="230dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
                                 android:text="Tarik"
-                                android:textColor="@color/textcolor" />
+                                android:textColor="?attr/colorOnBackground1" />
 
                             <TextView
-                                android:layout_width="230dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-
-
                                 android:text="@string/developer"
-                                android:textColor="@color/spinr" />
+                                android:textColor="?attr/colorOnBackground2" />
                         </LinearLayout>
                     </LinearLayout>
 
+                    <!-- Social Media Buttons -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="horizontal">
 
-                        <Button
-                            android:id="@+id/btnmail_codeaquariatar"
+                        <ImageView
+                            android:id="@+id/btnmail_tarik"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
                             android:background="@drawable/email"
-                            android:onClick="contact_codeaquariatar"
-                            />
+                            android:onClick="contact_marvin" />
 
-                        <Button
-                            android:id="@+id/btngit_codeaquariatar"
+                        <ImageView
+                            android:id="@+id/btngit_tarik"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
                             android:background="@drawable/git"
-                            android:onClick="contact_codeaquariatar"
-                            />
+                            android:onClick="contact_marvin" />
 
-                        <Button
-                            android:id="@+id/btntwitter_codeaquariatar"
+                        <ImageView
+                            android:id="@+id/btntwitter_tarik"
                             android:layout_width="20dp"
-                            android:layout_height="18dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"
+                            android:layout_marginEnd="10dp"
                             android:layout_weight="0.01"
-                            android:background="@drawable/ic_facebook"
-                            android:onClick="contact_codeaquariatar"
-                            />
+                            android:background="@drawable/twitter"
+                            android:onClick="contact_marvin" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Contribution Section -->
+            <LinearLayout
+                android:id="@+id/contributionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <!--            <androidx.cardview.widget.CardView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="80dp"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:layout_marginTop="15dp"-->
-<!--                app:cardBackgroundColor="@color/a"-->
-<!--                app:cardCornerRadius="10dp"-->
-<!--                android:layout_marginLeft="20dp"-->
-<!--                android:layout_marginRight="20dp"-->
-<!--                >-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/contribute"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18sp" />
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:background="@color/a"-->
-<!--                    android:orientation="vertical">-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="13dp"
+                    android:background="?attr/colorSurfaceVariant" />
 
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_gravity="center"-->
-<!--                        android:orientation="horizontal">-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-<!--                        <LinearLayout-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_gravity="center"-->
-<!--                            android:orientation="horizontal">-->
+                    <ImageView
+                        android:id="@+id/btntranslate"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
 
-<!--                            <de.hdodenhof.circleimageview.CircleImageView-->
-<!--                                android:layout_width="40dp"-->
-<!--                                android:layout_height="40dp"-->
-<!--                                android:layout_centerInParent="true"-->
-<!--                                android:layout_marginLeft="10dp"-->
-<!--                                android:src="@drawable/designerlogo" />-->
-<!--                        </LinearLayout>-->
+                        android:background="@drawable/translate"
+                        android:onClick="translate" />
 
-<!--                        <LinearLayout-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_gravity="center"-->
-<!--                            android:layout_marginLeft="10dp"-->
-<!--                            android:orientation="vertical"-->
+                    <TextView
+                        android:id="@+id/texttranslate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:onClick="translate"
+                        android:text="@string/translate"
+                        android:textColor="?attr/colorOnBackground1" />
+                </LinearLayout>
 
-<!--                            >-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="57dp"
+                    android:layout_marginTop="13dp"
+                    android:background="?attr/colorSurfaceVariant" />
 
-<!--                            <TextView-->
-<!--                                android:layout_width="230dp"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:layout_gravity="center"-->
-<!--                                android:text="Patryk Michalik"-->
-<!--                                android:textColor="@color/textcolor" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-<!--                            <TextView-->
-<!--                                android:layout_width="230dp"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="Designer"-->
-<!--                                android:textColor="@color/spinr" />-->
-<!--                        </LinearLayout>-->
-<!--                    </LinearLayout>-->
+                    <ImageView
+                        android:id="@+id/btnreport"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/reportproblem"
+                        android:onClick="report" />
 
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_gravity="right"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:orientation="horizontal">-->
+                    <TextView
+                        android:id="@+id/textreport"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:onClick="report"
+                        android:text="@string/report"
+                        android:textColor="?attr/colorOnBackground1" />
+                </LinearLayout>
 
-<!--                        <Button-->
-<!--                            android:id="@+id/btnweb_patriyk"-->
-<!--                            android:layout_width="20dp"-->
-<!--                            android:layout_height="20dp"-->
-<!--                            android:layout_marginRight="10dp"-->
-<!--                            android:layout_weight="0.01"-->
-<!--                            android:background="@drawable/web"-->
-<!--                            android:onClick="contact_patriyk" />-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="57dp"
+                    android:layout_marginTop="13dp"
+                    android:background="?attr/colorSurfaceVariant" />
 
-<!--                        <Button-->
-<!--                            android:id="@+id/btngit_patriyk"-->
-<!--                            android:layout_width="20dp"-->
-<!--                            android:layout_height="20dp"-->
-<!--                            android:layout_marginRight="10dp"-->
-<!--                            android:layout_weight="0.01"-->
-<!--                            android:background="@drawable/git"-->
-<!--                            android:onClick="contact_patriyk" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-<!--                        <Button-->
-<!--                            android:id="@+id/btntwitter_patriyk"-->
-<!--                            android:layout_width="20dp"-->
-<!--                            android:layout_height="20dp"-->
-<!--                            android:layout_marginRight="10dp"-->
-<!--                            android:layout_weight="0.01"-->
-<!--                            android:background="@drawable/twitter"-->
-<!--                            android:onClick="contact_patriyk" />-->
-<!--                    </LinearLayout>-->
-<!--                </LinearLayout>-->
-<!--            </androidx.cardview.widget.CardView>-->
+                    <ImageView
+                        android:id="@+id/btnsource"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/viewsrc"
+                        android:onClick="viewsource" />
 
-        <LinearLayout
-            android:id="@+id/contributionView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
+                    <TextView
+                        android:id="@+id/textsource"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:onClick="viewsource"
+                        android:text="@string/source"
+                        android:textColor="?attr/colorOnBackground1" />
+                </LinearLayout>
+            </LinearLayout>
 
-        android:text="@string/contribute"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="13dp"
-        android:background="@color/innerfragmentsColor2" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="25dp"
-        android:background="@android:color/transparent"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btntranslate"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/translate"
-            android:onClick="translate"/>
-
-        <TextView
-            android:id="@+id/texttranslate"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:text="@string/translate"
-            android:onClick="translate"
-            android:gravity = "center_vertical"
-            android:textColor="@color/textcolor" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginLeft="67dp"
-        android:background="@color/innerfragmentsColor2" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="25dp"
-        android:background="@android:color/transparent"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnreport"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/reportproblem"
-            android:onClick="report"
-            />
-
-        <TextView
-            android:id="@+id/textreport"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:text="@string/report"
-            android:gravity = "center_vertical"
-            android:textColor="@color/textcolor"
-            android:onClick="report"
-            />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="67dp"
-
-        android:layout_marginTop="13dp"
-        android:background="@color/innerfragmentsColor2" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="25dp"
-        android:background="@android:color/transparent"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnsource"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/viewsrc"
-            android:onClick="viewsource"
-            />
-
-        <TextView
-            android:id="@+id/textsource"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:text="@string/source"
-            android:gravity = "center_vertical"
-            android:onClick="viewsource"
-            android:textColor="@color/textcolor"/>
-    </LinearLayout>
-        </LinearLayout>
-
-
+            <!-- Open Source Licenses Section -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:text="@string/opensourcelicense"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/colorPrimary"
                 android:textSize="18sp" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="13dp"
-                android:background="@color/innerfragmentsColor2" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@android:color/transparent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/texticons"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="@string/feather"
-                        android:onClick="feather"
-                        android:textColor="@color/textcolor"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="@string/mitlicence"
-                        android:onClick="feather"
-                        android:textColor="@color/spinr" />
-                </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginLeft="40dp"
-                android:background="@color/innerfragmentsColor2" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-
-                    android:background="@android:color/transparent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textjetpack"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="@string/jetpack"
-                        android:onClick="jetpack"
-                        android:textColor="@color/textcolor"/>
-                    <TextView
-                        android:id="@+id/textjetpack1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="@string/apachelicense"
-                        android:onClick="jetpack"
-                        android:textColor="@color/spinr" />
-                </LinearLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_marginLeft="40dp"
-
-                android:layout_height="1dp"
-                android:layout_marginTop="13dp"
-                android:background="@color/innerfragmentsColor2" />
+                android:background="?attr/colorSurfaceVariant" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texticons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="feather"
+                    android:text="@string/feather"
+                    android:textColor="?attr/colorOnBackground1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="feather"
+                    android:text="@string/mitlicence"
+                    android:textColor="?attr/colorOnBackground2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="13dp"
+                android:background="?attr/colorSurfaceVariant" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textjetpack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:onClick="jetpack"
+                    android:text="@string/jetpack"
+                    android:textColor="?attr/colorOnBackground1" />
+
+                <TextView
+                    android:id="@+id/textjetpack1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="jetpack"
+                    android:text="@string/apachelicense"
+                    android:textColor="?attr/colorOnBackground2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="13dp"
+                android:background="?attr/colorSurfaceVariant" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
 
                 android:background="@android:color/transparent"
@@ -769,32 +605,32 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/materialspinner"
                     android:onClick="spinner"
-                    android:textColor="@color/textcolor"/>
+                    android:text="@string/materialspinner"
+                    android:textColor="?attr/colorOnBackground1" />
+
                 <TextView
                     android:id="@+id/spinner1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/apachelicense"
+
                     android:onClick="spinner"
-                    android:textColor="@color/spinr" />
+                    android:text="@string/apachelicense"
+                    android:textColor="?attr/colorOnBackground2" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginLeft="40dp"
 
-                android:background="@color/innerfragmentsColor2" />
+                android:background="?attr/colorSurfaceVariant" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
 
                 android:background="@android:color/transparent"
@@ -805,33 +641,34 @@
                     android:id="@+id/nobobutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/nobobutton"
+
                     android:onClick="nobobutton"
-                    android:textColor="@color/textcolor"/>
+                    android:text="@string/nobobutton"
+                    android:textColor="?attr/colorOnBackground1" />
+
                 <TextView
                     android:id="@+id/nobobutton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/apachelicense"
+
                     android:onClick="nobobutton"
-                    android:textColor="@color/spinr" />
+                    android:text="@string/apachelicense"
+                    android:textColor="?attr/colorOnBackground2" />
             </LinearLayout>
 
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginStart="25dp"
 
                 android:layout_marginTop="13dp"
-                android:background="@color/innerfragmentsColor2" />
+                android:background="?attr/colorSurfaceVariant" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
 
                 android:background="@android:color/transparent"
@@ -842,31 +679,31 @@
                     android:id="@+id/CircleImageView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/circleimg"
+
                     android:onClick="cImgButton"
-                    android:textColor="@color/textcolor"/>
+                    android:text="@string/circleimg"
+                    android:textColor="?attr/colorOnBackground1" />
+
                 <TextView
                     android:id="@+id/CircleImageView1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/apachelicense"
                     android:onClick="cImgButton"
-                    android:textColor="@color/spinr" />
+                    android:text="@string/apachelicense"
+                    android:textColor="?attr/colorOnBackground2" />
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="40dp"
-
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="13dp"
-                android:background="@color/innerfragmentsColor2" />
+                android:background="?attr/colorSurfaceVariant" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
 
                 android:background="@android:color/transparent"
@@ -877,34 +714,34 @@
                     android:id="@+id/MPAndroidChart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/mpandroidchart"
+
                     android:onClick="MPAndroidChart"
-                    android:textColor="@color/textcolor"/>
+                    android:text="@string/mpandroidchart"
+                    android:textColor="?attr/colorOnBackground1" />
+
                 <TextView
                     android:id="@+id/MPAndroidChart1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/apachelicense"
-                    android:onClick="MPAndroidChart"
-                    android:textColor="@color/spinr" />
-            </LinearLayout>
 
+                    android:onClick="MPAndroidChart"
+                    android:text="@string/apachelicense"
+                    android:textColor="?attr/colorOnBackground2" />
+            </LinearLayout>
 
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginLeft="40dp"
 
-                android:background="@color/innerfragmentsColor2" />
+                android:background="?attr/colorSurfaceVariant" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
 
                 android:background="@android:color/transparent"
@@ -915,34 +752,30 @@
                     android:id="@+id/JUnit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/junit"
                     android:onClick="JUnit"
-                    android:textColor="@color/textcolor"/>
+                    android:text="@string/junit"
+                    android:textColor="?attr/colorOnBackground1" />
+
                 <TextView
                     android:id="@+id/JUnit1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/eclipse"
                     android:onClick="JUnit"
-                    android:textColor="@color/spinr" />
+                    android:text="@string/eclipse"
+                    android:textColor="?attr/colorOnBackground2" />
             </LinearLayout>
-
-
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="40dp"
-
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="13dp"
-                android:background="@color/innerfragmentsColor2" />
+                android:background="?attr/colorSurfaceVariant" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
 
                 android:background="@android:color/transparent"
@@ -953,36 +786,33 @@
                     android:id="@+id/Kotlin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/kotlin"
+
                     android:onClick="Kotlin"
-                    android:textColor="@color/textcolor"/>
+                    android:text="@string/kotlin"
+                    android:textColor="?attr/colorOnBackground1" />
+
                 <TextView
                     android:id="@+id/Kotlin1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/apachelicense"
                     android:onClick="Kotlin"
-                    android:textColor="@color/spinr" />
+                    android:text="@string/apachelicense"
+                    android:textColor="?attr/colorOnBackground2" />
             </LinearLayout>
-
 
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="40dp"
-
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="13dp"
-                android:background="@color/innerfragmentsColor2" />
+                android:background="?attr/colorSurfaceVariant" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
-
-                android:layout_marginLeft="25dp"
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -991,19 +821,52 @@
                     android:id="@+id/Java"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/java"
                     android:onClick="Java"
-                    android:textColor="@color/textcolor"/>
+                    android:text="@string/java"
+                    android:textColor="?attr/colorOnBackground1" />
+
                 <TextView
                     android:id="@+id/Java1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/gnu"
                     android:onClick="Java"
-                    android:textColor="@color/spinr" />
+                    android:text="@string/gnu"
+                    android:textColor="?attr/colorOnBackground2" />
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="13dp"
+                android:background="?attr/colorSurfaceVariant" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/showCaseView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="showCaseView"
+                    android:text="@string/ShowCaseView"
+                    android:textColor="?attr/colorOnBackground1" />
+
+                <TextView
+                    android:id="@+id/showCaseView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="showCaseView"
+                    android:text="Apache-2.0 license"
+                    android:textColor="?attr/colorOnBackground2" />
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
 
@@ -1013,6 +876,4 @@
 
         </LinearLayout>
     </ScrollView>
-
-
 </RelativeLayout>

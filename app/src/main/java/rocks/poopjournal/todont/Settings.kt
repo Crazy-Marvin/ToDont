@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat;
 
 import android.app.Dialog;
 import android.app.LocaleManager;
+import android.content.ContentValues
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources.Theme
@@ -21,17 +22,17 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.LocaleList;
 import android.provider.DocumentsContract;
+import android.provider.MediaStore
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowInsets
-import android.view.WindowInsetsController
 import android.view.WindowManager
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.TextView
 import android.widget.Toast;
-import androidx.core.view.WindowCompat
 import rocks.poopjournal.todont.databinding.ActivitySettingsBinding
+import rocks.poopjournal.todont.utils.Constants
 import rocks.poopjournal.todont.utils.DatabaseUtils
 
 import java.io.FileOutputStream;
@@ -39,66 +40,196 @@ import java.util.Locale;
 
 import rocks.poopjournal.todont.utils.SharedPrefUtils;
 import rocks.poopjournal.todont.utils.ThemeMode
+import rocks.poopjournal.todont.utils.getAppTheme
+import rocks.poopjournal.todont.utils.setAppTheme
 
 import smartdevelop.ir.eram.showcaseviewlib.GuideView;
 import smartdevelop.ir.eram.showcaseviewlib.config.DismissType;
 import smartdevelop.ir.eram.showcaseviewlib.config.Gravity;
 import smartdevelop.ir.eram.showcaseviewlib.config.PointerType;
+import java.io.File
+import java.io.FileInputStream
+import java.io.IOException
 
 class Settings : AppCompatActivity() {
 
-    private val REQUEST_CODE = 100
-
+    private lateinit var binding: ActivitySettingsBinding
     private lateinit var prefUtils: SharedPrefUtils
+    private lateinit var dbHelper: DatabaseUtils
 
-    private val localeList = listOf("cs", "da", "de", "en", "es", "it", "fr")
     private val REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 100
     private val REQUEST_CODE_PICK_DB_FILE = 200
-    private lateinit var dbHelper: DatabaseUtils  // Database helper to manage DB connection
-    private val TAG = "DatabaseManager"
 
-    private lateinit var binding: ActivitySettingsBinding;
 
-    @RequiresApi(Build.VERSION_CODES.R)
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setAppTheme(this)
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //actionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.mygradient))
 
         prefUtils = SharedPrefUtils(this)
+
+
         dbHelper = DatabaseUtils(this)
-        // Enable immersive mode
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.insetsController?.let { controller ->
-            controller.hide(WindowInsets.Type.systemBars())
-            controller.systemBarsBehavior =
-                WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-        }
 
         // Handle back press
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-//                 val intent = Intent(this@Settings, MainActivity::class.java)
-//                 finishAffinity()
-//                 startActivity(intent)
-                finish()
+                finishMYActivity()
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             }
         })
 
         binding.btnBack.setOnClickListener {
-//             val intent = Intent(this@Settings, MainActivity::class.java)
-//             finishAffinity()
-//             startActivity(intent)
-            finish()
+           finishMYActivity()
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
-        binding.modetitle.text = getThemeMode(prefUtils.getThemeMode())
+
+        binding.modetitle.text = getThemeMode(this.getAppTheme())
+
         binding.backUpButton.setOnClickListener {
-            copyDatabase()
+            if (checkStoragePermission()) {
+                backupDatabase()
+            }
+        }
+
+        binding.restoreButton.setOnClickListener {
+            if (checkStoragePermission()) {
+                openFilePicker()
+            }
         }
     }
 
+    // Check and request storage permission
+    private fun checkStoragePermission(): Boolean {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q || ContextCompat.checkSelfPermission(
+                this,
+                android.Manifest.permission.WRITE_EXTERNAL_STORAGE
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            true
+        } else {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE),
+                REQUEST_CODE_WRITE_EXTERNAL_STORAGE
+            )
+            false
+        }
+    }
+
+    // Backup the database to the Downloads folder
+    private fun backupDatabase() {
+        try {
+            val dbFile = dbHelper.getDatabaseFile()
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                saveFileToDownloadsUsingMediaStore(dbFile)
+            } else {
+                val downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                val destFile = File(downloadsDir, dbFile.name)
+                copyFile(dbFile, destFile)
+                Toast.makeText(this, "Database backed up to Downloads", Toast.LENGTH_LONG).show()
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(this, "Failed to backup database: ${e.message}", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    // Save file to Downloads using MediaStore (Android 10+)
+    @RequiresApi(Build.VERSION_CODES.Q)
+    private fun saveFileToDownloadsUsingMediaStore(sourceFile: File) {
+        val contentResolver = contentResolver
+        val values = ContentValues().apply {
+            put(MediaStore.MediaColumns.DISPLAY_NAME, sourceFile.name)
+            put(MediaStore.MediaColumns.MIME_TYPE, "application/octet-stream")
+            put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS)
+        }
+
+        val fileUri = contentResolver.insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, values)
+        if (fileUri != null) {
+            try {
+                contentResolver.openOutputStream(fileUri)?.use { outputStream ->
+                    FileInputStream(sourceFile).use { inputStream ->
+                        inputStream.copyTo(outputStream)
+                    }
+                }
+                Toast.makeText(this, "Database backed up to Downloads", Toast.LENGTH_LONG).show()
+            } catch (e: Exception) {
+                e.printStackTrace()
+                Toast.makeText(this, "Failed to save file: ${e.message}", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
+    // Open file picker to select a backup file
+    private fun openFilePicker() {
+        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+            addCategory(Intent.CATEGORY_OPENABLE)
+            type = "application/octet-stream"
+        }
+        startActivityForResult(intent, REQUEST_CODE_PICK_DB_FILE)
+    }
+
+    // Handle file picker result
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQUEST_CODE_PICK_DB_FILE && resultCode == RESULT_OK && data != null) {
+            val fileUri = data.data
+            if (fileUri != null) {
+                restoreDatabase(fileUri)
+            }
+        }
+    }
+
+    // Restore the database from the selected file
+    private fun restoreDatabase(fileUri: Uri) {
+        try {
+            dbHelper.close()
+            val dbFile = dbHelper.getDatabaseFile()
+
+            contentResolver.openInputStream(fileUri)?.use { inputStream ->
+                FileOutputStream(dbFile).use { outputStream ->
+                    inputStream.copyTo(outputStream)
+                }
+            }
+            Toast.makeText(this, "Database restored successfully", Toast.LENGTH_LONG).show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(this, "Failed to restore database: ${e.message}", Toast.LENGTH_LONG).show()
+        } finally {
+            dbHelper = DatabaseUtils(this) // Reinitialize the database helper
+        }
+    }
+
+    // Copy file from source to destination
+    @Throws(IOException::class)
+    private fun copyFile(sourceFile: File, destFile: File) {
+        FileInputStream(sourceFile).use { inputStream ->
+            FileOutputStream(destFile).use { outputStream ->
+                inputStream.copyTo(outputStream)
+            }
+        }
+    }
+
+    // Handle permission request result
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQUEST_CODE_WRITE_EXTERNAL_STORAGE) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                backupDatabase()
+            } else {
+                Toast.makeText(this, "Permission denied", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
 
     fun changeMode(view: View) {
         if (prefUtils.getBool(SharedPrefUtils.KEY_APPEAR_VIEW)) {
@@ -115,6 +246,7 @@ class Settings : AppCompatActivity() {
             val dialog = Dialog(this).apply {
                 requestWindowFeature(Window.FEATURE_NO_TITLE)
                 setContentView(R.layout.dialogbox)
+                setCancelable(false)
                 window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             }
             val lp = dialog.window!!.attributes
@@ -126,11 +258,15 @@ class Settings : AppCompatActivity() {
             )
             dialog.window!!.attributes = lp
 
-            val btndone = dialog.findViewById<Button>(R.id.btndone)
+            val btndone = dialog.findViewById<TextView>(R.id.btndone)
             val light = dialog.findViewById<RadioButton>(R.id.light)
             val dark = dialog.findViewById<RadioButton>(R.id.dark)
             val dracula = dialog.findViewById<RadioButton>(R.id.dracula)
             val fsys = dialog.findViewById<RadioButton>(R.id.followsys)
+            val draculaPro= dialog.findViewById<RadioButton>(R.id.dracula_pro)
+            val draculaProAlucard= dialog.findViewById<RadioButton>(R.id.dracula_pro_alucard)
+            val draculaProBuffy= dialog.findViewById<RadioButton>(R.id.dracula_pro_buffy)
+            val draculaProBlade= dialog.findViewById<RadioButton>(R.id.dracula_pro_blade)
 
 
             when (binding.modetitle.text.toString()) {
@@ -138,6 +274,10 @@ class Settings : AppCompatActivity() {
                 resources.getString(R.string.light) -> light.isChecked = true
                 resources.getString(R.string.dark) -> dark.isChecked = true
                 resources.getString(R.string.dracula) -> dracula.isChecked = true
+                resources.getString(R.string.dracula_pro) -> draculaPro.isChecked = true
+                resources.getString(R.string.dracula_pro_alucard) -> draculaProAlucard.isChecked = true
+                resources.getString(R.string.dracula_pro_buffy) -> draculaProBuffy.isChecked = true
+                resources.getString(R.string.dracula_pro_blade) -> draculaProBlade.isChecked = true
             }
 
             dialog.window?.attributes = dialog.window?.attributes?.apply {
@@ -154,11 +294,12 @@ class Settings : AppCompatActivity() {
 
     private fun setNewThemeMode() {
         // Usage in when block
-        when (prefUtils.getThemeMode()) {
+        val theme=prefUtils.getThemeMode()
+        when (theme) {
             ThemeMode.FOLLOW_SYS.value -> {
                 applyThemeMode(
                     AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM,
-                    R.string.toast_system,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
                     ThemeMode.FOLLOW_SYS.value
                 )
 
@@ -166,8 +307,9 @@ class Settings : AppCompatActivity() {
 
             ThemeMode.LIGHT_MODE.value-> {
                 applyThemeMode(
-                    AppCompatDelegate.MODE_NIGHT_NO,
-                    R.string.toast_light,
+                    //AppCompatDelegate.MODE_NIGHT_NO,
+                    R.style.Theme_Todon_Light,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
                     ThemeMode.LIGHT_MODE.value
                 )
 
@@ -175,8 +317,9 @@ class Settings : AppCompatActivity() {
 
             ThemeMode.DARK_MODE.value -> {
                 applyThemeMode(
-                    AppCompatDelegate.MODE_NIGHT_YES,
-                    R.string.toast_dark,
+                    // AppCompatDelegate.MODE_NIGHT_YES,
+                    R.style.Theme_Todon_Dark,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
                     ThemeMode.DARK_MODE.value
                 )
 
@@ -184,19 +327,70 @@ class Settings : AppCompatActivity() {
 
             ThemeMode.DRACULA.value -> {
                 applyThemeMode(
-                    AppCompatDelegate.MODE_NIGHT_YES,
-                    R.string.toast_dark, // Optionally change this to a custom Dracula toast message
+                    //AppCompatDelegate.MODE_NIGHT_YES,
+                    R.style.Theme_Todon_Dracula,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
                     ThemeMode.DRACULA.value
                 )
             }
+            ThemeMode.DRACULA_PRO.value -> {
+                applyThemeMode(
+                    //AppCompatDelegate.MODE_NIGHT_YES,
+                    R.style.Theme_Todon_Dracula_Pro,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
+                    ThemeMode.DRACULA_PRO.value
+                )
+            }
+            ThemeMode.DRACULA_PRO_ALUCARD.value -> {
+                applyThemeMode(
+                    //AppCompatDelegate.MODE_NIGHT_YES,
+                    R.style.Theme_Todon_Dracula_Alucard,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
+                    ThemeMode.DRACULA_PRO_ALUCARD.value
+                )
+            }
+            ThemeMode.DRACULA_PRO_BUFFY.value -> {
+                applyThemeMode(
+                    //AppCompatDelegate.MODE_NIGHT_YES,
+                    R.style.Theme_Todon_DraculaBlade_Buffy,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
+                    ThemeMode.DRACULA_PRO_BUFFY.value
+                )
+            }
+            ThemeMode.DRACULA_PRO_BLADE.value -> {
+                applyThemeMode(
+                    //AppCompatDelegate.MODE_NIGHT_YES,
+                    R.style.Theme_Todon_DraculaBlade,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
+                    ThemeMode.DRACULA_PRO_BLADE.value
+                )
+            }
+            else -> {
+                applyThemeMode(
+                    AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM,
+                    String.format("To Don't is using the %s now",getThemeMode(theme)),
+                    ThemeMode.FOLLOW_SYS.value
+                )
+            }
+
         }
     }
 
-    private fun applyThemeMode(mode: Int, toastMessageRes: Int, modeTitle: String) {
-        AppCompatDelegate.setDefaultNightMode(mode)
+
+
+    private fun applyThemeMode(mode: Int, toastMessageRes: String, modeTitle: String) {
         Log.d("checkmode", "Mode set to: $mode")
-        Toast.makeText(applicationContext, toastMessageRes, Toast.LENGTH_SHORT).show()
-        binding.modetitle.text = getThemeMode(modeTitle)
+        //binding.modetitle.text = getThemeMode(modeTitle)
+        //prefUtils.setThemeMode(modeTitle)
+        //AppCompatDelegate.setDefaultNightMode(mode)
+        //setTheme(mode)
+        Constants.CURRENT_THEME=prefUtils.getThemeMode()
+
+
+        if(Constants.IS_OK){
+            Toast.makeText(applicationContext, toastMessageRes, Toast.LENGTH_SHORT).show()
+            recreate()
+        }
     }
 
     private fun getThemeMode(modeTitle: String): String {
@@ -215,6 +409,18 @@ class Settings : AppCompatActivity() {
 
             ThemeMode.DRACULA.value -> {
                 resources.getString(R.string.dracula)
+            }
+            ThemeMode.DRACULA_PRO.value ->{
+                resources.getString(R.string.dracula_pro)
+            }
+            ThemeMode.DRACULA_PRO_ALUCARD.value ->{
+                resources.getString(R.string.dracula_pro_alucard)
+            }
+            ThemeMode.DRACULA_PRO_BUFFY.value ->{
+                resources.getString(R.string.dracula_pro_buffy)
+            }
+            ThemeMode.DRACULA_PRO_BLADE.value ->{
+                resources.getString(R.string.dracula_pro_blade)
             }
             else -> {
                 modeTitle
@@ -252,7 +458,28 @@ class Settings : AppCompatActivity() {
                     updateThemeMode(ThemeMode.DRACULA.value)
                 }
             }
+            R.id.dracula_pro -> {
+                if (checked) {
+                    updateThemeMode(ThemeMode.DRACULA_PRO.value)
+                }
+            }
+            R.id.dracula_pro_alucard -> {
+                if (checked) {
+                    updateThemeMode(ThemeMode.DRACULA_PRO_ALUCARD.value)
+                }
+            }
+            R.id.dracula_pro_buffy -> {
+                if (checked) {
+                    updateThemeMode(ThemeMode.DRACULA_PRO_BUFFY.value)
+                }
+            }
+            R.id.dracula_pro_blade -> {
+                if (checked) {
+                    updateThemeMode(ThemeMode.DRACULA_PRO_BLADE.value)
+                }
+            }
         }
+        Constants.IS_OK= Constants.CURRENT_THEME != prefUtils.getThemeMode()
     }
 
     private fun updateThemeMode(value: String) {
@@ -261,9 +488,8 @@ class Settings : AppCompatActivity() {
     }
 
     private fun backBtn(view: View) {
-        onBackPressed()
+       finishMYActivity()
     }
-
     fun aboutus(view: View) {
         Intent(this, About::class.java).also { intent ->
             //finishAffinity()
@@ -281,74 +507,6 @@ class Settings : AppCompatActivity() {
     private fun setAppLocale(locale: Locale) {
         val localeManager = getSystemService(LocaleManager::class.java)
         localeManager?.applicationLocales = LocaleList(locale)
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-
-        when (requestCode) {
-            REQUEST_CODE_WRITE_EXTERNAL_STORAGE -> {
-                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission granted, copy the database
-                    copyDatabase()
-                } else {
-                    // Permission denied, show a message
-                    Toast.makeText(
-                        this,
-                        "Permission denied to write to external storage",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-            }
-
-            REQUEST_CODE -> {
-                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission granted, restore the database
-                    Log.e(TAG, "granted")
-                } else {
-                    // Permission denied, handle accordingly
-                    Log.e(TAG, "Permission denied to read external storage")
-                    if (!ActivityCompat.shouldShowRequestPermissionRationale(
-                            this,
-                            "android.permission.WRITE_EXTERNAL_STORAGE"
-                        )
-                    ) {
-                        // Permission denied permanently, inform the user and direct them to settings
-                        showPermissionDeniedDialog()
-                    } else {
-                        // Permission denied but not permanently
-                        Toast.makeText(
-                            this,
-                            "Permission is required to restore the database.",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                }
-            }
-        }
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if (requestCode == REQUEST_CODE_PICK_DB_FILE && resultCode == RESULT_OK && data != null) {
-            val fileUri = data.data
-            if (fileUri != null) {
-                // Close the database before restoring
-                dbHelper.closeDatabase()
-
-                // Restore the selected file to the app's database directory
-                restoreDatabase(fileUri)
-                dbHelper = DatabaseUtils(this)
-
-                // Reopen the database after restoring
-                dbHelper.writableDatabase // This reopens the DB connection
-            }
-        }
     }
 
 
@@ -369,77 +527,13 @@ class Settings : AppCompatActivity() {
             .show()
     }
 
-    // Method to copy the selected file back to the app's database directory
-    private fun restoreDatabase(fileUri: Uri) {
-        val contentResolver = contentResolver
-        dbHelper.close()
-        val databaseManager = DatabaseUtils(this)
-        databaseManager.deleteCurrentDatabase()
-
-        try {
-            contentResolver.openInputStream(fileUri)?.use { inputStream ->
-                // Get the app's internal database directory
-                val dbFile =
-                    getDatabasePath(DatabaseUtils.DATABASE_NAME) // Replace with actual DB name
-
-
-                // If the file doesn't exist, create it
-                if (!dbFile.exists()) {
-                    dbFile.parentFile?.mkdirs()
-                    dbFile.createNewFile()
-                }
-
-                // Copy the selected file to the app's database directory
-                FileOutputStream(dbFile).use { outputStream ->
-                    val buffer = ByteArray(1024)
-                    var length: Int
-                    while (inputStream.read(buffer).also { length = it } > 0) {
-                        outputStream.write(buffer, 0, length)
-                    }
-                }
-
-                Toast.makeText(this, "Database restored successfully", Toast.LENGTH_LONG).show()
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Toast.makeText(this, "Failed to restore database: ${e.message}", Toast.LENGTH_LONG)
-                .show()
+    fun finishMYActivity(){
+        if(Constants.IS_OK){
+            setResult(RESULT_OK)
+        }else{
+            setResult(RESULT_CANCELED)
         }
-    }
-
-    private fun checkPermissionAndRestoreDatabase() {
-        if (ContextCompat.checkSelfPermission(
-                this,
-                android.Manifest.permission.WRITE_EXTERNAL_STORAGE
-            )
-            != PackageManager.PERMISSION_GRANTED
-        ) {
-            // Request permission
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE),
-                REQUEST_CODE
-            )
-        }
-    }
-
-    // Method to copy the database
-    private fun copyDatabase() {
-        DatabaseUtils.copyDatabaseToDownloads(this, DatabaseUtils.DATABASE_NAME)
-    }
-
-    // Method to open the file picker and allow the user to select the database file
-    private fun openFilePicker() {
-        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
-            addCategory(Intent.CATEGORY_OPENABLE)
-            type = "application/octet-stream" // MIME type for .db files
-
-            // Optional: Specify a specific folder (App's folder in Downloads)
-            val downloadsFolderUri =
-                Uri.fromFile(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS))
-            putExtra(DocumentsContract.EXTRA_INITIAL_URI, downloadsFolderUri)
-        }
-        startActivityForResult(intent, REQUEST_CODE_PICK_DB_FILE)
+        finish()
     }
 
 

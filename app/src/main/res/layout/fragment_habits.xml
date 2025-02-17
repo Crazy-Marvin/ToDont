@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/backgroundcolor">
+    android:background="?attr/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            tools:listitem="@layout/recyclerview_layout_habits"
             />
 
     </LinearLayout>
@@ -24,7 +25,7 @@
         android:id="@+id/b"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:textColor="@color/spinr"
+        android:textColor="?attr/colorOnSurface"
         android:textSize="12sp"
         android:text="@string/habitswillshowuphere"
         android:layout_gravity="center"
@@ -47,34 +48,6 @@
 
 
     </rocks.poopjournal.todont.showcaseview.RippleBackground>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
 
-        android:layout_height="wrap_content">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_gravity="bottom"
-            android:background="@color/bottom_sheet_background"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="61dp"
-            android:background="@color/backgroundcolor"/>
-    </LinearLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingbtn"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:foreground="@drawable/gradient_fab"
-        android:layout_marginBottom="35dp"
-        android:elevation="0dp"
-        app:elevation="0dp"
-        android:layout_centerInParent="true"
-        android:layout_gravity="bottom|center"
-        android:contentDescription="@string/contentDescription_FAB"
-        />
 </FrameLayout>

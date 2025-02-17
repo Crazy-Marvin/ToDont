@@ -82,9 +82,7 @@
         <item>Studii</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Pentru A Nu -Ți Urmă Acum Sistemul.</string>
-    <string name="toast_light">A Nu \'T Este Pe Partea Ușoară Acum.</string>
-    <string name="toast_dark">A Nu Fi Acum Pe Partea Întunecată.</string>
+    <string name="toast_system">To Don\\\'t folosește acum tema %s.</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

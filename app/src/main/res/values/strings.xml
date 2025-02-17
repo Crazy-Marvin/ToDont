@@ -12,20 +12,20 @@
         <item>French</item>
     </string-array>
 
-        <string-array name="month_names">
-            <item>January</item>
-            <item>February</item>
-            <item>March</item>
-            <item>April</item>
-            <item>May</item>
-            <item>June</item>
-            <item>July</item>
-            <item>August</item>
-            <item>September</item>
-            <item>October</item>
-            <item>November</item>
-            <item>December</item>
-        </string-array>
+    <string-array name="month_names">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
 
 
     <string name="delete_habit">Are you sure you want to delete this habit?</string>
@@ -76,20 +76,23 @@
     <string name="kotlin">Kotlin</string>
     <string name="java">Java</string>
     <string name="gnu">GNU General Public License CE</string>
+    <string name="ShowCaseView" translatable="false">ShowCaseView</string>
+    <string name="showCaseViewLink" translatable="false">https://github.com/mreram/ShowCaseView?</string>
+
     <string-array name="spinner_array">
         <item>Social</item>
         <item>Foods And Drinks</item>
         <item>Studies</item>
     </string-array>
     # Toasts
-    <string name="toast_system">To Don\'t now follows your system.</string>
-    <string name="toast_light">To Don\'t is on the light side now.</string>
-    <string name="toast_dark">To Don\'t is on the dark side now.</string>
+    <string name="toast_system">To Don\'t is using the %s theme now.</string>
+
     # Here are the non-translateable strings
     <string name="crazymarvin" translatable="false">Crazy Marvin</string>
     <string name="codeacquaria" translatable="false">Code Acquaria</string>
     <string name="text" translatable="false"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hello blank fragment</string>
-    # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
+    # Here are the contentDescription strings (for impaired users) starting with
+    "contentDescription_"
     <string name="contentDescription_FAB">Add new To Don\'t item</string>
     <string name="d">D</string>
     <string name="w">W</string>
@@ -138,5 +141,9 @@
     <string name="back_up">Back up</string>
     <string name="restore">Restore</string>
     <string name="dracula">Dracula</string>
+    <string name="dracula_pro_blade" translatable="false">Dracula PRO Blade</string>
+    <string name="dracula_pro_buffy" translatable="false">Dracula PRO Buffy</string>
+    <string name="dracula_pro_alucard" translatable="false">Dracula Pro Alucard</string>
+    <string name="dracula_pro" translatable="false">Dracula Pro</string>
 
 </resources>

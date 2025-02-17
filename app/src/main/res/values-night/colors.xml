@@ -1,37 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFAF01</color>
-    <color name="colorPrimaryDark">#756893</color>
-    <color name="colorAccent">#FFAF01</color>
+    <!--    &lt;!&ndash; Base Colors &ndash;&gt;-->
+    <!--    <color name="white">#FFFFFF</color>-->
+    <!--    <color name="backgroundcolor">#FFFFFF</color>-->
+    <!--    <color name="black">#000000</color>-->
+    <!--    <color name="gray">#676979</color>-->
+    <!--    <color name="light_gray">#CFD1DD</color>-->
+    <!--    <color name="semi_transparent_black">#0000005C</color>-->
+    <!--    <color name="light_blue_gray">#E7E8EE</color>-->
+    <!--    <color name="orange">#FF6701</color>-->
+    <!--    <color name="yellow_gradient_start">#FFD500</color>-->
+    <!--    <color name="yellow_gradient_end">#FFAA00</color>-->
+
+    <!-- Light Theme Colors -->
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_on_background_1">#000000</color>
+    <color name="light_on_background_2">#676979</color>
+    <color name="light_on_background_3">#CFD1DD</color>
+    <color name="light_background_container">#E7E8EE</color>
+    <color name="light_on_background_container_1">#000000</color>
+    <color name="light_on_background_container_2">#FFFFFF</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_on_surface_1">#000000</color>
+    <color name="light_on_surface_2">#676979</color>
+    <color name="light_on_surface_3">#CFD1DD</color>
+    <color name="light_accent">#FF6701</color>
+    <color name="light_on_accent">#FFFFFF</color>
+    <color name="light_top_bar_grad_start">#FFD500</color>
+    <color name="light_top_bar_grad_end">#FFAA00</color>
+    <color name="light_on_top_bar">#000000</color>
+    <color name="light_top_bar_container">#FFAA00</color>
+    <color name="light_on_top_bar_container_1">#000000</color>
+    <color name="light_on_top_bar_container_2">#FFFFFF</color>
+    <color name="light_button_grad_start">#FFD500</color>
+    <color name="light_button_grad_end">#FFAA00</color>
+    <color name="light_on_button">#000000</color>
+    <color name="light_top_bar_container_grad_end">#FF8F01</color>
+    <color name="light_top_bar_container_grad_start">#FFC001</color>
+    <color name="light_error">#FF0000</color>
+    <color name="light_on_error">#FFFFFF</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="dark_background">#000000</color>
+    <color name="dark_on_background_1">#FFFFFF</color>
+    <color name="dark_on_background_2">#868898</color>
+    <color name="dark_on_background_3">#4B4D59</color>
+    <color name="dark_background_container">#26262C</color>
+    <color name="dark_on_background_container_1">#FFFFFF</color>
+    <color name="dark_on_background_container_2">#42434D</color>
+    <color name="dark_surface">#26272C</color>
+    <color name="dark_on_surface_1">#FFFFFF</color>
+    <color name="dark_on_surface_2">#B2B3BD</color>
+    <color name="dark_on_surface_3">#555763</color>
+    <color name="dark_accent">#FFBF00</color>
+    <color name="dark_on_accent">#000000</color>
+    <color name="dark_top_bar_grad_start">#26272C</color>
+    <color name="dark_top_bar_grad_end">#26272C</color>
+    <color name="dark_on_top_bar">#FFFFFF</color>
+    <color name="dark_top_bar_container">#131316</color>
+    <color name="dark_on_top_bar_container_1">#FFFFFF</color>
+    <color name="dark_on_top_bar_container_2">#2F3037</color>
+    <color name="dark_button_grad_start">#FFCC00</color>
+    <color name="dark_button_grad_end">#FFB200</color>
+    <color name="dark_on_button">#000000</color>
+    <color name="dark_top_bar_container_grad_end">#131316</color>
+    <color name="dark_top_bar_container_grad_start">#131316</color>
+
+    <!-- Dracula Theme Colors -->
+    <color name="dracula_background">#282A36</color>
+    <color name="dracula_on_background_1">#FFFFFF</color>
+    <color name="dracula_on_background_2">#7E83A0</color>
+    <color name="dracula_on_background_3">#46495E</color>
+    <color name="dracula_background_container">#383B4C</color>
+    <color name="dracula_on_background_container_1">#FFFFFF</color>
+    <color name="dracula_on_background_container_2">#52576F</color>
+    <color name="dracula_surface">#44475A</color>
+    <color name="dracula_on_surface_1">#FFFFFF</color>
+    <color name="dracula_on_surface_2">#ADB0C2</color>
+    <color name="dracula_on_surface_3">#6F7495</color>
+    <color name="dracula_accent">#BC94F8</color>
+    <color name="dracula_on_accent">#282A36</color>
+    <color name="dracula_top_bar_grad_start">#44475A</color>
+    <color name="dracula_top_bar_grad_end">#44475A</color>
+    <color name="dracula_on_top_bar">#FFFFFF</color>
+    <color name="dracula_top_bar_container">#323443</color>
+    <color name="dracula_on_top_bar_container_1">#FFFFFF</color>
+    <color name="dracula_on_top_bar_container_2">#44475A</color>
+    <color name="dracula_button_grad_start">#BC94F8</color>
+    <color name="dracula_button_grad_end">#BC94F8</color>
+    <color name="dracula_on_button">#282A36</color>
+    <color name="dracula_top_bar_container_grad_end">#323443</color>
+    <color name="dracula_top_bar_container_grad_start">#323443</color>
+
+    <!-- Dracula PRO Blade -->
+    <color name="dracula_pro_blade_accent">#66F859</color>
+    <color name="dracula_pro_blade_on_accent">#000000</color>
+
+    <!-- Dracula PRO Buffy -->
+    <color name="dracula_pro_buffy_accent">#F859A8</color>
+    <color name="dracula_pro_buffy_on_accent">#FFFFFF</color>
+
+    <!-- Dracula PRO  -->
+    <color name="dracula_pro_accent">#9580FF</color>
+    <color name="dracula_pro_on_accent">#FFFFFF</color>
 
 
-    <color name="g1s">#000000</color>
-    <color name="g2s">#000000</color>
-    <color name="g1">#26272c</color>
-    <color name="g2">#26272c</color>
-    <color name="radio">#fac401</color>
+    <!-- Dracula Pro alucard Colors -->
+    <color name="dracula_pro_alucard_background">#F5F5F5</color>
+    <color name="dracula_pro_alucard_on_background_1">#000000</color>
+    <color name="dracula_pro_alucard_on_background_2">#707070</color>
+    <color name="dracula_pro_alucard_on_background_3">#CCCCCC</color>
+    <color name="dracula_pro_alucard_background_container">#E0E0E0</color>
+    <color name="dracula_pro_alucard_on_background_container_1">#000000</color>
+    <color name="dracula_pro_alucard_on_background_container_2">#F5F5F5</color>
+    <color name="dracula_pro_alucard_surface">#F5F5F5</color>
+    <color name="dracula_pro_alucard_on_surface_1">#000000</color>
+    <color name="dracula_pro_alucard_on_surface_2">#707070</color>
+    <color name="dracula_pro_alucard_on_surface_3">#CCCCCC</color>
+    <color name="dracula_pro_alucard_accent">#644AC9</color>
+    <color name="dracula_pro_alucard_on_accent">#FFFFFF</color>
+    <color name="dracula_pro_alucard_top_bar_grad_start">#E6E6E6</color>
+    <color name="dracula_pro_alucard_top_bar_grad_end">#E6E6E6</color>
+    <color name="dracula_pro_alucard_on_top_bar">#000000</color>
+    <color name="dracula_pro_alucard_top_bar_container">#D1D1D1</color>
+    <color name="dracula_pro_alucard_on_top_bar_container_1">#000000</color>
+    <color name="dracula_pro_alucard_on_top_bar_container_2">#E6E6E6</color>
+    <color name="dracula_pro_alucard_button_grad_start">#644AC9</color>
+    <color name="dracula_pro_alucard_button_grad_end">#644AC9</color>
+    <color name="dracula_pro_alucard_on_button">#FFFFFF</color>
+    <color name="dracula_pro_alucard_top_bar_container_grad_end">#D1D1D1</color>
+    <color name="dracula_pro_alucard_top_bar_container_grad_start">#D1D1D1</color>
 
-    <!--    <color name="floatingbutton">#fac401</color>-->
-<!--    <color name="innerg1">#7C7A72</color>-->
-    <color name="innerg1">#26272c</color>
-    <color name="innerg2">#26272c</color>
-    <color name="bottom_sheet_background">#26272c</color>
-    <color name="backgroundcolor">#000000</color>
-    <color name="dialogcolor">#26272c</color>
-    <color name="textcolor">#FFFFFF</color>
-    <color name="bottomdia">#26272c</color>
-    <color name="bottomnavigationline">#26272c</color>
-    <color name="catagoriescolor">#26272c</color>
-    <color name="a">#26272c</color>
-    <color name="radiobuttoncolor">#000000</color>
-    <color name="fragmentsColor">#000000</color>
-    <color name="fragmentsColor2">#000000</color>
-    <color name="innerfragmentsColor1">#26272c</color>
-    <color name="innerfragmentsColor1s">#131316</color>
-    <color name="innerfragmentsColor2">#26272c</color>
-    <color name="newhabitsheet">#26272c</color>
-    <color name="spinnercolor">#3A3B40</color>
-    <color name="iconcolor">#ffffff</color>
+
+
+
+    <!--    &lt;!&ndash; Additional Colors &ndash;&gt;-->
+    <!--    <color name="bottom_sheet_background">#F8F8F8</color>-->
+    <!--    <color name="spinner_text_color">#FFFFFF</color>-->
+    <!--    <color name="radio_button_color">#000000</color>-->
+    <!--    <color name="textcolor">@android:color/darker_gray</color>-->
+
+
+    <color name="white">#000000</color>
+    <color name="black">#FFFFFF</color>
+    <color name="grad_start">#26272C</color>
+    <color name="grad_end">#26272C</color>
+    <color name="gray">#42434D</color>
+    <color name="divider">#CFD1DD</color>
+
+
 
 
 </resources>

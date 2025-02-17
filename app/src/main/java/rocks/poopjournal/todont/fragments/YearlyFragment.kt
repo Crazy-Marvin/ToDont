@@ -5,10 +5,12 @@ import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.github.mikephil.charting.charts.PieChart
@@ -41,8 +43,8 @@ class YearlyFragment : Fragment() {
     private lateinit var mostAvoidedText: TextView
     private lateinit var leastAvoidedText: TextView
     private lateinit var dateRangeText: TextView
-    private lateinit var btnPrevious: Button
-    private lateinit var btnNext: Button
+    private lateinit var btnPrevious: ImageView
+    private lateinit var btnNext: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -143,14 +145,20 @@ class YearlyFragment : Fragment() {
             )
             val dataSet = PieDataSet(entries, "").apply {
                 valueTextColor = Color.WHITE
-                setColors(Color.parseColor("#FFAF01"), Color.parseColor("#26272c"))
+                val lightSurface=TypedValue()
+                requireContext().theme.resolveAttribute(R.attr.colorOnBackground3,lightSurface,true)
+                val primaryColor=TypedValue()
+                requireContext().theme.resolveAttribute(R.attr.colorAccent,primaryColor,true)
+                setColors(primaryColor.data, lightSurface.data)
             }
 
             data = PieData(dataSet)
             description = Description().apply { text = "" }
             holeRadius = 50f
             transparentCircleRadius = 50f
-            setHoleColor(resources.getColor(R.color.backgroundcolor))
+            val typedValue = TypedValue()
+            requireContext().theme.resolveAttribute(R.attr.colorBackground, typedValue, true)
+            setHoleColor(typedValue.data)
             animateXY(1000, 1000)
         }
     }

@@ -81,9 +81,7 @@
         <item>Ուսումնասիրություններ</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Հիմա Չի Հետեւում Ձեր Համակարգին:</string>
-    <string name="toast_light">Հիմա Լույսը Չէ:</string>
-    <string name="toast_dark">Դու Հիմա Մութ Կողմում Չէ:</string>
+    <string name="toast_system">To Don\\\'t-ը այժմ օգտագործում է %s թեման</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

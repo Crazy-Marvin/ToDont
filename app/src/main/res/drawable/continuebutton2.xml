@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="@color/bottom_sheet_background" />
+    <solid android:color="?attr/colorOnTopBarContainer2" />
     <corners android:bottomRightRadius="10dp"
         android:bottomLeftRadius="10dp"
         android:topRightRadius="10dp"
         android:topLeftRadius="10dp"/>
-    <gradient
-        android:startColor="@color/bottom_sheet_background"
-        android:endColor="@color/bottom_sheet_background"
-        android:angle="360" />
 </shape>

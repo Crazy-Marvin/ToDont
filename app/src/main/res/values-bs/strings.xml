@@ -81,9 +81,8 @@
         <item>Studije</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Da Ne Donesu Sada Vaš Sistem.</string>
-    <string name="toast_light">Da Ne Bude Na Svetlodnoj Strani Sada.</string>
-    <string name="toast_dark">Da Ne Bude Na Tamnoj Strani Sada.</string>
+    <string name="toast_system">To Don\\\'t sada koristi %s temu.</string>
+
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"

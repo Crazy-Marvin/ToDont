@@ -1,12 +1,12 @@
-<b>好好审视不良习惯。</b> 在主页上轻轻一点，就能记下你的坏习惯。用“备注”功能添加详细信息，比如你抗拒不了巧克力棒，就可以写上健康的替代品。还能通过“标签”整理你记录的内容。
+<b>审视不良习惯的好帮手。</b>轻触屏幕，就能在主页记下你的不良习惯。用“备注”功能添加详细信息——比如你抗拒不了的巧克力棒，就可以写上健康替代品。还能通过“标签”整理你记录内容。
 
 
-<b>比拿笔记录还快。</b> 在主页上找到自己的坏习惯，划掉那些你没能忍住做了的事。这些事当天就会移到“已做”列表里。第二天早上，又会有一整列需要避免的事情，让你重新开始。
+<b>比拿笔记录还快。</b>在主页找到你的坏习惯，划掉那些你没能忍住做了的事。它们会移至“今日已做”列表。第二天早上，又会有一整列需要避免的事情，让你重新开始。
 
 
-<b>随时掌握自己的进步情况。</b> “日志”能让你了解自己的整体成功率，还能指出你在一周、一个月或一年里最难以改掉的坏习惯。这样你就能轻松地朝着更好的自己努力
+<b>随时掌握自己的进步情况。</b>“日志”功能让你了解自己的整体成功率，还能指出你在一周、一个月或一年里最难以改掉的坏习惯。助你轻松迈向更优秀的自己。
 
 
-网站地址：<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
-为 To Don’t 添加翻译：<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
-在 GitHub 上的源代码：<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>
+官方网址：<a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+为 To Don't 添加翻译：<a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+GitHub 源码：<a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

@@ -1,0 +1,8 @@
+- 优化了用户体验 🎨
+- 更新了翻译 🗺️
+- 修复了已知漏洞 🤢
+- 更新了依赖项 🔩
+- 进行了常规维护 🧹
+
+非常感谢所有贡献者和翻译人员，尤其是@theftzoku 😘
+欢迎在 https://github.com/Crazy-Marvin/ToDont/ 报告问题或提交修复，或者在 https://hosted.weblate.org/engage/todont/ 参与翻译 🚀

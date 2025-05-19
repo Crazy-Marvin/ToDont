@@ -96,7 +96,7 @@
     <string name="add_daily_notification">添加每日通知</string>
     <string name="onboarding_bad">记下你的坏习惯，每天都划掉</string>
     <string name="april">四月</string>
-    <string name="onboarding_gavein">记下你的坏习惯。每天把那些你没能克制住的坏习惯划掉。然后第二天</string>
+    <string name="onboarding_gavein">记下你的坏习惯。每天把那些你没能克制住的坏习惯划掉。然后第二天继续重复这一过程</string>
     <string name="march">三月</string>
     <string name="dracula">德拉库拉</string>
 </resources>

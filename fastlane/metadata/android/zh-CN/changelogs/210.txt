@@ -1,8 +1,8 @@
 - 适配 Android 14 🤖
 - 支持应用内语言偏好设置 🗺
 - 使外部库中的字符串可翻译 🗺
-- 更新翻译内容 🗺
-- 优化用户界面 🎨
+- 更新了翻译内容 🗺
+- 优化了用户界面 🎨
 
 非常感谢所有贡献者和翻译人员 😘
-欢迎在 https://github.com/Crazy-Marvin/ToDont/ 上报告问题并提交修复方案，或者在 https://hosted.weblate.org/engage/todont/ 上提交翻译 🚀
+欢迎在 https://github.com/Crazy-Marvin/ToDont/ 上报告问题或提交修复，或者在 https://hosted.weblate.org/engage/todont/ 上参与翻译 🚀

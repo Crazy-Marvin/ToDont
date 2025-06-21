@@ -42,6 +42,9 @@
     <string name="log">Бревно</string>
     <string name="about">О</string>
     <string name="labels">Ярлыки</string>
+    <string name="new_labels">Новая метка</string>
+    <string name="time">Время</string>
+    <string name="frequncy">Частота</string>
     <string name="settings">Настройки</string>
     <string name="mostav">Большинство Избегали:</string>
     <string name="leastav">Меньше Всего Избежать:</string>
@@ -89,6 +92,7 @@
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
     <string name="contentDescription_FAB">Добавить Новое В Предмет</string>
     <string name="d">Дюймовый</string>
+    <string name="Notification_scheduled">Уведомление запланировано</string>
     <string name="w">W.</string>
     <string name="m">М</string>
     <string name="y">У</string>

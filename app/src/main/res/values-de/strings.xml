@@ -40,6 +40,9 @@
     <string name="log">Protokoll</string>
     <string name="about">Über</string>
     <string name="labels">Labels</string>
+    <string name="new_labels">Neues Etikett</string>
+    <string name="time">Zeit</string>
+    <string name="frequncy">Frequenz</string>
     <string name="settings">Einstellungen</string>
     <string name="mostav">Am meisten vermieden:</string>
     <string name="leastav">Am wenigsten vermieden:</string>
@@ -88,6 +91,7 @@
     <!-- Here are the contentDescription strings -->
     <string name="contentDescription_FAB">Neue To Don\'t-Aufgabe hinzufügen</string>
     <string name="d">D</string>
+    <string name="Notification_scheduled">Benachrichtigung geplant</string>
     <string name="w">W</string>
     <string name="m">M</string>
     <string name="y">J</string>

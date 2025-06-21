@@ -41,6 +41,9 @@
     <string name="log">سجل</string>
     <string name="about">عن</string>
     <string name="labels">تسميات</string>
+    <string name="new_labels">تسمية جديدة</string>
+    <string name="time">الوقت</string>
+    <string name="frequncy">التكرار</string>
     <string name="settings">إعدادات</string>
     <string name="mostav">تجنبها الأكثر:</string>
     <string name="leastav">على الأقل تجنب:</string>
@@ -89,6 +92,7 @@
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
     <string name="contentDescription_FAB">أضف جديدًا إلى عنصر Don \'T</string>
     <string name="d">د</string>
+    <string name="Notification_scheduled">تمت جدولة الإشعار</string>
     <string name="w">ث</string>
     <string name="m">م</string>
     <string name="y">ذ</string>

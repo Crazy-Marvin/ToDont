@@ -40,6 +40,9 @@
     <string name="log">Journal</string>
     <string name="about">À propos</string>
     <string name="labels">Étiquettes</string>
+    <string name="new_labels">Nouvelle étiquette</string>
+    <string name="time">Temps</string>
+    <string name="frequncy">Fréquence</string>
     <string name="settings">Paramètres</string>
     <string name="mostav">Le plus évité :</string>
     <string name="leastav">Le moins évité :</string>
@@ -89,6 +92,7 @@
     <!-- Here are the contentDescription strings -->
     <string name="contentDescription_FAB">Ajouter une nouvelle tâche To Don\'t</string>
     <string name="d">D</string>
+    <string name="Notification_scheduled">Notification programmée</string>
     <string name="w">W</string>
     <string name="m">M</string>
     <string name="y">A</string>

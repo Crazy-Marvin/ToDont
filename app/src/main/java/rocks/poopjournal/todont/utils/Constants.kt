@@ -1,5 +1,8 @@
 package rocks.poopjournal.todont.utils;
 
+import android.content.Context
+import rocks.poopjournal.todont.R
+
 
 public class Constants {
 
@@ -22,10 +25,16 @@ public class Constants {
             const val DEFAULT_APP_DISABLE_COLOR = "#DCDCDC"
             const val DEFAULT_APP_DISABLE_COLOR2 = "#FFFFFF"
 
-            const val NOTIFICATION_TIME_FORMAT="Time: %02d:%02d, Frequency: %s"
+//            const val NOTIFICATION_TIME_FORMAT=context.getString(R.string.time)"Time: %02d:%02d, Frequency: %s"
 
              var IS_OK=false
              var CURRENT_THEME:String=""
+            fun getNotificationTimeText(context: Context, hour: Int, minute: Int, frequency: String): String {
+                    val timeLabel = context.getString(R.string.time)
+                    val frequencyLabel = context.getString(R.string.frequncy)
+                    val format = "%s: %02d:%02d, %s: %s"
+                    return String.format(format, timeLabel, hour, minute, frequencyLabel, frequency)
+            }
     }
 
 }

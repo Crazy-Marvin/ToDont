@@ -1,13 +1,13 @@
 优化：
-- 拓展了应用教程 🦮
+- 扩展了应用教程 🦮
 - 适配 Android 15 🤖
 - 更新了翻译内容 🗺️
-- 优化了用户体验 🎨
+- 优化用户体验 🎨
 
-新增：
-- 每天可记录多个想要避免的行为和已完成的事项 🪬
+新增功能：
+- 每日可记录多个“避免事项”和“已做事项” 🪬
 - 新增通知功能 🛎️
-- 支持本地备份与恢复 🛟
+- 支持本地备份与恢复功能 🛟
 
 非常感谢所有贡献者和翻译人员 😘
-欢迎在 https://github.com/Crazy-Marvin/ToDont/ 上报告问题并提交修复方案，或者在 https://hosted.weblate.org/engage/todont/ 上提交翻译 🚀
+欢迎在 https://github.com/Crazy-Marvin/ToDont/ 上报告问题或提交修复，或者在 https://hosted.weblate.org/engage/todont/ 上参与翻译 🚀

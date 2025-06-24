@@ -1,6 +1,4 @@
-- New feature: add a cover image for entries 🖼️
-- New feature: homescreen widget 🏡
-- New feature: Dracula themes 🧛
+- UX improvements 🎨
 - Translation updates 🗺️
 - Bug fixes 🤢
 - Updated dependencies 🔩

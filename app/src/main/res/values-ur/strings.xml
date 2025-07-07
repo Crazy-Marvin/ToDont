@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>زبان منتخب کریں</item>
         <item>چیک</item>
@@ -11,23 +10,20 @@
         <item>Italian</item>
         <item>فرانسیسی</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>جنوری</item>
-            <item>فروری</item>
-            <item>مارچ</item>
-            <item>اپریل</item>
-            <item>مئی</item>
-            <item>جون</item>
-            <item>جولائی</item>
-            <item>اگست</item>
-            <item>ستمبر</item>
-            <item>اکتوبر</item>
-            <item>نومبر</item>
-            <item>دسمبر</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>جنوری</item>
+        <item>فروری</item>
+        <item>مارچ</item>
+        <item>اپریل</item>
+        <item>مئی</item>
+        <item>جون</item>
+        <item>جولائی</item>
+        <item>اگست</item>
+        <item>ستمبر</item>
+        <item>اکتوبر</item>
+        <item>نومبر</item>
+        <item>دسمبر</item>
+    </string-array>
     <string name="delete_habit">کیا آپ واقعی اس عادت کو حذف کرنا چاہتے ہیں؟</string>
     <string name="LightMode">To Don \'T</string>
     <string name="onboarding_reverse">ریورس ٹو ڈو لسٹ</string>
@@ -135,5 +131,4 @@
     <string name="back_up">بیک اپ</string>
     <string name="restore">بحال کریں</string>
     <string name="dracula">Dracula</string>
-
 </resources>

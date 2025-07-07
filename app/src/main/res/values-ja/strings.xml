@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>言語を選択します</item>
         <item>チェコ</item>
@@ -11,23 +10,20 @@
         <item>イタリア語</item>
         <item>フランス語</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>1月</item>
-            <item>2月</item>
-            <item>行進</item>
-            <item>4月</item>
-            <item>5月</item>
-            <item>6月</item>
-            <item>7月</item>
-            <item>8月</item>
-            <item>9月</item>
-            <item>10月</item>
-            <item>11月</item>
-            <item>12月</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>1月</item>
+        <item>2月</item>
+        <item>行進</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
     <string name="delete_habit">この習慣を削除したいですか？</string>
     <string name="LightMode">Don \'Tに</string>
     <string name="onboarding_reverse">逆To-Doリスト</string>
@@ -135,5 +131,4 @@
     <string name="back_up">バックアップ</string>
     <string name="restore">復元する</string>
     <string name="dracula">Dracula</string>
-
 </resources>

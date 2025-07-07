@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Valitse Kieli</item>
@@ -10,23 +10,20 @@
         <item>Italialainen</item>
         <item>Ranskalainen</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Tammikuu</item>
-            <item>Helmikuu</item>
-            <item>Maaliskuu</item>
-            <item>Huhtikuu</item>
-            <item>Toukokuu</item>
-            <item>Kesäkuu</item>
-            <item>Heinäkuu</item>
-            <item>Elokuu</item>
-            <item>Syyskuu</item>
-            <item>Lokakuu</item>
-            <item>Marraskuu</item>
-            <item>Joulukuu</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Tammikuu</item>
+        <item>Helmikuu</item>
+        <item>Maaliskuu</item>
+        <item>Huhtikuu</item>
+        <item>Toukokuu</item>
+        <item>Kesäkuu</item>
+        <item>Heinäkuu</item>
+        <item>Elokuu</item>
+        <item>Syyskuu</item>
+        <item>Lokakuu</item>
+        <item>Marraskuu</item>
+        <item>Joulukuu</item>
+    </string-array>
     <string name="delete_habit">Haluatko Varmasti Poistaa Tämän Tavan?</string>
     <string name="LightMode">Don \'T</string>
     <string name="onboarding_reverse">Käänteinen Tehtäväluettelo</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Tutustua</string>
     <string name="restore">Palauttaa</string>
     <string name="dracula">Dracula</string>
-
 </resources>

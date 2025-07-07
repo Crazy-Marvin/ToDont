@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>เลือกภาษา</item>
         <item>ภาษาเช็ก</item>
@@ -11,23 +10,20 @@
         <item>อิตาลี</item>
         <item>ภาษาฝรั่งเศส</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>มกราคม</item>
-            <item>กุมภาพันธ์</item>
-            <item>มีนาคม</item>
-            <item>เมษายน</item>
-            <item>อาจ</item>
-            <item>มิถุนายน</item>
-            <item>กรกฎาคม</item>
-            <item>สิงหาคม</item>
-            <item>กันยายน</item>
-            <item>ตุลาคม</item>
-            <item>พฤศจิกายน</item>
-            <item>ธันวาคม</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>มกราคม</item>
+        <item>กุมภาพันธ์</item>
+        <item>มีนาคม</item>
+        <item>เมษายน</item>
+        <item>อาจ</item>
+        <item>มิถุนายน</item>
+        <item>กรกฎาคม</item>
+        <item>สิงหาคม</item>
+        <item>กันยายน</item>
+        <item>ตุลาคม</item>
+        <item>พฤศจิกายน</item>
+        <item>ธันวาคม</item>
+    </string-array>
     <string name="delete_habit">แน่ใจหรือว่าต้องการลบนิสัยนี้?</string>
     <string name="LightMode">เพื่อไม่ \'T</string>
     <string name="onboarding_reverse">รายการสิ่งที่ต้องทำย้อนกลับ</string>
@@ -135,5 +131,4 @@
     <string name="back_up">สำรอง</string>
     <string name="restore">คืนค่า</string>
     <string name="dracula">Dracula</string>
-
 </resources>

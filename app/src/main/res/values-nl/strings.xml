@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Selecteer Taal</item>
@@ -10,23 +10,20 @@
         <item>Italiaans</item>
         <item>Frans</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Januari</item>
-            <item>Februari</item>
-            <item>Maart</item>
-            <item>April</item>
-            <item>Kunnen</item>
-            <item>Juni</item>
-            <item>Juli</item>
-            <item>Augustus</item>
-            <item>September</item>
-            <item>Oktober</item>
-            <item>November</item>
-            <item>December</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maart</item>
+        <item>April</item>
+        <item>Kunnen</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Augustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
     <string name="delete_habit">Weet Je Zeker Dat Je Deze Gewoonte Wilt Verwijderen?</string>
     <string name="LightMode">Om Niet Te Doen</string>
     <string name="onboarding_reverse">De Omgekeerde Takenlijst</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Back -Up</string>
     <string name="restore">Herstellen</string>
     <string name="dracula">Dracula</string>
-
 </resources>

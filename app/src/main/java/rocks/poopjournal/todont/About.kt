@@ -59,7 +59,6 @@ class About : AppCompatActivity() {
             false
         })
 
-        //tabdeeli aa gai hai
     }
 
     fun contact_codeaquaria(view: View) {

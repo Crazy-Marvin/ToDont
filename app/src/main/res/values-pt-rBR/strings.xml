@@ -41,6 +41,9 @@
     <string name="log">Registro</string>
     <string name="about">Sobre</string>
     <string name="labels">Etiquetas</string>
+    <string name="new_labels">Nova etiqueta</string>
+    <string name="time">Tempo</string>
+    <string name="frequncy">Frequência</string>
     <string name="settings">Configurações</string>
     <string name="mostav">Mais evitado:</string>
     <string name="leastav">Menos evitado:</string>
@@ -94,6 +97,7 @@
     <!-- Content Description Strings -->
     <string name="contentDescription_FAB">Adicionar novo item ao To Don\'t</string>
     <string name="d">D</string>
+    <string name="Notification_scheduled">Notificação agendada</string>
     <string name="w">S</string>
     <string name="m">M</string>
     <string name="y">A</string>

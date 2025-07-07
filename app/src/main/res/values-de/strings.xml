@@ -10,6 +10,7 @@
         <item>Italienisch</item>
         <item>Französisch</item>
     </string-array>
+
     <string-array name="month_names">
         <item>Januar</item>
         <item>Februar</item>
@@ -24,6 +25,7 @@
         <item>November</item>
         <item>Dezember</item>
     </string-array>
+
     <string name="delete_habit">Möchten Sie diese Gewohnheit wirklich löschen?</string>
     <string name="LightMode">To Don\'t</string>
     <string name="onboarding_reverse">Die To-Do-Liste umkehren</string>
@@ -31,13 +33,16 @@
     <string name="onboarding_gavein">die schlechten Gewohnheiten, denen Sie nachgegeben haben. Und am nächsten Tag</string>
     <string name="onboarding_freshlist">beginnen Sie mit einer neuen Liste.</string>
     <string name="onboarding_continue">Fortfahren</string>
-    <string name="avoided">Vermieden</string>
-    <string name="done">Getan</string>
+    <string name="avoided">Vermeidet</string>
+    <string name="done">Fertig</string>
     <string name="habits">Gewohnheiten</string>
     <string name="today">Heute</string>
     <string name="log">Protokoll</string>
     <string name="about">Über</string>
     <string name="labels">Labels</string>
+    <string name="new_labels">Neues Etikett</string>
+    <string name="time">Zeit</string>
+    <string name="frequncy">Frequenz</string>
     <string name="settings">Einstellungen</string>
     <string name="mostav">Am meisten vermieden:</string>
     <string name="leastav">Am wenigsten vermieden:</string>
@@ -77,13 +82,16 @@
         <item>Essen und Trinken</item>
         <item>Studium</item>
     </string-array>
+
     <!-- Toasts -->
     <string name="toast_system">To Don\\\'t verwendet jetzt das %s -Design.</string>
+
     <!-- Here are the non-translateable strings -->
 
     <!-- Here are the contentDescription strings -->
     <string name="contentDescription_FAB">Neue To Don\'t-Aufgabe hinzufügen</string>
     <string name="d">D</string>
+    <string name="Notification_scheduled">Benachrichtigung geplant</string>
     <string name="w">W</string>
     <string name="m">M</string>
     <string name="y">J</string>

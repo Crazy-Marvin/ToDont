@@ -34,8 +34,6 @@ class MainActivity : AppCompatActivity() {
         prefUtils = SharedPrefUtils(this)
         dbHelper = DatabaseUtils(this)
 
-
-
         // Set toolbar text to "Today"
         binding.toolbartext.setText(R.string.today)
 

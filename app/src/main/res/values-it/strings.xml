@@ -40,6 +40,9 @@
     <string name="log">Registro</string>
     <string name="about">Informazioni</string>
     <string name="labels">Etichette</string>
+    <string name="new_labels">Nuova etichetta</string>
+    <string name="time">Tempo</string>
+    <string name="frequncy">Frequenza</string>
     <string name="settings">Impostazioni</string>
     <string name="mostav">Più evitato:</string>
     <string name="leastav">Meno evitato:</string>
@@ -89,6 +92,7 @@
     <!-- Here are the contentDescription strings -->
     <string name="contentDescription_FAB">Aggiungi nuova attività To Don\'t</string>
     <string name="d">D</string>
+    <string name="Notification_scheduled">Notifica programmata</string>
     <string name="w">W</string>
     <string name="m">M</string>
     <string name="y">G</string>

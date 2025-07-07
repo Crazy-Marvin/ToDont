@@ -11,9 +11,9 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 210,
-      "versionName": "2.1.0",
-      "outputFile": "app-release.apk"
+      "versionCode": 410,
+      "versionName": "4.1.0",
+      "outputFile": "ToDont_410_Release.apk"
     }
   ],
   "elementType": "File",
@@ -22,14 +22,14 @@
       "minApi": 28,
       "maxApi": 30,
       "baselineProfiles": [
-        "baselineProfiles/1/app-release.dm"
+        "baselineProfiles/1/ToDont_410_Release.dm"
       ]
     },
     {
       "minApi": 31,
       "maxApi": 2147483647,
       "baselineProfiles": [
-        "baselineProfiles/0/app-release.dm"
+        "baselineProfiles/0/ToDont_410_Release.dm"
       ]
     }
   ],

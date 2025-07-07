@@ -1,6 +1,7 @@
 package rocks.poopjournal.todont.utils
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlarmManager
 import android.app.NotificationManager
@@ -36,6 +37,7 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 import jp.wasabeef.glide.transformations.BlurTransformation
+import rocks.poopjournal.todont.utils.Constants.Companion.getNotificationTimeText
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileNotFoundException
@@ -73,8 +75,15 @@ class HabitsBottomSheetDialog(
             }
             val calendar= Calendar.getInstance()
             calendar.timeInMillis=it.alarmTime
-            binding.tvNotification.text=String.format(
+/*            binding.tvNotification.text=String.format(
                 Constants.NOTIFICATION_TIME_FORMAT,
+                calendar[Calendar.HOUR_OF_DAY],
+                calendar[Calendar.MINUTE],
+                freq
+            )*/
+
+            binding.tvNotification.text = getNotificationTimeText(
+                context,
                 calendar[Calendar.HOUR_OF_DAY],
                 calendar[Calendar.MINUTE],
                 freq
@@ -278,12 +287,14 @@ class HabitsBottomSheetDialog(
         ) { _, which ->
             val frequency = frequencies[which]
             // Update tvNotification with selected time and frequency
-            val notificationText = String.format(
+      /*      val notificationText = String.format(
                 Constants.NOTIFICATION_TIME_FORMAT,
                 hourOfDay,
                 minute,
                 frequency
-            )
+            )*/
+            val notificationText = getNotificationTimeText(context, hourOfDay, minute, frequency)
+
             binding.tvNotification.text = notificationText
 
             // Schedule notification based on selected time and frequency
@@ -297,6 +308,7 @@ class HabitsBottomSheetDialog(
         builder.show()
     }
 
+    @SuppressLint("StringFormatInvalid")
     private fun scheduleNotification(
         habitId: Int?,
         calendar: Calendar,
@@ -306,12 +318,12 @@ class HabitsBottomSheetDialog(
         val alarmManager =
             context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
-        val delete:Boolean= mapFreq == "0";
+        val delete: Boolean = mapFreq == "0";
 
 
         val intent = Intent(context, NotificationReceiver::class.java)
         intent.putExtra("task_id", habitId) // Pass task ID in intent
-        intent.putExtra("delete",delete)
+        intent.putExtra("delete", delete)
         intent.putExtra(
             "task",
             habit.name
@@ -321,7 +333,7 @@ class HabitsBottomSheetDialog(
                 context,
                 it,
                 intent,
-               PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
         }
 
@@ -329,9 +341,9 @@ class HabitsBottomSheetDialog(
         var interval: Long = 0
 
         // Determine repetition interval based on frequency
-        if (frequency == context.getString(R.string.daily)) {
+        if (mapFreq == "1") {
             interval = AlarmManager.INTERVAL_DAY
-        } else if (frequency == context.getString(R.string.weekly)) {
+        } else if (mapFreq=="7") {
             interval = AlarmManager.INTERVAL_DAY * 7
         }
 
@@ -340,7 +352,7 @@ class HabitsBottomSheetDialog(
 
         // Set the alarm
         pendingIntent?.let {
-            if (interval > 0 ) {
+            if (interval > 0) {
                 alarmManager.setRepeating(
                     AlarmManager.RTC_WAKEUP,
                     triggerTime,
@@ -356,13 +368,18 @@ class HabitsBottomSheetDialog(
             }
         }
 
-        Toast.makeText(
+        /*   Toast.makeText(
             context,
             "Notification scheduled: $frequency",
             Toast.LENGTH_SHORT
         ).show()
+    }*/
+        Toast.makeText(
+            context,
+            context.getString(R.string.Notification_scheduled, frequency),
+            Toast.LENGTH_SHORT
+        ).show()
     }
-
     private fun deleteAlarm(habitId: Int) {
 
         val alarmManager =

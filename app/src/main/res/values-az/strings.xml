@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Dil Seçin</item>
@@ -10,23 +10,20 @@
         <item>İtalyan</item>
         <item>Fransız</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Yanvar</item>
-            <item>Fevral</item>
-            <item>Mart</item>
-            <item>Aprel</item>
-            <item>Maya</item>
-            <item>İyun</item>
-            <item>İyul</item>
-            <item>Avqust</item>
-            <item>Sentyabr</item>
-            <item>Oktyabr</item>
-            <item>Noyabr</item>
-            <item>Dekabr</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Yanvar</item>
+        <item>Fevral</item>
+        <item>Mart</item>
+        <item>Aprel</item>
+        <item>Maya</item>
+        <item>İyun</item>
+        <item>İyul</item>
+        <item>Avqust</item>
+        <item>Sentyabr</item>
+        <item>Oktyabr</item>
+        <item>Noyabr</item>
+        <item>Dekabr</item>
+    </string-array>
     <string name="delete_habit">Bu Vərdişi Silmək Istədiyinizə Əminsiniz?</string>
     <string name="LightMode">Don \'T</string>
     <string name="onboarding_reverse">Tərsin Siyahısı Siyahısı</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Yedək</string>
     <string name="restore">Bərpa Etmək</string>
     <string name="dracula">Dracula</string>
-
 </resources>

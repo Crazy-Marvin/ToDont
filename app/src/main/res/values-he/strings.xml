@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>בחר שפה</item>
         <item>צ\'כיה</item>
@@ -11,23 +10,20 @@
         <item>אִיטַלְקִית</item>
         <item>צָרְפָתִית</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>יָנוּאָר</item>
-            <item>פֶבּרוּאָר</item>
-            <item>מַרס</item>
-            <item>אַפּרִיל</item>
-            <item>מַאִי</item>
-            <item>יוּנִי</item>
-            <item>יוּלִי</item>
-            <item>אוֹגוּסט</item>
-            <item>סֶפּטֶמבֶּר</item>
-            <item>אוֹקְטוֹבֶּר</item>
-            <item>נוֹבֶמבֶּר</item>
-            <item>דֵצֶמבֶּר</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>יָנוּאָר</item>
+        <item>פֶבּרוּאָר</item>
+        <item>מַרס</item>
+        <item>אַפּרִיל</item>
+        <item>מַאִי</item>
+        <item>יוּנִי</item>
+        <item>יוּלִי</item>
+        <item>אוֹגוּסט</item>
+        <item>סֶפּטֶמבֶּר</item>
+        <item>אוֹקְטוֹבֶּר</item>
+        <item>נוֹבֶמבֶּר</item>
+        <item>דֵצֶמבֶּר</item>
+    </string-array>
     <string name="delete_habit">האם אתה בטוח שאתה רוצה למחוק את ההרגל הזה?</string>
     <string name="LightMode">לדון</string>
     <string name="onboarding_reverse">רשימת המטלות ההפוכה</string>
@@ -135,5 +131,4 @@
     <string name="back_up">לְגַבּוֹת</string>
     <string name="restore">לְשַׁחְזֵר</string>
     <string name="dracula">Dracula</string>
-
 </resources>

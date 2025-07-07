@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Vali Keel</item>
@@ -10,23 +10,20 @@
         <item>Itaallane</item>
         <item>Prantsuse</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Jaanuar</item>
-            <item>Veebruar</item>
-            <item>Marssima</item>
-            <item>Aprill</item>
-            <item>Mai</item>
-            <item>Juuni</item>
-            <item>Juuli</item>
-            <item>August</item>
-            <item>September</item>
-            <item>Oktoober</item>
-            <item>November</item>
-            <item>Detsember</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Jaanuar</item>
+        <item>Veebruar</item>
+        <item>Marssima</item>
+        <item>Aprill</item>
+        <item>Mai</item>
+        <item>Juuni</item>
+        <item>Juuli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktoober</item>
+        <item>November</item>
+        <item>Detsember</item>
+    </string-array>
     <string name="delete_habit">Kas Olete Kindel, Et Soovite Selle Harjumuse Kustutada?</string>
     <string name="LightMode">Mitte</string>
     <string name="onboarding_reverse">Vastupidine Ülesandeloend</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Varundama</string>
     <string name="restore">Taastama</string>
     <string name="dracula">Dracula</string>
-
 </resources>

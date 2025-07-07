@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Pilih Bahasa</item>
         <item>Czech</item>
@@ -11,23 +10,20 @@
         <item>Bahasa Itali</item>
         <item>Perancis</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Januari</item>
-            <item>Februari</item>
-            <item>Mac</item>
-            <item>April</item>
-            <item>Mei</item>
-            <item>Jun</item>
-            <item>Julai</item>
-            <item>Ogos</item>
-            <item>September</item>
-            <item>Oktober</item>
-            <item>November</item>
-            <item>Disember</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Mac</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Jun</item>
+        <item>Julai</item>
+        <item>Ogos</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Disember</item>
+    </string-array>
     <string name="delete_habit">Adakah Anda Pasti Mahu Memadamkan Tabiat Ini?</string>
     <string name="LightMode">Untuk Tidak</string>
     <string name="onboarding_reverse">Senarai Tugasan Terbalik</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Kembali</string>
     <string name="restore">Pulihkan</string>
     <string name="dracula">Dracula</string>
-
 </resources>

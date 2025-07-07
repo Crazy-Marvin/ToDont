@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Επιλέξτε Τη Γλώσσα</item>
         <item>Τσέχος</item>
@@ -11,23 +10,20 @@
         <item>Ιταλικά</item>
         <item>Γάλλος</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Ιανουάριος</item>
-            <item>Φεβρουάριος</item>
-            <item>Πορεία</item>
-            <item>Απρίλιος</item>
-            <item>Μάιος</item>
-            <item>Ιούνιος</item>
-            <item>Ιούλιος</item>
-            <item>Αύγουστος</item>
-            <item>Σεπτέμβριος</item>
-            <item>Οκτώβριος</item>
-            <item>Νοέμβριος</item>
-            <item>Δεκέμβριος</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Ιανουάριος</item>
+        <item>Φεβρουάριος</item>
+        <item>Πορεία</item>
+        <item>Απρίλιος</item>
+        <item>Μάιος</item>
+        <item>Ιούνιος</item>
+        <item>Ιούλιος</item>
+        <item>Αύγουστος</item>
+        <item>Σεπτέμβριος</item>
+        <item>Οκτώβριος</item>
+        <item>Νοέμβριος</item>
+        <item>Δεκέμβριος</item>
+    </string-array>
     <string name="delete_habit">Είστε Βέβαιοι Ότι Θέλετε Να Διαγράψετε Αυτήν Τη Συνήθεια;</string>
     <string name="LightMode">Για Να Μην \'T</string>
     <string name="onboarding_reverse">Την Αντίστροφη Λίστα Υποχρεώσεων</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Υποβοηθώ</string>
     <string name="restore">Επαναφέρω</string>
     <string name="dracula">Dracula</string>
-
 </resources>

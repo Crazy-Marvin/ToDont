@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Lego Language</item>
         <item>Bohemica</item>
@@ -11,23 +10,20 @@
         <item>Italiae</item>
         <item>Gallus</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>January</item>
-            <item>Februarii</item>
-            <item>Appellum</item>
-            <item>Aprilis</item>
-            <item>Ut</item>
-            <item>Junio</item>
-            <item>July</item>
-            <item>Augusto</item>
-            <item>September</item>
-            <item>Octobris</item>
-            <item>November</item>
-            <item>Deceptio</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>January</item>
+        <item>Februarii</item>
+        <item>Appellum</item>
+        <item>Aprilis</item>
+        <item>Ut</item>
+        <item>Junio</item>
+        <item>July</item>
+        <item>Augusto</item>
+        <item>September</item>
+        <item>Octobris</item>
+        <item>November</item>
+        <item>Deceptio</item>
+    </string-array>
     <string name="delete_habit">Tu Es Certus Vis Delere Hoc Habitum?</string>
     <string name="LightMode">Ut Don \'T</string>
     <string name="onboarding_reverse">Et Converso Ad-Do List</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Tergum Sursum</string>
     <string name="restore">Restituo</string>
     <string name="dracula">Dracula</string>
-
 </resources>

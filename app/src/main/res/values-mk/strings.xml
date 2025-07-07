@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Изберете Јазик</item>
         <item>Чешки</item>
@@ -11,23 +10,20 @@
         <item>Италијански</item>
         <item>Француски</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Јануари</item>
-            <item>Февруари</item>
-            <item>Март</item>
-            <item>Април</item>
-            <item>Мај</item>
-            <item>Јуни</item>
-            <item>Јули</item>
-            <item>Август</item>
-            <item>Септември</item>
-            <item>Октомври</item>
-            <item>Ноември</item>
-            <item>Декември</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Јануари</item>
+        <item>Февруари</item>
+        <item>Март</item>
+        <item>Април</item>
+        <item>Мај</item>
+        <item>Јуни</item>
+        <item>Јули</item>
+        <item>Август</item>
+        <item>Септември</item>
+        <item>Октомври</item>
+        <item>Ноември</item>
+        <item>Декември</item>
+    </string-array>
     <string name="delete_habit">Дали Сте Сигурни Дека Сакате Да Ја Избришете Оваа Навика?</string>
     <string name="LightMode">Да Не</string>
     <string name="onboarding_reverse">Списокот За Обратни За Да Направам</string>
@@ -134,5 +130,4 @@
     <string name="back_up">Назад</string>
     <string name="restore">Врати</string>
     <string name="dracula">Dracula</string>
-
 </resources>

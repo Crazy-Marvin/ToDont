@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Тілді Таңдаңыз</item>
         <item>Чех</item>
@@ -11,23 +10,20 @@
         <item>Итальяндық</item>
         <item>Француз</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Қаңтар</item>
-            <item>Ақпан</item>
-            <item>Сапта Жүру</item>
-            <item>Сәуір</item>
-            <item>Мамыр</item>
-            <item>Маусым</item>
-            <item>Шілде</item>
-            <item>Тамыз</item>
-            <item>Қыркүйек</item>
-            <item>Қазан</item>
-            <item>Қараша</item>
-            <item>Желтоқсан</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Қаңтар</item>
+        <item>Ақпан</item>
+        <item>Сапта Жүру</item>
+        <item>Сәуір</item>
+        <item>Мамыр</item>
+        <item>Маусым</item>
+        <item>Шілде</item>
+        <item>Тамыз</item>
+        <item>Қыркүйек</item>
+        <item>Қазан</item>
+        <item>Қараша</item>
+        <item>Желтоқсан</item>
+    </string-array>
     <string name="delete_habit">Сіз Осы Әдетті Жойғыңыз Келе Ме?</string>
     <string name="LightMode">To Don \'T</string>
     <string name="onboarding_reverse">Кері Істер Тізімі</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Сақтық Көшірме</string>
     <string name="restore">Қалпына Келтіру</string>
     <string name="dracula">Dracula</string>
-
 </resources>

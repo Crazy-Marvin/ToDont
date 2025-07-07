@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Agħżel Lingwa</item>
         <item>Ċek</item>
@@ -11,23 +10,20 @@
         <item>Taljan</item>
         <item>Franċiż</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Jannar</item>
-            <item>Frar</item>
-            <item>Marzu</item>
-            <item>April</item>
-            <item>Mejju</item>
-            <item>Ġunju</item>
-            <item>Lulju</item>
-            <item>Awwissu</item>
-            <item>Settembru</item>
-            <item>Ottubru</item>
-            <item>Novembru</item>
-            <item>Diċembru</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Jannar</item>
+        <item>Frar</item>
+        <item>Marzu</item>
+        <item>April</item>
+        <item>Mejju</item>
+        <item>Ġunju</item>
+        <item>Lulju</item>
+        <item>Awwissu</item>
+        <item>Settembru</item>
+        <item>Ottubru</item>
+        <item>Novembru</item>
+        <item>Diċembru</item>
+    </string-array>
     <string name="delete_habit">Int Żgur Li Trid Tħassar Din Il-Vizzju?</string>
     <string name="LightMode">Biex Ma \'T</string>
     <string name="onboarding_reverse">Il-Lista Ta \'Wara Li Tagħmel</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Back Up</string>
     <string name="restore">Irrestawra</string>
     <string name="dracula">Dracula</string>
-
 </resources>

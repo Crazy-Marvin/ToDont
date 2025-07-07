@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>भाषा चयन गर्नुहोस्</item>
@@ -10,23 +10,20 @@
         <item>इटालियन</item>
         <item>फ्रेन्च</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>जनवरी</item>
-            <item>फरवरी</item>
-            <item>मार्च</item>
-            <item>अप्रिल</item>
-            <item>मे</item>
-            <item>जून</item>
-            <item>जुलाई</item>
-            <item>अगस्त महिना</item>
-            <item>सेप्टेम्बर</item>
-            <item>अक्टोबर</item>
-            <item>नभेम्बर</item>
-            <item>दिसम्बर</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>जनवरी</item>
+        <item>फरवरी</item>
+        <item>मार्च</item>
+        <item>अप्रिल</item>
+        <item>मे</item>
+        <item>जून</item>
+        <item>जुलाई</item>
+        <item>अगस्त महिना</item>
+        <item>सेप्टेम्बर</item>
+        <item>अक्टोबर</item>
+        <item>नभेम्बर</item>
+        <item>दिसम्बर</item>
+    </string-array>
     <string name="delete_habit">के तपाईं पक्का यो बानी मेट्न निश्चित हुनुहुन्छ?</string>
     <string name="LightMode">गर्न सक्दैन</string>
     <string name="onboarding_reverse">उल्टो सूची</string>
@@ -134,5 +131,4 @@
     <string name="back_up">पूर्ति</string>
     <string name="restore">मरम्मत गर्नु</string>
     <string name="dracula">Dracula</string>
-
 </resources>

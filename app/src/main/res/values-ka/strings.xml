@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>შეარჩიეთ ენა</item>
         <item>ჩეხური</item>
@@ -11,23 +10,20 @@
         <item>იტალიური</item>
         <item>ფრანგული</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>იანვარი</item>
-            <item>თებერვალი</item>
-            <item>მარტი</item>
-            <item>აპრილი</item>
-            <item>მაისი</item>
-            <item>ივნისი</item>
-            <item>ივლისი</item>
-            <item>აგვისტო</item>
-            <item>September</item>
-            <item>October</item>
-            <item>November</item>
-            <item>დეკემბერი</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>იანვარი</item>
+        <item>თებერვალი</item>
+        <item>მარტი</item>
+        <item>აპრილი</item>
+        <item>მაისი</item>
+        <item>ივნისი</item>
+        <item>ივლისი</item>
+        <item>აგვისტო</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>დეკემბერი</item>
+    </string-array>
     <string name="delete_habit">დარწმუნებული ხართ, რომ გსურთ ამ ჩვევის წაშლა?</string>
     <string name="LightMode">არ</string>
     <string name="onboarding_reverse">საპირისპირო სამუშაოების სია</string>
@@ -135,5 +131,4 @@
     <string name="back_up">სარეზერვო ასვლა</string>
     <string name="restore">აღდგენა</string>
     <string name="dracula">Dracula</string>
-
 </resources>

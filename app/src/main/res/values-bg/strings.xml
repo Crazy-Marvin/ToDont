@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Изберете Език</item>
@@ -10,23 +10,20 @@
         <item>Италиански</item>
         <item>Френски</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Януари</item>
-            <item>Февруари</item>
-            <item>Март</item>
-            <item>Април</item>
-            <item>Може</item>
-            <item>Юни</item>
-            <item>Юли</item>
-            <item>Август</item>
-            <item>Септември</item>
-            <item>Октомври</item>
-            <item>Ноември</item>
-            <item>Декември</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Януари</item>
+        <item>Февруари</item>
+        <item>Март</item>
+        <item>Април</item>
+        <item>Може</item>
+        <item>Юни</item>
+        <item>Юли</item>
+        <item>Август</item>
+        <item>Септември</item>
+        <item>Октомври</item>
+        <item>Ноември</item>
+        <item>Декември</item>
+    </string-array>
     <string name="delete_habit">Сигурни Ли Сте, Че Искате Да Изтриете Този Навик?</string>
     <string name="LightMode">Да Не \'T</string>
     <string name="onboarding_reverse">Списъкът С Обратни Задачи</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Резервно Копие</string>
     <string name="restore">Възстановяване</string>
     <string name="dracula">Dracula</string>
-
 </resources>

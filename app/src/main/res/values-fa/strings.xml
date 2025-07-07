@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>زبان را انتخاب کنید</item>
         <item>وابسته به چک</item>
@@ -11,23 +10,20 @@
         <item>ایتالیایی</item>
         <item>فرانسوی</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>ژانویه</item>
-            <item>فوریه</item>
-            <item>راهپیمایی</item>
-            <item>ماه آوریل</item>
-            <item>ماه مه</item>
-            <item>ژوئن</item>
-            <item>ژوئیه</item>
-            <item>اوت</item>
-            <item>سپتامبر</item>
-            <item>اکتبر</item>
-            <item>ماه نوامبر</item>
-            <item>دسامبر</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>ژانویه</item>
+        <item>فوریه</item>
+        <item>راهپیمایی</item>
+        <item>ماه آوریل</item>
+        <item>ماه مه</item>
+        <item>ژوئن</item>
+        <item>ژوئیه</item>
+        <item>اوت</item>
+        <item>سپتامبر</item>
+        <item>اکتبر</item>
+        <item>ماه نوامبر</item>
+        <item>دسامبر</item>
+    </string-array>
     <string name="delete_habit">آیا مطمئن هستید که می خواهید این عادت را حذف کنید؟</string>
     <string name="LightMode">به</string>
     <string name="onboarding_reverse">لیست معکوس به انجام کارهای</string>
@@ -134,5 +130,4 @@
     <string name="back_up">از پس دادن</string>
     <string name="restore">بازگرداندن</string>
     <string name="dracula">Dracula</string>
-
 </resources>

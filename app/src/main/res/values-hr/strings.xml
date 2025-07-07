@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Odaberite Jezik</item>
@@ -10,23 +10,20 @@
         <item>Talijanski</item>
         <item>Francuski</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Siječanj</item>
-            <item>Veljača</item>
-            <item>Ožujak</item>
-            <item>Travanj</item>
-            <item>Svibanj</item>
-            <item>Lipanj</item>
-            <item>Srpanj</item>
-            <item>Kolovoz</item>
-            <item>Rujan</item>
-            <item>Listopad</item>
-            <item>Studeni</item>
-            <item>Prosinac</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Siječanj</item>
+        <item>Veljača</item>
+        <item>Ožujak</item>
+        <item>Travanj</item>
+        <item>Svibanj</item>
+        <item>Lipanj</item>
+        <item>Srpanj</item>
+        <item>Kolovoz</item>
+        <item>Rujan</item>
+        <item>Listopad</item>
+        <item>Studeni</item>
+        <item>Prosinac</item>
+    </string-array>
     <string name="delete_habit">Jeste Li Sigurni Da Želite Izbrisati Ovu Naviku?</string>
     <string name="LightMode">Ne Doneti</string>
     <string name="onboarding_reverse">Popis Obrnutog Obveza</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Sigurnosno Kopirati</string>
     <string name="restore">Vratiti</string>
     <string name="dracula">Dracula</string>
-
 </resources>

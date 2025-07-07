@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Selecione O Idioma</item>
         <item>Czech</item>
@@ -11,23 +10,20 @@
         <item>Italian</item>
         <item>French</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Janeiro</item>
-            <item>Fevereiro</item>
-            <item>Marchar</item>
-            <item>Abril</item>
-            <item>Poderia</item>
-            <item>Junho</item>
-            <item>Julho</item>
-            <item>Agosto</item>
-            <item>Setembro</item>
-            <item>Outubro</item>
-            <item>Novembro</item>
-            <item>Dezembro</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Janeiro</item>
+        <item>Fevereiro</item>
+        <item>Marchar</item>
+        <item>Abril</item>
+        <item>Poderia</item>
+        <item>Junho</item>
+        <item>Julho</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outubro</item>
+        <item>Novembro</item>
+        <item>Dezembro</item>
+    </string-array>
     <string name="delete_habit">Tem Certeza De Que Deseja Excluir Esse Hábito?</string>
     <string name="LightMode">Para Não Fazer</string>
     <string name="onboarding_reverse">A Lista De Tarefas Reversas</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Backup</string>
     <string name="restore">Restaurar</string>
     <string name="dracula">Dracula</string>
-
 </resources>

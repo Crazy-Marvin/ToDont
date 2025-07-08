@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>भाषा चुने</item>
         <item>चेक</item>
@@ -11,23 +10,20 @@
         <item>इतालवी</item>
         <item>फ्रांसीसी</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>जनवरी</item>
-            <item>फ़रवरी</item>
-            <item>मार्च</item>
-            <item>अप्रैल</item>
-            <item>मई</item>
-            <item>जून</item>
-            <item>जुलाई</item>
-            <item>अगस्त</item>
-            <item>सितम्बर</item>
-            <item>अक्टूबर</item>
-            <item>नवंबर</item>
-            <item>दिसंबर</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>जनवरी</item>
+        <item>फ़रवरी</item>
+        <item>मार्च</item>
+        <item>अप्रैल</item>
+        <item>मई</item>
+        <item>जून</item>
+        <item>जुलाई</item>
+        <item>अगस्त</item>
+        <item>सितम्बर</item>
+        <item>अक्टूबर</item>
+        <item>नवंबर</item>
+        <item>दिसंबर</item>
+    </string-array>
     <string name="delete_habit">क्या आप सुनिश्चित हैं कि आप इस आदत को हटाना चाहते हैं?</string>
     <string name="LightMode">करने के लिए</string>
     <string name="onboarding_reverse">रिवर्स टू-डू सूची</string>
@@ -134,5 +130,4 @@
     <string name="back_up">वापस करना</string>
     <string name="restore">पुनर्स्थापित करना</string>
     <string name="dracula">Dracula</string>
-
 </resources>

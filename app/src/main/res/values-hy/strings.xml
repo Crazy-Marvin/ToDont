@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Ընտրեք Լեզուն</item>
@@ -10,23 +10,20 @@
         <item>Իտալերեն</item>
         <item>Ֆրանսիական</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Հունվար</item>
-            <item>Փետրվար</item>
-            <item>Մարտ</item>
-            <item>Ապրիլ</item>
-            <item>Մայիս</item>
-            <item>Հունիս</item>
-            <item>Հուլիս</item>
-            <item>Օգոստոս</item>
-            <item>Սեպտեմբեր</item>
-            <item>Հոկտեմբեր</item>
-            <item>Նոյեմբեր</item>
-            <item>Դեկտեմբեր</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Հունվար</item>
+        <item>Փետրվար</item>
+        <item>Մարտ</item>
+        <item>Ապրիլ</item>
+        <item>Մայիս</item>
+        <item>Հունիս</item>
+        <item>Հուլիս</item>
+        <item>Օգոստոս</item>
+        <item>Սեպտեմբեր</item>
+        <item>Հոկտեմբեր</item>
+        <item>Նոյեմբեր</item>
+        <item>Դեկտեմբեր</item>
+    </string-array>
     <string name="delete_habit">Համոզված Եք, Որ Ցանկանում Եք Ջնջել Այս Սովորությունը:</string>
     <string name="LightMode">Չի</string>
     <string name="onboarding_reverse">Հակադարձ Անելիքների Ցուցակը</string>
@@ -133,5 +130,4 @@
     <string name="back_up">Կրկնօրինակում</string>
     <string name="restore">Վերականգնել</string>
     <string name="dracula">Dracula</string>
-
 </resources>

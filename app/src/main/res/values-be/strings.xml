@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Выберыце Мову</item>
@@ -10,23 +10,20 @@
         <item>Італьянскі</item>
         <item>Француз</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Студзень</item>
-            <item>Люты</item>
-            <item>Маршыраваць</item>
-            <item>Красавік</item>
-            <item>Травень</item>
-            <item>Чэрвень</item>
-            <item>Ліпень</item>
-            <item>Жнівень</item>
-            <item>Верасень</item>
-            <item>October</item>
-            <item>Лістапад</item>
-            <item>Снежань</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Студзень</item>
+        <item>Люты</item>
+        <item>Маршыраваць</item>
+        <item>Красавік</item>
+        <item>Травень</item>
+        <item>Чэрвень</item>
+        <item>Ліпень</item>
+        <item>Жнівень</item>
+        <item>Верасень</item>
+        <item>October</item>
+        <item>Лістапад</item>
+        <item>Снежань</item>
+    </string-array>
     <string name="delete_habit">Вы Ўпэўнены, Што Хочаце Выдаліць Гэтую Звычку?</string>
     <string name="LightMode">Каб Не</string>
     <string name="onboarding_reverse">Спіс Зваротнага Спраў</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Назад</string>
     <string name="restore">Аднаўляць</string>
     <string name="dracula">Dracula</string>
-
 </resources>

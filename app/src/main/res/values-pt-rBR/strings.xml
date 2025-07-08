@@ -11,7 +11,6 @@
         <item>Italiano</item>
         <item>Francês</item>
     </string-array>
-
     <string-array name="month_names">
         <item>Janeiro</item>
         <item>Fevereiro</item>
@@ -26,7 +25,6 @@
         <item>Novembro</item>
         <item>Dezembro</item>
     </string-array>
-
     <string name="delete_habit">Você tem certeza que deseja excluir este hábito?</string>
     <string name="LightMode">To Don\'t</string>
     <string name="onboarding_reverse">A lista de tarefas ao contrário</string>
@@ -83,17 +81,14 @@
         <item>Comidas e Bebidas</item>
         <item>Estudos</item>
     </string-array>
-
     <!-- Toasts -->
     <string name="toast_system">To Don\'t agora segue o sistema.</string>
     <string name="toast_light">To Don\'t está no modo claro agora.</string>
     <string name="toast_dark">To Don\'t está no modo escuro agora.</string>
-
     <!-- Non-translatable strings -->
     <string name="crazymarvin" translatable="false">Crazy Marvin</string>
     <string name="codeacquaria" translatable="false">Code Acquaria</string>
     <string name="text" translatable="false"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Olá fragmento em branco</string>
-
     <!-- Content Description Strings -->
     <string name="contentDescription_FAB">Adicionar novo item ao To Don\'t</string>
     <string name="d">D</string>

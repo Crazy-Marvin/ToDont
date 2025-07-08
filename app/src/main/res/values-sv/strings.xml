@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Välj Språk</item>
         <item>Tjeckisk</item>
@@ -11,23 +10,20 @@
         <item>Italienare</item>
         <item>Franska</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Januari</item>
-            <item>Februari</item>
-            <item>Marsch</item>
-            <item>April</item>
-            <item>Kan</item>
-            <item>Juni</item>
-            <item>Juli</item>
-            <item>Augusti</item>
-            <item>September</item>
-            <item>Oktober</item>
-            <item>November</item>
-            <item>December</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Marsch</item>
+        <item>April</item>
+        <item>Kan</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Augusti</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
     <string name="delete_habit">Är Du Säker På Att Du Vill Ta Bort Den Här Vanan?</string>
     <string name="LightMode">Till Don \'T</string>
     <string name="onboarding_reverse">Den Omvända Att Göra-Listan</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Backa Upp</string>
     <string name="restore">Återställa</string>
     <string name="dracula">Dracula</string>
-
 </resources>

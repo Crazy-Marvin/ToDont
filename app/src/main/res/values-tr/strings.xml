@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Dili Seçin</item>
         <item>Çek</item>
@@ -11,23 +10,20 @@
         <item>İtalyan</item>
         <item>Fransızca</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Ocak</item>
-            <item>Şubat</item>
-            <item>Mart</item>
-            <item>Nisan</item>
-            <item>Mayıs</item>
-            <item>Haziran</item>
-            <item>Temmuz</item>
-            <item>Ağustos</item>
-            <item>Eylül</item>
-            <item>Ekim</item>
-            <item>Kasım</item>
-            <item>Aralık</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Ocak</item>
+        <item>Şubat</item>
+        <item>Mart</item>
+        <item>Nisan</item>
+        <item>Mayıs</item>
+        <item>Haziran</item>
+        <item>Temmuz</item>
+        <item>Ağustos</item>
+        <item>Eylül</item>
+        <item>Ekim</item>
+        <item>Kasım</item>
+        <item>Aralık</item>
+    </string-array>
     <string name="delete_habit">Bu Alışkanlığı Silmek Istediğinden Emin Misiniz?</string>
     <string name="LightMode">Doğrulmak</string>
     <string name="onboarding_reverse">Ters Yapılacaklar Listesi</string>
@@ -134,5 +130,4 @@
     <string name="back_up">Yedeklemek</string>
     <string name="restore">Eski Haline Getirmek</string>
     <string name="dracula">Dracula</string>
-
 </resources>

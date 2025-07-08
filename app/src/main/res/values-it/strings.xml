@@ -10,7 +10,6 @@
         <item>Italiano</item>
         <item>Francese</item>
     </string-array>
-
     <string-array name="month_names">
         <item>Gennaio</item>
         <item>Febbraio</item>
@@ -25,7 +24,6 @@
         <item>Novembre</item>
         <item>Dicembre</item>
     </string-array>
-
     <string name="delete_habit">Sei sicuro di voler eliminare questa abitudine?</string>
     <string name="LightMode">To Don\'t</string>
     <string name="onboarding_reverse">Inverti la lista To Do</string>
@@ -82,11 +80,8 @@
         <item>Cibo e Bevande</item>
         <item>Studio</item>
     </string-array>
-
     <!-- Toasts -->
     <string name="toast_system">To Don\\\'t sta utilizzando il tema %s ora.</string>
-
-
     <!-- Here are the non-translateable strings -->
 
     <!-- Here are the contentDescription strings -->

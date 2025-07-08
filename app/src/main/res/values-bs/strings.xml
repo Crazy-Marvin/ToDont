@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Odaberite Jezik</item>
@@ -10,23 +10,20 @@
         <item>Italijanski</item>
         <item>Francuski</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Januar</item>
-            <item>Februar</item>
-            <item>Mart</item>
-            <item>April</item>
-            <item>Maja</item>
-            <item>Juni</item>
-            <item>Juli</item>
-            <item>Avgust</item>
-            <item>Septembar</item>
-            <item>Oktobar</item>
-            <item>Novembar</item>
-            <item>Decembar</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>Mart</item>
+        <item>April</item>
+        <item>Maja</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Avgust</item>
+        <item>Septembar</item>
+        <item>Oktobar</item>
+        <item>Novembar</item>
+        <item>Decembar</item>
+    </string-array>
     <string name="delete_habit">Jeste Li Sigurni Da Želite Izbrisati Ovu Naviku?</string>
     <string name="LightMode">Da Ne Donesi</string>
     <string name="onboarding_reverse">Popis Obrnutog Obaveza</string>
@@ -134,5 +131,4 @@
     <string name="back_up">Sigurnosno Kopirati</string>
     <string name="restore">Vratiti</string>
     <string name="dracula">Dracula</string>
-
 </resources>

@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Wybierz Język</item>
         <item>Czeski</item>
@@ -11,23 +10,20 @@
         <item>Włoski</item>
         <item>Francuski</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Styczeń</item>
-            <item>Luty</item>
-            <item>Marzec</item>
-            <item>Kwiecień</item>
-            <item>Móc</item>
-            <item>Czerwiec</item>
-            <item>Lipiec</item>
-            <item>Sierpień</item>
-            <item>Wrzesień</item>
-            <item>Październik</item>
-            <item>Listopad</item>
-            <item>Grudzień</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Styczeń</item>
+        <item>Luty</item>
+        <item>Marzec</item>
+        <item>Kwiecień</item>
+        <item>Móc</item>
+        <item>Czerwiec</item>
+        <item>Lipiec</item>
+        <item>Sierpień</item>
+        <item>Wrzesień</item>
+        <item>Październik</item>
+        <item>Listopad</item>
+        <item>Grudzień</item>
+    </string-array>
     <string name="delete_habit">Czy Na Pewno Chcesz Usunąć Ten Nawyk?</string>
     <string name="LightMode">Don \'T</string>
     <string name="onboarding_reverse">Lista Rzeczy Do Odwrotnej</string>
@@ -134,5 +130,4 @@
     <string name="back_up">Kopia Zapasowa</string>
     <string name="restore">Przywrócić</string>
     <string name="dracula">Dracula</string>
-
 </resources>

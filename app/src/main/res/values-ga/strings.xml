@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Roghnaigh Teanga</item>
         <item>(De Chuid) Na Seice</item>
@@ -11,23 +10,20 @@
         <item>(De Chuid) Na Hiodáile</item>
         <item>(De Chuid) Na Fraince</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Mí Eanáir</item>
-            <item>Mí Feabhra</item>
-            <item>Mí An Mhárta</item>
-            <item>Aibreán</item>
-            <item>Ar Mhiste Leat?</item>
-            <item>Mí An Mheithimh</item>
-            <item>Mí Iúil</item>
-            <item>Mí Lúnasa</item>
-            <item>Mí Mheán Fómhair</item>
-            <item>Deireadh Fómhair</item>
-            <item>Mí Na Samhna</item>
-            <item>Mí Na Nollag</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Mí Eanáir</item>
+        <item>Mí Feabhra</item>
+        <item>Mí An Mhárta</item>
+        <item>Aibreán</item>
+        <item>Ar Mhiste Leat?</item>
+        <item>Mí An Mheithimh</item>
+        <item>Mí Iúil</item>
+        <item>Mí Lúnasa</item>
+        <item>Mí Mheán Fómhair</item>
+        <item>Deireadh Fómhair</item>
+        <item>Mí Na Samhna</item>
+        <item>Mí Na Nollag</item>
+    </string-array>
     <string name="delete_habit">An Bhfuil Tú Cinnte Gur Mhaith Leat An Nós Seo A Scriosadh?</string>
     <string name="LightMode">A Don\'T</string>
     <string name="onboarding_reverse">An Liosta Droim Ar Ais Le Déanamh</string>
@@ -134,5 +130,4 @@
     <string name="back_up">Cúlíop</string>
     <string name="restore">Cuir Ar An Eolas</string>
     <string name="dracula">Dracula</string>
-
 </resources>

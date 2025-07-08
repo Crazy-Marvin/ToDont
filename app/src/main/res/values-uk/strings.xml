@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Виберіть Мову</item>
         <item>Чеський</item>
@@ -11,23 +10,20 @@
         <item>Італійський</item>
         <item>Французький</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Січень</item>
-            <item>Лютий</item>
-            <item>Марш</item>
-            <item>Квітень</item>
-            <item>Травень</item>
-            <item>Червень</item>
-            <item>Липень</item>
-            <item>Серпень</item>
-            <item>Вересень</item>
-            <item>Жовтень</item>
-            <item>Листопад</item>
-            <item>Грудень</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Січень</item>
+        <item>Лютий</item>
+        <item>Марш</item>
+        <item>Квітень</item>
+        <item>Травень</item>
+        <item>Червень</item>
+        <item>Липень</item>
+        <item>Серпень</item>
+        <item>Вересень</item>
+        <item>Жовтень</item>
+        <item>Листопад</item>
+        <item>Грудень</item>
+    </string-array>
     <string name="delete_habit">Ви Впевнені, Що Хочете Видалити Цю Звичку?</string>
     <string name="LightMode">Щоб Не</string>
     <string name="onboarding_reverse">Зворотний Список Справ</string>
@@ -134,5 +130,4 @@
     <string name="back_up">Резервувати</string>
     <string name="restore">Відновити</string>
     <string name="dracula">Dracula</string>
-
 </resources>

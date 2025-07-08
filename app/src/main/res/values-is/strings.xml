@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Veldu Tungumál</item>
         <item>Czech</item>
@@ -11,23 +10,20 @@
         <item>Ítalska</item>
         <item>Franska</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Janúar</item>
-            <item>Febrúar</item>
-            <item>Mars</item>
-            <item>Apríl</item>
-            <item>Maí</item>
-            <item>Júní</item>
-            <item>Júlí</item>
-            <item>Ágúst</item>
-            <item>September</item>
-            <item>Október</item>
-            <item>Nóvember</item>
-            <item>Desember</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Janúar</item>
+        <item>Febrúar</item>
+        <item>Mars</item>
+        <item>Apríl</item>
+        <item>Maí</item>
+        <item>Júní</item>
+        <item>Júlí</item>
+        <item>Ágúst</item>
+        <item>September</item>
+        <item>Október</item>
+        <item>Nóvember</item>
+        <item>Desember</item>
+    </string-array>
     <string name="delete_habit">Ertu Viss Um Að Þú Viljir Eyða Þessum Vana?</string>
     <string name="LightMode">Að Ekki</string>
     <string name="onboarding_reverse">Öfugt Verkefnalistinn</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Afrit Af</string>
     <string name="restore">Endurheimta</string>
     <string name="dracula">Dracula</string>
-
 </resources>

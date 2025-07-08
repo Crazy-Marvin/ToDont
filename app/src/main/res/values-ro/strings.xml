@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Selectați Limba</item>
         <item>Ceh</item>
@@ -11,23 +10,20 @@
         <item>Italian</item>
         <item>Franceză</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Ianuarie</item>
-            <item>Februarie</item>
-            <item>Martie</item>
-            <item>Aprilie</item>
-            <item>Mai</item>
-            <item>Iunie</item>
-            <item>Iulie</item>
-            <item>August</item>
-            <item>Septembrie</item>
-            <item>Octombrie</item>
-            <item>Noiembrie</item>
-            <item>Decembrie</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Ianuarie</item>
+        <item>Februarie</item>
+        <item>Martie</item>
+        <item>Aprilie</item>
+        <item>Mai</item>
+        <item>Iunie</item>
+        <item>Iulie</item>
+        <item>August</item>
+        <item>Septembrie</item>
+        <item>Octombrie</item>
+        <item>Noiembrie</item>
+        <item>Decembrie</item>
+    </string-array>
     <string name="delete_habit">Ești Sigur Că Vrei Să Ștergi Acest Obicei?</string>
     <string name="LightMode">A Nu \'T</string>
     <string name="onboarding_reverse">Lista Inversă De A Face</string>
@@ -134,5 +130,4 @@
     <string name="back_up">Înapoi</string>
     <string name="restore">Restabili</string>
     <string name="dracula">Dracula</string>
-
 </resources>

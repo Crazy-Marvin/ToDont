@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Wielt D\'Sprooch</item>
         <item>Tschechesch</item>
@@ -11,23 +10,20 @@
         <item>Italienesch</item>
         <item>Franséisch</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Januar</item>
-            <item>Februar</item>
-            <item>Mäerz</item>
-            <item>Abrëll</item>
-            <item>Mee</item>
-            <item>Juni</item>
-            <item>Juli</item>
-            <item>August</item>
-            <item>September</item>
-            <item>Oktober</item>
-            <item>November</item>
-            <item>Dezember</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>Mäerz</item>
+        <item>Abrëll</item>
+        <item>Mee</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Dezember</item>
+    </string-array>
     <string name="delete_habit">Sidd Dir Sécher, Datt Dir Dës Gewunnecht Läsche Wëllt?</string>
     <string name="LightMode">Ze Maachen Net</string>
     <string name="onboarding_reverse">Der Ëmgedréint Fir Lëscht</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Zréckkomm</string>
     <string name="restore">Erëmzekréien</string>
     <string name="dracula">Dracula</string>
-
 </resources>

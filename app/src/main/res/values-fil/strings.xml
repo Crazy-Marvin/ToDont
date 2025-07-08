@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
         <item>Select Language</item>
@@ -10,23 +10,20 @@
         <item>Italian</item>
         <item>French</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>January</item>
-            <item>February</item>
-            <item>March</item>
-            <item>April</item>
-            <item>May</item>
-            <item>June</item>
-            <item>July</item>
-            <item>August</item>
-            <item>September</item>
-            <item>October</item>
-            <item>November</item>
-            <item>December</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
     <string name="delete_habit">Are you sure you want to delete this habit?</string>
     <string name="LightMode">To Don\'t</string>
     <string name="onboarding_reverse">The reverse to-do list</string>
@@ -133,5 +130,4 @@
     <string name="back_up">Back up</string>
     <string name="restore">Restore</string>
     <string name="dracula">Dracula</string>
-
 </resources>

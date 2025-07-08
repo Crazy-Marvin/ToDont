@@ -10,7 +10,6 @@
         <item>Italiensk</item>
         <item>Fransk</item>
     </string-array>
-
     <string-array name="month_names">
         <item>Januar</item>
         <item>Februar</item>
@@ -25,7 +24,6 @@
         <item>November</item>
         <item>December</item>
     </string-array>
-
     <string name="delete_habit">Er du sikker på, at du vil slette denne vane?</string>
     <string name="LightMode">To Don\'t</string>
     <string name="onboarding_reverse">Den omvendte to-do liste</string>
@@ -79,10 +77,8 @@
         <item>Mad og drikke</item>
         <item>Studier</item>
     </string-array>
-
     <!-- Toasts -->
     <string name="toast_system">To Don\\\'t bruger nu %s-temaet.</string>
-
     <!-- Here are the non-translateable strings -->
 
     <!-- Here are the contentDescription strings -->

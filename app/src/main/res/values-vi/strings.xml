@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Chọn Ngôn Ngữ</item>
         <item>Séc</item>
@@ -11,23 +10,20 @@
         <item>Ý</item>
         <item>Tiếng Pháp</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Tháng Một</item>
-            <item>Tháng Hai</item>
-            <item>Bước Đều</item>
-            <item>Tháng Tư</item>
-            <item>Có Thể</item>
-            <item>Tháng Sáu</item>
-            <item>Tháng Bảy</item>
-            <item>Tháng Tám</item>
-            <item>Tháng 9</item>
-            <item>Tháng Mười</item>
-            <item>Tháng Mười Một</item>
-            <item>Tháng 12</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Tháng Một</item>
+        <item>Tháng Hai</item>
+        <item>Bước Đều</item>
+        <item>Tháng Tư</item>
+        <item>Có Thể</item>
+        <item>Tháng Sáu</item>
+        <item>Tháng Bảy</item>
+        <item>Tháng Tám</item>
+        <item>Tháng 9</item>
+        <item>Tháng Mười</item>
+        <item>Tháng Mười Một</item>
+        <item>Tháng 12</item>
+    </string-array>
     <string name="delete_habit">Bạn Có Chắc Là Bạn Muốn Xóa Thói Quen Này?</string>
     <string name="LightMode">Để Don \'T</string>
     <string name="onboarding_reverse">Danh Sách Việc Cần Làm Ngược Lại</string>
@@ -134,5 +130,4 @@
     <string name="back_up">Hỗ Trợ</string>
     <string name="restore">Khôi Phục</string>
     <string name="dracula">Dracula</string>
-
 </resources>

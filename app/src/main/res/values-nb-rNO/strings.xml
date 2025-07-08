@@ -11,7 +11,6 @@
         <item>Italiensk</item>
         <item>Fransk</item>
     </string-array>
-
     <string-array name="month_names">
         <item>Januar</item>
         <item>Februar</item>
@@ -26,7 +25,6 @@
         <item>November</item>
         <item>Desember</item>
     </string-array>
-
     <string name="delete_habit">Er du sikker på at du vil slette denne vanen?</string>
     <string name="LightMode">To Don\'t</string>
     <string name="onboarding_reverse">Den omvendte gjøremålslisten</string>
@@ -75,20 +73,15 @@
     <string name="kotlin">Kotlin</string>
     <string name="java">Java</string>
     <string name="gnu">GNU General Public License CE</string>
-
     <string-array name="spinner_array">
         <item>Sosialt</item>
         <item>Mat og drikke</item>
         <item>Studier</item>
     </string-array>
-
     <string name="toast_system">To Don\\\'t bruker nå %s-temaet.</string>
-
-
     <string name="crazymarvin" translatable="false">Crazy Marvin</string>
     <string name="codeacquaria" translatable="false">Code Acquaria</string>
     <string name="text" translatable="false"> <a href="https://mail.google.com/mail/u/0/#search/arafaatqureshi%40gmail.com?compose=new">Link</a> Hei blank fragment</string>
-
     <string name="contentDescription_FAB">Legg til ny To Don\'t-gjenstand</string>
     <string name="d">D</string>
     <string name="w">U</string>
@@ -105,7 +98,6 @@
     <string name="yes">Ja</string>
     <string name="please_add_a_label_first">Vennligst legg til en etikett først</string>
     <string name="do_you_really_want_to_delete_this">Vil du virkelig slette dette?</string>
-
     <string name="january">Januar</string>
     <string name="february">Februar</string>
     <string name="march">Mars</string>
@@ -118,7 +110,6 @@
     <string name="october">Oktober</string>
     <string name="november">November</string>
     <string name="december">Desember</string>
-
     <string name="mark_as_done_or_avoided">Merk som ferdig eller unngått.</string>
     <string name="help_make_to_don_t_better">Hjelp med å gjøre \"To Don\'t\" bedre.</string>
     <string name="todon_t_reminder">To Don\'t-påminnelse</string>

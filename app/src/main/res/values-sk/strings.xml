@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Vyberte Jazyk</item>
         <item>Český</item>
@@ -11,23 +10,20 @@
         <item>Taliansky</item>
         <item>Francúzsky</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Január</item>
-            <item>Február</item>
-            <item>Pochod</item>
-            <item>Apríl</item>
-            <item>May</item>
-            <item>Jún</item>
-            <item>Júl</item>
-            <item>August</item>
-            <item>September</item>
-            <item>Október</item>
-            <item>November</item>
-            <item>December</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Január</item>
+        <item>Február</item>
+        <item>Pochod</item>
+        <item>Apríl</item>
+        <item>May</item>
+        <item>Jún</item>
+        <item>Júl</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Október</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
     <string name="delete_habit">Ste Si Istí, Že Chcete Tento Zvyk Odstrániť?</string>
     <string name="LightMode">Don \'T</string>
     <string name="onboarding_reverse">Zoznam Úloh Úloh</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Zálohovať</string>
     <string name="restore">Obnoviť</string>
     <string name="dracula">Dracula</string>
-
 </resources>

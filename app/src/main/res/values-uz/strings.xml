@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string-array name="languages">
         <item>Tilni Tanlang</item>
         <item>Chex Tili</item>
@@ -11,23 +10,20 @@
         <item>Italyan</item>
         <item>Fransuz</item>
     </string-array>
-
-        <string-array name="month_names">
-            <item>Yanvar</item>
-            <item>Fevral</item>
-            <item>Mart Oyi</item>
-            <item>Aprel</item>
-            <item>Mayl</item>
-            <item>Iyun</item>
-            <item>Iyul</item>
-            <item>Avgust</item>
-            <item>Sentyabr</item>
-            <item>Oktyabr</item>
-            <item>Noyabr</item>
-            <item>Dekabr</item>
-        </string-array>
-
-
+    <string-array name="month_names">
+        <item>Yanvar</item>
+        <item>Fevral</item>
+        <item>Mart Oyi</item>
+        <item>Aprel</item>
+        <item>Mayl</item>
+        <item>Iyun</item>
+        <item>Iyul</item>
+        <item>Avgust</item>
+        <item>Sentyabr</item>
+        <item>Oktyabr</item>
+        <item>Noyabr</item>
+        <item>Dekabr</item>
+    </string-array>
     <string name="delete_habit">Haqiqatan Ham Ushbu Odatni Yo\'Q Qilmoqchimisiz?</string>
     <string name="LightMode">Don \'T</string>
     <string name="onboarding_reverse">Teskari Toishma Ro\'Yxati</string>
@@ -135,5 +131,4 @@
     <string name="back_up">Zaxirada</string>
     <string name="restore">Tiklamoq</string>
     <string name="dracula">Dracula</string>
-
 </resources>

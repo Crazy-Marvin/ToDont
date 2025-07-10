@@ -78,12 +78,12 @@
         <item>מחקרים</item>
     </string-array>
     # Toasts
-    <string name="toast_system">‏To Don\\\'t משתמש כעת בערכת הנושא %s.</string>
+    <string name="toast_system">‏To Don\'t נצמד להגדרת המערכת שלך.</string>
 
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
-    <string name="contentDescription_FAB">הוסף חדש לפריט לא</string>
+    <string name="contentDescription_FAB">הוספת פריט חדש ל־To Don\'t</string>
     <string name="d">ד</string>
     <string name="w">W</string>
     <string name="m">מ \'</string>
@@ -131,4 +131,12 @@
     <string name="back_up">לְגַבּוֹת</string>
     <string name="restore">לְשַׁחְזֵר</string>
     <string name="dracula">Dracula</string>
+    <string name="toast_light">To Don\'t חבר לצד הבהיר כעת.</string>
+    <string name="toast_dark">To Don\'t חבר לצד האפל כעת.</string>
+
+    # Here are the non-translateable strings
+    <string name="new_labels">תוויות חדשות</string>
+    <string name="time">שעה</string>
+    <string name="frequncy">תדירות</string>
+    <string name="Notification_scheduled">תוזמנה התראה</string>
 </resources>

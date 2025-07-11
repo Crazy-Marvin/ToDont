@@ -92,5 +92,10 @@
     <string name="feather">Feather Icons</string>
     <string name="Notification_scheduled">已设定提醒</string>
     <string name="toast_system">To Don\'t 现在跟随您系统的主题设置。</string>
-    <string name="toast_light">To Don\'t 现在使用浅色模式</string>
+    <string name="toast_light">To Don\'t 现在使用浅色模式。</string>
+    <string name="toast_dark">To Don\'t 现在使用深色模式。</string>
+
+    # Here are the non-translateable strings
+    <string name="contentDescription_FAB">向 To Don\'t 项目添加新内容</string>
+    <string name="out_of">" 退出 "</string>
 </resources>

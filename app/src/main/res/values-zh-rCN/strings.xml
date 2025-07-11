@@ -91,5 +91,6 @@
     <string name="restore">恢复数据</string>
     <string name="feather">Feather Icons</string>
     <string name="Notification_scheduled">已设定提醒</string>
-    <string name="toast_system">To Don\'t现在跟随您系统的主题设置</string>
+    <string name="toast_system">To Don\'t 现在跟随您系统的主题设置。</string>
+    <string name="toast_light">To Don\'t 现在使用浅色模式</string>
 </resources>

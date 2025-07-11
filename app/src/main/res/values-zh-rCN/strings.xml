@@ -39,10 +39,10 @@
     <string name="dark">深色模式</string>
     <string name="light">浅色模式</string>
     <string name="update">更新</string>
-    <string name="mitlicence">MIT 许可证</string>
+    <string name="mitlicence">MIT许可证</string>
     <string name="materialspinner">MaterialSpinner</string>
     <string name="followsys">跟随系统</string>
-    <string name="eclipse">Eclipse 公共许可证 1.0</string>
+    <string name="eclipse">Eclipse公共许可证1.0</string>
     <string name="gnu">GNU通用公共许可证</string>
     <string name="d">日</string>
     <string name="w">周</string>
@@ -90,4 +90,6 @@
     <string name="back_up">备份数据</string>
     <string name="restore">恢复数据</string>
     <string name="feather">Feather Icons</string>
+    <string name="Notification_scheduled">已设定提醒</string>
+    <string name="toast_system">To Don\'t现在跟随您系统的主题设置</string>
 </resources>

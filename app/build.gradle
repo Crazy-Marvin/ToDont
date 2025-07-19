@@ -10,11 +10,11 @@ plugins {
 
 android {
     namespace 'rocks.poopjournal.todont'
-    compileSdk 35
+    compileSdk 36
     defaultConfig {
         applicationId "rocks.poopjournal.todont"
         minSdkVersion 26
-        targetSdkVersion 35
+        targetSdkVersion 36
         versionCode 420
         versionName "4.2.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

@@ -1,3 +1,4 @@
+- Target Android 16 🤖
 - UX improvements 🎨
 - Translation updates 🗺️
 - Bug fixes 🤢

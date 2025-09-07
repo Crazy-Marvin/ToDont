@@ -9,7 +9,7 @@ jobs:
     steps:
       # Checkout
       - name: SCM
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: "Make gradlew executable"
         run: chmod +x ./gradlew
 

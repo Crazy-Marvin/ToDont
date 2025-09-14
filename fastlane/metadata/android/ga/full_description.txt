@@ -1,0 +1,12 @@
+<b>Léargas maith ar dhroch-nósanna.</b> Scríobh síos do lochtanna le sconna amháin, díreach ón leathanach baile. Bain úsáid as Nótaí chun sonraí a chur leis — cosúil le rogha shláintiúil in ionad an bharra seacláide sin nach féidir leat a sheasamh. Agus eagraigh do chuid ionchuir le Lipéid.
+
+
+<b>Níos tapúla ná mar is féidir leat peann a ghabháil.</b> Aimsigh do dhroch-nósanna ar an leathanach baile, agus scrios amach na cinn a dtugann tú faoi. Bogfar iad seo go dtí Críochnaithe don lá. An mhaidin dár gcionn, tosaigh as an nua le liosta iomlán de rudaí le seachaint.
+
+
+<b>Fan ar bharr do dhul chun cinn.</b> Tugann an Log léargas duit ar do rátaí rathúlachta foriomlána agus aithníonn sé cén droch-nós is mó a raibh tú ceangailte leis — thar sheachtain, mí, nó bliain. Mar sin is féidir leat oibriú go héasca i dtreo tú féin níos fearr.
+
+
+Leathanach Gréasáin: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+Aistrigh go Ná Déan: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a>
+Foinse ar GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

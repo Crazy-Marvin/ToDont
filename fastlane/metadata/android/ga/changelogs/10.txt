@@ -1,0 +1,1 @@
+- 🐛 Cosc a chur ar úsáideoirí droch-nósanna a chruthú gan lipéad chun tuairteanna aipeanna a chosc (#187)

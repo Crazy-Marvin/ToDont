@@ -62,7 +62,7 @@
     <string name="feather">Deilbhíní Cleite</string>
     <string name="mitlicence">Ceadúnas Mit</string>
     <string name="jetpack">Scairdphaca Android</string>
-    <string name="materialspinner">Ábhar Ábhar</string>
+    <string name="materialspinner">Spinneoir Ábhar</string>
     <string name="followsys">Lean An Córas</string>
     <string name="nobobutton">Nobobutton</string>
     <string name="circleimg">Ciorcailídview</string>
@@ -71,14 +71,14 @@
     <string name="eclipse">Ceadúnas Poiblí Eclipse 1.0</string>
     <string name="kotlin">Céatach</string>
     <string name="java">Iva</string>
-    <string name="gnu">Ceadúnas Poiblí Gnu Gnu Ce Ce</string>
+    <string name="gnu">Ceadúnas Poiblí Ginearálta GNU CE</string>
     <string-array name="spinner_array">
         <item>Sóisialta</item>
         <item>Bianna Agus Deochanna</item>
         <item>Staidéar</item>
     </string-array>
     # Toasts
-    <string name="toast_system">Tá To Don\\\'t ag úsáid an téama %s anois.</string>
+    <string name="toast_system">Leanann To Don\'t do chóras anois.</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
@@ -87,22 +87,22 @@
     <string name="w">Thiar</string>
     <string name="m">M</string>
     <string name="y">Y</string>
-    <string name="out_of">"As"</string>
-    <string name="habits_are_avoided">"Seachnaítear Nósanna"</string>
-    <string name="habits_are_avoided_way_to_go">"Seachnaítear Nósanna, Bealach Le Dul!"</string>
+    <string name="out_of">" amach as "</string>
+    <string name="habits_are_avoided">" seachnaítear nósanna"</string>
+    <string name="habits_are_avoided_way_to_go">" seachnaítear nósanna, maith thú!"</string>
     <string name="avoided_">Seachnaithe</string>
     <string name="habits_">Nósanna</string>
-    <string name="delete">Ar Mhaith Leat É Seo A Scriosadh I Ndáiríre?</string>
+    <string name="delete">An bhfuil tú cinnte gur mhaith leat é seo a scriosadh?</string>
     <string name="no">Ar Bith</string>
-    <string name="deletes">Ar Mhaith Leat É Seo A Scriosadh I Ndáiríre?</string>
+    <string name="deletes">An bhfuil tú cinnte gur mhaith leat é seo a scriosadh?</string>
     <string name="yes">Tá</string>
     <string name="please_add_a_label_first">Cuir Lipéad Ar Dtús Le Do Thoil</string>
-    <string name="do_you_really_want_to_delete_this">Ar Mhaith Leat É Seo A Scriosadh I Ndáiríre?</string>
+    <string name="do_you_really_want_to_delete_this">An bhfuil tú cinnte gur mhaith leat é seo a scriosadh?</string>
     <string name="january">Mí Eanáir</string>
     <string name="february">Mí Feabhra</string>
     <string name="march">Mí An Mhárta</string>
     <string name="april">Aibreán</string>
-    <string name="may">Ar Mhiste Leat?</string>
+    <string name="may">Bealtaine</string>
     <string name="june">Mí An Mheithimh</string>
     <string name="july">Mí Iúil</string>
     <string name="august">Mí Lúnasa</string>
@@ -124,10 +124,19 @@
     <string name="once">Aon Bhabhta Amháin</string>
     <string name="daily">Óga</string>
     <string name="weekly">Seachtainiúil</string>
-    <string name="do_you_really_want_to_delete_this_this_will_also_delete_all_habits_related_to_this_label">Ar Mhaith Leat É Seo A Scriosadh I Ndáiríre?</string>
+    <string name="do_you_really_want_to_delete_this_this_will_also_delete_all_habits_related_to_this_label">An bhfuil tú cinnte gur mhaith leat é seo a scriosadh? \nScriosfaidh sé seo gach nós a bhaineann leis an lipéad seo freisin.</string>
     <string name="data">Sonraí</string>
     <string name="add_daily_notification">Cuir Fógra Laethúil Leis</string>
     <string name="back_up">Cúlíop</string>
     <string name="restore">Cuir Ar An Eolas</string>
     <string name="dracula">Dracula</string>
-</resources>
+    <string name="app_name">Ná Déan</string>
+    <string name="new_labels">Lipéid Nua</string>
+    <string name="time">Am</string>
+    <string name="frequncy">Minicíocht</string>
+    <string name="Notification_scheduled">Fógra sceidealaithe</string>
+    <string name="toast_light">Tá Ná Déan ar an taobh éadrom anois.</string>
+    <string name="toast_dark">Tá Ná Déan ar an taobh dorcha anois.</string>
+
+    # Here are the non-translateable strings
+    </resources>

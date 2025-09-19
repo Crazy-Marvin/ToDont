@@ -1,0 +1,5 @@
+- Baineadh an dearthóir ón scáileán Maidir Linn
+- Bogadh teaghráin chrua-chódaithe ón leagan amach isteach sa strings.xml le haghaidh aistriúcháin níos éasca
+- Nuashonraíodh an chuid Ceadúnais Úsáidte leis na spleáchais uile a úsáideadh (buíochas leo go léir!)
+- Cuirtear níos mó gothaí svaidhpe leis
+- Feabhsuithe beaga faoin gcochall

@@ -78,7 +78,7 @@
         <item>Çalışmalar</item>
     </string-array>
     # Toasts
-    <string name="toast_system">To Don\\\'t şu anda %s temasını kullanıyor.</string>
+    <string name="toast_system">To Don\\\'t şu anda sistem temasını kullanıyor.</string>
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
@@ -130,4 +130,12 @@
     <string name="back_up">Yedeklemek</string>
     <string name="restore">Eski Haline Getirmek</string>
     <string name="dracula">Dracula</string>
+    <string name="new_labels">Yeni Etiketler</string>
+    <string name="time">Zaman</string>
+    <string name="frequncy">Sıklık</string>
+    <string name="toast_light">To Don\\\'t şu anda aydınlık temayı kullanıyor.</string>
+    <string name="toast_dark">To Don\\\'t şu anda karanlık temayı kullanıyor.</string>
+
+    # Here are the non-translateable strings
+    <string name="Notification_scheduled">Bildirimler zamanlandı</string>
 </resources>

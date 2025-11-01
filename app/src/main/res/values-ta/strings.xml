@@ -53,7 +53,7 @@
     <string name="kotlin">கோட்லின்</string>
     <string name="java">சாவா</string>
     <string name="gnu">குனு பொது பொதுமக்கள் உரிமம் பொப</string>
-    <string name="toast_system">வேண்டாம் என்பது இப்போது %s கருப்பொருளைப் பயன்படுத்துகிறது.</string>
+    <string name="toast_system">வேண்டாம் என்பது இப்போது உங்கள் கணினியைப் பின்பற்றுகிறது.</string>
 
     # Here are the non-translateable strings
     <string name="contentDescription_FAB">உருப்படிக்குப் புதியதைச் சேர்</string>
@@ -99,4 +99,13 @@
     <string name="back_up">காப்புப்பிரதி</string>
     <string name="restore">மீட்டமை</string>
     <string name="dracula">டிராகுலா</string>
-</resources>
+    <string name="app_name">தவிர்</string>
+    <string name="new_labels">புதிய சிட்டைகள்</string>
+    <string name="time">நேரம்</string>
+    <string name="frequncy">அலைவரிசை</string>
+    <string name="Notification_scheduled">அறிவிப்பு திட்டமிடப்பட்டுள்ளது</string>
+    <string name="toast_light">தவிர் இப்போது ஒளி பக்கத்தில் உள்ளது.</string>
+    <string name="toast_dark">தவிர் இப்போது இருள் பக்கத்தில் உள்ளது.</string>
+
+    # Here are the non-translateable strings
+    </resources>

@@ -13,6 +13,7 @@ import android.app.LocaleManager;
 import android.content.ContentValues
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration
 import android.content.res.Resources.Theme
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -25,13 +26,20 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup
 import android.view.Window;
 import android.view.WindowManager
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView
 import android.widget.Toast;
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import rocks.poopjournal.todont.databinding.ActivitySettingsBinding
+import rocks.poopjournal.todont.databinding.DialogInfoBinding
 import rocks.poopjournal.todont.utils.Constants
 import rocks.poopjournal.todont.utils.DatabaseUtils
 
@@ -69,6 +77,29 @@ class Settings : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         //actionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.mygradient))
+       WindowCompat.setDecorFitsSystemWindows(window, false);
+
+        // Apply insets padding to avoid notch / status bar / nav bar overlap
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { view, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+
+            view.updatePadding(
+                left = systemBars.left,
+                top = systemBars.top,
+                right = systemBars.right,
+                bottom = systemBars.bottom
+            )
+
+            insets
+        }
+        window.statusBarColor = Color.TRANSPARENT
+
+        WindowCompat.getInsetsController(window, window.decorView).apply {
+            val isDark =
+                (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) ==
+                        Configuration.UI_MODE_NIGHT_YES
+            isAppearanceLightStatusBars = !isDark
+        }
 
         prefUtils = SharedPrefUtils(this)
 
@@ -101,6 +132,24 @@ class Settings : AppCompatActivity() {
                 openFilePicker()
             }
         }
+
+        binding.monitorInfoBtn.setOnClickListener {
+            showMaterialInfoDialog()
+        }
+
+        binding.monitorSwitch.isChecked = prefUtils.isMonitorEnabled()
+
+
+        binding.monitorSwitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                // switch turned ON
+                prefUtils.setMonitorEnabled(true)
+            } else {
+                // switch turned OFF
+                prefUtils.setMonitorEnabled(false)
+            }
+        }
+
     }
 
     // Check and request storage permission
@@ -525,6 +574,23 @@ class Settings : AppCompatActivity() {
                 dialog.dismiss()
             }
             .show()
+    }
+
+    private fun showMaterialInfoDialog() {
+        val dialogBinding = DialogInfoBinding.inflate(layoutInflater)
+
+        val dialog = MaterialAlertDialogBuilder(this)
+            .setView(dialogBinding.root)
+            .setCancelable(true)
+            .create()
+
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        dialogBinding.btnOk.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
     }
 
     fun finishMYActivity(){

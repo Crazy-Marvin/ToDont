@@ -63,6 +63,8 @@
     <string name="source">View source</string>
     <string name="opensourcelicense">Open-source licences</string>
     <string name="appearance">Appearance</string>
+    <string name="monitor_error">Monitor errors</string>
+    <string name="monitor_information">Use Sentry to auto-report issues for faster bug fixes and improved stability. Only essential technical data is collected.</string>
     <string name="dark">Dark</string>
     <string name="light">Light</string>
     <string name="update">Update</string>

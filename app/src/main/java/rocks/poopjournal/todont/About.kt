@@ -3,6 +3,8 @@ package rocks.poopjournal.todont
 import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.content.res.Configuration
+import android.graphics.Color
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -10,9 +12,14 @@ import android.view.View
 import android.view.View.OnTouchListener
 import android.view.WindowManager
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import rocks.poopjournal.todont.utils.SharedPrefUtils
 import rocks.poopjournal.todont.utils.setAppTheme
 import smartdevelop.ir.eram.showcaseviewlib.GuideView
@@ -22,6 +29,8 @@ import smartdevelop.ir.eram.showcaseviewlib.config.PointerType
 
 class About : AppCompatActivity() {
     var version: TextView? = null
+
+    lateinit var mainRelative : RelativeLayout
     private var contributionView: LinearLayout? = null
     private var prefUtils: SharedPrefUtils? = null
 
@@ -32,7 +41,28 @@ class About : AppCompatActivity() {
         setAppTheme(this)
         setContentView(R.layout.activity_about)
         //actionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.mygradient))
+        WindowCompat.setDecorFitsSystemWindows(window, false);
+        mainRelative = findViewById<RelativeLayout>(R.id.main_relative)
+        // Apply insets padding to avoid notch / status bar / nav bar overlap
+        ViewCompat.setOnApplyWindowInsetsListener(mainRelative) { view, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
 
+            view.updatePadding(
+                left = systemBars.left,
+                top = systemBars.top,
+                right = systemBars.right,
+            )
+
+            insets
+        }
+        window.statusBarColor = Color.TRANSPARENT
+
+        WindowCompat.getInsetsController(window, window.decorView).apply {
+            val isDark =
+                (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) ==
+                        Configuration.UI_MODE_NIGHT_YES
+            isAppearanceLightStatusBars = !isDark
+        }
 
         contributionView = findViewById(R.id.contributionView)
         version = findViewById(R.id.versiontext)

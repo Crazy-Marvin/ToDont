@@ -20,13 +20,11 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.label, 4);
         sViewsWithIds.put(R.id.settings, 5);
         sViewsWithIds.put(R.id.container, 6);
-        sViewsWithIds.put(R.id.navigationView, 7);
-        sViewsWithIds.put(R.id.divider, 8);
+        sViewsWithIds.put(R.id.divider, 7);
+        sViewsWithIds.put(R.id.navigationView, 8);
         sViewsWithIds.put(R.id.floatingbtn, 9);
     }
     // views
-    @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -39,16 +37,16 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         super(bindingComponent, root, 0
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
             , (android.widget.FrameLayout) bindings[6]
-            , (android.view.View) bindings[8]
+            , (android.view.View) bindings[7]
             , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[9]
             , (android.widget.ImageButton) bindings[4]
-            , (com.google.android.material.bottomnavigation.BottomNavigationView) bindings[7]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
+            , (com.google.android.material.bottomnavigation.BottomNavigationView) bindings[8]
             , (android.widget.ImageButton) bindings[5]
             , (androidx.appcompat.widget.Toolbar) bindings[2]
             , (android.widget.TextView) bindings[3]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.main.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();

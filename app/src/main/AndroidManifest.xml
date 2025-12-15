@@ -80,6 +80,36 @@
             android:name=".widgets.NoButtonsWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://57ed9cffc2c8b91a85db1dbde5bccc12@o282785.ingest.us.sentry.io/4510467467116544"
+            />
+
+        <meta-data
+            android:name="io.sentry.auto-init"
+            android:value="false" />
+
+        <!-- Add data like request headers, user ip address and device name, see https://docs.sentry.io/platforms/android/data-management/data-collected/ for more info -->
+        <meta-data
+            android:name="io.sentry.send-default-pii"
+            android:value="true"
+            />
+        <!-- enable automatic breadcrumbs for user interactions (clicks, swipes, scrolls) -->
+        <meta-data
+            android:name="io.sentry.traces.user-interaction.enable"
+            android:value="true"
+            />
+        <!-- enable screenshot for crashes -->
+        <meta-data
+            android:name="io.sentry.attach-screenshot"
+            android:value="true"
+            />
+        <!-- enable view hierarchy for crashes -->
+        <meta-data
+            android:name="io.sentry.attach-view-hierarchy"
+            android:value="true"
+            />
+
     </application>
 
 </manifest>

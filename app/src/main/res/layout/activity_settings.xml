@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorBackground"
+    android:id="@+id/settings_main"
     android:orientation="vertical"
     tools:context=".Settings">
 
@@ -88,6 +89,66 @@
                 />
         </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/monitorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <!-- Monitor Icon -->
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/monitor"
+            android:contentDescription="@string/monitor_error"
+            android:elevation="6dp"
+            android:onClick="changeMode" />
+
+        <!-- Text -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:elevation="6dp"
+            android:gravity="center_vertical"
+            android:onClick="changeMode"
+            android:text="@string/monitor_error"
+            android:textColor="?attr/colorOnBackground1"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+        <!-- Right-side container (info + radio) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="20dp">
+
+            <!-- Info Icon -->
+            <ImageButton
+                android:id="@+id/monitor_info_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/info"
+                android:elevation="6dp"
+                android:contentDescription="@string/monitor_error"
+                android:onClick="changeMode" />
+
+            <!-- Radio Button -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/monitorSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 
     <LinearLayout

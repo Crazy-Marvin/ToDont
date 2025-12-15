@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorBackground"
+    android:id="@+id/main_relative"
     tools:context=".About">
 
     <!-- App Bar -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
         android:background="@drawable/gradient_background"
         android:gravity="bottom"
         app:elevation="0dp"

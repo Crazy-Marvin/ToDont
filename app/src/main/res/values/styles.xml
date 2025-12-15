@@ -2,8 +2,7 @@
     <!-- Base Application Theme -->
     <style name="Base.Theme.Todon" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowDisablePreview">true</item>
-        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
         <item name="android:windowBackground">@drawable/grad_window_backgrond</item>
         <!--        <item name="toolbarStyle">@style/Widget.Toolbar</item>-->
         <!--        &lt;!&ndash; Material Components Attributes &ndash;&gt;-->

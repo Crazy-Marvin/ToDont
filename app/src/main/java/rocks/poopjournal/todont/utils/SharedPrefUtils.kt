@@ -70,6 +70,14 @@ class SharedPrefUtils(private val context: Context) {
         sharedPreferences.edit().putString(KEY_NIGHT_MODE,mode).apply()
     }
 
+    fun setMonitorEnabled(enabled: Boolean) {
+        sharedPreferences.edit().putBoolean(KEY_MONITOR_MODE, enabled).apply()
+    }
+
+    fun isMonitorEnabled(): Boolean {
+        return sharedPreferences.getBoolean(KEY_MONITOR_MODE, false)
+    }
+
 
     companion object {
         const val PREF_NAME = "MyPrefs"
@@ -79,6 +87,9 @@ class SharedPrefUtils(private val context: Context) {
         const val KEY_APPEAR_VIEW: String = "APPEAR_VIEW"
         const val KEY_FIRST_TIME = "FirstTime"
         const val KEY_NIGHT_MODE = "NightMode"
+
+        const val KEY_MONITOR_MODE = "MonitorMode"
+
     }
 }
 

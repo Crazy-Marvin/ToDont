@@ -1,10 +1,19 @@
 package rocks.poopjournal.todont
 
 import android.content.Intent
+import android.content.res.Configuration
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updateLayoutParams
+import androidx.core.view.updatePadding
 import androidx.databinding.DataBindingUtil
 import rocks.poopjournal.todont.databinding.ActivityMainBinding
 import rocks.poopjournal.todont.fragments.FragmentLog
@@ -30,6 +39,29 @@ class MainActivity : AppCompatActivity() {
         //setTheme(R.style.Theme_Todon_Dracula)
         setAppTheme(this)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        WindowCompat.setDecorFitsSystemWindows(window, false);
+        // Apply insets padding to avoid notch / status bar / nav bar overlap
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { view, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+
+            view.updatePadding(
+                left = systemBars.left,
+                top = systemBars.top,
+                right = systemBars.right,
+            )
+
+            insets
+        }
+
+        window.statusBarColor = Color.TRANSPARENT
+
+        WindowCompat.getInsetsController(window, window.decorView).apply {
+            val isDark =
+                (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) ==
+                        Configuration.UI_MODE_NIGHT_YES
+            isAppearanceLightStatusBars = !isDark
+        }
+
         // Initialize the database controller
         prefUtils = SharedPrefUtils(this)
         dbHelper = DatabaseUtils(this)

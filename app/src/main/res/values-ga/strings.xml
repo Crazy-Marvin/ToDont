@@ -139,4 +139,6 @@
     <string name="toast_dark">Tá Ná Déan ar an taobh dorcha anois.</string>
 
     # Here are the non-translateable strings
-    </resources>
+    <string name="monitor_error">Earráidí monatóireachta</string>
+    <string name="monitor_information">Bain úsáid as Sentry chun fadhbanna a thuairisciú go huathoibríoch le haghaidh ceartúcháin fabhtanna níos tapúla agus cobhsaíocht fheabhsaithe. Ní bhailítear ach sonraí teicniúla riachtanacha.</string>
+</resources>

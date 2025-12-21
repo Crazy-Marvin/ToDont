@@ -134,4 +134,6 @@
     <string name="back_up">Sicherung</string>
     <string name="restore">Wiederherstellen</string>
     <string name="dracula">Dracula</string>
+    <string name="monitor_error">Fehler überwachen</string>
+    <string name="monitor_information">Verwendet Sentry, um Probleme automatisch zu melden, damit Fehler schneller behoben werden und die Stabilität verbessert wird. Es werden nur wichtige technische Daten erfasst.</string>
 </resources>

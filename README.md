@@ -8,6 +8,7 @@
 [![Pull requests](https://img.shields.io/github/issues-pr/Crazy-Marvin/ToDont.svg?style=flat)](https://github.com/Crazy-Marvin/ToDont/pulls)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7dadc506c2df42a38c2ef733948f9492)](https://app.codacy.com/gh/Crazy-Marvin/ToDont/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Hosted Weblate](https://hosted.weblate.org/widgets/todont/-/svg-badge.svg)](https://hosted.weblate.org/engage/todont/)
+[![Sentry](https://img.shields.io/badge/Sentry-%23362D59.svg?logo=sentry&style=flat)](https://sentry.com)
 [![Known Vulnerabilities](https://snyk.io/test/github/Crazy-Marvin/ToDont/badge.svg?targetFile=app%2Fbuild.gradle)](https://snyk.io/test/github/Crazy-Marvin/ToDont?targetFile=app%2Fbuild.gradle)
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
 [![F-Droid](https://img.shields.io/f-droid/v/rocks.poopjournal.todont.svg)](https://f-droid.org/en/packages/rocks.poopjournal.todont/)

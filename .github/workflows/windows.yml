@@ -15,7 +15,7 @@ jobs:
           java-version: 8
           java-package: jdk
       - name: "🧰 Setup Android SDK"
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
       - name: "🦸 Make gradlew executable"
         run: chmod +x ./gradlew
       - name: "🏗 Build"

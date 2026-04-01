@@ -4,7 +4,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id "io.sentry.android.gradle" version "6.1.0"
+    id "io.sentry.android.gradle" version "6.3.0"
 
 //    id 'com.google.gms.google-services'
 //    id 'kotlin-parcelize'

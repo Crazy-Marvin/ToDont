@@ -24,45 +24,45 @@
         <item>November</item>
         <item>Desember</item>
     </string-array>
-    <string name="delete_habit">Apakah Anda Yakin Ingin Menghapus Kebiasaan Ini?</string>
-    <string name="LightMode">Untuk Tidak</string>
-    <string name="onboarding_reverse">Daftar Yang Harus Dilakukan Terbalik</string>
-    <string name="onboarding_bad">Mencatat Kebiasaan Buruk Anda.Setiap Hari, Silang</string>
-    <string name="onboarding_gavein">Di Luar Yang Anda Berikan.Dan Berikutnya</string>
-    <string name="onboarding_freshlist">Mulailah Pagi Dengan Daftar Baru.</string>
-    <string name="onboarding_continue">Melanjutkan</string>
+    <string name="delete_habit">Apakah Anda yakin ingin menghapus kebiasaan ini?</string>
+    <string name="LightMode">To Don\'t</string>
+    <string name="onboarding_reverse">Daftar to-do terbalik</string>
+    <string name="onboarding_bad">Catat kebiasaan buruk Anda. Setiap hari, coret</string>
+    <string name="onboarding_gavein">yang Anda turuti. Dan keesokan</string>
+    <string name="onboarding_freshlist">paginya mulailah dengan daftar yang segar.</string>
+    <string name="onboarding_continue">Lanjutkan</string>
     <string name="avoided">Dihindari</string>
     <string name="done">Selesai</string>
     <string name="habits">Kebiasaan</string>
-    <string name="today">Hari Ini</string>
-    <string name="log">Log</string>
+    <string name="today">Hari ini</string>
+    <string name="log">Catatan</string>
     <string name="about">Tentang</string>
     <string name="labels">Label</string>
     <string name="settings">Pengaturan</string>
-    <string name="mostav">Kebanyakan Dihindari:</string>
-    <string name="leastav">Paling Tidak Dihindari:</string>
-    <string name="addlabel">Tolong Tambahkan Label Terlebih Dahulu</string>
-    <string name="addnewlabel">Tambahkan Label Baru</string>
+    <string name="mostav">Paling sering dihindari:</string>
+    <string name="leastav">Paling jarang dihindari:</string>
+    <string name="addlabel">Harap tambahkan label terlebih dahulu</string>
+    <string name="addnewlabel">Tambah label baru</string>
     <string name="addtask">Masukkan Kebiasaan Buruk</string>
-    <string name="note">Keterangan</string>
-    <string name="save">Menyimpan</string>
-    <string name="puthabit">Untuk Memulai, Hancurkan Kebiasaan Buruk</string>
-    <string name="habitswillshowuphere">Kebiasaan Akan Muncul Di Sini</string>
-    <string name="apachelicense">Lisensi Apache 2.0</string>
+    <string name="note">Deskripsi</string>
+    <string name="save">Simpan</string>
+    <string name="puthabit">Untuk memulai, catat sebuah kebiasaan buruk</string>
+    <string name="habitswillshowuphere">Kebiasaan akan muncul di sini</string>
+    <string name="apachelicense">Apache License 2.0</string>
     <string name="developer">Pengembang</string>
-    <string name="contribute">Menyumbang</string>
-    <string name="translate">Menerjemahkan</string>
-    <string name="report">Melaporkan Masalah</string>
-    <string name="source">Sumber Lihat</string>
-    <string name="opensourcelicense">Lisensi Open-Source</string>
-    <string name="appearance">Penampilan</string>
+    <string name="contribute">Berkontribusi</string>
+    <string name="translate">Terjemahkan</string>
+    <string name="report">Laporkan masalah</string>
+    <string name="source">Lihat sumber</string>
+    <string name="opensourcelicense">Lisensi sumber terbuka</string>
+    <string name="appearance">Tampilan</string>
     <string name="dark">Gelap</string>
-    <string name="light">Lampu</string>
-    <string name="update">Memperbarui</string>
-    <string name="feather">Ikon Bulu</string>
-    <string name="mitlicence">Lisensi Mit</string>
+    <string name="light">Terang</string>
+    <string name="update">Perbarui</string>
+    <string name="feather">Feather Icons</string>
+    <string name="mitlicence">MIT License</string>
     <string name="jetpack">Android Jetpack</string>
-    <string name="materialspinner">Materialspinner</string>
+    <string name="materialspinner">MaterialSpinner</string>
     <string name="followsys">Ikuti Sistem</string>
     <string name="nobobutton">Nobobutton</string>
     <string name="circleimg">Circlemageview</string>
@@ -71,39 +71,39 @@
     <string name="eclipse">Eclipse Public License 1.0</string>
     <string name="kotlin">Kotlin</string>
     <string name="java">Jawa</string>
-    <string name="gnu">Ce Lisensi Publik Umum Gnu</string>
+    <string name="gnu">GNU General Public License CE</string>
     <string-array name="spinner_array">
         <item>Sosial</item>
         <item>Makanan Dan Minuman</item>
         <item>Studi</item>
     </string-array>
     # Toasts
-    <string name="toast_system">To Don\\\'t sekarang menggunakan tema %s.</string>
+    <string name="toast_system">To Don\'t kini mengikuti sistem Anda.</string>
 
     # Here are the non-translateable strings
 
     # Here are the contentDescription strings (for impaired users) starting with "contentDescription_"
-    <string name="contentDescription_FAB">Tambahkan Baru Ke Item Tidak</string>
-    <string name="d">D</string>
-    <string name="w">W</string>
-    <string name="m">M</string>
-    <string name="y">Y</string>
-    <string name="out_of">"Keluar"</string>
-    <string name="habits_are_avoided">"Kebiasaan Dihindari"</string>
-    <string name="habits_are_avoided_way_to_go">"Kebiasaan Dihindari, Cara Untuk Pergi!"</string>
+    <string name="contentDescription_FAB">Tambah item To Don\'t baru</string>
+    <string name="d">H</string>
+    <string name="w">M</string>
+    <string name="m">B</string>
+    <string name="y">T</string>
+    <string name="out_of">" dari "</string>
+    <string name="habits_are_avoided">" kebiasaan berhasil dihindari"</string>
+    <string name="habits_are_avoided_way_to_go">" kebiasaan berhasil dihindari, pertahankan!"</string>
     <string name="avoided_">Dihindari</string>
     <string name="habits_">Kebiasaan</string>
-    <string name="delete">Apakah Anda Benar -Benar Ingin Menghapus Ini?</string>
+    <string name="delete">Apakah Anda benar-benar ingin menghapus ini?</string>
     <string name="no">Tidak</string>
-    <string name="deletes">Apakah Anda Benar -Benar Ingin Menghapus Ini?</string>
+    <string name="deletes">Apakah Anda benar-benar ingin menghapus ini?</string>
     <string name="yes">Ya</string>
-    <string name="please_add_a_label_first">Tolong Tambahkan Label Terlebih Dahulu</string>
-    <string name="do_you_really_want_to_delete_this">Apakah Anda Benar -Benar Ingin Menghapus Ini?</string>
+    <string name="please_add_a_label_first">Harap Tambahkan Label Terlebih Dahulu</string>
+    <string name="do_you_really_want_to_delete_this">Apakah Anda benar-benar ingin menghapus ini?</string>
     <string name="january">Januari</string>
     <string name="february">Februari</string>
-    <string name="march">Berbaris</string>
+    <string name="march">Maret</string>
     <string name="april">April</string>
-    <string name="may">Mungkin</string>
+    <string name="may">Mei</string>
     <string name="june">Juni</string>
     <string name="july">Juli</string>
     <string name="august">Agustus</string>
@@ -111,24 +111,35 @@
     <string name="october">Oktober</string>
     <string name="november">November</string>
     <string name="december">Desember</string>
-    <string name="mark_as_done_or_avoided">Tandai Seperti Yang Dilakukan Atau Dihindari.</string>
-    <string name="help_make_to_don_t_better">Membantu Membuat \ "Untuk Tidak Lebih Baik.</string>
-    <string name="todon_t_reminder">Pengingat Todon</string>
-    <string name="mark_your_todon_t_task">"Tandai Tugas Todon Anda"</string>
-    <string name="to_start_off_put_down_a_bad_habit">Untuk Memulai, Hancurkan Kebiasaan Buruk.</string>
-    <string name="view_your_stats">Lihat Statistik Anda.</string>
-    <string name="add_label">Tambahkan Label.</string>
+    <string name="mark_as_done_or_avoided">Tandai sebagai selesai atau dihindari.</string>
+    <string name="help_make_to_don_t_better">Bantu jadikan \"To Don\'t\" lebih baik.</string>
+    <string name="todon_t_reminder">Pengingat ToDon\'t</string>
+    <string name="mark_your_todon_t_task">"Tandai tugas ToDon\'t Anda "</string>
+    <string name="to_start_off_put_down_a_bad_habit">Untuk memulai, catat sebuah kebiasaan buruk.</string>
+    <string name="view_your_stats">Lihat statistik Anda.</string>
+    <string name="add_label">Tambah Label.</string>
     <string name="permission_required">Izin Diperlukan</string>
-    <string name="this_app_requires_access_to_your_external_storage_to_restore_the_database_please_enable_this_permission_in_the_app_settings">Aplikasi Ini Membutuhkan Akses Ke Penyimpanan Eksternal Anda Untuk Memulihkan Database.Harap Aktifkan Izin Ini Di Pengaturan Aplikasi.</string>
+    <string name="this_app_requires_access_to_your_external_storage_to_restore_the_database_please_enable_this_permission_in_the_app_settings">Aplikasi ini memerlukan akses ke penyimpanan eksternal Anda untuk memulihkan basis data. Harap aktifkan izin ini di pengaturan aplikasi.</string>
     <string name="open_settings">Buka Pengaturan</string>
     <string name="select_repetition_frequency">Pilih Frekuensi Pengulangan</string>
     <string name="once">Sekali</string>
-    <string name="daily">Sehari-Hari</string>
+    <string name="daily">Harian</string>
     <string name="weekly">Mingguan</string>
-    <string name="do_you_really_want_to_delete_this_this_will_also_delete_all_habits_related_to_this_label">Apakah Anda Benar -Benar Ingin Menghapus Ini? Ini Juga Akan Menghapus Semua Kebiasaan Yang Terkait Dengan Label Ini.</string>
+    <string name="do_you_really_want_to_delete_this_this_will_also_delete_all_habits_related_to_this_label">Apakah Anda benar-benar ingin menghapus ini?\nIni juga akan menghapus semua kebiasaan yang terkait dengan label ini.</string>
     <string name="data">Data</string>
-    <string name="add_daily_notification">Tambahkan Pemberitahuan Harian</string>
-    <string name="back_up">Cadangan</string>
-    <string name="restore">Memulihkan</string>
+    <string name="add_daily_notification">Tambah notifikasi harian</string>
+    <string name="back_up">Cadangkan</string>
+    <string name="restore">Pulihkan</string>
     <string name="dracula">Dracula</string>
-</resources>
+    <string name="app_name">To Don\'t</string>
+    <string name="new_labels">Label Baru</string>
+    <string name="time">Waktu</string>
+    <string name="frequncy">Frekuensi</string>
+    <string name="monitor_error">Pantau kesalahan</string>
+    <string name="monitor_information">Gunakan Sentry untuk melaporkan masalah secara otomatis demi perbaikan bug yang lebih cepat dan stabilitas yang lebih baik. Hanya data teknis penting yang dikumpulkan.</string>
+    <string name="Notification_scheduled">Notifikasi dijadwalkan</string>
+    <string name="toast_light">To Don\'t kini berada di sisi terang.</string>
+    <string name="toast_dark">To Don\'t kini berada di sisi gelap.</string>
+
+    # Here are the non-translateable strings
+    </resources>

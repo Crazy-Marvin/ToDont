@@ -10,7 +10,7 @@
     <string name="today">今天</string>
     <string name="done">完成</string>
     <string name="log">记录</string>
-    <string name="about">关于</string>
+    <string name="about">關於</string>
     <string name="labels">标签</string>
     <string name="settings">设置</string>
     <string name="mostav">最避免的:</string>
@@ -100,4 +100,5 @@
     <string name="march">三月</string>
     <string name="dracula">德拉库拉</string>
     <string name="app_name">不待辦事項</string>
+    <string name="monitor_information">使用 Sentry 來自動回報問題，以加快修復 Bug 的速度並提升穩定性。系統僅會收集必要的技術資料。</string>
 </resources>

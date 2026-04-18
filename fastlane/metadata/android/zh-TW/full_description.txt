@@ -1,0 +1,17 @@
+<b>正式你的壞習慣。</b>
+在首頁輕鬆地將你的壞習慣記錄下來。用Notes添加詳細資訊 -- 例如那根讓你無法抗拒的巧克力棒的健康替代品 -- 並利用標籤來整理你的輸入內容。
+
+
+<b>記錄，就在彈指之間。</b>
+在首頁就能一眼看到你的壞習慣清單，隨手一滑就能完成記錄。清單會於隔天重置，讓你繼續遠離惡習。
+
+
+<b>進度成效，一目了然。</b>
+透過日誌分析，你可以掌握整體的達成率，並鎖定糾纏最久的惡習，協助你一步步成就更好的自己。
+
+
+Webpage: <a href="https://www.crazymarvin.com/todont">https://www.crazymarvin.com/todont</a>
+
+Translate To Don’t: <a href="https://hosted.weblate.org/engage/todont/">https://hosted.weblate.org/engage/todont/</a> 
+
+Source on GitHub: <a href="https://github.com/Crazy-Marvin/ToDont">https://github.com/Crazy-Marvin/ToDont</a>

@@ -122,9 +122,9 @@
     <string name="this_app_requires_access_to_your_external_storage_to_restore_the_database_please_enable_this_permission_in_the_app_settings">אפליקציה זו דורשת גישה לאחסון החיצוני שלך כדי לשחזר את בסיס הנתונים.אנא הפעל אישור זה בהגדרות האפליקציה.</string>
     <string name="open_settings">הגדרות פתוחות</string>
     <string name="select_repetition_frequency">בחר תדר חזרה</string>
-    <string name="once"></string>
-    <string name="daily"></string>
-    <string name="weekly"></string>
+    <string name="once"/>
+    <string name="daily"/>
+    <string name="weekly"/>
     <string name="do_you_really_want_to_delete_this_this_will_also_delete_all_habits_related_to_this_label">למחוק תווית זו?\nיימחקו גם כל ההרגלים המשויכים לתווית זו.</string>
     <string name="data">נתונים</string>
     <string name="add_daily_notification">הוסף הודעה יומית</string>
@@ -140,4 +140,5 @@
     <string name="frequncy">תדירות</string>
     <string name="Notification_scheduled">תוזמנה התראה</string>
     <string name="app_name">רשימת מכשלות</string>
+    <string name="monitor_error">ניטור שגיאות</string>
 </resources>

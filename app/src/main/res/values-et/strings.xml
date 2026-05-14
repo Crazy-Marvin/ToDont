@@ -78,7 +78,7 @@
         <item>Uuringud</item>
     </string-array>
     # Toasts
-    <string name="toast_system">To Don\\\'t kasutab nüüd %s teemat.</string>
+    <string name="toast_system">To Don\\\'t kasutab nüüd süsteemi kujundust.</string>
 
     # Here are the non-translateable strings
 
@@ -120,15 +120,15 @@
     <string name="add_label">Lisage Silt.</string>
     <string name="permission_required">Vajalik Luba</string>
     <string name="this_app_requires_access_to_your_external_storage_to_restore_the_database_please_enable_this_permission_in_the_app_settings">See Rakendus Nõuab Andmebaasi Taastamiseks Juurdepääsu Teie Välisele Salvestusruumile.Luba See Luba Rakenduse Seadetes.</string>
-    <string name="open_settings">Avatud Sätted</string>
-    <string name="select_repetition_frequency">Valige Korduse Sagedus</string>
-    <string name="once">Kord</string>
-    <string name="daily">Iga Päev</string>
-    <string name="weekly">Iganädalane</string>
+    <string name="open_settings">Ava seadistused</string>
+    <string name="select_repetition_frequency">Vali korduse sagedus</string>
+    <string name="once">Üks kord</string>
+    <string name="daily">Iga päev</string>
+    <string name="weekly">Iga nädal</string>
     <string name="do_you_really_want_to_delete_this_this_will_also_delete_all_habits_related_to_this_label">Kas Soovite Selle Tõesti Kustutada? \ Nthis Kustutab Ka Kõik Selle Sildiga Seotud Harjumused.</string>
     <string name="data">Andmed</string>
     <string name="add_daily_notification">Lisage Igapäevane Teatis</string>
     <string name="back_up">Varundama</string>
-    <string name="restore">Taastama</string>
+    <string name="restore">Taasta</string>
     <string name="dracula">Dracula</string>
 </resources>

@@ -98,4 +98,5 @@
     # Here are the non-translateable strings
     <string name="contentDescription_FAB">向 To Don\'t 项目添加新内容</string>
     <string name="out_of">" 退出 "</string>
+    <string name="monitor_error">监测器错误</string>
 </resources>
